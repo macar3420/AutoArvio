@@ -1,20 +1,78 @@
 {
-  "note": "Optional tech specs keyed by generation id. Values are approximate brochure/type-approval figures for FI/EU. Fill more generations over time.",
-  "specs": {
-    "audi-a4-b8": {
-      "generationId": "audi-a4-b8",
-      "powertrain": "ice",
-      "powerHpMin": 120,
-      "powerHpMax": 333,
-      "powerKwMin": 88,
-      "powerKwMax": 245,
-      "drivetrain": "FWD / quattro",
-      "transmissionSummary": "6MT / Multitronic CVT / 7DCT / 8AT",
-      "bodyStyles": "Sedan, Avant",
-      "enginesSummary": "1.8/2.0 TFSI, 3.2 FSI (early); 2.0/3.0 TDI; S4 3.0 TFSI",
-      "consumptionCombinedL": 6.2,
-      "consumptionNote": "Typical mid-range ~5.5–7.5 L/100 km depending on engine/gearbox",
-      "consumptionStandard": "NEDC"
-    }
+  "note": "Optional tech data keyed by generation id. Prefer variants[] for engines & versions; generation-level specs are legacy. Values are approximate brochure/type-approval figures for FI/EU.",
+  "specs": {},
+  "variants": {
+    "audi-a4-b8": [
+      {
+        "id": "audi-a4-b8-18-tfsi-160",
+        "generationId": "audi-a4-b8",
+        "name": "1.8 TFSI 160",
+        "powertrain": "ice",
+        "powerHp": 160,
+        "powerKw": 118,
+        "drivetrain": "FWD",
+        "transmissionSummary": "6MT / Multitronic",
+        "bodyStyles": "Sedan, Avant",
+        "consumptionCombinedL": 6.6,
+        "consumptionNote": "Approx. brochure combined; Multitronic often a touch lower than 6MT",
+        "consumptionStandard": "NEDC"
+      },
+      {
+        "id": "audi-a4-b8-20-tfsi-211",
+        "generationId": "audi-a4-b8",
+        "name": "2.0 TFSI 211",
+        "powertrain": "ice",
+        "powerHp": 211,
+        "powerKw": 155,
+        "drivetrain": "FWD / quattro",
+        "transmissionSummary": "6MT / S tronic",
+        "bodyStyles": "Sedan, Avant",
+        "consumptionCombinedL": 6.9,
+        "consumptionNote": "FWD 6MT ~6.6–7.1; quattro higher",
+        "consumptionStandard": "NEDC"
+      },
+      {
+        "id": "audi-a4-b8-20-tdi-143",
+        "generationId": "audi-a4-b8",
+        "name": "2.0 TDI 143",
+        "powertrain": "ice",
+        "powerHp": 143,
+        "powerKw": 105,
+        "drivetrain": "FWD",
+        "transmissionSummary": "6MT / S tronic / Multitronic",
+        "bodyStyles": "Sedan, Avant",
+        "consumptionCombinedL": 4.8,
+        "consumptionNote": "Common FI diesel; ~4.6–5.3 depending on gearbox",
+        "consumptionStandard": "NEDC"
+      },
+      {
+        "id": "audi-a4-b8-20-tdi-177",
+        "generationId": "audi-a4-b8",
+        "name": "2.0 TDI 177",
+        "powertrain": "ice",
+        "powerHp": 177,
+        "powerKw": 130,
+        "drivetrain": "FWD / quattro",
+        "transmissionSummary": "6MT / S tronic",
+        "bodyStyles": "Sedan, Avant",
+        "consumptionCombinedL": 5.1,
+        "consumptionNote": "Later B8/B8.5 common output; quattro slightly higher",
+        "consumptionStandard": "NEDC"
+      },
+      {
+        "id": "audi-a4-b8-30-tdi-240",
+        "generationId": "audi-a4-b8",
+        "name": "3.0 TDI 240",
+        "powertrain": "ice",
+        "powerHp": 240,
+        "powerKw": 176,
+        "drivetrain": "quattro",
+        "transmissionSummary": "7DCT / 8AT",
+        "bodyStyles": "Sedan, Avant",
+        "consumptionCombinedL": 6.2,
+        "consumptionNote": "V6 diesel; ~6.0–6.6 NEDC combined typical",
+        "consumptionStandard": "NEDC"
+      }
+    ]
   }
 }

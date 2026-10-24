@@ -1,5 +1,6 @@
 package fi.tamk.autoarvio.ui.generations
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,10 +9,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -27,7 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import fi.tamk.autoarvio.domain.model.GenerationSpecs
+import fi.tamk.autoarvio.domain.model.PowertrainVariant
 import fi.tamk.autoarvio.ui.theme.OutfitFamily
 import fi.tamk.autoarvio.ui.theme.Ultramarine
 
@@ -36,19 +38,29 @@ import fi.tamk.autoarvio.ui.theme.Ultramarine
 fun GenerationDetailScreen(
     viewModel: GenerationDetailViewModel,
     onBack: () -> Unit,
+    onVariantClick: (PowertrainVariant) -> Unit,
 ) {
     val generation = viewModel.generation
-    val specs = viewModel.specs
+    val variants = viewModel.variants
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(
-                        text = generation?.code ?: "Generation",
-                        fontFamily = OutfitFamily,
-                        fontWeight = FontWeight.SemiBold,
-                    )
+                    Column {
+                        Text(
+                            text = generation?.let { "${viewModel.modelTitle} ${it.code}" }
+                                ?: "Engines & versions",
+                            fontFamily = OutfitFamily,
+                            fontWeight = FontWeight.SemiBold,
+                        )
+                        Text(
+                            text = "Engines & versions",
+                            style = MaterialTheme.typography.bodySmall,
+                            fontFamily = OutfitFamily,
+                            color = Color.White.copy(alpha = 0.85f),
+                        )
+                    }
                 },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
@@ -68,179 +80,122 @@ fun GenerationDetailScreen(
         },
         containerColor = MaterialTheme.colorScheme.background,
     ) { padding ->
-        if (generation == null) {
-            Text(
-                text = "Generation not found",
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding)
-                    .padding(20.dp),
-                fontFamily = OutfitFamily,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
-            )
-            return@Scaffold
+        when {
+            generation == null -> {
+                Text(
+                    text = "Generation not found",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                        .padding(20.dp),
+                    fontFamily = OutfitFamily,
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                )
+            }
+            variants.isEmpty() -> {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                        .padding(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text(
+                        text = generation.yearLabel(),
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontFamily = OutfitFamily,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
+                    )
+                    Text(
+                        text = "Engines coming soon for this generation.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontFamily = OutfitFamily,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                    )
+                }
+            }
+            else -> {
+                LazyColumn(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding),
+                ) {
+                    item {
+                        Column(
+                            modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
+                            verticalArrangement = Arrangement.spacedBy(4.dp),
+                        ) {
+                            Text(
+                                text = generation.code,
+                                style = MaterialTheme.typography.titleLarge,
+                                fontFamily = OutfitFamily,
+                                fontWeight = FontWeight.Bold,
+                                color = Ultramarine,
+                            )
+                            Text(
+                                text = generation.yearLabel(),
+                                style = MaterialTheme.typography.bodyMedium,
+                                fontFamily = OutfitFamily,
+                                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
+                            )
+                        }
+                        HorizontalDivider(
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                        )
+                    }
+                    items(variants, key = { it.id }) { variant ->
+                        VariantRow(
+                            variant = variant,
+                            onClick = { onVariantClick(variant) },
+                        )
+                        HorizontalDivider(
+                            modifier = Modifier.padding(start = 20.dp),
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                        )
+                    }
+                    item { Spacer(modifier = Modifier.height(24.dp)) }
+                }
+            }
         }
+    }
+}
 
+@Composable
+private fun VariantRow(
+    variant: PowertrainVariant,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick)
+            .padding(horizontal = 20.dp, vertical = 16.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(padding)
-                .verticalScroll(rememberScrollState())
-                .padding(horizontal = 20.dp, vertical = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            GenerationImage(
-                imageAsset = generation.imageAsset,
-                contentDescription = "${generation.code} placeholder",
-                modifier = Modifier.fillMaxWidth(),
-            )
             Text(
-                text = viewModel.modelTitle,
-                style = MaterialTheme.typography.titleLarge,
+                text = variant.name,
+                style = MaterialTheme.typography.titleMedium,
                 fontFamily = OutfitFamily,
                 fontWeight = FontWeight.SemiBold,
             )
-            Text(
-                text = generation.code,
-                style = MaterialTheme.typography.headlineSmall,
-                fontFamily = OutfitFamily,
-                fontWeight = FontWeight.Bold,
-                color = Ultramarine,
-            )
-            Text(
-                text = generation.yearLabel(),
-                style = MaterialTheme.typography.bodyLarge,
-                fontFamily = OutfitFamily,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
-            )
-
-            if (specs != null) {
-                SpecsSections(specs = specs, yearsLabel = generation.yearLabel())
-            } else {
-                Spacer(modifier = Modifier.height(8.dp))
+            val subtitle = variant.listSubtitle()
+            if (subtitle.isNotBlank()) {
                 Text(
-                    text = "Technical summary not filled for this generation yet.",
+                    text = subtitle,
                     style = MaterialTheme.typography.bodyMedium,
                     fontFamily = OutfitFamily,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
                 )
             }
         }
-    }
-}
-
-@Composable
-private fun SpecsSections(
-    specs: GenerationSpecs,
-    yearsLabel: String,
-) {
-    Spacer(modifier = Modifier.height(4.dp))
-
-    SpecSection(title = "Overview") {
-        SpecRow(label = "Years", value = yearsLabel)
-        specs.powertrainLabel()?.let { SpecRow(label = "Powertrain", value = it) }
-        specs.bodyStyles?.let { SpecRow(label = "Body", value = it) }
-    }
-
-    if (specs.hasPerformance()) {
-        SpecSection(title = "Performance") {
-            specs.powerLabel()?.let { SpecRow(label = "Power", value = it) }
-            specs.enginesSummary?.let { SpecRow(label = "Engines", value = it) }
-            specs.drivetrain?.let { SpecRow(label = "Drivetrain", value = it) }
-            specs.transmissionSummary?.let { SpecRow(label = "Gearbox", value = it) }
-        }
-    }
-
-    if (specs.hasEnergy()) {
-        SpecSection(title = "Energy") {
-            specs.consumptionCombinedL?.let { litres ->
-                val standard = specs.consumptionStandard?.let { " ($it)" }.orEmpty()
-                SpecRow(
-                    label = "Consumption",
-                    value = String.format("%.1f L/100 km%s", litres, standard),
-                )
-            }
-            specs.consumptionNote?.let { SpecRow(label = "Note", value = it) }
-            specs.batteryKwh?.let {
-                SpecRow(label = "Battery", value = String.format("%.1f kWh usable", it))
-            }
-            specs.electricRangeKm?.let { range ->
-                val standard = (specs.rangeStandard ?: specs.consumptionStandard)
-                    ?.let { " ($it)" }
-                    .orEmpty()
-                SpecRow(label = "Electric range", value = "$range km$standard")
-            }
-            specs.consumptionCombinedKwh?.let {
-                val standard = specs.consumptionStandard?.let { s -> " ($s)" }.orEmpty()
-                SpecRow(
-                    label = "Energy use",
-                    value = String.format("%.1f kWh/100 km%s", it, standard),
-                )
-            }
-            if (specs.consumptionCombinedL == null &&
-                specs.consumptionNote == null &&
-                specs.consumptionStandard != null &&
-                specs.batteryKwh == null &&
-                specs.electricRangeKm == null &&
-                specs.consumptionCombinedKwh == null
-            ) {
-                SpecRow(label = "Standard", value = specs.consumptionStandard!!)
-            }
-        }
-    }
-}
-
-@Composable
-private fun SpecSection(
-    title: String,
-    content: @Composable () -> Unit,
-) {
-    Column(
-        modifier = Modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-    ) {
-        Text(
-            text = title,
-            style = MaterialTheme.typography.titleMedium,
-            fontFamily = OutfitFamily,
-            fontWeight = FontWeight.SemiBold,
-            color = Ultramarine,
-        )
-        HorizontalDivider(
-            color = Ultramarine.copy(alpha = 0.2f),
-            thickness = 1.dp,
-        )
-        content()
-        Spacer(modifier = Modifier.height(4.dp))
-    }
-}
-
-@Composable
-private fun SpecRow(
-    label: String,
-    value: String,
-) {
-    Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.Top,
-    ) {
-        Text(
-            text = label,
-            style = MaterialTheme.typography.bodyMedium,
-            fontFamily = OutfitFamily,
-            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
-            modifier = Modifier
-                .weight(0.38f)
-                .padding(end = 12.dp),
-        )
-        Text(
-            text = value,
-            style = MaterialTheme.typography.bodyMedium,
-            fontFamily = OutfitFamily,
-            fontWeight = FontWeight.Medium,
-            color = MaterialTheme.colorScheme.onSurface,
-            modifier = Modifier.weight(0.62f),
+        Icon(
+            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            contentDescription = null,
+            tint = Ultramarine.copy(alpha = 0.7f),
         )
     }
 }

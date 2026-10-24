@@ -5,8 +5,10 @@ import fi.tamk.autoarvio.domain.model.Generation
 import fi.tamk.autoarvio.domain.model.GenerationSpecs
 import fi.tamk.autoarvio.domain.model.Make
 import fi.tamk.autoarvio.domain.model.Model
+import fi.tamk.autoarvio.domain.model.PowertrainVariant
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
+import org.json.JSONArray
 import org.json.JSONObject
 
 /**
@@ -14,7 +16,7 @@ import org.json.JSONObject
  * plus confirmed FI pages for S/RS/M gaps. yearFrom = best-effort first introduction.
  * Full mirror: assets/catalog/fi_catalog.json
  * Generations: assets/catalog/generations.json
- * Tech specs: assets/catalog/generation_specs.json (optional; A4 B8 prototype filled).
+ * Tech / variants: assets/catalog/generation_specs.json (A4 B8 engines prototype).
  *
  * Chinese FI brands kept: Aion, BYD, Maxus, MG, Smart, Voyah, XPeng.
  * Omitted (no clear FI retail): Leapmotor, Zeekr, NIO, Ora, Lynk & Co.
@@ -25,6 +27,12 @@ class CatalogRepository(
     private val appContext = context.applicationContext
     private val generations: List<Generation> by lazy { loadGenerations(appContext) }
     private val generationSpecs: Map<String, GenerationSpecs> by lazy { loadGenerationSpecs(appContext) }
+    private val variantsByGeneration: Map<String, List<PowertrainVariant>> by lazy {
+        loadPowertrainVariants(appContext)
+    }
+    private val variantsById: Map<String, PowertrainVariant> by lazy {
+        variantsByGeneration.values.flatten().associateBy { it.id }
+    }
 
     fun observeMakes(): Flow<List<Make>> = flowOf(PlaceholderCatalog.makes)
 
@@ -55,8 +63,15 @@ class CatalogRepository(
     fun generationById(generationId: String): Generation? =
         generations.firstOrNull { it.id == generationId }
 
+    /** Legacy generation-level averages; prefer [variantsFor] when present. */
     fun specsFor(generationId: String): GenerationSpecs? =
         generationSpecs[generationId]
+
+    fun variantsFor(generationId: String): List<PowertrainVariant> =
+        variantsByGeneration[generationId].orEmpty()
+
+    fun variantById(variantId: String): PowertrainVariant? =
+        variantsById[variantId]
 }
 
 private fun loadGenerations(context: Context): List<Generation> {
@@ -83,31 +98,83 @@ private fun loadGenerations(context: Context): List<Generation> {
 }
 
 private fun loadGenerationSpecs(context: Context): Map<String, GenerationSpecs> {
-    val json = context.assets.open("catalog/generation_specs.json")
-        .bufferedReader()
-        .use { it.readText() }
-    val root = JSONObject(json)
+    val root = loadSpecsRoot(context)
+    if (!root.has("specs") || root.isNull("specs")) return emptyMap()
     val specsObj = root.getJSONObject("specs")
     return buildMap {
         val keys = specsObj.keys()
         while (keys.hasNext()) {
             val key = keys.next()
             val o = specsObj.getJSONObject(key)
-            put(
-                key,
-                GenerationSpecs(
-                    generationId = o.optString("generationId", key),
+            put(key, parseGenerationSpecs(key, o))
+        }
+    }
+}
+
+private fun loadPowertrainVariants(
+    context: Context,
+): Map<String, List<PowertrainVariant>> {
+    val root = loadSpecsRoot(context)
+    if (!root.has("variants") || root.isNull("variants")) return emptyMap()
+    val variantsObj = root.getJSONObject("variants")
+    return buildMap {
+        val keys = variantsObj.keys()
+        while (keys.hasNext()) {
+            val generationId = keys.next()
+            val array = variantsObj.getJSONArray(generationId)
+            put(generationId, parseVariantArray(generationId, array))
+        }
+    }
+}
+
+private fun loadSpecsRoot(context: Context): JSONObject {
+    val json = context.assets.open("catalog/generation_specs.json")
+        .bufferedReader()
+        .use { it.readText() }
+    return JSONObject(json)
+}
+
+private fun parseGenerationSpecs(key: String, o: JSONObject): GenerationSpecs =
+    GenerationSpecs(
+        generationId = o.optString("generationId", key),
+        powertrain = o.optNullableString("powertrain"),
+        powerHp = o.optNullableInt("powerHp"),
+        powerKw = o.optNullableInt("powerKw"),
+        powerHpMin = o.optNullableInt("powerHpMin"),
+        powerHpMax = o.optNullableInt("powerHpMax"),
+        powerKwMin = o.optNullableInt("powerKwMin"),
+        powerKwMax = o.optNullableInt("powerKwMax"),
+        drivetrain = o.optNullableString("drivetrain"),
+        transmissionSummary = o.optNullableString("transmissionSummary"),
+        bodyStyles = o.optNullableString("bodyStyles"),
+        enginesSummary = o.optNullableString("enginesSummary"),
+        consumptionCombinedL = o.optNullableDouble("consumptionCombinedL"),
+        consumptionNote = o.optNullableString("consumptionNote"),
+        consumptionStandard = o.optNullableString("consumptionStandard"),
+        batteryKwh = o.optNullableDouble("batteryKwh"),
+        electricRangeKm = o.optNullableInt("electricRangeKm"),
+        rangeStandard = o.optNullableString("rangeStandard"),
+        consumptionCombinedKwh = o.optNullableDouble("consumptionCombinedKwh"),
+    )
+
+private fun parseVariantArray(
+    generationId: String,
+    array: JSONArray,
+): List<PowertrainVariant> =
+    buildList {
+        for (i in 0 until array.length()) {
+            val o = array.getJSONObject(i)
+            add(
+                PowertrainVariant(
+                    id = o.getString("id"),
+                    generationId = o.optString("generationId", generationId),
+                    name = o.getString("name"),
                     powertrain = o.optNullableString("powertrain"),
                     powerHp = o.optNullableInt("powerHp"),
                     powerKw = o.optNullableInt("powerKw"),
-                    powerHpMin = o.optNullableInt("powerHpMin"),
-                    powerHpMax = o.optNullableInt("powerHpMax"),
-                    powerKwMin = o.optNullableInt("powerKwMin"),
-                    powerKwMax = o.optNullableInt("powerKwMax"),
                     drivetrain = o.optNullableString("drivetrain"),
                     transmissionSummary = o.optNullableString("transmissionSummary"),
                     bodyStyles = o.optNullableString("bodyStyles"),
-                    enginesSummary = o.optNullableString("enginesSummary"),
                     consumptionCombinedL = o.optNullableDouble("consumptionCombinedL"),
                     consumptionNote = o.optNullableString("consumptionNote"),
                     consumptionStandard = o.optNullableString("consumptionStandard"),
@@ -119,7 +186,6 @@ private fun loadGenerationSpecs(context: Context): Map<String, GenerationSpecs> 
             )
         }
     }
-}
 
 private fun JSONObject.optNullableString(name: String): String? =
     if (has(name) && !isNull(name)) optString(name).takeIf { it.isNotBlank() } else null

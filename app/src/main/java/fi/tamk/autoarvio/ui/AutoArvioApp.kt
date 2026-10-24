@@ -14,6 +14,8 @@ import fi.tamk.autoarvio.ui.generations.GenerationDetailScreen
 import fi.tamk.autoarvio.ui.generations.GenerationDetailViewModel
 import fi.tamk.autoarvio.ui.generations.GenerationListScreen
 import fi.tamk.autoarvio.ui.generations.GenerationListViewModel
+import fi.tamk.autoarvio.ui.generations.VariantDetailScreen
+import fi.tamk.autoarvio.ui.generations.VariantDetailViewModel
 import fi.tamk.autoarvio.ui.makes.MakeListScreen
 import fi.tamk.autoarvio.ui.makes.MakeListViewModel
 import fi.tamk.autoarvio.ui.models.ModelListScreen
@@ -100,6 +102,22 @@ fun AutoArvioApp(
                 factory = GenerationDetailViewModel.factory(generationId, catalog),
             )
             GenerationDetailScreen(
+                viewModel = vm,
+                onBack = { navController.popBackStack() },
+                onVariantClick = { variant ->
+                    navController.navigate(Routes.variantDetail(variant.id))
+                },
+            )
+        }
+        composable(
+            route = Routes.VARIANT_DETAIL,
+            arguments = listOf(navArgument("variantId") { type = NavType.StringType }),
+        ) { entry ->
+            val variantId = entry.arguments?.getString("variantId").orEmpty()
+            val vm: VariantDetailViewModel = viewModel(
+                factory = VariantDetailViewModel.factory(variantId, catalog),
+            )
+            VariantDetailScreen(
                 viewModel = vm,
                 onBack = { navController.popBackStack() },
             )

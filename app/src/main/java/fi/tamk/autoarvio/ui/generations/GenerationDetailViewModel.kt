@@ -4,14 +4,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import fi.tamk.autoarvio.data.repository.CatalogRepository
 import fi.tamk.autoarvio.domain.model.Generation
-import fi.tamk.autoarvio.domain.model.GenerationSpecs
+import fi.tamk.autoarvio.domain.model.PowertrainVariant
 
 class GenerationDetailViewModel(
     generationId: String,
     repository: CatalogRepository,
 ) : ViewModel() {
     val generation: Generation? = repository.generationById(generationId)
-    val specs: GenerationSpecs? = repository.specsFor(generationId)
+    val variants: List<PowertrainVariant> = repository.variantsFor(generationId)
     val modelTitle: String =
         generation?.let { repository.modelTitle(it.modelId) }.orEmpty()
 
