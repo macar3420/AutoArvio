@@ -1,5 +1,6 @@
 package fi.tamk.autoarvio.ui.models
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,6 +10,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -39,6 +41,7 @@ import fi.tamk.autoarvio.ui.theme.Ultramarine
 fun ModelListScreen(
     viewModel: ModelListViewModel,
     onBack: () -> Unit,
+    onModelClick: (Model) -> Unit,
 ) {
     val models by viewModel.models.collectAsStateWithLifecycle()
     val query by viewModel.searchQuery.collectAsStateWithLifecycle()
@@ -130,7 +133,10 @@ fun ModelListScreen(
                 else -> {
                     LazyColumn(modifier = Modifier.fillMaxSize()) {
                         items(models, key = { it.id }) { model ->
-                            ModelRow(model = model)
+                            ModelRow(
+                                model = model,
+                                onClick = { onModelClick(model) },
+                            )
                             HorizontalDivider(
                                 modifier = Modifier.padding(start = 20.dp),
                                 color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
@@ -144,18 +150,28 @@ fun ModelListScreen(
 }
 
 @Composable
-private fun ModelRow(model: Model) {
+private fun ModelRow(
+    model: Model,
+    onClick: () -> Unit,
+) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable(onClick = onClick)
             .padding(horizontal = 20.dp, vertical = 18.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(
             text = model.name,
+            modifier = Modifier.weight(1f),
             style = MaterialTheme.typography.titleMedium,
             fontFamily = OutfitFamily,
             fontWeight = FontWeight.SemiBold,
+        )
+        Icon(
+            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            contentDescription = null,
+            tint = Ultramarine.copy(alpha = 0.7f),
         )
     }
 }

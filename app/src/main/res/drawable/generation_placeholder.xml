@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neutral same-style generation image slot (16:9). Replace per-generation later via imageAsset. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="#E6EAF2"
+        android:pathData="M0,0h320v180h-320z" />
+    <path
+        android:fillColor="#D0D7E4"
+        android:pathData="M0,132h320v48h-320z" />
+    <!-- Soft sedan silhouette -->
+    <path
+        android:fillColor="#9AA6BA"
+        android:pathData="M54,118 L72,92 C78,84 92,78 108,76 L168,72 C196,70 214,74 228,84 L262,112 L268,118 Z" />
+    <path
+        android:fillColor="#B7C0D0"
+        android:pathData="M112,78 L128,78 L148,96 L112,98 Z" />
+    <path
+        android:fillColor="#B7C0D0"
+        android:pathData="M154,76 L186,74 L198,96 L152,98 Z" />
+    <path
+        android:fillColor="#7E8BA0"
+        android:pathData="M88,118 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0" />
+    <path
+        android:fillColor="#7E8BA0"
+        android:pathData="M232,118 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0" />
+    <path
+        android:fillColor="#C5CDDB"
+        android:pathData="M88,118 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#C5CDDB"
+        android:pathData="M232,118 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+</vector>

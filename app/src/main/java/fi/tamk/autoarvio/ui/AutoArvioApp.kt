@@ -9,6 +9,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import fi.tamk.autoarvio.data.repository.CatalogRepository
+import fi.tamk.autoarvio.ui.generations.GenerationDetailScreen
+import fi.tamk.autoarvio.ui.generations.GenerationDetailViewModel
+import fi.tamk.autoarvio.ui.generations.GenerationListScreen
+import fi.tamk.autoarvio.ui.generations.GenerationListViewModel
 import fi.tamk.autoarvio.ui.makes.MakeListScreen
 import fi.tamk.autoarvio.ui.makes.MakeListViewModel
 import fi.tamk.autoarvio.ui.models.ModelListScreen
@@ -59,6 +63,38 @@ fun AutoArvioApp(
                 ),
             )
             ModelListScreen(
+                viewModel = vm,
+                onBack = { navController.popBackStack() },
+                onModelClick = { model ->
+                    navController.navigate(Routes.generationList(model.id))
+                },
+            )
+        }
+        composable(
+            route = Routes.GENERATION_LIST,
+            arguments = listOf(navArgument("modelId") { type = NavType.StringType }),
+        ) { entry ->
+            val modelId = entry.arguments?.getString("modelId").orEmpty()
+            val vm: GenerationListViewModel = viewModel(
+                factory = GenerationListViewModel.factory(modelId, catalogRepository),
+            )
+            GenerationListScreen(
+                viewModel = vm,
+                onBack = { navController.popBackStack() },
+                onGenerationClick = { generation ->
+                    navController.navigate(Routes.generationDetail(generation.id))
+                },
+            )
+        }
+        composable(
+            route = Routes.GENERATION_DETAIL,
+            arguments = listOf(navArgument("generationId") { type = NavType.StringType }),
+        ) { entry ->
+            val generationId = entry.arguments?.getString("generationId").orEmpty()
+            val vm: GenerationDetailViewModel = viewModel(
+                factory = GenerationDetailViewModel.factory(generationId, catalogRepository),
+            )
+            GenerationDetailScreen(
                 viewModel = vm,
                 onBack = { navController.popBackStack() },
             )

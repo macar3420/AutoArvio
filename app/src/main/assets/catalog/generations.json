@@ -1,0 +1,45 @@
+{
+  "note": "Prototype generations. imageAsset = drawable name; shared placeholder until matching photo set exists.",
+  "generations": [
+    {
+      "id": "audi-a4-b5",
+      "modelId": "audi-a4",
+      "code": "B5",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-b6",
+      "modelId": "audi-a4",
+      "code": "B6",
+      "yearFrom": 2000,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-b7",
+      "modelId": "audi-a4",
+      "code": "B7",
+      "yearFrom": 2004,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-b8",
+      "modelId": "audi-a4",
+      "code": "B8",
+      "yearFrom": 2007,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-b9",
+      "modelId": "audi-a4",
+      "code": "B9",
+      "yearFrom": 2015,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    }
+  ]
+}

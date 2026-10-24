@@ -1,5 +1,6 @@
 package fi.tamk.autoarvio.data.repository
 
+import fi.tamk.autoarvio.domain.model.Generation
 import fi.tamk.autoarvio.domain.model.Make
 import fi.tamk.autoarvio.domain.model.Model
 import kotlinx.coroutines.flow.Flow
@@ -9,6 +10,7 @@ import kotlinx.coroutines.flow.flowOf
  * Finnish-market catalog expanded from Nettiauto make→model filters (scraped 2026-10)
  * plus confirmed FI pages for S/RS/M gaps. yearFrom = best-effort first introduction.
  * Full mirror: assets/catalog/fi_catalog.json
+ * Generations prototype: assets/catalog/generations.json (Audi A4 first).
  *
  * Chinese FI brands kept: Aion, BYD, Maxus, MG, Smart, Voyah, XPeng.
  * Omitted (no clear FI retail): Leapmotor, Zeekr, NIO, Ora, Lynk & Co.
@@ -27,6 +29,71 @@ class CatalogRepository {
 
     fun makeById(makeId: String): Make? =
         PlaceholderCatalog.makes.firstOrNull { it.id == makeId }
+
+    fun modelById(modelId: String): Model? =
+        PlaceholderCatalog.models.firstOrNull { it.id == modelId }
+
+    fun modelTitle(modelId: String): String {
+        val model = modelById(modelId) ?: return modelId
+        val make = makeName(model.makeId)
+        return "$make ${model.name}"
+    }
+
+    /** Generations for a model (empty until data exists — currently Audi A4). */
+    fun observeGenerations(modelId: String): Flow<List<Generation>> =
+        flowOf(GenerationsCatalog.byModelId(modelId))
+
+    fun generationById(generationId: String): Generation? =
+        GenerationsCatalog.all.firstOrNull { it.id == generationId }
+}
+
+/** Mirrors assets/catalog/generations.json for the MVP in-memory path. */
+private object GenerationsCatalog {
+    val all: List<Generation> = listOf(
+        Generation(
+            id = "audi-a4-b5",
+            modelId = "audi-a4",
+            code = "B5",
+            yearFrom = 1994,
+            yearTo = 2001,
+            imageAsset = "generation_placeholder",
+        ),
+        Generation(
+            id = "audi-a4-b6",
+            modelId = "audi-a4",
+            code = "B6",
+            yearFrom = 2000,
+            yearTo = 2006,
+            imageAsset = "generation_placeholder",
+        ),
+        Generation(
+            id = "audi-a4-b7",
+            modelId = "audi-a4",
+            code = "B7",
+            yearFrom = 2004,
+            yearTo = 2008,
+            imageAsset = "generation_placeholder",
+        ),
+        Generation(
+            id = "audi-a4-b8",
+            modelId = "audi-a4",
+            code = "B8",
+            yearFrom = 2007,
+            yearTo = 2015,
+            imageAsset = "generation_placeholder",
+        ),
+        Generation(
+            id = "audi-a4-b9",
+            modelId = "audi-a4",
+            code = "B9",
+            yearFrom = 2015,
+            yearTo = null,
+            imageAsset = "generation_placeholder",
+        ),
+    )
+
+    fun byModelId(modelId: String): List<Generation> =
+        all.filter { it.modelId == modelId }
 }
 
 private fun m(
