@@ -348,13 +348,17 @@ bmwAssign(
     "bmw-325",
     "bmw-328",
     "bmw-330",
-    "bmw-330e",
     "bmw-335",
     "bmw-340",
-    "bmw-m340i",
   ],
   BMW_3,
 );
+// PHEV siblings — only chassis that offered the eDrive model in EU
+DATA["bmw-330e"] = [
+  ["F30/F31 LCI", 2016, 2019],
+  ["G20/G21", 2019, null],
+];
+DATA["bmw-m340i"] = [["G20/G21", 2019, null]];
 bmwAssign(["bmw-318-gran-turismo", "bmw-320-gran-turismo"], BMW_3_GT);
 bmwAssign(["bmw-m3"], BMW_M3);
 
@@ -369,7 +373,6 @@ bmwAssign(
     "bmw-525",
     "bmw-528",
     "bmw-530",
-    "bmw-530e",
     "bmw-535",
     "bmw-540",
     "bmw-545",
@@ -378,6 +381,10 @@ bmwAssign(
   ],
   BMW_5,
 );
+DATA["bmw-530e"] = [
+  ["G30/G31", 2017, 2023],
+  ["G60/G61", 2023, null],
+];
 DATA["bmw-530-gran-turismo"] = BMW_5_GT;
 bmwAssign(["bmw-m5"], BMW_M5);
 DATA["bmw-m535i"] = [["E28/E34 M535i", 1980, 1988]];

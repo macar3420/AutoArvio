@@ -83,6 +83,46 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "audi-a3-e-tron-8v-e-tron",
+      "modelId": "audi-a3-e-tron",
+      "code": "8V e-tron",
+      "yearFrom": 2014,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-sportback-8p",
+      "modelId": "audi-a3-sportback",
+      "code": "8P",
+      "yearFrom": 2004,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-sportback-8v",
+      "modelId": "audi-a3-sportback",
+      "code": "8V",
+      "yearFrom": 2012,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-sportback-8y",
+      "modelId": "audi-a3-sportback",
+      "code": "8Y",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-tfsi-e-8y-tfsi-e",
+      "modelId": "audi-a3-tfsi-e",
+      "code": "8Y TFSI e",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "audi-a4-b5",
       "modelId": "audi-a4",
       "code": "B5",
@@ -259,6 +299,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "audi-a6-tfsi-e-c8-tfsi-e",
+      "modelId": "audi-a6-tfsi-e",
+      "code": "C8 TFSI e",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "audi-a7-4g",
       "modelId": "audi-a7",
       "code": "4G",
@@ -271,6 +319,14 @@
       "modelId": "audi-a7",
       "code": "4K",
       "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a7-tfsi-e-4k-tfsi-e",
+      "modelId": "audi-a7-tfsi-e",
+      "code": "4K TFSI e",
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -371,6 +427,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "audi-q3-tfsi-e-f3-tfsi-e",
+      "modelId": "audi-q3-tfsi-e",
+      "code": "F3 TFSI e",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "audi-q4-e-tron-f4",
       "modelId": "audi-q4-e-tron",
       "code": "F4",
@@ -403,6 +467,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "audi-q5-tfsi-e-fy-tfsi-e",
+      "modelId": "audi-q5-tfsi-e",
+      "code": "FY TFSI e",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "audi-q7-4l",
       "modelId": "audi-q7",
       "code": "4L",
@@ -419,6 +491,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "audi-q7-tfsi-e-4m-tfsi-e",
+      "modelId": "audi-q7-tfsi-e",
+      "code": "4M TFSI e",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "audi-q8-4m",
       "modelId": "audi-q8",
       "code": "4M",
@@ -431,6 +511,14 @@
       "modelId": "audi-q8-e-tron",
       "code": "GE",
       "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q8-tfsi-e-4m-tfsi-e",
+      "modelId": "audi-q8-tfsi-e",
+      "code": "4M TFSI e",
+      "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -1163,6 +1251,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "bmw-225xe-f45",
+      "modelId": "bmw-225xe",
+      "code": "F45",
+      "yearFrom": 2016,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-225xe-u06",
+      "modelId": "bmw-225xe",
+      "code": "U06",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "bmw-230-f22-f23",
       "modelId": "bmw-230",
       "code": "F22/F23",
@@ -1691,34 +1795,10 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "bmw-330e-e36",
+      "id": "bmw-330e-f30-f31-lci",
       "modelId": "bmw-330e",
-      "code": "E36",
-      "yearFrom": 1990,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-330e-e46",
-      "modelId": "bmw-330e",
-      "code": "E46",
-      "yearFrom": 1998,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-330e-e90-e91-e92",
-      "modelId": "bmw-330e",
-      "code": "E90/E91/E92",
-      "yearFrom": 2005,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-330e-f30-f31",
-      "modelId": "bmw-330e",
-      "code": "F30/F31",
-      "yearFrom": 2011,
+      "code": "F30/F31 LCI",
+      "yearFrom": 2016,
       "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
@@ -1726,7 +1806,7 @@
       "id": "bmw-330e-g20-g21",
       "modelId": "bmw-330e",
       "code": "G20/G21",
-      "yearFrom": 2018,
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -2187,42 +2267,10 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "bmw-530e-e34",
-      "modelId": "bmw-530e",
-      "code": "E34",
-      "yearFrom": 1988,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-530e-e39",
-      "modelId": "bmw-530e",
-      "code": "E39",
-      "yearFrom": 1995,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-530e-e60-e61",
-      "modelId": "bmw-530e",
-      "code": "E60/E61",
-      "yearFrom": 2003,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-530e-f10-f11",
-      "modelId": "bmw-530e",
-      "code": "F10/F11",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "bmw-530e-g30-g31",
       "modelId": "bmw-530e",
       "code": "G30/G31",
-      "yearFrom": 2016,
+      "yearFrom": 2017,
       "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
@@ -3427,6 +3475,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "bmw-x1-xdrive25e-f48",
+      "modelId": "bmw-x1-xdrive25e",
+      "code": "F48",
+      "yearFrom": 2019,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x1-xdrive25e-u11",
+      "modelId": "bmw-x1-xdrive25e",
+      "code": "U11",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "bmw-x2-f39",
       "modelId": "bmw-x2",
       "code": "F39",
@@ -3479,6 +3543,14 @@
       "modelId": "bmw-x3-m",
       "code": "F97 LCI",
       "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-xdrive30e-g01",
+      "modelId": "bmw-x3-xdrive30e",
+      "code": "G01",
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -3558,6 +3630,14 @@
       "id": "bmw-x5-m-f95",
       "modelId": "bmw-x5-m",
       "code": "F95",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-xdrive45e-g05",
+      "modelId": "bmw-x5-xdrive45e",
+      "code": "G05",
       "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -4355,9 +4435,25 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "cupra-formentor-vz-formentor-vz",
+      "modelId": "cupra-formentor-vz",
+      "code": "Formentor VZ",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "cupra-leon-leon",
       "modelId": "cupra-leon",
       "code": "Leon",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "cupra-leon-ehybrid-leon-e-hybrid",
+      "modelId": "cupra-leon-ehybrid",
+      "code": "Leon e-Hybrid",
       "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -5363,6 +5459,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "ford-explorer-phev-vi-phev",
+      "modelId": "ford-explorer-phev",
+      "code": "VI PHEV",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "ford-f-150-f-150",
       "modelId": "ford-f-150",
       "code": "F-150",
@@ -5443,6 +5547,30 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "ford-fiesta-st-mk6-st",
+      "modelId": "ford-fiesta-st",
+      "code": "Mk6 ST",
+      "yearFrom": 2004,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-fiesta-st-mk7-st",
+      "modelId": "ford-fiesta-st",
+      "code": "Mk7 ST",
+      "yearFrom": 2008,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-fiesta-st-mk8-st",
+      "modelId": "ford-fiesta-st",
+      "code": "Mk8 ST",
+      "yearFrom": 2018,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "ford-fiesta-van-mk4-5",
       "modelId": "ford-fiesta-van",
       "code": "Mk4/5",
@@ -5512,6 +5640,46 @@
       "code": "C-Max",
       "yearFrom": 2003,
       "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-focus-rs-mk2-rs",
+      "modelId": "ford-focus-rs",
+      "code": "Mk2 RS",
+      "yearFrom": 2009,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-focus-rs-mk3-rs",
+      "modelId": "ford-focus-rs",
+      "code": "Mk3 RS",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-focus-st-mk2-st",
+      "modelId": "ford-focus-st",
+      "code": "Mk2 ST",
+      "yearFrom": 2005,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-focus-st-mk3-st",
+      "modelId": "ford-focus-st",
+      "code": "Mk3 ST",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-focus-st-mk4-st",
+      "modelId": "ford-focus-st",
+      "code": "Mk4 ST",
+      "yearFrom": 2019,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -5631,6 +5799,14 @@
       "modelId": "ford-kuga",
       "code": "III",
       "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "ford-kuga-phev-iii-phev",
+      "modelId": "ford-kuga-phev",
+      "code": "III PHEV",
+      "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -6099,6 +6275,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "honda-civic-ehev-fl-e-hev",
+      "modelId": "honda-civic-ehev",
+      "code": "FL e:HEV",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "honda-civic-type-r-ek9",
       "modelId": "honda-civic-type-r",
       "code": "EK9",
@@ -6143,14 +6327,6 @@
       "modelId": "honda-civic-type-r",
       "code": "FL5",
       "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "honda-cr-v-hybrid-cr-v-hybrid",
-      "modelId": "honda-cr-v-hybrid",
-      "code": "CR-V Hybrid",
-      "yearFrom": 2018,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -6203,11 +6379,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "honda-crx-crx",
-      "modelId": "honda-crx",
-      "code": "CRX",
-      "yearFrom": 1983,
-      "yearTo": 1991,
+      "id": "honda-cr-v-hybrid-cr-v-hybrid",
+      "modelId": "honda-cr-v-hybrid",
+      "code": "CR-V Hybrid",
+      "yearFrom": 2018,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -6216,6 +6392,14 @@
       "code": "CR-Z",
       "yearFrom": 2010,
       "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "honda-crx-crx",
+      "modelId": "honda-crx",
+      "code": "CRX",
+      "yearFrom": 1983,
+      "yearTo": 1991,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -6312,6 +6496,22 @@
       "code": "DE4",
       "yearFrom": 2021,
       "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "honda-integra-type-r-dc2",
+      "modelId": "honda-integra-type-r",
+      "code": "DC2",
+      "yearFrom": 1995,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "honda-integra-type-r-dc5",
+      "modelId": "honda-integra-type-r",
+      "code": "DC5",
+      "yearFrom": 2001,
+      "yearTo": 2006,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -6667,6 +6867,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "hyundai-ioniq-5-n-ioniq-5-n",
+      "modelId": "hyundai-ioniq-5-n",
+      "code": "Ioniq 5 N",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "hyundai-ioniq-6-ioniq-6",
       "modelId": "hyundai-ioniq-6",
       "code": "Ioniq 6",
@@ -6875,6 +7083,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "hyundai-tucson-plug-in-iv-phev",
+      "modelId": "hyundai-tucson-plug-in",
+      "code": "IV PHEV",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "hyundai-veloster-veloster",
       "modelId": "hyundai-veloster",
       "code": "Veloster",
@@ -6935,6 +7151,14 @@
       "modelId": "kia-ceed",
       "code": "III",
       "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "kia-ceed-sw-phev-iii-phev",
+      "modelId": "kia-ceed-sw-phev",
+      "code": "III PHEV",
+      "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -7171,6 +7395,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "kia-sorento-plug-in-iv-phev",
+      "modelId": "kia-sorento-plug-in",
+      "code": "IV PHEV",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "kia-soul-i",
       "modelId": "kia-soul",
       "code": "I",
@@ -7222,6 +7454,14 @@
       "id": "kia-sportage-v",
       "modelId": "kia-sportage",
       "code": "V",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "kia-sportage-plug-in-v-phev",
+      "modelId": "kia-sportage-plug-in",
+      "code": "V PHEV",
       "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -7539,6 +7779,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "lexus-nx-450h-plus-az20-phev",
+      "modelId": "lexus-nx-450h-plus",
+      "code": "AZ20 PHEV",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "lexus-rc-rc",
       "modelId": "lexus-rc",
       "code": "RC",
@@ -7566,6 +7814,14 @@
       "id": "lexus-rx-al30",
       "modelId": "lexus-rx",
       "code": "AL30",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "lexus-rx-450h-plus-al30-phev",
+      "modelId": "lexus-rx-450h-plus",
+      "code": "AL30 PHEV",
       "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -7699,38 +7955,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mazda-3-bk",
-      "modelId": "mazda-3",
-      "code": "BK",
-      "yearFrom": 2003,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-3-bl",
-      "modelId": "mazda-3",
-      "code": "BL",
-      "yearFrom": 2009,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-3-bm",
-      "modelId": "mazda-3",
-      "code": "BM",
-      "yearFrom": 2013,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-3-bp",
-      "modelId": "mazda-3",
-      "code": "BP",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "mazda-121-121",
       "modelId": "mazda-121",
       "code": "121",
@@ -7800,6 +8024,38 @@
       "code": "2200",
       "yearFrom": 1970,
       "yearTo": 1978,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-3-bk",
+      "modelId": "mazda-3",
+      "code": "BK",
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-3-bl",
+      "modelId": "mazda-3",
+      "code": "BL",
+      "yearFrom": 2009,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-3-bm",
+      "modelId": "mazda-3",
+      "code": "BM",
+      "yearFrom": 2013,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-3-bp",
+      "modelId": "mazda-3",
+      "code": "BP",
+      "yearFrom": 2019,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -7955,30 +8211,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mazda-cx-6e-cx-6e",
-      "modelId": "mazda-cx-6e",
-      "code": "CX-6e",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-cx-7-cx-7",
-      "modelId": "mazda-cx-7",
-      "code": "CX-7",
-      "yearFrom": 2006,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-cx-80-cx-80",
-      "modelId": "mazda-cx-80",
-      "code": "CX-80",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "mazda-cx-30-cx-30",
       "modelId": "mazda-cx-30",
       "code": "CX-30",
@@ -8007,6 +8239,30 @@
       "modelId": "mazda-cx-60",
       "code": "CX-60",
       "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-cx-6e-cx-6e",
+      "modelId": "mazda-cx-6e",
+      "code": "CX-6e",
+      "yearFrom": 2025,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-cx-7-cx-7",
+      "modelId": "mazda-cx-7",
+      "code": "CX-7",
+      "yearFrom": 2006,
+      "yearTo": 2012,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-cx-80-cx-80",
+      "modelId": "mazda-cx-80",
+      "code": "CX-80",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -8059,6 +8315,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mazda-mx-30-mx-30",
+      "modelId": "mazda-mx-30",
+      "code": "MX-30",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mazda-mx-30-r-ev-mx-30-r-ev",
+      "modelId": "mazda-mx-30-r-ev",
+      "code": "MX-30 R-EV",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mazda-mx-5-na",
       "modelId": "mazda-mx-5",
       "code": "NA",
@@ -8096,14 +8368,6 @@
       "code": "MX-6",
       "yearFrom": 1987,
       "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-mx-30-mx-30",
-      "modelId": "mazda-mx-30",
-      "code": "MX-30",
-      "yearFrom": 2020,
-      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -8667,6 +8931,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mercedes-a-250-e-w177",
+      "modelId": "mercedes-a-250-e",
+      "code": "W177",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mercedes-a-45-amg-w176",
       "modelId": "mercedes-a-45-amg",
       "code": "W176",
@@ -8981,6 +9253,22 @@
     {
       "id": "mercedes-c-30-amg-w206",
       "modelId": "mercedes-c-30-amg",
+      "code": "W206",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mercedes-c-300-e-w205",
+      "modelId": "mercedes-c-300-e",
+      "code": "W205",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mercedes-c-300-e-w206",
+      "modelId": "mercedes-c-300-e",
       "code": "W206",
       "yearFrom": 2021,
       "yearTo": null,
@@ -9499,6 +9787,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mercedes-e-300-e-w213",
+      "modelId": "mercedes-e-300-e",
+      "code": "W213",
+      "yearFrom": 2018,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mercedes-e-300-e-w214",
+      "modelId": "mercedes-e-300-e",
+      "code": "W214",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mercedes-e-50-amg-w124",
       "modelId": "mercedes-e-50-amg",
       "code": "W124",
@@ -9839,6 +10143,14 @@
       "modelId": "mercedes-gle",
       "code": "W167",
       "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mercedes-gle-350-de-w167",
+      "modelId": "mercedes-gle-350-de",
+      "code": "W167",
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10435,6 +10747,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mg-hs-plug-in-hs-phev",
+      "modelId": "mg-hs-plug-in",
+      "code": "HS PHEV",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mg-marvel-r-marvel-r",
       "modelId": "mg-marvel-r",
       "code": "Marvel R",
@@ -10731,6 +11051,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mini-cooper-se-countryman-f60-phev",
+      "modelId": "mini-cooper-se-countryman",
+      "code": "F60 PHEV",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mini-countryman-r60",
       "modelId": "mini-countryman",
       "code": "R60",
@@ -10915,6 +11243,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "mitsubishi-eclipse-cross-phev-eclipse-cross-phev",
+      "modelId": "mitsubishi-eclipse-cross-phev",
+      "code": "Eclipse Cross PHEV",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "mitsubishi-galant-galant",
       "modelId": "mitsubishi-galant",
       "code": "Galant",
@@ -10984,6 +11320,86 @@
       "code": "CY/CZ",
       "yearFrom": 2007,
       "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-i",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "I",
+      "yearFrom": 1992,
+      "yearTo": 1993,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-ii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "II",
+      "yearFrom": 1993,
+      "yearTo": 1995,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-iii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "III",
+      "yearFrom": 1995,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-iv",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "IV",
+      "yearFrom": 1996,
+      "yearTo": 1998,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-v",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "V",
+      "yearFrom": 1998,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-vi",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VI",
+      "yearFrom": 1999,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-vii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VII",
+      "yearFrom": 2001,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-viii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VIII",
+      "yearFrom": 2003,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-ix",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "IX",
+      "yearFrom": 2005,
+      "yearTo": 2007,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-x",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "X",
+      "yearFrom": 2007,
+      "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11603,6 +12019,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "nissan-qashqai-e-power-j12-e-power",
+      "modelId": "nissan-qashqai-e-power",
+      "code": "J12 e-POWER",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "nissan-serena-serena",
       "modelId": "nissan-serena",
       "code": "Serena",
@@ -11723,6 +12147,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "nissan-x-trail-e-power-t33-e-power",
+      "modelId": "nissan-x-trail-e-power",
+      "code": "T33 e-POWER",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "opel-adam-adam",
       "modelId": "opel-adam",
       "code": "Adam",
@@ -11823,6 +12255,14 @@
       "modelId": "opel-astra",
       "code": "L",
       "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-astra-gse-l-gse",
+      "modelId": "opel-astra-gse",
+      "code": "L GSe",
+      "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11959,6 +12399,14 @@
       "modelId": "opel-grandland",
       "code": "Grandland",
       "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-grandland-gse-gse",
+      "modelId": "opel-grandland-gse",
+      "code": "GSe",
+      "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -12363,6 +12811,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "peugeot-3008-hybrid-ii-hybrid",
+      "modelId": "peugeot-3008-hybrid",
+      "code": "II Hybrid",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "peugeot-304-304",
       "modelId": "peugeot-304",
       "code": "304",
@@ -12416,6 +12872,14 @@
       "code": "III",
       "yearFrom": 2021,
       "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "peugeot-308-gte-ii-gte",
+      "modelId": "peugeot-308-gte",
+      "code": "II GTE",
+      "yearFrom": 2015,
+      "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12851,6 +13315,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "porsche-cayenne-e-hybrid-92a-e-hybrid",
+      "modelId": "porsche-cayenne-e-hybrid",
+      "code": "92A E-Hybrid",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-e-hybrid-po536-e-hybrid",
+      "modelId": "porsche-cayenne-e-hybrid",
+      "code": "PO536 E-Hybrid",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "porsche-cayman-987c",
       "modelId": "porsche-cayman",
       "code": "987c",
@@ -12902,6 +13382,22 @@
       "id": "porsche-panamera-971",
       "modelId": "porsche-panamera",
       "code": "971",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-panamera-e-hybrid-970-e-hybrid",
+      "modelId": "porsche-panamera-e-hybrid",
+      "code": "970 E-Hybrid",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-panamera-e-hybrid-971-e-hybrid",
+      "modelId": "porsche-panamera-e-hybrid",
+      "code": "971 E-Hybrid",
       "yearFrom": 2016,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -13315,11 +13811,27 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "renault-megane-e-tech-megane-e-tech",
+      "modelId": "renault-megane-e-tech",
+      "code": "Megane E-Tech",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "renault-modus-modus",
       "modelId": "renault-modus",
       "code": "Modus",
       "yearFrom": 2004,
       "yearTo": 2012,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "renault-rafale-rafale",
+      "modelId": "renault-rafale",
+      "code": "Rafale",
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13359,6 +13871,14 @@
       "modelId": "renault-scenic",
       "code": "IV",
       "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "renault-scenic-e-tech-scenic-e-tech",
+      "modelId": "renault-scenic-e-tech",
+      "code": "Scenic E-Tech",
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -13611,6 +14131,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "seat-leon-ehybrid-kl-e-hybrid",
+      "modelId": "seat-leon-ehybrid",
+      "code": "KL e-Hybrid",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "seat-leon-sportstourer-kl-st",
       "modelId": "seat-leon-sportstourer",
       "code": "KL ST",
@@ -13655,6 +14183,14 @@
       "modelId": "seat-tarraco",
       "code": "Tarraco",
       "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "seat-tarraco-ehybrid-tarraco-e-hybrid",
+      "modelId": "seat-tarraco-ehybrid",
+      "code": "Tarraco e-Hybrid",
+      "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -13751,6 +14287,14 @@
       "modelId": "skoda-enyaq",
       "code": "Enyaq",
       "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "skoda-enyaq-coupe-enyaq-coup",
+      "modelId": "skoda-enyaq-coupe",
+      "code": "Enyaq Coupé",
+      "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -13867,6 +14411,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "skoda-octavia-iv-iv-iv",
+      "modelId": "skoda-octavia-iv",
+      "code": "IV iV",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "skoda-peaq-peaq",
       "modelId": "skoda-peaq",
       "code": "Peaq",
@@ -13919,6 +14471,14 @@
       "modelId": "skoda-superb",
       "code": "III",
       "yearFrom": 2015,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "skoda-superb-iv-iii-iv",
+      "modelId": "skoda-superb-iv",
+      "code": "III iV",
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -14331,6 +14891,22 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "subaru-wrx-va",
+      "modelId": "subaru-wrx",
+      "code": "VA",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "subaru-wrx-vb",
+      "modelId": "subaru-wrx",
+      "code": "VB",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "subaru-wrx-sti-gdb",
       "modelId": "subaru-wrx-sti",
       "code": "GDB",
@@ -14491,19 +15067,19 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-samurai-samurai",
-      "modelId": "suzuki-samurai",
-      "code": "Samurai",
-      "yearFrom": 1984,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "suzuki-s-cross-s-cross",
       "modelId": "suzuki-s-cross",
       "code": "S-Cross",
       "yearFrom": 2013,
       "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-samurai-samurai",
+      "modelId": "suzuki-samurai",
+      "code": "Samurai",
+      "yearFrom": 1984,
+      "yearTo": 2004,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14819,6 +15395,30 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "toyota-c-hr-i",
+      "modelId": "toyota-c-hr",
+      "code": "I",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-c-hr-ii",
+      "modelId": "toyota-c-hr",
+      "code": "II",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-c-hr-plug-in-ii-phev",
+      "modelId": "toyota-c-hr-plug-in",
+      "code": "II PHEV",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "toyota-caldina-caldina",
       "modelId": "toyota-caldina",
       "code": "Caldina",
@@ -14904,22 +15504,6 @@
       "code": "Chaser",
       "yearFrom": 1977,
       "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-c-hr-i",
-      "modelId": "toyota-c-hr",
-      "code": "I",
-      "yearFrom": 2016,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-c-hr-ii",
-      "modelId": "toyota-c-hr",
-      "code": "II",
-      "yearFrom": 2023,
-      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -15627,6 +16211,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "volkswagen-e-golf-e-golf",
+      "modelId": "volkswagen-e-golf",
+      "code": "e-Golf",
+      "yearFrom": 2014,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "volkswagen-e-up-e-up",
       "modelId": "volkswagen-e-up",
       "code": "e-up!",
@@ -15695,6 +16287,22 @@
       "modelId": "volkswagen-golf",
       "code": "Mk8",
       "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-golf-gte-mk7-gte",
+      "modelId": "volkswagen-golf-gte",
+      "code": "Mk7 GTE",
+      "yearFrom": 2014,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-golf-gte-mk8-gte",
+      "modelId": "volkswagen-golf-gte",
+      "code": "Mk8 GTE",
+      "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -15795,18 +16403,18 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id-polo-id-polo",
-      "modelId": "volkswagen-id-polo",
-      "code": "ID. Polo",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "volkswagen-id-buzz-id-buzz",
       "modelId": "volkswagen-id-buzz",
       "code": "ID. Buzz",
       "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-id-polo-id-polo",
+      "modelId": "volkswagen-id-polo",
+      "code": "ID. Polo",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -15979,6 +16587,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "volkswagen-passat-gte-b8-gte",
+      "modelId": "volkswagen-passat-gte",
+      "code": "B8 GTE",
+      "yearFrom": 2015,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "volkswagen-phaeton-phaeton",
       "modelId": "volkswagen-phaeton",
       "code": "Phaeton",
@@ -16015,6 +16631,46 @@
       "modelId": "volkswagen-polo",
       "code": "AW",
       "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-polo-gte-6c-gte",
+      "modelId": "volkswagen-polo-gte",
+      "code": "6C GTE",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-polo-gti-6n-gti",
+      "modelId": "volkswagen-polo-gti",
+      "code": "6N GTI",
+      "yearFrom": 1998,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-polo-gti-9n-gti",
+      "modelId": "volkswagen-polo-gti",
+      "code": "9N GTI",
+      "yearFrom": 2005,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-polo-gti-6r-gti",
+      "modelId": "volkswagen-polo-gti",
+      "code": "6R GTI",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-polo-gti-aw-gti",
+      "modelId": "volkswagen-polo-gti",
+      "code": "AW GTI",
+      "yearFrom": 2018,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -16099,6 +16755,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "volkswagen-tiguan-ehybrid-ii-ehybrid",
+      "modelId": "volkswagen-tiguan-ehybrid",
+      "code": "II eHybrid",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "volkswagen-touareg-i",
       "modelId": "volkswagen-touareg",
       "code": "I",
@@ -16119,6 +16783,14 @@
       "modelId": "volkswagen-touareg",
       "code": "III",
       "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-touareg-r-iii-r",
+      "modelId": "volkswagen-touareg-r",
+      "code": "III R",
+      "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -16619,6 +17291,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "volvo-v60-recharge-ii-recharge",
+      "modelId": "volvo-v60-recharge",
+      "code": "II Recharge",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "volvo-v70-i",
       "modelId": "volvo-v70",
       "code": "I",
@@ -16667,6 +17347,14 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "volvo-xc40-recharge-xc40-recharge",
+      "modelId": "volvo-xc40-recharge",
+      "code": "XC40 Recharge",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "volvo-xc60-i",
       "modelId": "volvo-xc60",
       "code": "I",
@@ -16678,6 +17366,14 @@
       "id": "volvo-xc60-ii",
       "modelId": "volvo-xc60",
       "code": "II",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-xc60-recharge-ii-recharge",
+      "modelId": "volvo-xc60-recharge",
+      "code": "II Recharge",
       "yearFrom": 2017,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -16711,6 +17407,14 @@
       "modelId": "volvo-xc90",
       "code": "II",
       "yearFrom": 2014,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-xc90-recharge-ii-recharge",
+      "modelId": "volvo-xc90-recharge",
+      "code": "II Recharge",
+      "yearFrom": 2015,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -16793,766 +17497,7 @@
       "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-e-golf-e-golf",
-      "modelId": "volkswagen-e-golf",
-      "code": "e-Golf",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gte-mk7-gte",
-      "modelId": "volkswagen-golf-gte",
-      "code": "Mk7 GTE",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gte-mk8-gte",
-      "modelId": "volkswagen-golf-gte",
-      "code": "Mk8 GTE",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-passat-gte-b8-gte",
-      "modelId": "volkswagen-passat-gte",
-      "code": "B8 GTE",
-      "yearFrom": 2015,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-6n-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "6N GTI",
-      "yearFrom": 1998,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-9n-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "9N GTI",
-      "yearFrom": 2005,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-6r-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "6R GTI",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-aw-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "AW GTI",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gte-6c-gte",
-      "modelId": "volkswagen-polo-gte",
-      "code": "6C GTE",
-      "yearFrom": 2014,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-tiguan-ehybrid-ii-ehybrid",
-      "modelId": "volkswagen-tiguan-ehybrid",
-      "code": "II eHybrid",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-touareg-r-iii-r",
-      "modelId": "volkswagen-touareg-r",
-      "code": "III R",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a3-sportback-8p",
-      "modelId": "audi-a3-sportback",
-      "code": "8P",
-      "yearFrom": 2004,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a3-sportback-8v",
-      "modelId": "audi-a3-sportback",
-      "code": "8V",
-      "yearFrom": 2012,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a3-sportback-8y",
-      "modelId": "audi-a3-sportback",
-      "code": "8Y",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a3-e-tron-8v-e-tron",
-      "modelId": "audi-a3-e-tron",
-      "code": "8V e-tron",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a3-tfsi-e-8y-tfsi-e",
-      "modelId": "audi-a3-tfsi-e",
-      "code": "8Y TFSI e",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-q3-tfsi-e-f3-tfsi-e",
-      "modelId": "audi-q3-tfsi-e",
-      "code": "F3 TFSI e",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-q5-tfsi-e-fy-tfsi-e",
-      "modelId": "audi-q5-tfsi-e",
-      "code": "FY TFSI e",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a6-tfsi-e-c8-tfsi-e",
-      "modelId": "audi-a6-tfsi-e",
-      "code": "C8 TFSI e",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-a7-tfsi-e-4k-tfsi-e",
-      "modelId": "audi-a7-tfsi-e",
-      "code": "4K TFSI e",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-q7-tfsi-e-4m-tfsi-e",
-      "modelId": "audi-q7-tfsi-e",
-      "code": "4M TFSI e",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "audi-q8-tfsi-e-4m-tfsi-e",
-      "modelId": "audi-q8-tfsi-e",
-      "code": "4M TFSI e",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-octavia-iv-iv-iv",
-      "modelId": "skoda-octavia-iv",
-      "code": "IV iV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-superb-iv-iii-iv",
-      "modelId": "skoda-superb-iv",
-      "code": "III iV",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-enyaq-coupe-enyaq-coup",
-      "modelId": "skoda-enyaq-coupe",
-      "code": "Enyaq Coupé",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-leon-ehybrid-kl-e-hybrid",
-      "modelId": "seat-leon-ehybrid",
-      "code": "KL e-Hybrid",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-tarraco-ehybrid-tarraco-e-hybrid",
-      "modelId": "seat-tarraco-ehybrid",
-      "code": "Tarraco e-Hybrid",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "cupra-formentor-vz-formentor-vz",
-      "modelId": "cupra-formentor-vz",
-      "code": "Formentor VZ",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "cupra-leon-ehybrid-leon-e-hybrid",
-      "modelId": "cupra-leon-ehybrid",
-      "code": "Leon e-Hybrid",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-225xe-f45",
-      "modelId": "bmw-225xe",
-      "code": "F45",
-      "yearFrom": 2016,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-225xe-u06",
-      "modelId": "bmw-225xe",
-      "code": "U06",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-x5-xdrive45e-g05",
-      "modelId": "bmw-x5-xdrive45e",
-      "code": "G05",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-x3-xdrive30e-g01",
-      "modelId": "bmw-x3-xdrive30e",
-      "code": "G01",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-x1-xdrive25e-f48",
-      "modelId": "bmw-x1-xdrive25e",
-      "code": "F48",
-      "yearFrom": 2019,
-      "yearTo": 2022,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "bmw-x1-xdrive25e-u11",
-      "modelId": "bmw-x1-xdrive25e",
-      "code": "U11",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-a-250-e-w177",
-      "modelId": "mercedes-a-250-e",
-      "code": "W177",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-c-300-e-w205",
-      "modelId": "mercedes-c-300-e",
-      "code": "W205",
-      "yearFrom": 2019,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-c-300-e-w206",
-      "modelId": "mercedes-c-300-e",
-      "code": "W206",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-e-300-e-w213",
-      "modelId": "mercedes-e-300-e",
-      "code": "W213",
-      "yearFrom": 2018,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-e-300-e-w214",
-      "modelId": "mercedes-e-300-e",
-      "code": "W214",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mercedes-gle-350-de-w167",
-      "modelId": "mercedes-gle-350-de",
-      "code": "W167",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc40-recharge-xc40-recharge",
-      "modelId": "volvo-xc40-recharge",
-      "code": "XC40 Recharge",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc60-recharge-ii-recharge",
-      "modelId": "volvo-xc60-recharge",
-      "code": "II Recharge",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc90-recharge-ii-recharge",
-      "modelId": "volvo-xc90-recharge",
-      "code": "II Recharge",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v60-recharge-ii-recharge",
-      "modelId": "volvo-v60-recharge",
-      "code": "II Recharge",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-kuga-phev-iii-phev",
-      "modelId": "ford-kuga-phev",
-      "code": "III PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-explorer-phev-vi-phev",
-      "modelId": "ford-explorer-phev",
-      "code": "VI PHEV",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-focus-st-mk2-st",
-      "modelId": "ford-focus-st",
-      "code": "Mk2 ST",
-      "yearFrom": 2005,
-      "yearTo": 2011,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-focus-st-mk3-st",
-      "modelId": "ford-focus-st",
-      "code": "Mk3 ST",
-      "yearFrom": 2012,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-focus-st-mk4-st",
-      "modelId": "ford-focus-st",
-      "code": "Mk4 ST",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-focus-rs-mk2-rs",
-      "modelId": "ford-focus-rs",
-      "code": "Mk2 RS",
-      "yearFrom": 2009,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-focus-rs-mk3-rs",
-      "modelId": "ford-focus-rs",
-      "code": "Mk3 RS",
-      "yearFrom": 2016,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-fiesta-st-mk6-st",
-      "modelId": "ford-fiesta-st",
-      "code": "Mk6 ST",
-      "yearFrom": 2004,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-fiesta-st-mk7-st",
-      "modelId": "ford-fiesta-st",
-      "code": "Mk7 ST",
-      "yearFrom": 2008,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "ford-fiesta-st-mk8-st",
-      "modelId": "ford-fiesta-st",
-      "code": "Mk8 ST",
-      "yearFrom": 2018,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "hyundai-ioniq-5-n-ioniq-5-n",
-      "modelId": "hyundai-ioniq-5-n",
-      "code": "Ioniq 5 N",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "hyundai-tucson-plug-in-iv-phev",
-      "modelId": "hyundai-tucson-plug-in",
-      "code": "IV PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "kia-sportage-plug-in-v-phev",
-      "modelId": "kia-sportage-plug-in",
-      "code": "V PHEV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "kia-sorento-plug-in-iv-phev",
-      "modelId": "kia-sorento-plug-in",
-      "code": "IV PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "kia-ceed-sw-phev-iii-phev",
-      "modelId": "kia-ceed-sw-phev",
-      "code": "III PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "peugeot-308-gte-ii-gte",
-      "modelId": "peugeot-308-gte",
-      "code": "II GTE",
-      "yearFrom": 2015,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "peugeot-3008-hybrid-ii-hybrid",
-      "modelId": "peugeot-3008-hybrid",
-      "code": "II Hybrid",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-grandland-gse-gse",
-      "modelId": "opel-grandland-gse",
-      "code": "GSe",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-astra-gse-l-gse",
-      "modelId": "opel-astra-gse",
-      "code": "L GSe",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-megane-e-tech-megane-e-tech",
-      "modelId": "renault-megane-e-tech",
-      "code": "Megane E-Tech",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-rafale-rafale",
-      "modelId": "renault-rafale",
-      "code": "Rafale",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-scenic-e-tech-scenic-e-tech",
-      "modelId": "renault-scenic-e-tech",
-      "code": "Scenic E-Tech",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-e-hybrid-92a-e-hybrid",
-      "modelId": "porsche-cayenne-e-hybrid",
-      "code": "92A E-Hybrid",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-e-hybrid-po536-e-hybrid",
-      "modelId": "porsche-cayenne-e-hybrid",
-      "code": "PO536 E-Hybrid",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-panamera-e-hybrid-970-e-hybrid",
-      "modelId": "porsche-panamera-e-hybrid",
-      "code": "970 E-Hybrid",
-      "yearFrom": 2011,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-panamera-e-hybrid-971-e-hybrid",
-      "modelId": "porsche-panamera-e-hybrid",
-      "code": "971 E-Hybrid",
-      "yearFrom": 2016,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-se-countryman-f60-phev",
-      "modelId": "mini-cooper-se-countryman",
-      "code": "F60 PHEV",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-eclipse-cross-phev-eclipse-cross-phev",
-      "modelId": "mitsubishi-eclipse-cross-phev",
-      "code": "Eclipse Cross PHEV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "honda-civic-ehev-fl-e-hev",
-      "modelId": "honda-civic-ehev",
-      "code": "FL e:HEV",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mazda-mx-30-r-ev-mx-30-r-ev",
-      "modelId": "mazda-mx-30-r-ev",
-      "code": "MX-30 R-EV",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-qashqai-e-power-j12-e-power",
-      "modelId": "nissan-qashqai-e-power",
-      "code": "J12 e-POWER",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-x-trail-e-power-t33-e-power",
-      "modelId": "nissan-x-trail-e-power",
-      "code": "T33 e-POWER",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-c-hr-plug-in-ii-phev",
-      "modelId": "toyota-c-hr-plug-in",
-      "code": "II PHEV",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "lexus-nx-450h-plus-az20-phev",
-      "modelId": "lexus-nx-450h-plus",
-      "code": "AZ20 PHEV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "lexus-rx-450h-plus-al30-phev",
-      "modelId": "lexus-rx-450h-plus",
-      "code": "AL30 PHEV",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-hs-plug-in-hs-phev",
-      "modelId": "mg-hs-plug-in",
-      "code": "HS PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-i",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "I",
-      "yearFrom": 1992,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-ii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "II",
-      "yearFrom": 1993,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-iii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "III",
-      "yearFrom": 1995,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-iv",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "IV",
-      "yearFrom": 1996,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-v",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "V",
-      "yearFrom": 1998,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-vi",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "VI",
-      "yearFrom": 1999,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-vii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "VII",
-      "yearFrom": 2001,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-viii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "VIII",
-      "yearFrom": 2003,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-ix",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "IX",
-      "yearFrom": 2005,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-x",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "X",
-      "yearFrom": 2007,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-wrx-va",
-      "modelId": "subaru-wrx",
-      "code": "VA",
-      "yearFrom": 2014,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-wrx-vb",
-      "modelId": "subaru-wrx",
-      "code": "VB",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "honda-integra-type-r-dc2",
-      "modelId": "honda-integra-type-r",
-      "code": "DC2",
-      "yearFrom": 1995,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "honda-integra-type-r-dc5",
-      "modelId": "honda-integra-type-r",
-      "code": "DC5",
-      "yearFrom": 2001,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
     }
-  ]
+  ],
+  "count": 2187
 }

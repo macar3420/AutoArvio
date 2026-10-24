@@ -39,6 +39,15 @@ export const SIBLING_GENS = {
     ["F45", 2016, 2021],
     ["U06", 2021, null],
   ],
+  // Must not inherit full 3/5 Series ICE chassis history
+  "bmw-330e": [
+    ["F30/F31 LCI", 2016, 2019],
+    ["G20/G21", 2019, null],
+  ],
+  "bmw-530e": [
+    ["G30/G31", 2017, 2023],
+    ["G60/G61", 2023, null],
+  ],
   "bmw-x5-xdrive45e": [["G05", 2019, null]],
   "bmw-x3-xdrive30e": [["G01", 2019, null]],
   "bmw-x1-xdrive25e": [
