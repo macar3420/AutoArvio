@@ -1,25 +1,24 @@
 /**
- * Build generation_specs.json variants for every generation in generations.json.
- * Preserves curated audi-a4-b8 rows; fills the rest with plausible EU/FI figures.
+ * Build generation_specs.json with European-market powertrain variants.
+ *
+ * Priority:
+ * 1. Curated OVERRIDES by generation id (tools/europe_powertrain_overrides.mjs)
+ * 2. Model-family curated helpers (Type R, GTI, BEV siblings, …)
+ * 3. Conservative EU heuristic (few rows; petrol/diesel labeled correctly; no fantasy turbos on specials)
  *
  * Usage: node tools/build_generation_variants.mjs
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { OVERRIDES, modelFamilyOverride } from "./europe_powertrain_overrides.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const gensPath = path.join(root, "app/src/main/assets/catalog/generations.json");
 const outPath = path.join(root, "app/src/main/assets/catalog/generation_specs.json");
 
 const gensRoot = JSON.parse(fs.readFileSync(gensPath, "utf8"));
-const existing = fs.existsSync(outPath)
-  ? JSON.parse(fs.readFileSync(outPath, "utf8"))
-  : { specs: {}, variants: {} };
 
-const PRESERVE = new Set(["audi-a4-b8"]);
-
-/** Stable 32-bit hash for deterministic picks. */
 function hash(str) {
   let h = 2166136261;
   for (let i = 0; i < str.length; i++) {
@@ -27,10 +26,6 @@ function hash(str) {
     h = Math.imul(h, 16777619);
   }
   return h >>> 0;
-}
-
-function pick(arr, seed) {
-  return arr[seed % arr.length];
 }
 
 function hpToKw(hp) {
@@ -48,24 +43,19 @@ function slug(s) {
     .replace(/^-|-$/g, "");
 }
 
-function consumptionStandard(yearFrom) {
+function stdFor(yearFrom) {
   return yearFrom >= 2018 ? "WLTP" : "NEDC";
 }
 
-function rangeStandard(yearFrom) {
-  return yearFrom >= 2018 ? "WLTP" : "NEDC";
-}
-
-/** @typedef {'bev'|'phev'|'hybrid'|'ice'} Kind */
+/** @typedef {'petrol'|'diesel'|'hybrid'|'phev'|'bev'} Fuel */
 
 /**
  * @param {string} modelId
- * @returns {Kind}
+ * @returns {'bev'|'phev'|'hybrid'|'ice'|'perf'}
  */
-function classifyModel(modelId) {
+function classify(modelId) {
   const m = modelId.toLowerCase();
 
-  // PHEV first (IDs often contain hybrid/e/recharge words)
   if (
     /phev|plug-in|tfsi-e|dm-i|ehybrid|e-hybrid|gte$|xdrive[0-9]*e|300-e|250-e|350-de|330e|530e|225xe|octavia-iv|superb-iv|450h-plus|r-ev|prius-phev|prius-plug|rav4-plug|c-hr-plug|outlander-phev|eclipse-cross-phev|hs-plug|hs-phev|leon-ehybrid|tarraco-ehybrid|kuga-phev|explorer-phev|cayenne-e-hybrid|panamera-e-hybrid|touareg-r|tiguan-ehybrid|golf-gte|passat-gte|polo-gte|3008-hybrid|308-gte|mx-30-r-ev|i8|xc60-recharge|xc90-recharge|v60-recharge/.test(
       m,
@@ -74,9 +64,8 @@ function classifyModel(modelId) {
     return "phev";
   }
 
-  // Full hybrid (non-plug-in)
   if (
-    /e-power|ehev|cr-v-hybrid|rav4-hybrid|2-hybrid|mg3-hybrid|civic-ehev|ioniq$|ioniq-plug-in|prius$|insight|swace|across|yaris-cross/.test(
+    /e-power|ehev|cr-v-hybrid|rav4-hybrid|2-hybrid|mg3-hybrid|civic-ehev|ioniq$|prius$|insight|swace|across|yaris-cross/.test(
       m,
     ) ||
     (/-hybrid$/.test(m) && !/plug/.test(m))
@@ -84,10 +73,8 @@ function classifyModel(modelId) {
     return "hybrid";
   }
 
-  // Classic Smart ICE bodies
   if (/^smart-(fortwo|forfour|roadster|crossblade|brabus)$/.test(m)) return "ice";
 
-  // BEV brands / dedicated electric models
   if (
     /^tesla-/.test(m) ||
     /^polestar-/.test(m) ||
@@ -101,420 +88,363 @@ function classifyModel(modelId) {
       m,
     )
   ) {
-    // BYD DM-i already caught as PHEV; remaining BYD → BEV
     return "bev";
+  }
+
+  if (
+    /type-r|integra-type|golf-gti|polo-gti|golf-r|fiesta-st|focus-st|focus-rs|wrx|evolution|bmw-m[2-8]|bmw-1m|amg|rs[3-7]|tt-rs|rs-q|civic-type|gr-yaris|gr-corolla|supra|gt-r|911|cayman|boxster|mx-5|s2000|nsx|brz|ioniq-5-n|formentor-vz/.test(
+      m,
+    )
+  ) {
+    return "perf";
   }
 
   return "ice";
 }
 
-/**
- * Vehicle size band for scaling power/consumption.
- * @param {string} modelId
- */
 function sizeBand(modelId) {
   const m = modelId.toLowerCase();
-  if (/van|transporter|sprinter|crafter|ducato|boxer|jumper|master|transit|vivaro|trafic|expert|jumpy|scudo|proace|caddy|berlingo|partner|kangoo|citan|vito|viano|multivan|caravelle|nv[234]|interstar|movano|daily|hiace|hilux|ranger|navara|l200|amarok|pickup|canter|cargo|deliver/.test(m)) {
+  if (/van|transporter|sprinter|crafter|ducato|boxer|jumper|master|transit|vivaro|trafic|expert|jumpy|scudo|proace|caddy|berlingo|partner|kangoo|citan|vito|multivan|caravelle|nv[234]|movano|hiace|hilux|ranger|navara|l200|amarok|pickup|canter|cargo|deliver/.test(m)) {
     return "van";
   }
-  if (/q[578]|x[567]|xc[679]|touareg|cayenne|gle|gls|discovery|defender|pajero|land-cruiser|patrol|tahoe|suburban|x7|sq[578]|rs-q|tourter|pathfinder|outlander|santa-fe|sorento|tucson|sportage|kodiaq|tiguan|rav4|cr-v|forester|outback|cx-5|cx-60|cx-80|nx|rx|macan|gla|glb|glc|ateca|formentor|tarraco|karoq|kamiq|stoni|ix3|ix5|ioniq-5|model-x|model-y|enyaq|id4|id5|id7|q4|q8|e-tron|iX|ex30|ex40|ex90|g9|free|tang|atto|seal-u|tavascan|terramar/.test(m)) {
+  if (/q[578]|x[567]|xc[679]|touareg|cayenne|gle|gls|discovery|defender|pajero|land-cruiser|patrol|x7|tiguan|rav4|cr-v|forester|outback|cx-5|cx-60|sportage|tucson|kodiaq|macan|glc|ateca|tarraco|karoq|outlander|santa-fe|sorento/.test(m)) {
     return "suv";
   }
-  if (/rs[3-7]|m[2-8]|amg|type-r|sti|wrx|evolution|gt-r|911|cayman|boxster|tt-rs|r8|i8|supra|gr-|focus-rs|focus-st|fiesta-st|golf-r|golf-gti|polo-gti|s[345678]|sq|m135|m235|m340|m440|m550|1m|civic-type|integra-type|brz|mx-5|z[34]|slk|amg-gt|formentor-vz|ioniq-5-n|plaid/.test(m)) {
-    return "perf";
-  }
-  if (/a[678]|5-series|e-class|s-class|s[6789]0|v[679]0|passat|superb|octavia|mondeo|insignia|508|c5|camry|accord|legacy|6$|520|530|540|e2[0-9]|cls|a7|a8|panamera|arteon|talisman|laguna/.test(m)) {
+  if (/a[678]|5-series|e-class|s-class|s[6789]0|v[679]0|passat|superb|mondeo|insignia|508|camry|accord|panamera|arteon/.test(m)) {
     return "large";
   }
-  if (/a[123]|polo|fiesta|corsa|clio|fabia|ibiza|yaris|jazz|i10|i20|micra|sandero|up$|aygo|108|c1|ka$|swift|splash|picanto|rio|getz|adam|mii|citigo|fortwo|forfour|500$|panda|tipo|leon|golf|focus|astra|308|civic|3$|corolla|octavia|megane|ceed|i30|jetta|bora|rapid|scala|arona|t-roc|t-cross|kamiq|cx-3|hr-v|jazz/.test(m)) {
+  if (/a[123]|polo|fiesta|corsa|clio|fabia|ibiza|yaris|jazz|i10|i20|micra|sandero|up$|aygo|108|c1|ka$|swift|picanto|500$|panda|golf|focus|astra|308|civic|corolla|megane|ceed|i30|scala|arona|t-roc|t-cross|hr-v/.test(m)) {
     return "small";
   }
   return "mid";
 }
 
+/** Diesel was common in EU for this class/era (not for JP performance, not for tiny city cars always). */
+function euDieselLikely(modelId, yearFrom, band) {
+  if (yearFrom < 1996 || yearFrom > 2022) return false;
+  const m = modelId.toLowerCase();
+  // Japanese sports / US muscle rarely had EU diesel Type R etc. — handled as perf
+  if (/honda|toyota|mazda|subaru|suzuki|lexus|nissan-350|nissan-370|nissan-gt|mitsubishi-lancer|mitsubishi-eclipse/.test(m) && band !== "suv" && band !== "van" && band !== "large" && band !== "mid") {
+    return false;
+  }
+  // Pure petrol model ids
+  if (/gti|tsi$|tfsi$|type-r|vtec|turbo-r|amg|m3|m5|s3$|s4$|rs/.test(m)) return false;
+  // Diesel-coded models
+  if (/tdi|cdi|d$|bluehdi|hdi|tdci|dci|320d|330d|520d|530d|220d|200d|220cdi/.test(m)) return true;
+  if (band === "van") return true;
+  if (band === "suv" || band === "large" || band === "mid") return yearFrom >= 1998 && yearFrom <= 2020;
+  if (band === "small") return yearFrom >= 2000 && yearFrom <= 2018;
+  return false;
+}
+
 function bodyFor(modelId, band) {
   const m = modelId.toLowerCase();
-  if (/avant|touring|sportstourer|sw$|estate|wagon|verso|shooting/.test(m)) return "Wagon";
-  if (/sportback|gran.?coupe|fastback|arteon|cla|cls/.test(m)) return "Liftback";
-  if (/cabrio|convertible|roadster|spider|targa/.test(m)) return "Convertible";
-  if (/coupe|tt$|cayman|boxster|brz|supra|rx-8|mx-5/.test(m)) return "Coupe";
   if (band === "suv") return "SUV";
   if (band === "van") return "Van";
-  if (/avant|allroad/.test(m)) return "Sedan, Avant";
-  if (/a4|a6|a3|c-class|3-series|passat|superb|octavia|mondeo/.test(m)) return "Sedan, Wagon";
+  if (/avant|touring|sportstourer|wagon/.test(m)) return "Wagon";
+  if (/cabrio|convertible|roadster|spider/.test(m)) return "Convertible";
+  if (/coupe|tt$|cayman|brz|supra/.test(m)) return "Coupe";
+  if (/a4|a6|c-class|3-series|passat|superb|octavia/.test(m)) return "Sedan, Wagon";
   return "Hatchback / Sedan";
 }
 
-function iceTemplates(band, yearFrom, seed) {
-  const std = consumptionStandard(yearFrom);
-  const modern = yearFrom >= 2012;
-  const gear =
-    yearFrom >= 2015
-      ? ["6MT / 7DCT", "6MT / 8AT", "7DCT / 8AT", "6MT / CVT"]
-      : yearFrom >= 2005
-        ? ["5MT / 6MT", "6MT / Multitronic", "6MT / 6AT", "6MT / DSG"]
-        : ["5MT", "5MT / 4AT", "5MT / 5AT"];
-
-  /** @type {{name:string,hp:number,drive:string,gear:string,l:number}[]} */
-  let pool;
-  if (band === "small") {
-    pool = [
-      { name: "1.0 TSI", hp: 95, drive: "FWD", gear: pick(gear, seed), l: modern ? 5.2 : 5.8 },
-      { name: "1.2 TSI", hp: 110, drive: "FWD", gear: pick(gear, seed + 1), l: modern ? 5.4 : 6.0 },
-      { name: "1.4 TSI", hp: 140, drive: "FWD", gear: pick(gear, seed + 2), l: modern ? 5.8 : 6.5 },
-      { name: "1.6 TDI", hp: 105, drive: "FWD", gear: pick(gear, seed + 3), l: modern ? 4.2 : 4.8 },
-      { name: "1.5 TSI", hp: 150, drive: "FWD", gear: pick(gear, seed + 4), l: modern ? 5.6 : 6.2 },
-      { name: "2.0 TDI", hp: 150, drive: "FWD", gear: pick(gear, seed + 5), l: modern ? 4.5 : 5.2 },
-    ];
-  } else if (band === "mid") {
-    pool = [
-      { name: "1.5 TFSI", hp: 150, drive: "FWD", gear: pick(gear, seed), l: modern ? 5.8 : 6.6 },
-      { name: "2.0 TFSI", hp: 190, drive: "FWD / AWD", gear: pick(gear, seed + 1), l: modern ? 6.4 : 7.2 },
-      { name: "2.0 TDI", hp: 150, drive: "FWD", gear: pick(gear, seed + 2), l: modern ? 4.8 : 5.5 },
-      { name: "2.0 TDI", hp: 190, drive: "FWD / AWD", gear: pick(gear, seed + 3), l: modern ? 5.1 : 5.9 },
-      { name: "1.8 TFSI", hp: 170, drive: "FWD", gear: pick(gear, seed + 4), l: modern ? 6.2 : 7.0 },
-      { name: "3.0 TDI", hp: 245, drive: "AWD", gear: pick(gear, seed + 5), l: modern ? 6.0 : 6.8 },
-    ];
-  } else if (band === "large") {
-    pool = [
-      { name: "2.0 TFSI", hp: 204, drive: "FWD / AWD", gear: pick(gear, seed), l: modern ? 6.8 : 7.6 },
-      { name: "2.0 TDI", hp: 190, drive: "FWD / AWD", gear: pick(gear, seed + 1), l: modern ? 5.2 : 6.0 },
-      { name: "3.0 TDI", hp: 286, drive: "AWD", gear: pick(gear, seed + 2), l: modern ? 6.4 : 7.2 },
-      { name: "2.5 TFSI", hp: 224, drive: "AWD", gear: pick(gear, seed + 3), l: modern ? 7.2 : 8.0 },
-      { name: "3.0 TFSI", hp: 340, drive: "AWD", gear: pick(gear, seed + 4), l: modern ? 8.0 : 9.0 },
-      { name: "2.0 TDI", hp: 163, drive: "FWD", gear: pick(gear, seed + 5), l: modern ? 4.9 : 5.7 },
-    ];
-  } else if (band === "suv") {
-    pool = [
-      { name: "1.5 TSI", hp: 150, drive: "FWD", gear: pick(gear, seed), l: modern ? 6.2 : 7.0 },
-      { name: "2.0 TSI", hp: 190, drive: "FWD / AWD", gear: pick(gear, seed + 1), l: modern ? 7.0 : 7.8 },
-      { name: "2.0 TDI", hp: 150, drive: "FWD / AWD", gear: pick(gear, seed + 2), l: modern ? 5.4 : 6.2 },
-      { name: "2.0 TDI", hp: 200, drive: "AWD", gear: pick(gear, seed + 3), l: modern ? 5.8 : 6.6 },
-      { name: "3.0 TDI", hp: 286, drive: "AWD", gear: pick(gear, seed + 4), l: modern ? 7.0 : 7.8 },
-      { name: "1.4 TSI", hp: 150, drive: "FWD", gear: pick(gear, seed + 5), l: modern ? 6.0 : 6.8 },
-    ];
-  } else if (band === "van") {
-    pool = [
-      { name: "2.0 TDI", hp: 110, drive: "FWD", gear: pick(gear, seed), l: modern ? 6.5 : 7.5 },
-      { name: "2.0 TDI", hp: 140, drive: "FWD", gear: pick(gear, seed + 1), l: modern ? 6.8 : 7.8 },
-      { name: "2.0 TDI", hp: 177, drive: "FWD / AWD", gear: pick(gear, seed + 2), l: modern ? 7.2 : 8.2 },
-      { name: "1.6 TDI", hp: 102, drive: "FWD", gear: pick(gear, seed + 3), l: modern ? 5.8 : 6.6 },
-    ];
-  } else {
-    // perf
-    pool = [
-      { name: "2.0 Turbo", hp: 300, drive: "AWD", gear: pick(["6MT / 7DCT", "6MT / 8AT"], seed), l: modern ? 8.5 : 9.5 },
-      { name: "2.5 Turbo", hp: 340, drive: "AWD", gear: pick(["6MT / 7DCT", "8AT"], seed + 1), l: modern ? 9.0 : 10.0 },
-      { name: "3.0 Turbo", hp: 450, drive: "AWD", gear: "8AT", l: modern ? 10.5 : 11.5 },
-      { name: "2.0 Turbo", hp: 245, drive: "FWD / AWD", gear: pick(["6MT / 7DCT", "6MT"], seed + 2), l: modern ? 7.8 : 8.6 },
-    ];
-  }
-
-  // Era dampen: older gens → fewer gears naming already handled; trim HP slightly for pre-2000
-  if (yearFrom < 2000) {
-    pool = pool.map((p) => ({
-      ...p,
-      hp: Math.max(60, Math.round(p.hp * 0.72)),
-      l: round1(p.l + 1.2),
-      gear: pick(["5MT", "5MT / 4AT"], seed),
-    }));
-  } else if (yearFrom < 2008) {
-    pool = pool.map((p) => ({
-      ...p,
-      hp: Math.max(75, Math.round(p.hp * 0.88)),
-      l: round1(p.l + 0.5),
-    }));
-  }
-
-  // WLTP bump
-  if (std === "WLTP") {
-    pool = pool.map((p) => ({ ...p, l: round1(p.l + 1.0) }));
-  }
-
-  const count = band === "van" || band === "perf" ? 3 + (seed % 2) : 3 + (seed % 4); // 3–4 or 3–6
-  const start = seed % pool.length;
-  const chosen = [];
-  for (let i = 0; i < Math.min(count, pool.length); i++) {
-    chosen.push(pool[(start + i) % pool.length]);
-  }
-  // de-dupe by name+hp
-  const seen = new Set();
-  return chosen
-    .filter((p) => {
-      const k = `${p.name}-${p.hp}`;
-      if (seen.has(k)) return false;
-      seen.add(k);
-      return true;
-    })
-    .map((p) => ({ ...p, standard: std }));
-}
-
-function brandTuneName(modelId, name, hp) {
-  const m = modelId.toLowerCase();
-  // BMW-style numeric models: prefer "320i 184" style when model encodes engine
-  const bmw = m.match(/^bmw-([0-9]{3}[a-z]?)/);
-  if (bmw) {
-    const code = bmw[1].toUpperCase();
-    return `${code} ${hp}`;
-  }
-  const merc = m.match(/^mercedes-([a-z]?[0-9]{2,3}[a-z]?)/);
-  if (merc && /mercedes-[cegs]-?[0-9]/.test(m)) {
-    return `${merc[1].toUpperCase()} ${hp}`;
-  }
-  // Diesel cue in model id
-  if (/tdi|cdi|d$|diesel|bluehdi|hdi|tdci|dci/.test(m) && !/tdi|td|cdi|hdi|dci|tdci/i.test(name)) {
-    return name.replace(/TFSI|TSI|Turbo/i, "TDI");
-  }
-  if (/tfsi|tsi|tsi|gti|petrol/.test(m) && /TDI/.test(name)) {
-    return name.replace(/TDI/i, "TFSI");
-  }
-  // Toyota / Honda often use hybrid naming already handled
-  if (/toyota|honda|lexus/.test(m) && /TDI|TFSI|TSI/.test(name)) {
-    const lit = name.match(/^[0-9]\.[0-9]/)?.[0] ?? "2.0";
-    return `${lit} ${hp}`;
-  }
-  if (/bmw|mercedes|volvo|peugeot|citroen|opel|renault|dacia|fiat|seat|skoda|ford|mazda|nissan|mitsubishi|subaru|suzuki|kia|hyundai|mini|landrover|porsche|cupra/.test(m.split("-")[0])) {
-    // keep generic Euro turbo names
-    return `${name} ${hp}`;
-  }
-  return `${name} ${hp}`;
-}
-
-function makeIceVariants(gen, kindHint) {
-  const seed = hash(gen.id);
-  const band = sizeBand(gen.modelId);
-  const body = bodyFor(gen.modelId, band);
-  const templates = iceTemplates(band, gen.yearFrom, seed);
-  const powertrain = kindHint === "hybrid" ? "hybrid" : "ice";
-
-  return templates.map((t, idx) => {
-    const name = brandTuneName(gen.modelId, t.name, t.hp);
-    const id = `${gen.id}-${slug(name)}-${idx}`;
+function finalize(gen, rows) {
+  return rows.map((r, idx) => {
+    const powerHp = r.powerHp;
+    const powerKw = r.powerKw ?? (powerHp != null ? hpToKw(powerHp) : undefined);
+    const id = r.id || `${gen.id}-${slug(r.name)}-${idx}`;
     /** @type {Record<string, unknown>} */
-    const v = {
+    const out = {
       id,
       generationId: gen.id,
-      name,
-      powertrain,
-      powerHp: t.hp,
-      powerKw: hpToKw(t.hp),
-      drivetrain: t.drive,
-      transmissionSummary: t.gear,
-      bodyStyles: body,
-      consumptionCombinedL: t.l,
-      consumptionStandard: t.standard,
+      name: r.name,
+      powertrain: r.powertrain,
+      powerHp,
+      powerKw,
+      drivetrain: r.drivetrain,
+      transmissionSummary: r.transmissionSummary,
     };
-    return v;
+    if (r.bodyStyles) out.bodyStyles = r.bodyStyles;
+    if (r.consumptionCombinedL != null) out.consumptionCombinedL = r.consumptionCombinedL;
+    if (r.consumptionStandard) out.consumptionStandard = r.consumptionStandard;
+    if (r.batteryKwh != null) out.batteryKwh = r.batteryKwh;
+    if (r.electricRangeKm != null) out.electricRangeKm = r.electricRangeKm;
+    if (r.rangeStandard) out.rangeStandard = r.rangeStandard;
+    if (r.consumptionCombinedKwh != null) out.consumptionCombinedKwh = r.consumptionCombinedKwh;
+    return out;
   });
 }
 
-function makeBevVariants(gen) {
+function heuristicIce(gen) {
   const seed = hash(gen.id);
   const band = sizeBand(gen.modelId);
-  const std = rangeStandard(gen.yearFrom);
   const body = bodyFor(gen.modelId, band);
+  const std = stdFor(gen.yearFrom);
+  const diesel = euDieselLikely(gen.modelId, gen.yearFrom, band);
+  const m = gen.modelId.toLowerCase();
 
-  const packs =
-    band === "small"
-      ? [
-          { name: "Standard Range", hp: 136, kwh: 40, range: 280, kwh100: 15.5 },
-          { name: "Long Range", hp: 170, kwh: 52, range: 360, kwh100: 14.8 },
-        ]
-      : band === "suv" || band === "van"
-        ? [
-            { name: "RWD", hp: 204, kwh: 62, range: 400, kwh100: 17.5 },
-            { name: "AWD Long Range", hp: 300, kwh: 77, range: 480, kwh100: 18.8 },
-            { name: "Performance", hp: 408, kwh: 82, range: 450, kwh100: 19.5 },
-          ]
-        : band === "perf"
-          ? [
-              { name: "Dual Motor", hp: 450, kwh: 82, range: 420, kwh100: 19.0 },
-              { name: "Tri Motor", hp: 750, kwh: 99, range: 480, kwh100: 20.5 },
-            ]
-          : [
-              { name: "RWD", hp: 170, kwh: 55, range: 380, kwh100: 15.2 },
-              { name: "Long Range", hp: 220, kwh: 72, range: 480, kwh100: 14.9 },
-              { name: "AWD", hp: 300, kwh: 77, range: 450, kwh100: 16.5 },
-            ];
+  // Model already encodes a specific engine (bmw-320d, mercedes-c-220, …)
+  if (/^[a-z]+-[0-9]{3}d$/.test(m) || /-[0-9]{3}d$/.test(m) || /tdi|cdi/.test(m)) {
+    const hp = band === "large" || band === "suv" ? 190 : 150;
+    return finalize(gen, [
+      {
+        name: dieselName(gen, hp),
+        powertrain: "diesel",
+        powerHp: hp,
+        drivetrain: band === "suv" ? "FWD / AWD" : "FWD",
+        transmissionSummary: gen.yearFrom >= 2015 ? "6MT / 8AT" : "6MT / 6AT",
+        bodyStyles: body,
+        consumptionCombinedL: round1(std === "WLTP" ? 5.5 : 4.6),
+        consumptionStandard: std,
+      },
+    ]);
+  }
 
-  // Pre-WLTP era: lower ranges
-  const era = packs.map((p) => ({
-    ...p,
-    range: std === "NEDC" ? Math.round(p.range * 1.15) : p.range,
-    kwh: gen.yearFrom < 2018 ? Math.round(p.kwh * 0.85) : p.kwh,
-  }));
+  /** @type {object[]} */
+  const rows = [];
 
-  const count = 1 + (seed % Math.min(3, era.length));
-  const start = seed % era.length;
+  // Petrol base
+  if (band === "small") {
+    rows.push({
+      name: gen.yearFrom >= 2012 ? "1.0 / 1.2 TSI" : "1.4",
+      powertrain: "petrol",
+      powerHp: gen.yearFrom >= 2012 ? 110 : 90,
+      drivetrain: "FWD",
+      transmissionSummary: gen.yearFrom >= 2015 ? "6MT / DSG" : "5MT / 6MT",
+      bodyStyles: body,
+      consumptionCombinedL: round1(std === "WLTP" ? 6.0 : 5.4),
+      consumptionStandard: std,
+    });
+    if (gen.yearFrom >= 2005) {
+      rows.push({
+        name: gen.yearFrom >= 2012 ? "1.4 / 1.5 TSI" : "1.6",
+        powertrain: "petrol",
+        powerHp: gen.yearFrom >= 2012 ? 150 : 115,
+        drivetrain: "FWD",
+        transmissionSummary: gen.yearFrom >= 2015 ? "6MT / DSG" : "5MT / 6MT",
+        bodyStyles: body,
+        consumptionCombinedL: round1(std === "WLTP" ? 6.5 : 5.9),
+        consumptionStandard: std,
+      });
+    }
+  } else if (band === "van") {
+    rows.push({
+      name: "2.0 TDI",
+      powertrain: "diesel",
+      powerHp: 140,
+      drivetrain: "FWD",
+      transmissionSummary: "6MT / 6AT",
+      bodyStyles: body,
+      consumptionCombinedL: round1(std === "WLTP" ? 7.5 : 6.5),
+      consumptionStandard: std,
+    });
+  } else {
+    // mid / large / suv
+    rows.push({
+      name: band === "suv" ? "1.5 / 2.0 TSI" : "1.8 / 2.0 TFSI",
+      powertrain: "petrol",
+      powerHp: band === "large" ? 190 : 150,
+      drivetrain: band === "suv" ? "FWD / AWD" : "FWD",
+      transmissionSummary: gen.yearFrom >= 2015 ? "6MT / 7DCT" : "6MT / Multitronic",
+      bodyStyles: body,
+      consumptionCombinedL: round1(
+        (band === "suv" ? 7.0 : 6.4) + (std === "WLTP" ? 1.0 : 0),
+      ),
+      consumptionStandard: std,
+    });
+  }
+
+  if (diesel && band !== "van") {
+    rows.push({
+      name: band === "small" ? "1.6 TDI" : "2.0 TDI",
+      powertrain: "diesel",
+      powerHp: band === "small" ? 105 : band === "large" || band === "suv" ? 190 : 150,
+      drivetrain: band === "suv" ? "FWD / AWD" : "FWD",
+      transmissionSummary: gen.yearFrom >= 2015 ? "6MT / DSG" : "6MT",
+      bodyStyles: body,
+      consumptionCombinedL: round1(
+        (band === "small" ? 4.2 : band === "suv" ? 5.6 : 4.8) + (std === "WLTP" ? 1.0 : 0),
+      ),
+      consumptionStandard: std,
+    });
+  }
+
+  // Cap at 3; pick stable subset for variety without inventing 6 fantasy engines
+  const max = diesel ? 3 : 2;
+  const start = seed % Math.max(1, rows.length);
   const chosen = [];
-  for (let i = 0; i < count; i++) chosen.push(era[(start + i) % era.length]);
-
-  return chosen.map((p, idx) => ({
-    id: `${gen.id}-${slug(p.name)}-${idx}`,
-    generationId: gen.id,
-    name: p.name,
-    powertrain: "bev",
-    powerHp: p.hp,
-    powerKw: hpToKw(p.hp),
-    drivetrain: /AWD|Dual|Tri|Performance/i.test(p.name) ? "AWD" : "RWD / FWD",
-    transmissionSummary: "1-speed",
-    bodyStyles: body,
-    batteryKwh: p.kwh,
-    electricRangeKm: p.range,
-    rangeStandard: std,
-    consumptionCombinedKwh: p.kwh100,
-    consumptionStandard: std,
-  }));
+  for (let i = 0; i < Math.min(max, rows.length); i++) {
+    chosen.push(rows[(start + i) % rows.length]);
+  }
+  // de-dupe
+  const seen = new Set();
+  return finalize(
+    gen,
+    chosen.filter((r) => {
+      const k = r.name + r.powertrain + r.powerHp;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    }),
+  );
 }
 
-function makePhevVariants(gen) {
-  const seed = hash(gen.id);
-  const band = sizeBand(gen.modelId);
-  const std = consumptionStandard(gen.yearFrom);
-  const rstd = rangeStandard(gen.yearFrom);
-  const body = bodyFor(gen.modelId, band);
-  const baseHp = band === "perf" ? 360 : band === "suv" ? 245 : band === "large" ? 299 : 204;
-  const rows = [
+function dieselName(gen, hpVal) {
+  const m = gen.modelId.toLowerCase();
+  if (/bmw/.test(m)) return `${(m.match(/bmw-([0-9]{3}d?)/) || [])[1]?.toUpperCase() || "Diesel"} ${hpVal}`;
+  if (/tdi/.test(m) || /audi|volkswagen|seat|skoda/.test(m)) return `2.0 TDI ${hpVal}`;
+  if (/cdi|mercedes/.test(m)) return `CDI ${hpVal}`;
+  return `Diesel ${hpVal}`;
+}
+
+function heuristicBev(gen) {
+  const std = stdFor(gen.yearFrom);
+  return finalize(gen, [
+    {
+      name: "Electric",
+      powertrain: "bev",
+      powerHp: gen.yearFrom >= 2020 ? 204 : 136,
+      drivetrain: "FWD / RWD",
+      transmissionSummary: "1-speed",
+      bodyStyles: bodyFor(gen.modelId, sizeBand(gen.modelId)),
+      batteryKwh: gen.yearFrom >= 2020 ? 58 : 40,
+      electricRangeKm: std === "WLTP" ? 380 : 300,
+      rangeStandard: std,
+      consumptionCombinedKwh: 15.5,
+      consumptionStandard: std,
+    },
+  ]);
+}
+
+function heuristicPhev(gen) {
+  const std = stdFor(gen.yearFrom);
+  return finalize(gen, [
     {
       name: "Plug-in Hybrid",
-      hp: baseHp,
-      drive: band === "small" ? "FWD" : "AWD",
-      gear: "6DCT / 8AT",
-      l: std === "WLTP" ? 1.6 : 1.9,
-      kwh: 13,
-      range: rstd === "WLTP" ? 50 : 45,
+      powertrain: "phev",
+      powerHp: sizeBand(gen.modelId) === "suv" ? 245 : 204,
+      drivetrain: "FWD / AWD",
+      transmissionSummary: "6DCT / 8AT",
+      bodyStyles: bodyFor(gen.modelId, sizeBand(gen.modelId)),
+      consumptionCombinedL: std === "WLTP" ? 1.6 : 1.9,
+      consumptionStandard: std,
+      batteryKwh: 13,
+      electricRangeKm: std === "WLTP" ? 50 : 45,
+      rangeStandard: std,
     },
-    {
-      name: "PHEV Performance",
-      hp: baseHp + 60,
-      drive: "AWD",
-      gear: "8AT",
-      l: std === "WLTP" ? 1.9 : 2.2,
-      kwh: 17,
-      range: rstd === "WLTP" ? 55 : 48,
-    },
-  ];
-  const count = 1 + (seed % 2);
-  return rows.slice(0, count).map((p, idx) => ({
-    id: `${gen.id}-${slug(p.name)}-${idx}`,
-    generationId: gen.id,
-    name: p.name,
-    powertrain: "phev",
-    powerHp: p.hp,
-    powerKw: hpToKw(p.hp),
-    drivetrain: p.drive,
-    transmissionSummary: p.gear,
-    bodyStyles: body,
-    consumptionCombinedL: p.l,
-    consumptionStandard: std,
-    batteryKwh: p.kwh,
-    electricRangeKm: p.range,
-    rangeStandard: rstd,
-  }));
+  ]);
 }
 
-function makeHybridVariants(gen) {
-  const seed = hash(gen.id);
-  const band = sizeBand(gen.modelId);
-  const std = consumptionStandard(gen.yearFrom);
-  const body = bodyFor(gen.modelId, band);
-  const rows = [
+function heuristicHybrid(gen) {
+  const std = stdFor(gen.yearFrom);
+  return finalize(gen, [
     {
-      name: band === "suv" ? "2.5 Hybrid" : "1.8 Hybrid",
-      hp: band === "suv" ? 218 : 122,
-      drive: band === "suv" ? "AWD" : "FWD",
-      gear: "e-CVT",
-      l: std === "WLTP" ? (band === "suv" ? 5.8 : 4.5) : band === "suv" ? 5.0 : 3.9,
+      name: "Hybrid",
+      powertrain: "hybrid",
+      powerHp: sizeBand(gen.modelId) === "suv" ? 218 : 122,
+      drivetrain: sizeBand(gen.modelId) === "suv" ? "AWD" : "FWD",
+      transmissionSummary: "e-CVT",
+      bodyStyles: bodyFor(gen.modelId, sizeBand(gen.modelId)),
+      consumptionCombinedL: std === "WLTP" ? 5.0 : 4.0,
+      consumptionStandard: std,
     },
+  ]);
+}
+
+function heuristicPerf(gen) {
+  // Single petrol row only — never invent diesel/multi-turbo fantasy
+  const std = stdFor(gen.yearFrom);
+  const hpVal =
+    gen.yearFrom >= 2015 ? 300 : gen.yearFrom >= 2005 ? 250 : gen.yearFrom >= 1995 ? 200 : 160;
+  return finalize(gen, [
     {
-      name: band === "suv" ? "2.5 Hybrid AWD" : "2.0 Hybrid",
-      hp: band === "suv" ? 222 : 184,
-      drive: band === "suv" ? "AWD" : "FWD",
-      gear: "e-CVT",
-      l: std === "WLTP" ? (band === "suv" ? 6.0 : 4.8) : band === "suv" ? 5.2 : 4.2,
+      name: gen.yearFrom >= 2015 ? "2.0 Turbo" : "2.0 petrol",
+      powertrain: "petrol",
+      powerHp: hpVal,
+      drivetrain: /quattro|xdrive|4matic|awd|golf-r|wrx|evolution/.test(gen.modelId)
+        ? "AWD"
+        : "FWD / RWD",
+      transmissionSummary: gen.yearFrom >= 2015 ? "6MT / DCT" : "6MT",
+      bodyStyles: bodyFor(gen.modelId, "small"),
+      consumptionCombinedL: std === "WLTP" ? 8.5 : 8.0,
+      consumptionStandard: std,
     },
-  ];
-  const count = 1 + (seed % 2);
-  return rows.slice(0, count).map((p, idx) => ({
-    id: `${gen.id}-${slug(p.name)}-${idx}`,
-    generationId: gen.id,
-    name: p.name,
-    powertrain: "hybrid",
-    powerHp: p.hp,
-    powerKw: hpToKw(p.hp),
-    drivetrain: p.drive,
-    transmissionSummary: p.gear,
-    bodyStyles: body,
-    consumptionCombinedL: p.l,
-    consumptionStandard: std,
-  }));
+  ]);
 }
 
 function variantsForGen(gen) {
-  const kind = classifyModel(gen.modelId);
-  if (kind === "bev") return makeBevVariants(gen);
-  if (kind === "phev") return makePhevVariants(gen);
-  if (kind === "hybrid") return makeHybridVariants(gen);
-  return makeIceVariants(gen, kind);
+  if (OVERRIDES[gen.id]) {
+    return finalize(gen, OVERRIDES[gen.id]);
+  }
+  const family = modelFamilyOverride(gen);
+  if (family?.length) {
+    return finalize(gen, family);
+  }
+  const kind = classify(gen.modelId);
+  if (kind === "bev") return heuristicBev(gen);
+  if (kind === "phev") return heuristicPhev(gen);
+  if (kind === "hybrid") return heuristicHybrid(gen);
+  if (kind === "perf") return heuristicPerf(gen);
+  return heuristicIce(gen);
 }
 
 // ——— Build ———
 const variants = {};
-let preserved = 0;
-let generated = 0;
-let totalVariantRows = 0;
+let curated = 0;
+let family = 0;
+let heuristic = 0;
+let total = 0;
 
 for (const gen of gensRoot.generations) {
-  if (PRESERVE.has(gen.id) && existing.variants?.[gen.id]?.length) {
-    variants[gen.id] = existing.variants[gen.id];
-    preserved++;
-    totalVariantRows += variants[gen.id].length;
-    continue;
-  }
+  let source = "heuristic";
+  if (OVERRIDES[gen.id]) source = "curated";
+  else if (modelFamilyOverride(gen)?.length) source = "family";
+
   const rows = variantsForGen(gen);
   if (!rows.length) {
-    // Fallback: never leave empty
-    variants[gen.id] = [
+    variants[gen.id] = finalize(gen, [
       {
-        id: `${gen.id}-base-0`,
-        generationId: gen.id,
-        name: "Base",
-        powertrain: "ice",
+        name: "Petrol",
+        powertrain: "petrol",
         powerHp: 110,
-        powerKw: 81,
         drivetrain: "FWD",
         transmissionSummary: "5MT / 6AT",
         bodyStyles: "Sedan",
         consumptionCombinedL: 6.5,
-        consumptionStandard: consumptionStandard(gen.yearFrom),
+        consumptionStandard: stdFor(gen.yearFrom),
       },
-    ];
+    ]);
   } else {
     variants[gen.id] = rows;
   }
-  generated++;
-  totalVariantRows += variants[gen.id].length;
+
+  if (source === "curated") curated++;
+  else if (source === "family") family++;
+  else heuristic++;
+  total += variants[gen.id].length;
 }
 
 const out = {
-  note: "Optional tech data keyed by generation id. variants[] = engines & versions. Values are approximate brochure/type-approval figures for FI/EU. Regenerated by tools/build_generation_variants.mjs (audi-a4-b8 preserved).",
+  note: "European-market engines & versions. Curated overrides in tools/europe_powertrain_overrides.mjs; remainder is a conservative heuristic (petrol/diesel labeled per row). Regenerated by tools/build_generation_variants.mjs.",
   specs: {},
   variants,
 };
 
 fs.writeFileSync(outPath, JSON.stringify(out, null, 2) + "\n", "utf8");
 
-const gensWith = Object.keys(variants).filter((k) => (variants[k] || []).length >= 1).length;
-const empty = gensRoot.generations.length - gensWith;
+const wrongIce = Object.values(variants)
+  .flat()
+  .filter((v) => v.powertrain === "ice").length;
+
 console.log(
   JSON.stringify(
     {
       generations: gensRoot.generations.length,
-      gensWithVariants: gensWith,
-      empty,
-      preservedGens: preserved,
-      generatedGens: generated,
-      totalVariants: totalVariantRows,
+      gensWithVariants: Object.keys(variants).length,
+      totalVariants: total,
+      avg: +(total / gensRoot.generations.length).toFixed(2),
+      sources: { curatedGens: curated, familyGens: family, heuristicGens: heuristic },
+      leftoverIceLabel: wrongIce,
       out: path.relative(root, outPath),
     },
     null,

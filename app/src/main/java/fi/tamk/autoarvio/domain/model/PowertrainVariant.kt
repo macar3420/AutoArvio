@@ -9,7 +9,7 @@ data class PowertrainVariant(
     val generationId: String,
     /** Display name, e.g. "2.0 TDI 143" */
     val name: String,
-    /** ice | hybrid | phev | bev */
+    /** petrol | diesel | hybrid | phev | bev (legacy: ice) */
     val powertrain: String? = null,
     val powerHp: Int? = null,
     val powerKw: Int? = null,
@@ -26,11 +26,17 @@ data class PowertrainVariant(
     val consumptionCombinedKwh: Double? = null,
 ) {
     fun powertrainLabel(): String? = when (powertrain?.lowercase()) {
+        "petrol", "gasoline", "ice-petrol" -> "Petrol"
+        "diesel", "ice-diesel" -> "Diesel"
+        // Legacy bulk rows used generic "ice" — infer from name, never show "Petrol / diesel"
         "ice" -> when {
-            name.contains("TDI", ignoreCase = true) -> "Diesel"
-            name.contains("TFSI", ignoreCase = true) ||
-                name.contains("FSI", ignoreCase = true) -> "Petrol"
-            else -> "Petrol / diesel"
+            name.contains("TDI", ignoreCase = true) ||
+                name.contains("CDI", ignoreCase = true) ||
+                name.contains("HDI", ignoreCase = true) ||
+                name.contains("TDCI", ignoreCase = true) ||
+                name.contains("dCi", ignoreCase = true) ||
+                Regex("""\bDiesel\b""", RegexOption.IGNORE_CASE).containsMatchIn(name) -> "Diesel"
+            else -> "Petrol"
         }
         "hybrid" -> "Hybrid"
         "phev" -> "Plug-in hybrid"

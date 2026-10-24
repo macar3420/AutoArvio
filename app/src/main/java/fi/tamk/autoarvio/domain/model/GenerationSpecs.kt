@@ -40,7 +40,9 @@ data class GenerationSpecs(
     val consumptionCombinedKwh: Double? = null,
 ) {
     fun powertrainLabel(): String? = when (powertrain?.lowercase()) {
-        "ice" -> "Petrol / diesel"
+        "petrol", "gasoline" -> "Petrol"
+        "diesel" -> "Diesel"
+        "ice" -> "Petrol" // legacy gen-level average; prefer per-variant labels
         "hybrid" -> "Hybrid"
         "phev" -> "Plug-in hybrid"
         "bev" -> "Electric"
