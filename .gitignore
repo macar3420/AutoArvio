@@ -1,0 +1,68 @@
+# Thesis docs stay local / out of app git
+Thesis/
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+captures/
+.navigation/
+*.hprof
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# NDK
+.externalNativeBuild/
+.cxx/
+obj/
+
+# Kotlin
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Signing
+*.jks
+*.keystore
+!debug.keystore
+
+# Google Services (if added later with secrets)
+# google-services.json
+
+# Misc
+*.swp
+*~
+.vscode/
+.fleet/
