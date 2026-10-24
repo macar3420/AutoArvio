@@ -469,6 +469,61 @@
             "yearFrom": 1988
         },
         {
+            "id": "audi-a3-sportback",
+            "makeId": "audi",
+            "name": "A3 Sportback",
+            "yearFrom": 2004
+        },
+        {
+            "id": "audi-a3-e-tron",
+            "makeId": "audi",
+            "name": "A3 Sportback e-tron",
+            "yearFrom": 2014,
+            "yearTo": 2020
+        },
+        {
+            "id": "audi-a3-tfsi-e",
+            "makeId": "audi",
+            "name": "A3 TFSI e",
+            "yearFrom": 2020
+        },
+        {
+            "id": "audi-q3-tfsi-e",
+            "makeId": "audi",
+            "name": "Q3 TFSI e",
+            "yearFrom": 2020
+        },
+        {
+            "id": "audi-q5-tfsi-e",
+            "makeId": "audi",
+            "name": "Q5 TFSI e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "audi-a6-tfsi-e",
+            "makeId": "audi",
+            "name": "A6 TFSI e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "audi-a7-tfsi-e",
+            "makeId": "audi",
+            "name": "A7 TFSI e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "audi-q7-tfsi-e",
+            "makeId": "audi",
+            "name": "Q7 TFSI e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "audi-q8-tfsi-e",
+            "makeId": "audi",
+            "name": "Q8 TFSI e",
+            "yearFrom": 2020
+        },
+        {
             "id": "bmw-114",
             "makeId": "bmw",
             "name": "114"
@@ -1047,6 +1102,30 @@
             "yearFrom": 2006
         },
         {
+            "id": "bmw-225xe",
+            "makeId": "bmw",
+            "name": "225xe",
+            "yearFrom": 2016
+        },
+        {
+            "id": "bmw-x5-xdrive45e",
+            "makeId": "bmw",
+            "name": "X5 xDrive45e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "bmw-x3-xdrive30e",
+            "makeId": "bmw",
+            "name": "X3 xDrive30e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "bmw-x1-xdrive25e",
+            "makeId": "bmw",
+            "name": "X1 xDrive25e",
+            "yearFrom": 2019
+        },
+        {
             "id": "byd-atto-2",
             "makeId": "byd",
             "name": "Atto 2"
@@ -1401,6 +1480,18 @@
             "id": "cupra-terramar",
             "makeId": "cupra",
             "name": "Terramar"
+        },
+        {
+            "id": "cupra-formentor-vz",
+            "makeId": "cupra",
+            "name": "Formentor VZ",
+            "yearFrom": 2020
+        },
+        {
+            "id": "cupra-leon-ehybrid",
+            "makeId": "cupra",
+            "name": "Leon e-Hybrid",
+            "yearFrom": 2020
         },
         {
             "id": "dacia-bigster",
@@ -2124,6 +2215,37 @@
             "name": "Zephyr"
         },
         {
+            "id": "ford-kuga-phev",
+            "makeId": "ford",
+            "name": "Kuga PHEV",
+            "yearFrom": 2020
+        },
+        {
+            "id": "ford-explorer-phev",
+            "makeId": "ford",
+            "name": "Explorer PHEV",
+            "yearFrom": 2019
+        },
+        {
+            "id": "ford-focus-st",
+            "makeId": "ford",
+            "name": "Focus ST",
+            "yearFrom": 2002
+        },
+        {
+            "id": "ford-focus-rs",
+            "makeId": "ford",
+            "name": "Focus RS",
+            "yearFrom": 2002,
+            "yearTo": 2018
+        },
+        {
+            "id": "ford-fiesta-st",
+            "makeId": "ford",
+            "name": "Fiesta ST",
+            "yearFrom": 2004
+        },
+        {
             "id": "honda-accord",
             "makeId": "honda",
             "name": "Accord",
@@ -2263,6 +2385,12 @@
             "id": "honda-zr-v",
             "makeId": "honda",
             "name": "ZR-V",
+            "yearFrom": 2022
+        },
+        {
+            "id": "honda-civic-ehev",
+            "makeId": "honda",
+            "name": "Civic e:HEV",
             "yearFrom": 2022
         },
         {
@@ -2442,6 +2570,18 @@
             "name": "Veloster"
         },
         {
+            "id": "hyundai-ioniq-5-n",
+            "makeId": "hyundai",
+            "name": "Ioniq 5 N",
+            "yearFrom": 2023
+        },
+        {
+            "id": "hyundai-tucson-plug-in",
+            "makeId": "hyundai",
+            "name": "Tucson Plug-in",
+            "yearFrom": 2020
+        },
+        {
             "id": "kia-carens",
             "makeId": "kia",
             "name": "Carens"
@@ -2577,6 +2717,24 @@
             "name": "Xceed"
         },
         {
+            "id": "kia-sportage-plug-in",
+            "makeId": "kia",
+            "name": "Sportage Plug-in",
+            "yearFrom": 2021
+        },
+        {
+            "id": "kia-sorento-plug-in",
+            "makeId": "kia",
+            "name": "Sorento Plug-in",
+            "yearFrom": 2020
+        },
+        {
+            "id": "kia-ceed-sw-phev",
+            "makeId": "kia",
+            "name": "Ceed SW Plug-in",
+            "yearFrom": 2020
+        },
+        {
             "id": "landrover-109",
             "makeId": "landrover",
             "name": "109"
@@ -2695,6 +2853,18 @@
             "id": "lexus-ux",
             "makeId": "lexus",
             "name": "Ux"
+        },
+        {
+            "id": "lexus-nx-450h-plus",
+            "makeId": "lexus",
+            "name": "NX 450h+",
+            "yearFrom": 2021
+        },
+        {
+            "id": "lexus-rx-450h-plus",
+            "makeId": "lexus",
+            "name": "RX 450h+",
+            "yearFrom": 2022
         },
         {
             "id": "mazda-121",
@@ -2910,6 +3080,12 @@
             "id": "mazda-tribute",
             "makeId": "mazda",
             "name": "Tribute"
+        },
+        {
+            "id": "mazda-mx-30-r-ev",
+            "makeId": "mazda",
+            "name": "MX-30 R-EV",
+            "yearFrom": 2023
         },
         {
             "id": "maxus-deliver-7",
@@ -3571,6 +3747,30 @@
             "name": "X"
         },
         {
+            "id": "mercedes-a-250-e",
+            "makeId": "mercedes",
+            "name": "A 250 e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "mercedes-c-300-e",
+            "makeId": "mercedes",
+            "name": "C 300 e",
+            "yearFrom": 2019
+        },
+        {
+            "id": "mercedes-e-300-e",
+            "makeId": "mercedes",
+            "name": "E 300 e",
+            "yearFrom": 2018
+        },
+        {
+            "id": "mercedes-gle-350-de",
+            "makeId": "mercedes",
+            "name": "GLE 350 de",
+            "yearFrom": 2019
+        },
+        {
             "id": "mg-1100",
             "makeId": "mg",
             "name": "1100"
@@ -3692,6 +3892,12 @@
             "name": "Zt T"
         },
         {
+            "id": "mg-hs-plug-in",
+            "makeId": "mg",
+            "name": "HS Plug-in",
+            "yearFrom": 2020
+        },
+        {
             "id": "mini-1000",
             "makeId": "mini",
             "name": "1000"
@@ -3761,6 +3967,12 @@
             "id": "mini-one",
             "makeId": "mini",
             "name": "One"
+        },
+        {
+            "id": "mini-cooper-se-countryman",
+            "makeId": "mini",
+            "name": "Countryman SE ALL4",
+            "yearFrom": 2017
         },
         {
             "id": "mitsubishi-3000-gt",
@@ -3911,6 +4123,12 @@
             "id": "mitsubishi-tredia",
             "makeId": "mitsubishi",
             "name": "Tredia"
+        },
+        {
+            "id": "mitsubishi-eclipse-cross-phev",
+            "makeId": "mitsubishi",
+            "name": "Eclipse Cross PHEV",
+            "yearFrom": 2021
         },
         {
             "id": "nissan-100nx",
@@ -4158,6 +4376,18 @@
             "name": "X-Trail"
         },
         {
+            "id": "nissan-qashqai-e-power",
+            "makeId": "nissan",
+            "name": "Qashqai e-POWER",
+            "yearFrom": 2021
+        },
+        {
+            "id": "nissan-x-trail-e-power",
+            "makeId": "nissan",
+            "name": "X-Trail e-POWER",
+            "yearFrom": 2022
+        },
+        {
             "id": "opel-adam",
             "makeId": "opel",
             "name": "Adam"
@@ -4363,6 +4593,18 @@
             "name": "Zafira Tourer"
         },
         {
+            "id": "opel-grandland-gse",
+            "makeId": "opel",
+            "name": "Grandland GSe",
+            "yearFrom": 2022
+        },
+        {
+            "id": "opel-astra-gse",
+            "makeId": "opel",
+            "name": "Astra GSe",
+            "yearFrom": 2022
+        },
+        {
             "id": "peugeot-1007",
             "makeId": "peugeot",
             "name": "1007"
@@ -4563,6 +4805,19 @@
             "name": "Traveller"
         },
         {
+            "id": "peugeot-308-gte",
+            "makeId": "peugeot",
+            "name": "308 GTE",
+            "yearFrom": 2015,
+            "yearTo": 2021
+        },
+        {
+            "id": "peugeot-3008-hybrid",
+            "makeId": "peugeot",
+            "name": "3008 Hybrid",
+            "yearFrom": 2019
+        },
+        {
             "id": "polestar-1",
             "makeId": "polestar",
             "name": "1"
@@ -4641,6 +4896,18 @@
             "id": "porsche-taycan",
             "makeId": "porsche",
             "name": "Taycan"
+        },
+        {
+            "id": "porsche-cayenne-e-hybrid",
+            "makeId": "porsche",
+            "name": "Cayenne E-Hybrid",
+            "yearFrom": 2010
+        },
+        {
+            "id": "porsche-panamera-e-hybrid",
+            "makeId": "porsche",
+            "name": "Panamera E-Hybrid",
+            "yearFrom": 2011
         },
         {
             "id": "renault-10",
@@ -4829,6 +5096,24 @@
             "yearTo": 2024
         },
         {
+            "id": "renault-megane-e-tech",
+            "makeId": "renault",
+            "name": "Megane E-Tech",
+            "yearFrom": 2021
+        },
+        {
+            "id": "renault-rafale",
+            "makeId": "renault",
+            "name": "Rafale",
+            "yearFrom": 2024
+        },
+        {
+            "id": "renault-scenic-e-tech",
+            "makeId": "renault",
+            "name": "Scenic E-Tech",
+            "yearFrom": 2023
+        },
+        {
             "id": "seat-alhambra",
             "makeId": "seat",
             "name": "Alhambra"
@@ -4927,6 +5212,18 @@
             "id": "seat-toledo",
             "makeId": "seat",
             "name": "Toledo"
+        },
+        {
+            "id": "seat-leon-ehybrid",
+            "makeId": "seat",
+            "name": "Leon e-Hybrid",
+            "yearFrom": 2020
+        },
+        {
+            "id": "seat-tarraco-ehybrid",
+            "makeId": "seat",
+            "name": "Tarraco e-Hybrid",
+            "yearFrom": 2021
         },
         {
             "id": "skoda-1000",
@@ -5037,6 +5334,24 @@
             "id": "skoda-yeti",
             "makeId": "skoda",
             "name": "Yeti"
+        },
+        {
+            "id": "skoda-octavia-iv",
+            "makeId": "skoda",
+            "name": "Octavia iV",
+            "yearFrom": 2020
+        },
+        {
+            "id": "skoda-superb-iv",
+            "makeId": "skoda",
+            "name": "Superb iV",
+            "yearFrom": 2019
+        },
+        {
+            "id": "skoda-enyaq-coupe",
+            "makeId": "skoda",
+            "name": "Enyaq Coupé",
+            "yearFrom": 2022
         },
         {
             "id": "smart-1",
@@ -5671,6 +5986,12 @@
             "name": "Yaris Verso"
         },
         {
+            "id": "toyota-c-hr-plug-in",
+            "makeId": "toyota",
+            "name": "C-HR Plug-in",
+            "yearFrom": 2023
+        },
+        {
             "id": "volkswagen-amarok",
             "makeId": "volkswagen",
             "name": "Amarok"
@@ -5929,6 +6250,50 @@
             "id": "volkswagen-vento",
             "makeId": "volkswagen",
             "name": "Vento"
+        },
+        {
+            "id": "volkswagen-e-golf",
+            "makeId": "volkswagen",
+            "name": "e-Golf",
+            "yearFrom": 2014,
+            "yearTo": 2020
+        },
+        {
+            "id": "volkswagen-golf-gte",
+            "makeId": "volkswagen",
+            "name": "Golf GTE",
+            "yearFrom": 2014
+        },
+        {
+            "id": "volkswagen-passat-gte",
+            "makeId": "volkswagen",
+            "name": "Passat GTE",
+            "yearFrom": 2015
+        },
+        {
+            "id": "volkswagen-polo-gti",
+            "makeId": "volkswagen",
+            "name": "Polo GTI",
+            "yearFrom": 1998
+        },
+        {
+            "id": "volkswagen-polo-gte",
+            "makeId": "volkswagen",
+            "name": "Polo GTE",
+            "yearFrom": 2014,
+            "yearTo": 2018
+        },
+        {
+            "id": "volkswagen-tiguan-ehybrid",
+            "makeId": "volkswagen",
+            "name": "Tiguan eHybrid",
+            "yearFrom": 2020
+        },
+        {
+            "id": "volkswagen-touareg-r",
+            "makeId": "volkswagen",
+            "name": "Touareg R",
+            "yearFrom": 2020
         },
         {
             "id": "volvo-142",
@@ -6199,6 +6564,30 @@
             "id": "volvo-xc90",
             "makeId": "volvo",
             "name": "Xc90"
+        },
+        {
+            "id": "volvo-xc40-recharge",
+            "makeId": "volvo",
+            "name": "XC40 Recharge",
+            "yearFrom": 2020
+        },
+        {
+            "id": "volvo-xc60-recharge",
+            "makeId": "volvo",
+            "name": "XC60 Recharge",
+            "yearFrom": 2017
+        },
+        {
+            "id": "volvo-xc90-recharge",
+            "makeId": "volvo",
+            "name": "XC90 Recharge",
+            "yearFrom": 2015
+        },
+        {
+            "id": "volvo-v60-recharge",
+            "makeId": "volvo",
+            "name": "V60 Recharge",
+            "yearFrom": 2018
         },
         {
             "id": "voyah-courage",

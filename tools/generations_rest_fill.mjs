@@ -2,6 +2,7 @@
  * Curated + patterned generations for catalog makes C–Z.
  * fillRest(set, assign, models) mutates via set/assign.
  */
+import { SIBLING_GENS } from "./generations_siblings_data.mjs";
 
 export function fillRest(rawSet, rawAssign, models) {
   const defined = new Set();
@@ -365,6 +366,11 @@ export function fillRest(rawSet, rawAssign, models) {
   fillPolestarPorscheRenaultSeatSkoda(set);
   fillSmartSubaruSuzukiTesla(set);
   fillToyotaVwVolvoVoyahXpeng(set, assign, byMake);
+
+  // EV / PHEV / performance siblings (must survive full rebuilds)
+  for (const [id, rows] of Object.entries(SIBLING_GENS)) {
+    set(id, rows);
+  }
 }
 
 function fillHyundaiKia(set) {
