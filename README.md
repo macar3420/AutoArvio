@@ -41,7 +41,7 @@ app/src/main/java/fi/tamk/autoarvio/
   domain/      # Make / Model models
 ```
 
-Screens today: **Make list → Model list** (placeholder catalog). Room DB is created empty; `DatabaseSeeder` is ready for the JSON seed task.
+Flow today: **Splash (Ultramarine `#0437F2` + Outfit wordmark) → Make list → Model list** (placeholder catalog). Room DB is created empty; `DatabaseSeeder` is ready for the JSON seed task.
 
 ## Thesis folder
 

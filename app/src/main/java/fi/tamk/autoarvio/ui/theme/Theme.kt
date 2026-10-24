@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val LightColors = lightColorScheme(
-    primary = SlateDeep,
+    primary = Ultramarine,
     onPrimary = Color.White,
     secondary = AccentTeal,
     onSecondary = Color.White,
@@ -19,13 +19,13 @@ private val LightColors = lightColorScheme(
 )
 
 private val DarkColors = darkColorScheme(
-    primary = AccentTeal,
-    onPrimary = Ink,
-    secondary = Mist,
-    onSecondary = Ink,
+    primary = Ultramarine,
+    onPrimary = Color.White,
+    secondary = AccentTeal,
+    onSecondary = Color.White,
     background = Ink,
     onBackground = Mist,
-    surface = SlateDeep,
+    surface = Color(0xFF152238),
     onSurface = Mist,
 )
 
@@ -36,6 +36,7 @@ fun AutoArvioTheme(
 ) {
     MaterialTheme(
         colorScheme = if (darkTheme) DarkColors else LightColors,
+        typography = AutoArvioTypography,
         content = content,
     )
 }
