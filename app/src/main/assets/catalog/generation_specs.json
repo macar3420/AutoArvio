@@ -139,7 +139,7 @@
         "powerHp": 185,
         "powerKw": 136,
         "drivetrain": "FWD",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 5.9,
         "consumptionStandard": "NEDC"
@@ -835,7 +835,7 @@
         "powerHp": 240,
         "powerKw": 176,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT / 8AT",
+        "transmissionSummary": "7 S tronic / 8AT",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 6.2,
         "consumptionStandard": "NEDC"
@@ -863,7 +863,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 6.6,
         "consumptionStandard": "WLTP"
@@ -889,7 +889,7 @@
         "powerHp": 163,
         "powerKw": 120,
         "drivetrain": "FWD",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 4.8,
         "consumptionStandard": "WLTP"
@@ -902,7 +902,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 5,
         "consumptionStandard": "WLTP"
@@ -1120,7 +1120,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 6.5,
         "consumptionStandard": "WLTP"
@@ -1146,7 +1146,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 5,
         "consumptionStandard": "WLTP"
@@ -1215,7 +1215,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Sportback",
         "consumptionCombinedL": 6.5,
         "consumptionStandard": "WLTP"
@@ -1241,7 +1241,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "Sportback",
         "consumptionCombinedL": 5,
         "consumptionStandard": "WLTP"
@@ -1403,7 +1403,7 @@
         "powerHp": 290,
         "powerKw": 213,
         "drivetrain": "quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "S tronic / 6AT",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 9.2,
         "consumptionStandard": "NEDC"
@@ -1619,7 +1619,7 @@
         "powerHp": 290,
         "powerKw": 213,
         "drivetrain": "quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "S tronic / 6AT",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "NEDC"
@@ -2372,7 +2372,7 @@
         "powerHp": 150,
         "powerKw": 110,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 4.9,
         "consumptionStandard": "WLTP"
@@ -2400,7 +2400,7 @@
         "powerHp": 180,
         "powerKw": 132,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 7,
         "consumptionStandard": "NEDC"
@@ -2413,7 +2413,7 @@
         "powerHp": 220,
         "powerKw": 162,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 7.3,
         "consumptionStandard": "NEDC"
@@ -2439,7 +2439,7 @@
         "powerHp": 177,
         "powerKw": 130,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 5.5,
         "consumptionStandard": "NEDC"
@@ -2467,7 +2467,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 7,
         "consumptionStandard": "WLTP"
@@ -2493,7 +2493,7 @@
         "powerHp": 150,
         "powerKw": 110,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / 7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 5.2,
         "consumptionStandard": "WLTP"
@@ -2571,7 +2571,7 @@
         "powerHp": 211,
         "powerKw": 155,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 7.8,
         "consumptionStandard": "NEDC"
@@ -2584,7 +2584,7 @@
         "powerHp": 270,
         "powerKw": 198,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 9,
         "consumptionStandard": "NEDC"
@@ -2610,7 +2610,7 @@
         "powerHp": 170,
         "powerKw": 125,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 5.9,
         "consumptionStandard": "NEDC"
@@ -2623,7 +2623,7 @@
         "powerHp": 240,
         "powerKw": 176,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 6.8,
         "consumptionStandard": "NEDC"
@@ -3001,7 +3001,7 @@
         "powerHp": 540,
         "powerKw": 397,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 13,
         "consumptionStandard": "WLTP"
@@ -3014,7 +3014,7 @@
         "powerHp": 620,
         "powerKw": 456,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 13.5,
         "consumptionStandard": "WLTP"
@@ -3047,7 +3047,7 @@
         "powerHp": 310,
         "powerKw": 228,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 8.8,
         "consumptionStandard": "NEDC"
@@ -3062,7 +3062,7 @@
         "powerHp": 400,
         "powerKw": 294,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "SUV",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "WLTP"
@@ -3092,7 +3092,7 @@
         "powerHp": 340,
         "powerKw": 250,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 10,
         "consumptionStandard": "NEDC"
@@ -3107,7 +3107,7 @@
         "powerHp": 367,
         "powerKw": 270,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 8.5,
         "consumptionStandard": "NEDC"
@@ -3120,7 +3120,7 @@
         "powerHp": 400,
         "powerKw": 294,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 8.6,
         "consumptionStandard": "NEDC"
@@ -3135,7 +3135,7 @@
         "powerHp": 400,
         "powerKw": 294,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 9,
         "consumptionStandard": "WLTP"
@@ -3180,7 +3180,7 @@
         "powerHp": 450,
         "powerKw": 331,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 11,
         "consumptionStandard": "NEDC"
@@ -3210,7 +3210,7 @@
         "powerHp": 450,
         "powerKw": 331,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 11,
         "consumptionStandard": "NEDC"
@@ -3375,7 +3375,7 @@
         "powerHp": 300,
         "powerKw": 221,
         "drivetrain": "quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 7,
         "consumptionStandard": "NEDC"
@@ -3448,7 +3448,7 @@
         "powerHp": 333,
         "powerKw": 245,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "NEDC"
@@ -3491,7 +3491,7 @@
         "powerHp": 333,
         "powerKw": 245,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "NEDC"
@@ -3579,7 +3579,7 @@
         "powerHp": 420,
         "powerKw": 309,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "NEDC"
@@ -3609,7 +3609,7 @@
         "powerHp": 420,
         "powerKw": 309,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Sportback",
         "consumptionCombinedL": 9.5,
         "consumptionStandard": "NEDC"
@@ -3979,7 +3979,7 @@
         "powerHp": 400,
         "powerKw": 294,
         "drivetrain": "quattro",
-        "transmissionSummary": "7DCT",
+        "transmissionSummary": "7 S tronic",
         "bodyStyles": "Coupe",
         "consumptionCombinedL": 8.5,
         "consumptionStandard": "WLTP"
@@ -6104,7 +6104,7 @@
         "powerHp": 190,
         "powerKw": 140,
         "drivetrain": "FWD / quattro",
-        "transmissionSummary": "S tronic",
+        "transmissionSummary": "6MT / S tronic",
         "bodyStyles": "Hatchback",
         "consumptionCombinedL": 5.8,
         "consumptionStandard": "NEDC"

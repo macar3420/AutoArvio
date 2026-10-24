@@ -85,7 +85,7 @@ export const A_BRAND_POWERTRAINS = {
   "audi-a1-8x": [
     petrol("1.2 TFSI 86", 86, "FWD", "5MT", 5.1, N, HB),
     petrol("1.4 TFSI 122", 122, "FWD", "6MT / S tronic", 5.3, N, HB),
-    petrol("1.4 TFSI 185", 185, "FWD", "7DCT", 5.9, N, HB),
+    petrol("1.4 TFSI 185", 185, "FWD", "7 S tronic", 5.9, N, HB),
     diesel("1.6 TDI 90", 90, "FWD", "5MT", 3.8, N, HB),
     diesel("1.6 TDI 105", 105, "FWD", "5MT / S tronic", 4.0, N, HB),
   ],
@@ -141,7 +141,7 @@ export const A_BRAND_POWERTRAINS = {
   ],
   "audi-a3-sportback-8v": [
     petrol("1.4 TFSI 150", 150, "FWD", "6MT / S tronic", 5.1, N, HB),
-    petrol("2.0 TFSI 190", 190, "FWD / quattro", "S tronic", 5.8, N, HB),
+    petrol("2.0 TFSI 190", 190, "FWD / quattro", "6MT / S tronic", 5.8, N, HB),
     diesel("2.0 TDI 150", 150, "FWD / quattro", "6MT / S tronic", 4.2, N, HB),
   ],
   "audi-a3-sportback-8y": [
@@ -236,7 +236,7 @@ export const A_BRAND_POWERTRAINS = {
       powerHp: 240,
       powerKw: 176,
       drivetrain: "quattro",
-      transmissionSummary: "7DCT / 8AT",
+      transmissionSummary: "7 S tronic / 8AT",
       bodyStyles: SA,
       consumptionCombinedL: 6.2,
       consumptionStandard: N,
@@ -244,10 +244,10 @@ export const A_BRAND_POWERTRAINS = {
   ],
   "audi-a4-b9": [
     petrol("35 TFSI 150", 150, "FWD", "6MT / S tronic", 6.2, W, SA),
-    petrol("40 TFSI 190", 190, "FWD / quattro", "S tronic", 6.6, W, SA),
+    petrol("40 TFSI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 6.6, W, SA),
     petrol("45 TFSI 245", 245, "quattro", "S tronic", 7.2, W, SA),
-    diesel("35 TDI 163", 163, "FWD", "S tronic", 4.8, W, SA),
-    diesel("40 TDI 190", 190, "FWD / quattro", "S tronic", 5.0, W, SA),
+    diesel("35 TDI 163", 163, "FWD", "6MT / 7 S tronic", 4.8, W, SA),
+    diesel("40 TDI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 5.0, W, SA),
     diesel("45 TDI 231", 231, "quattro", "S tronic", 5.5, W, SA),
   ],
 
@@ -277,9 +277,9 @@ export const A_BRAND_POWERTRAINS = {
     diesel("3.0 TDI 240", 240, "quattro", "S tronic", 6.0, N, CP),
   ],
   "audi-a5-f5": [
-    petrol("40 TFSI 190", 190, "FWD / quattro", "S tronic", 6.5, W, CP),
+    petrol("40 TFSI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 6.5, W, CP),
     petrol("45 TFSI 245", 245, "quattro", "S tronic", 7.1, W, CP),
-    diesel("40 TDI 190", 190, "FWD / quattro", "S tronic", 5.0, W, CP),
+    diesel("40 TDI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 5.0, W, CP),
     diesel("45 TDI 231", 231, "quattro", "S tronic", 5.4, W, CP),
   ],
   "audi-a5-sportback-8ta": [
@@ -288,9 +288,9 @@ export const A_BRAND_POWERTRAINS = {
     diesel("3.0 TDI 240", 240, "quattro", "S tronic", 6.0, N, LB),
   ],
   "audi-a5-sportback-f5": [
-    petrol("40 TFSI 190", 190, "FWD / quattro", "S tronic", 6.5, W, LB),
+    petrol("40 TFSI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 6.5, W, LB),
     petrol("45 TFSI 245", 245, "quattro", "S tronic", 7.1, W, LB),
-    diesel("40 TDI 190", 190, "quattro", "S tronic", 5.0, W, LB),
+    diesel("40 TDI 190", 190, "quattro", "6MT / 7 S tronic", 5.0, W, LB),
   ],
 
   // ——— A6 ———
@@ -310,7 +310,7 @@ export const A_BRAND_POWERTRAINS = {
   "audi-a6-c6": [
     petrol("2.0 TFSI 170", 170, "FWD", "6MT / Multitronic", 7.5, N, SA),
     petrol("2.8 FSI 210", 210, "FWD / quattro", "Multitronic / 6AT", 8.5, N, SA),
-    petrol("3.0 TFSI 290", 290, "quattro", "S tronic", 9.2, N, SA),
+    petrol("3.0 TFSI 290", 290, "quattro", "S tronic / 6AT", 9.2, N, SA),
     diesel("2.0 TDI 140", 140, "FWD", "6MT / Multitronic", 5.9, N, SA),
     diesel("2.7 TDI 180", 180, "FWD / quattro", "Multitronic / 6AT", 6.8, N, SA),
     diesel("3.0 TDI 233", 233, "quattro", "6AT", 7.5, N, SA),
@@ -334,7 +334,7 @@ export const A_BRAND_POWERTRAINS = {
     diesel("2.5 TDI 180", 180, "quattro", "6MT / 5AT", 7.8, N, SUV),
   ],
   "audi-a6-allroad-c6": [
-    petrol("3.0 TFSI 290", 290, "quattro", "S tronic", 9.5, N, SUV),
+    petrol("3.0 TFSI 290", 290, "quattro", "S tronic / 6AT", 9.5, N, SUV),
     diesel("2.7 TDI 180", 180, "quattro", "6AT", 7.2, N, SUV),
     diesel("3.0 TDI 240", 240, "quattro", "6AT", 7.8, N, SUV),
   ],
@@ -452,20 +452,20 @@ export const A_BRAND_POWERTRAINS = {
     petrol("35 TFSI 150", 150, "FWD", "6MT / S tronic", 6.0, W, SUV),
     petrol("40 TFSI 190", 190, "quattro", "S tronic", 6.8, W, SUV),
     diesel("30 TDI 116", 116, "FWD", "6MT / S tronic", 4.6, W, SUV),
-    diesel("35 TDI 150", 150, "FWD / quattro", "S tronic", 4.9, W, SUV),
+    diesel("35 TDI 150", 150, "FWD / quattro", "6MT / 7 S tronic", 4.9, W, SUV),
   ],
   "audi-q3-8u": [
     petrol("1.4 TFSI 150", 150, "FWD", "6MT / S tronic", 6.0, N, SUV),
-    petrol("2.0 TFSI 180", 180, "quattro", "7DCT", 7.0, N, SUV),
-    petrol("2.0 TFSI 220", 220, "quattro", "7DCT", 7.3, N, SUV),
+    petrol("2.0 TFSI 180", 180, "quattro", "7 S tronic", 7.0, N, SUV),
+    petrol("2.0 TFSI 220", 220, "quattro", "7 S tronic", 7.3, N, SUV),
     diesel("2.0 TDI 140", 140, "FWD / quattro", "6MT / S tronic", 5.2, N, SUV),
-    diesel("2.0 TDI 177", 177, "quattro", "7DCT", 5.5, N, SUV),
+    diesel("2.0 TDI 177", 177, "quattro", "7 S tronic", 5.5, N, SUV),
   ],
   "audi-q3-f3": [
     petrol("35 TFSI 150", 150, "FWD", "6MT / S tronic", 6.5, W, SUV),
-    petrol("40 TFSI 190", 190, "FWD / quattro", "S tronic", 7.0, W, SUV),
+    petrol("40 TFSI 190", 190, "FWD / quattro", "6MT / 7 S tronic", 7.0, W, SUV),
     petrol("45 TFSI 230", 230, "quattro", "S tronic", 7.5, W, SUV),
-    diesel("35 TDI 150", 150, "FWD / quattro", "S tronic", 5.2, W, SUV),
+    diesel("35 TDI 150", 150, "FWD / quattro", "6MT / 7 S tronic", 5.2, W, SUV),
   ],
   "audi-q3-tfsi-e-f3-tfsi-e": [
     phev("45 TFSI e", 245, "quattro", "S tronic", 1.7, W, 13, 50, SUV),
@@ -474,11 +474,11 @@ export const A_BRAND_POWERTRAINS = {
   // ——— Q5 ———
   "audi-q5-8r": [
     petrol("2.0 TFSI 180", 180, "quattro", "6MT / S tronic", 7.5, N, SUV),
-    petrol("2.0 TFSI 211", 211, "quattro", "7DCT", 7.8, N, SUV),
-    petrol("3.2 FSI 270", 270, "quattro", "7DCT", 9.0, N, SUV),
+    petrol("2.0 TFSI 211", 211, "quattro", "7 S tronic", 7.8, N, SUV),
+    petrol("3.2 FSI 270", 270, "quattro", "7 S tronic", 9.0, N, SUV),
     diesel("2.0 TDI 143", 143, "quattro", "6MT / S tronic", 5.7, N, SUV),
-    diesel("2.0 TDI 170", 170, "quattro", "7DCT", 5.9, N, SUV),
-    diesel("3.0 TDI 240", 240, "quattro", "7DCT", 6.8, N, SUV),
+    diesel("2.0 TDI 170", 170, "quattro", "7 S tronic", 5.9, N, SUV),
+    diesel("3.0 TDI 240", 240, "quattro", "7 S tronic", 6.8, N, SUV),
   ],
   "audi-q5-fy": [
     petrol("40 TFSI 190", 190, "quattro", "S tronic", 7.5, W, SUV),
@@ -534,8 +534,8 @@ export const A_BRAND_POWERTRAINS = {
     petrol("5.2 V10 plus", 550, "quattro", "R tronic", 15.0, N, CP),
   ],
   "audi-r8-4s": [
-    petrol("5.2 V10 FSI", 540, "quattro", "7DCT", 13.0, W, CP),
-    petrol("5.2 V10 performance", 620, "quattro", "7DCT", 13.5, W, CP),
+    petrol("5.2 V10 FSI", 540, "quattro", "7 S tronic", 13.0, W, CP),
+    petrol("5.2 V10 performance", 620, "quattro", "7 S tronic", 13.5, W, CP),
   ],
   "audi-v8-d11": [
     petrol("3.6 V8", 250, "quattro", "5MT / 4AT", 12.0, N, "Sedan"),
@@ -546,20 +546,20 @@ export const A_BRAND_POWERTRAINS = {
   "audi-s2-s2": [petrol("2.2 20v Turbo", 220, "quattro", "5MT / 6MT", 10.5, N, "Coupe / Avant")],
   "audi-s3-8l": [petrol("1.8 T 210", 210, "quattro", "6MT", 9.0, N, HB)],
   "audi-s3-8p": [petrol("2.0 TFSI 265", 265, "quattro", "6MT / S tronic", 8.5, N, HB)],
-  "audi-s3-8v": [petrol("2.0 TFSI 300", 300, "quattro", "S tronic", 7.0, N, HB), petrol("2.0 TFSI 310", 310, "quattro", "S tronic", 7.1, N, HB)],
+  "audi-s3-8v": [petrol("2.0 TFSI 300", 300, "quattro", "6MT / S tronic", 7.0, N, HB), petrol("2.0 TFSI 310", 310, "quattro", "S tronic", 7.1, N, HB)],
   "audi-s3-8y": [petrol("2.0 TFSI 310", 310, "quattro", "S tronic", 8.1, W, HB)],
   "audi-s4-b5": [petrol("2.7 V6 Biturbo", 265, "quattro", "6MT / 5AT", 11.5, N, SA)],
   "audi-s4-b6-b7": [petrol("4.2 V8", 344, "quattro", "6MT / 6AT", 13.0, N, SA)],
-  "audi-s4-b8": [petrol("3.0 TFSI", 333, "quattro", "7DCT", 9.5, N, SA)],
+  "audi-s4-b8": [petrol("3.0 TFSI", 333, "quattro", "7 S tronic", 9.5, N, SA)],
   "audi-s4-b9": [petrol("3.0 TFSI", 354, "quattro", "8AT", 8.8, W, SA)],
-  "audi-s5-8t": [petrol("4.2 V8 FSI", 354, "quattro", "6MT / S tronic", 12.0, N, CP), petrol("3.0 TFSI", 333, "quattro", "7DCT", 9.5, N, CP)],
+  "audi-s5-8t": [petrol("4.2 V8 FSI", 354, "quattro", "6MT / S tronic", 12.0, N, CP), petrol("3.0 TFSI", 333, "quattro", "7 S tronic", 9.5, N, CP)],
   "audi-s5-f5": [petrol("3.0 TFSI", 354, "quattro", "8AT", 8.5, W, CP)],
   "audi-s6-c4": [petrol("2.2 20v Turbo", 230, "quattro", "5MT / 4AT", 11.0, N, SA), petrol("4.2 V8", 290, "quattro", "5MT / 4AT", 12.5, N, SA)],
   "audi-s6-c5": [petrol("4.2 V8", 340, "quattro", "6MT / 5AT", 13.0, N, SA)],
   "audi-s6-c6": [petrol("5.2 V10", 435, "quattro", "6AT", 13.5, N, SA)],
-  "audi-s6-c7": [petrol("4.0 TFSI", 420, "quattro", "7DCT", 9.5, N, SA)],
+  "audi-s6-c7": [petrol("4.0 TFSI", 420, "quattro", "7 S tronic", 9.5, N, SA)],
   "audi-s6-c8": [diesel("TDI 349", 349, "quattro", "8AT", 7.5, W, SA)],
-  "audi-s7-4g": [petrol("4.0 TFSI", 420, "quattro", "7DCT", 9.5, N, LB)],
+  "audi-s7-4g": [petrol("4.0 TFSI", 420, "quattro", "7 S tronic", 9.5, N, LB)],
   "audi-s7-4k": [diesel("TDI 349", 349, "quattro", "8AT", 7.6, W, LB)],
   "audi-s8-d2": [petrol("4.2 V8", 340, "quattro", "5AT", 13.5, N, "Sedan")],
   "audi-s8-d3": [petrol("5.2 V10", 450, "quattro", "6AT", 14.0, N, "Sedan")],
@@ -572,14 +572,14 @@ export const A_BRAND_POWERTRAINS = {
   "audi-sq7-4m": [diesel("4.0 TDI", 435, "quattro", "8AT", 8.0, W, SUV), petrol("4.0 TFSI", 507, "quattro", "8AT", 12.0, W, SUV)],
   "audi-sq8-4m": [diesel("4.0 TDI", 435, "quattro", "8AT", 8.2, W, SUV), petrol("4.0 TFSI", 507, "quattro", "8AT", 12.2, W, SUV)],
 
-  "audi-rs3-8p": [petrol("2.5 TFSI", 340, "quattro", "7DCT", 10.0, N, HB)],
-  "audi-rs3-8v": [petrol("2.5 TFSI", 367, "quattro", "7DCT", 8.5, N, HB), petrol("2.5 TFSI 400", 400, "quattro", "7DCT", 8.6, N, HB)],
-  "audi-rs3-8y": [petrol("2.5 TFSI", 400, "quattro", "7DCT", 9.0, W, HB)],
+  "audi-rs3-8p": [petrol("2.5 TFSI", 340, "quattro", "7 S tronic", 10.0, N, HB)],
+  "audi-rs3-8v": [petrol("2.5 TFSI", 367, "quattro", "7 S tronic", 8.5, N, HB), petrol("2.5 TFSI 400", 400, "quattro", "7 S tronic", 8.6, N, HB)],
+  "audi-rs3-8y": [petrol("2.5 TFSI", 400, "quattro", "7 S tronic", 9.0, W, HB)],
   "audi-rs4-b5": [petrol("2.7 V6 Biturbo", 380, "quattro", "6MT", 12.5, N, SA)],
   "audi-rs4-b7": [petrol("4.2 V8 FSI", 420, "quattro", "6MT", 13.5, N, SA)],
-  "audi-rs4-b8": [petrol("4.2 V8 FSI", 450, "quattro", "7DCT", 11.0, N, SA)],
+  "audi-rs4-b8": [petrol("4.2 V8 FSI", 450, "quattro", "7 S tronic", 11.0, N, SA)],
   "audi-rs4-b9": [petrol("2.9 TFSI", 450, "quattro", "8AT", 9.5, W, SA)],
-  "audi-rs5-8t": [petrol("4.2 V8 FSI", 450, "quattro", "7DCT", 11.0, N, CP)],
+  "audi-rs5-8t": [petrol("4.2 V8 FSI", 450, "quattro", "7 S tronic", 11.0, N, CP)],
   "audi-rs5-f5": [petrol("2.9 TFSI", 450, "quattro", "8AT", 9.5, W, CP)],
   "audi-rs6-c5": [petrol("4.2 V8 Biturbo", 450, "quattro", "5AT", 14.5, N, SA)],
   "audi-rs6-c6": [petrol("5.0 V10 Biturbo", 580, "quattro", "6AT", 14.0, N, SA)],
@@ -587,8 +587,8 @@ export const A_BRAND_POWERTRAINS = {
   "audi-rs6-c8": [petrol("4.0 TFSI", 600, "quattro", "8AT", 12.0, W, SA)],
   "audi-rs7-4g": [petrol("4.0 TFSI", 560, "quattro", "8AT", 10.0, N, LB)],
   "audi-rs7-4k": [petrol("4.0 TFSI", 600, "quattro", "8AT", 12.2, W, LB)],
-  "audi-rs-q3-8u": [petrol("2.5 TFSI", 310, "quattro", "7DCT", 8.8, N, SUV)],
-  "audi-rs-q3-f3": [petrol("2.5 TFSI", 400, "quattro", "7DCT", 9.5, W, SUV)],
+  "audi-rs-q3-8u": [petrol("2.5 TFSI", 310, "quattro", "7 S tronic", 8.8, N, SUV)],
+  "audi-rs-q3-f3": [petrol("2.5 TFSI", 400, "quattro", "7 S tronic", 9.5, W, SUV)],
   "audi-rs-q8-4m": [petrol("4.0 TFSI", 600, "quattro", "8AT", 13.5, W, SUV)],
 
   // ——— TT ———
@@ -612,7 +612,7 @@ export const A_BRAND_POWERTRAINS = {
   "audi-tts-8j": [petrol("2.0 TFSI 272", 272, "quattro", "6MT / S tronic", 8.0, N, CP)],
   "audi-tts-8s": [petrol("2.0 TFSI 310", 310, "quattro", "6MT / S tronic", 7.5, W, CP)],
   "audi-tt-rs-8j": [petrol("2.5 TFSI", 340, "quattro", "6MT / S tronic", 9.5, N, CP)],
-  "audi-tt-rs-8s": [petrol("2.5 TFSI", 400, "quattro", "7DCT", 8.5, W, CP)],
+  "audi-tt-rs-8s": [petrol("2.5 TFSI", 400, "quattro", "7 S tronic", 8.5, W, CP)],
 };
 
 /** Makes covered by this curated letter pack. */
