@@ -66,3 +66,10 @@ Desktop.ini
 *~
 .vscode/
 .fleet/
+
+# Dropped-in originals; stable copies live under brand/
+logo (2).svg
+logo (2).png
+
+# Node helpers for SVG rasterize
+tools/svg2png/node_modules/

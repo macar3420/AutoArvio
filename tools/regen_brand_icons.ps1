@@ -2,7 +2,9 @@
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
 
-$srcPath = "C:\Users\musta\AppData\Local\Cursor\AgentStores\cursor_agent_stores\bc-291574c2-926b-43bb-a99f-2497b288c9a3\files\media\brand\autoarvio-logo-shared-a.png"
+# Prefer project brand PNG (rasterized from autoarvio-logo-shared-a.svg / logo (2).svg).
+$srcPath = Join-Path $PSScriptRoot "..\brand\autoarvio-logo-shared-a.png" | Resolve-Path
+
 $res = Join-Path $PSScriptRoot "..\app\src\main\res" | Resolve-Path
 $ultramarine = [System.Drawing.Color]::FromArgb(255, 4, 55, 242)
 
@@ -110,14 +112,6 @@ $logoPath = Join-Path $res "drawable-nodpi\autoarvio_logo.png"
 Save-Png $logoFull $logoPath
 $logoFull.Dispose()
 Write-Host "Wrote $logoPath"
-
-# Also keep a project brand copy
-$brandDir = Join-Path $PSScriptRoot "..\brand" | Resolve-Path -ErrorAction SilentlyContinue
-if (-not $brandDir) {
-    New-Item -ItemType Directory -Path (Join-Path $PSScriptRoot "..\brand") | Out-Null
-    $brandDir = Join-Path $PSScriptRoot "..\brand" | Resolve-Path
-}
-Copy-Item $srcPath (Join-Path $brandDir "autoarvio-logo-shared-a.png") -Force
 
 $densities = @{
     "mipmap-mdpi"    = 48
