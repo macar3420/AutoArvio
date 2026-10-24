@@ -107,7 +107,7 @@ fun GenerationDetailScreen(
                         color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
                     )
                     Text(
-                        text = "Engines coming soon for this generation.",
+                        text = "Engine list not curated yet for this generation.",
                         style = MaterialTheme.typography.bodyMedium,
                         fontFamily = OutfitFamily,
                         color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
