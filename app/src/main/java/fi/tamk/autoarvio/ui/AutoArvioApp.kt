@@ -2,6 +2,7 @@ package fi.tamk.autoarvio.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -21,8 +22,12 @@ import fi.tamk.autoarvio.ui.navigation.Routes
 
 @Composable
 fun AutoArvioApp(
-    catalogRepository: CatalogRepository = remember { CatalogRepository() },
+    catalogRepository: CatalogRepository? = null,
 ) {
+    val context = LocalContext.current
+    val catalog = catalogRepository ?: remember(context) {
+        CatalogRepository(context.applicationContext)
+    }
     val navController = rememberNavController()
 
     NavHost(
@@ -31,7 +36,7 @@ fun AutoArvioApp(
     ) {
         composable(Routes.MAKE_LIST) {
             val vm: MakeListViewModel = viewModel(
-                factory = MakeListViewModel.factory(catalogRepository),
+                factory = MakeListViewModel.factory(catalog),
             )
             MakeListScreen(
                 viewModel = vm,
@@ -58,7 +63,7 @@ fun AutoArvioApp(
             val vm: ModelListViewModel = viewModel(
                 factory = ModelListViewModel.factory(
                     makeId = makeId,
-                    repository = catalogRepository,
+                    repository = catalog,
                     initialQuery = initialQuery,
                 ),
             )
@@ -76,7 +81,7 @@ fun AutoArvioApp(
         ) { entry ->
             val modelId = entry.arguments?.getString("modelId").orEmpty()
             val vm: GenerationListViewModel = viewModel(
-                factory = GenerationListViewModel.factory(modelId, catalogRepository),
+                factory = GenerationListViewModel.factory(modelId, catalog),
             )
             GenerationListScreen(
                 viewModel = vm,
@@ -92,7 +97,7 @@ fun AutoArvioApp(
         ) { entry ->
             val generationId = entry.arguments?.getString("generationId").orEmpty()
             val vm: GenerationDetailViewModel = viewModel(
-                factory = GenerationDetailViewModel.factory(generationId, catalogRepository),
+                factory = GenerationDetailViewModel.factory(generationId, catalog),
             )
             GenerationDetailScreen(
                 viewModel = vm,

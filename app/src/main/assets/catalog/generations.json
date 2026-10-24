@@ -1,6 +1,87 @@
 {
-  "note": "Prototype generations. imageAsset = drawable name; shared placeholder until matching photo set exists.",
+  "note": "Generations for Aion, Audi, BMW, BYD. imageAsset = shared placeholder until matching photo set.",
+  "market": "FI",
   "generations": [
+    {
+      "id": "aion-ut-ut",
+      "modelId": "aion-ut",
+      "code": "UT",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "aion-v-v-1st",
+      "modelId": "aion-v",
+      "code": "V (1st)",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "aion-v-v-2nd",
+      "modelId": "aion-v",
+      "code": "V (2nd)",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a1-8x",
+      "modelId": "audi-a1",
+      "code": "8X",
+      "yearFrom": 2010,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a1-gb",
+      "modelId": "audi-a1",
+      "code": "GB",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a2-8z",
+      "modelId": "audi-a2",
+      "code": "8Z",
+      "yearFrom": 1999,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-8l",
+      "modelId": "audi-a3",
+      "code": "8L",
+      "yearFrom": 1996,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-8p",
+      "modelId": "audi-a3",
+      "code": "8P",
+      "yearFrom": 2003,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-8v",
+      "modelId": "audi-a3",
+      "code": "8V",
+      "yearFrom": 2012,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a3-8y",
+      "modelId": "audi-a3",
+      "code": "8Y",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
     {
       "id": "audi-a4-b5",
       "modelId": "audi-a4",
@@ -38,6 +119,3670 @@
       "modelId": "audi-a4",
       "code": "B9",
       "yearFrom": 2015,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-allroad-b6-b7",
+      "modelId": "audi-a4-allroad",
+      "code": "B6/B7",
+      "yearFrom": 2000,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-allroad-b8",
+      "modelId": "audi-a4-allroad",
+      "code": "B8",
+      "yearFrom": 2009,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a4-allroad-b9",
+      "modelId": "audi-a4-allroad",
+      "code": "B9",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a5-8t",
+      "modelId": "audi-a5",
+      "code": "8T",
+      "yearFrom": 2007,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a5-f5",
+      "modelId": "audi-a5",
+      "code": "F5",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a5-sportback-8ta",
+      "modelId": "audi-a5-sportback",
+      "code": "8TA",
+      "yearFrom": 2009,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a5-sportback-f5",
+      "modelId": "audi-a5-sportback",
+      "code": "F5",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-c4",
+      "modelId": "audi-a6",
+      "code": "C4",
+      "yearFrom": 1994,
+      "yearTo": 1997,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-c5",
+      "modelId": "audi-a6",
+      "code": "C5",
+      "yearFrom": 1997,
+      "yearTo": 2004,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-c6",
+      "modelId": "audi-a6",
+      "code": "C6",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-c7",
+      "modelId": "audi-a6",
+      "code": "C7",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-c8",
+      "modelId": "audi-a6",
+      "code": "C8",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-allroad-c5",
+      "modelId": "audi-a6-allroad",
+      "code": "C5",
+      "yearFrom": 2000,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-allroad-c6",
+      "modelId": "audi-a6-allroad",
+      "code": "C6",
+      "yearFrom": 2006,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-allroad-c7",
+      "modelId": "audi-a6-allroad",
+      "code": "C7",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-allroad-c8",
+      "modelId": "audi-a6-allroad",
+      "code": "C8",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a6-e-tron-c8-e-tron",
+      "modelId": "audi-a6-e-tron",
+      "code": "C8 e-tron",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a7-4g",
+      "modelId": "audi-a7",
+      "code": "4G",
+      "yearFrom": 2010,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a7-4k",
+      "modelId": "audi-a7",
+      "code": "4K",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a8-d2",
+      "modelId": "audi-a8",
+      "code": "D2",
+      "yearFrom": 1994,
+      "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a8-d3",
+      "modelId": "audi-a8",
+      "code": "D3",
+      "yearFrom": 2002,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a8-d4",
+      "modelId": "audi-a8",
+      "code": "D4",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-a8-d5",
+      "modelId": "audi-a8",
+      "code": "D5",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-cabriolet-typ-8g",
+      "modelId": "audi-cabriolet",
+      "code": "Typ 8G",
+      "yearFrom": 1991,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-coupe-b2",
+      "modelId": "audi-coupe",
+      "code": "B2",
+      "yearFrom": 1980,
+      "yearTo": 1988,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-coupe-b3",
+      "modelId": "audi-coupe",
+      "code": "B3",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-e-tron-gen1",
+      "modelId": "audi-e-tron",
+      "code": "GEN1",
+      "yearFrom": 2018,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-e-tron-gt-fw",
+      "modelId": "audi-e-tron-gt",
+      "code": "FW",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q2-ga",
+      "modelId": "audi-q2",
+      "code": "GA",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q3-8u",
+      "modelId": "audi-q3",
+      "code": "8U",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q3-f3",
+      "modelId": "audi-q3",
+      "code": "F3",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q4-e-tron-f4",
+      "modelId": "audi-q4-e-tron",
+      "code": "F4",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q5-8r",
+      "modelId": "audi-q5",
+      "code": "8R",
+      "yearFrom": 2008,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q5-fy",
+      "modelId": "audi-q5",
+      "code": "FY",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q5-sportback-fy",
+      "modelId": "audi-q5-sportback",
+      "code": "FY",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q7-4l",
+      "modelId": "audi-q7",
+      "code": "4L",
+      "yearFrom": 2005,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q7-4m",
+      "modelId": "audi-q7",
+      "code": "4M",
+      "yearFrom": 2015,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q8-4m",
+      "modelId": "audi-q8",
+      "code": "4M",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-q8-e-tron-ge",
+      "modelId": "audi-q8-e-tron",
+      "code": "GE",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-quattro-ur-quattro",
+      "modelId": "audi-quattro",
+      "code": "Ur-Quattro",
+      "yearFrom": 1980,
+      "yearTo": 1991,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-r8-typ-42",
+      "modelId": "audi-r8",
+      "code": "Typ 42",
+      "yearFrom": 2006,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-r8-4s",
+      "modelId": "audi-r8",
+      "code": "4S",
+      "yearFrom": 2015,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs-e-tron-gt-fw",
+      "modelId": "audi-rs-e-tron-gt",
+      "code": "FW",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs-q3-8u",
+      "modelId": "audi-rs-q3",
+      "code": "8U",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs-q3-f3",
+      "modelId": "audi-rs-q3",
+      "code": "F3",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs-q8-4m",
+      "modelId": "audi-rs-q8",
+      "code": "4M",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs3-8p",
+      "modelId": "audi-rs3",
+      "code": "8P",
+      "yearFrom": 2011,
+      "yearTo": 2012,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs3-8v",
+      "modelId": "audi-rs3",
+      "code": "8V",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs3-8y",
+      "modelId": "audi-rs3",
+      "code": "8Y",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs4-b5",
+      "modelId": "audi-rs4",
+      "code": "B5",
+      "yearFrom": 2000,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs4-b7",
+      "modelId": "audi-rs4",
+      "code": "B7",
+      "yearFrom": 2006,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs4-b8",
+      "modelId": "audi-rs4",
+      "code": "B8",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs4-b9",
+      "modelId": "audi-rs4",
+      "code": "B9",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs5-8t",
+      "modelId": "audi-rs5",
+      "code": "8T",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs5-f5",
+      "modelId": "audi-rs5",
+      "code": "F5",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs6-c5",
+      "modelId": "audi-rs6",
+      "code": "C5",
+      "yearFrom": 2002,
+      "yearTo": 2004,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs6-c6",
+      "modelId": "audi-rs6",
+      "code": "C6",
+      "yearFrom": 2008,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs6-c7",
+      "modelId": "audi-rs6",
+      "code": "C7",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs6-c8",
+      "modelId": "audi-rs6",
+      "code": "C8",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs7-4g",
+      "modelId": "audi-rs7",
+      "code": "4G",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-rs7-4k",
+      "modelId": "audi-rs7",
+      "code": "4K",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s2-s2",
+      "modelId": "audi-s2",
+      "code": "S2",
+      "yearFrom": 1991,
+      "yearTo": 1995,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s3-8l",
+      "modelId": "audi-s3",
+      "code": "8L",
+      "yearFrom": 1999,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s3-8p",
+      "modelId": "audi-s3",
+      "code": "8P",
+      "yearFrom": 2006,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s3-8v",
+      "modelId": "audi-s3",
+      "code": "8V",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s3-8y",
+      "modelId": "audi-s3",
+      "code": "8Y",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s4-b5",
+      "modelId": "audi-s4",
+      "code": "B5",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s4-b6-b7",
+      "modelId": "audi-s4",
+      "code": "B6/B7",
+      "yearFrom": 2003,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s4-b8",
+      "modelId": "audi-s4",
+      "code": "B8",
+      "yearFrom": 2008,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s4-b9",
+      "modelId": "audi-s4",
+      "code": "B9",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s5-8t",
+      "modelId": "audi-s5",
+      "code": "8T",
+      "yearFrom": 2007,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s5-f5",
+      "modelId": "audi-s5",
+      "code": "F5",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s6-c4",
+      "modelId": "audi-s6",
+      "code": "C4",
+      "yearFrom": 1994,
+      "yearTo": 1997,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s6-c5",
+      "modelId": "audi-s6",
+      "code": "C5",
+      "yearFrom": 1999,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s6-c6",
+      "modelId": "audi-s6",
+      "code": "C6",
+      "yearFrom": 2006,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s6-c7",
+      "modelId": "audi-s6",
+      "code": "C7",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s6-c8",
+      "modelId": "audi-s6",
+      "code": "C8",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s7-4g",
+      "modelId": "audi-s7",
+      "code": "4G",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s7-4k",
+      "modelId": "audi-s7",
+      "code": "4K",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s8-d2",
+      "modelId": "audi-s8",
+      "code": "D2",
+      "yearFrom": 1996,
+      "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s8-d3",
+      "modelId": "audi-s8",
+      "code": "D3",
+      "yearFrom": 2006,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s8-d4",
+      "modelId": "audi-s8",
+      "code": "D4",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-s8-d5",
+      "modelId": "audi-s8",
+      "code": "D5",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq2-ga",
+      "modelId": "audi-sq2",
+      "code": "GA",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq5-8r",
+      "modelId": "audi-sq5",
+      "code": "8R",
+      "yearFrom": 2013,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq5-fy",
+      "modelId": "audi-sq5",
+      "code": "FY",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq5-sportback-fy",
+      "modelId": "audi-sq5-sportback",
+      "code": "FY",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq7-4m",
+      "modelId": "audi-sq7",
+      "code": "4M",
+      "yearFrom": 2016,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-sq8-4m",
+      "modelId": "audi-sq8",
+      "code": "4M",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tt-8n",
+      "modelId": "audi-tt",
+      "code": "8N",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tt-8j",
+      "modelId": "audi-tt",
+      "code": "8J",
+      "yearFrom": 2006,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tt-8s",
+      "modelId": "audi-tt",
+      "code": "8S",
+      "yearFrom": 2014,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tt-rs-8j",
+      "modelId": "audi-tt-rs",
+      "code": "8J",
+      "yearFrom": 2009,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tt-rs-8s",
+      "modelId": "audi-tt-rs",
+      "code": "8S",
+      "yearFrom": 2015,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tts-8j",
+      "modelId": "audi-tts",
+      "code": "8J",
+      "yearFrom": 2008,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-tts-8s",
+      "modelId": "audi-tts",
+      "code": "8S",
+      "yearFrom": 2014,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "audi-v8-d11",
+      "modelId": "audi-v8",
+      "code": "D11",
+      "yearFrom": 1988,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-114-e81-e87",
+      "modelId": "bmw-114",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-114-f20-f21",
+      "modelId": "bmw-114",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-114-f40",
+      "modelId": "bmw-114",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-116-e81-e87",
+      "modelId": "bmw-116",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-116-f20-f21",
+      "modelId": "bmw-116",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-116-f40",
+      "modelId": "bmw-116",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-118-e81-e87",
+      "modelId": "bmw-118",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-118-f20-f21",
+      "modelId": "bmw-118",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-118-f40",
+      "modelId": "bmw-118",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-120-e81-e87",
+      "modelId": "bmw-120",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-120-f20-f21",
+      "modelId": "bmw-120",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-120-f40",
+      "modelId": "bmw-120",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-123-e81-e87",
+      "modelId": "bmw-123",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-123-f20-f21",
+      "modelId": "bmw-123",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-123-f40",
+      "modelId": "bmw-123",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-125-e81-e87",
+      "modelId": "bmw-125",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-125-f20-f21",
+      "modelId": "bmw-125",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-125-f40",
+      "modelId": "bmw-125",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-130-e81-e87",
+      "modelId": "bmw-130",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-130-f20-f21",
+      "modelId": "bmw-130",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-130-f40",
+      "modelId": "bmw-130",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-135-e81-e87",
+      "modelId": "bmw-135",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-135-f20-f21",
+      "modelId": "bmw-135",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-135-f40",
+      "modelId": "bmw-135",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-1m-e82-1m",
+      "modelId": "bmw-1m",
+      "code": "E82 1M",
+      "yearFrom": 2011,
+      "yearTo": 2012,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-216-f22-f23",
+      "modelId": "bmw-216",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-216-g42",
+      "modelId": "bmw-216",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-218-f22-f23",
+      "modelId": "bmw-218",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-218-g42",
+      "modelId": "bmw-218",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-220-f22-f23",
+      "modelId": "bmw-220",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-220-g42",
+      "modelId": "bmw-220",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-225-f22-f23",
+      "modelId": "bmw-225",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-225-g42",
+      "modelId": "bmw-225",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-230-f22-f23",
+      "modelId": "bmw-230",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-230-g42",
+      "modelId": "bmw-230",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-2500-e3",
+      "modelId": "bmw-2500",
+      "code": "E3",
+      "yearFrom": 1968,
+      "yearTo": 1977,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-30-e3-3-0",
+      "modelId": "bmw-30",
+      "code": "E3 3.0",
+      "yearFrom": 1971,
+      "yearTo": 1977,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-315-e36",
+      "modelId": "bmw-315",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-315-e46",
+      "modelId": "bmw-315",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-315-e90-e91-e92",
+      "modelId": "bmw-315",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-315-f30-f31",
+      "modelId": "bmw-315",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-315-g20-g21",
+      "modelId": "bmw-315",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-316-e36",
+      "modelId": "bmw-316",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-316-e46",
+      "modelId": "bmw-316",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-316-e90-e91-e92",
+      "modelId": "bmw-316",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-316-f30-f31",
+      "modelId": "bmw-316",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-316-g20-g21",
+      "modelId": "bmw-316",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-e36",
+      "modelId": "bmw-318",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-e46",
+      "modelId": "bmw-318",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-e90-e91-e92",
+      "modelId": "bmw-318",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-f30-f31",
+      "modelId": "bmw-318",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-g20-g21",
+      "modelId": "bmw-318",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318-gran-turismo-f34",
+      "modelId": "bmw-318-gran-turismo",
+      "code": "F34",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318is-e36",
+      "modelId": "bmw-318is",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318is-e46",
+      "modelId": "bmw-318is",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318is-e90-e91-e92",
+      "modelId": "bmw-318is",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318is-f30-f31",
+      "modelId": "bmw-318is",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-318is-g20-g21",
+      "modelId": "bmw-318is",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-e36",
+      "modelId": "bmw-320",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-e46",
+      "modelId": "bmw-320",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-e90-e91-e92",
+      "modelId": "bmw-320",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-f30-f31",
+      "modelId": "bmw-320",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-g20-g21",
+      "modelId": "bmw-320",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320-gran-turismo-f34",
+      "modelId": "bmw-320-gran-turismo",
+      "code": "F34",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320d-e36",
+      "modelId": "bmw-320d",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320d-e46",
+      "modelId": "bmw-320d",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320d-e90-e91-e92",
+      "modelId": "bmw-320d",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320d-f30-f31",
+      "modelId": "bmw-320d",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320d-g20-g21",
+      "modelId": "bmw-320d",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320is-e36",
+      "modelId": "bmw-320is",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320is-e46",
+      "modelId": "bmw-320is",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320is-e90-e91-e92",
+      "modelId": "bmw-320is",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320is-f30-f31",
+      "modelId": "bmw-320is",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-320is-g20-g21",
+      "modelId": "bmw-320is",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-323-e36",
+      "modelId": "bmw-323",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-323-e46",
+      "modelId": "bmw-323",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-323-e90-e91-e92",
+      "modelId": "bmw-323",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-323-f30-f31",
+      "modelId": "bmw-323",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-323-g20-g21",
+      "modelId": "bmw-323",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-324-e36",
+      "modelId": "bmw-324",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-324-e46",
+      "modelId": "bmw-324",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-324-e90-e91-e92",
+      "modelId": "bmw-324",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-324-f30-f31",
+      "modelId": "bmw-324",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-324-g20-g21",
+      "modelId": "bmw-324",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-325-e36",
+      "modelId": "bmw-325",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-325-e46",
+      "modelId": "bmw-325",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-325-e90-e91-e92",
+      "modelId": "bmw-325",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-325-f30-f31",
+      "modelId": "bmw-325",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-325-g20-g21",
+      "modelId": "bmw-325",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-328-e36",
+      "modelId": "bmw-328",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-328-e46",
+      "modelId": "bmw-328",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-328-e90-e91-e92",
+      "modelId": "bmw-328",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-328-f30-f31",
+      "modelId": "bmw-328",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-328-g20-g21",
+      "modelId": "bmw-328",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330-e36",
+      "modelId": "bmw-330",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330-e46",
+      "modelId": "bmw-330",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330-e90-e91-e92",
+      "modelId": "bmw-330",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330-f30-f31",
+      "modelId": "bmw-330",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330-g20-g21",
+      "modelId": "bmw-330",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330e-e36",
+      "modelId": "bmw-330e",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330e-e46",
+      "modelId": "bmw-330e",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330e-e90-e91-e92",
+      "modelId": "bmw-330e",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330e-f30-f31",
+      "modelId": "bmw-330e",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-330e-g20-g21",
+      "modelId": "bmw-330e",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-335-e36",
+      "modelId": "bmw-335",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-335-e46",
+      "modelId": "bmw-335",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-335-e90-e91-e92",
+      "modelId": "bmw-335",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-335-f30-f31",
+      "modelId": "bmw-335",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-335-g20-g21",
+      "modelId": "bmw-335",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-340-e36",
+      "modelId": "bmw-340",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-340-e46",
+      "modelId": "bmw-340",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-340-e90-e91-e92",
+      "modelId": "bmw-340",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-340-f30-f31",
+      "modelId": "bmw-340",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-340-g20-g21",
+      "modelId": "bmw-340",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-418-f32-f33-f36",
+      "modelId": "bmw-418",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-418-g22-g23-g26",
+      "modelId": "bmw-418",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-420-f32-f33-f36",
+      "modelId": "bmw-420",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-420-g22-g23-g26",
+      "modelId": "bmw-420",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-428-f32-f33-f36",
+      "modelId": "bmw-428",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-428-g22-g23-g26",
+      "modelId": "bmw-428",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-430-f32-f33-f36",
+      "modelId": "bmw-430",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-430-g22-g23-g26",
+      "modelId": "bmw-430",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-435-f32-f33-f36",
+      "modelId": "bmw-435",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-435-g22-g23-g26",
+      "modelId": "bmw-435",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-e34",
+      "modelId": "bmw-518",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-e39",
+      "modelId": "bmw-518",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-e60-e61",
+      "modelId": "bmw-518",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-f10-f11",
+      "modelId": "bmw-518",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-g30-g31",
+      "modelId": "bmw-518",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-518-g60-g61",
+      "modelId": "bmw-518",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-e34",
+      "modelId": "bmw-520",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-e39",
+      "modelId": "bmw-520",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-e60-e61",
+      "modelId": "bmw-520",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-f10-f11",
+      "modelId": "bmw-520",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-g30-g31",
+      "modelId": "bmw-520",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-520-g60-g61",
+      "modelId": "bmw-520",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-e34",
+      "modelId": "bmw-523",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-e39",
+      "modelId": "bmw-523",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-e60-e61",
+      "modelId": "bmw-523",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-f10-f11",
+      "modelId": "bmw-523",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-g30-g31",
+      "modelId": "bmw-523",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-523-g60-g61",
+      "modelId": "bmw-523",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-e34",
+      "modelId": "bmw-525",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-e39",
+      "modelId": "bmw-525",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-e60-e61",
+      "modelId": "bmw-525",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-f10-f11",
+      "modelId": "bmw-525",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-g30-g31",
+      "modelId": "bmw-525",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-525-g60-g61",
+      "modelId": "bmw-525",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-e34",
+      "modelId": "bmw-528",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-e39",
+      "modelId": "bmw-528",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-e60-e61",
+      "modelId": "bmw-528",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-f10-f11",
+      "modelId": "bmw-528",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-g30-g31",
+      "modelId": "bmw-528",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-528-g60-g61",
+      "modelId": "bmw-528",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-e34",
+      "modelId": "bmw-530",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-e39",
+      "modelId": "bmw-530",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-e60-e61",
+      "modelId": "bmw-530",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-f10-f11",
+      "modelId": "bmw-530",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-g30-g31",
+      "modelId": "bmw-530",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-g60-g61",
+      "modelId": "bmw-530",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530-gran-turismo-f07",
+      "modelId": "bmw-530-gran-turismo",
+      "code": "F07",
+      "yearFrom": 2009,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-e34",
+      "modelId": "bmw-530e",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-e39",
+      "modelId": "bmw-530e",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-e60-e61",
+      "modelId": "bmw-530e",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-f10-f11",
+      "modelId": "bmw-530e",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-g30-g31",
+      "modelId": "bmw-530e",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-530e-g60-g61",
+      "modelId": "bmw-530e",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-e34",
+      "modelId": "bmw-535",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-e39",
+      "modelId": "bmw-535",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-e60-e61",
+      "modelId": "bmw-535",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-f10-f11",
+      "modelId": "bmw-535",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-g30-g31",
+      "modelId": "bmw-535",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-535-g60-g61",
+      "modelId": "bmw-535",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-e34",
+      "modelId": "bmw-540",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-e39",
+      "modelId": "bmw-540",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-e60-e61",
+      "modelId": "bmw-540",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-f10-f11",
+      "modelId": "bmw-540",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-g30-g31",
+      "modelId": "bmw-540",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-540-g60-g61",
+      "modelId": "bmw-540",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-e34",
+      "modelId": "bmw-545",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-e39",
+      "modelId": "bmw-545",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-e60-e61",
+      "modelId": "bmw-545",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-f10-f11",
+      "modelId": "bmw-545",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-g30-g31",
+      "modelId": "bmw-545",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-545-g60-g61",
+      "modelId": "bmw-545",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-e34",
+      "modelId": "bmw-550",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-e39",
+      "modelId": "bmw-550",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-e60-e61",
+      "modelId": "bmw-550",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-f10-f11",
+      "modelId": "bmw-550",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-g30-g31",
+      "modelId": "bmw-550",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-550-g60-g61",
+      "modelId": "bmw-550",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-628-e63-e64",
+      "modelId": "bmw-628",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-628-f06-f12-f13",
+      "modelId": "bmw-628",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-628-g32",
+      "modelId": "bmw-628",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-630-e63-e64",
+      "modelId": "bmw-630",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-630-f06-f12-f13",
+      "modelId": "bmw-630",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-630-g32",
+      "modelId": "bmw-630",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-633-e63-e64",
+      "modelId": "bmw-633",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-633-f06-f12-f13",
+      "modelId": "bmw-633",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-633-g32",
+      "modelId": "bmw-633",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-635-e63-e64",
+      "modelId": "bmw-635",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-635-f06-f12-f13",
+      "modelId": "bmw-635",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-635-g32",
+      "modelId": "bmw-635",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-645-e63-e64",
+      "modelId": "bmw-645",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-645-f06-f12-f13",
+      "modelId": "bmw-645",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-645-g32",
+      "modelId": "bmw-645",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-650-e63-e64",
+      "modelId": "bmw-650",
+      "code": "E63/E64",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-650-f06-f12-f13",
+      "modelId": "bmw-650",
+      "code": "F06/F12/F13",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-650-g32",
+      "modelId": "bmw-650",
+      "code": "G32",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-e32",
+      "modelId": "bmw-725",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-e38",
+      "modelId": "bmw-725",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-e65-e66",
+      "modelId": "bmw-725",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-f01-f02",
+      "modelId": "bmw-725",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-g11-g12",
+      "modelId": "bmw-725",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-725-g70",
+      "modelId": "bmw-725",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-e32",
+      "modelId": "bmw-728",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-e38",
+      "modelId": "bmw-728",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-e65-e66",
+      "modelId": "bmw-728",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-f01-f02",
+      "modelId": "bmw-728",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-g11-g12",
+      "modelId": "bmw-728",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-728-g70",
+      "modelId": "bmw-728",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-e32",
+      "modelId": "bmw-730",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-e38",
+      "modelId": "bmw-730",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-e65-e66",
+      "modelId": "bmw-730",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-f01-f02",
+      "modelId": "bmw-730",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-g11-g12",
+      "modelId": "bmw-730",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-730-g70",
+      "modelId": "bmw-730",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-e32",
+      "modelId": "bmw-735",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-e38",
+      "modelId": "bmw-735",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-e65-e66",
+      "modelId": "bmw-735",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-f01-f02",
+      "modelId": "bmw-735",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-g11-g12",
+      "modelId": "bmw-735",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-735-g70",
+      "modelId": "bmw-735",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-e32",
+      "modelId": "bmw-740",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-e38",
+      "modelId": "bmw-740",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-e65-e66",
+      "modelId": "bmw-740",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-f01-f02",
+      "modelId": "bmw-740",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-g11-g12",
+      "modelId": "bmw-740",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-740-g70",
+      "modelId": "bmw-740",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-e32",
+      "modelId": "bmw-745",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-e38",
+      "modelId": "bmw-745",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-e65-e66",
+      "modelId": "bmw-745",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-f01-f02",
+      "modelId": "bmw-745",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-g11-g12",
+      "modelId": "bmw-745",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-745-g70",
+      "modelId": "bmw-745",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-e32",
+      "modelId": "bmw-750",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-e38",
+      "modelId": "bmw-750",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-e65-e66",
+      "modelId": "bmw-750",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-f01-f02",
+      "modelId": "bmw-750",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-g11-g12",
+      "modelId": "bmw-750",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-750-g70",
+      "modelId": "bmw-750",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-e32",
+      "modelId": "bmw-760",
+      "code": "E32",
+      "yearFrom": 1986,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-e38",
+      "modelId": "bmw-760",
+      "code": "E38",
+      "yearFrom": 1994,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-e65-e66",
+      "modelId": "bmw-760",
+      "code": "E65/E66",
+      "yearFrom": 2001,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-f01-f02",
+      "modelId": "bmw-760",
+      "code": "F01/F02",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-g11-g12",
+      "modelId": "bmw-760",
+      "code": "G11/G12",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-760-g70",
+      "modelId": "bmw-760",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-840-e31",
+      "modelId": "bmw-840",
+      "code": "E31",
+      "yearFrom": 1989,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-840-g14-g15-g16",
+      "modelId": "bmw-840",
+      "code": "G14/G15/G16",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-850-e31",
+      "modelId": "bmw-850",
+      "code": "E31",
+      "yearFrom": 1989,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-850-g14-g15-g16",
+      "modelId": "bmw-850",
+      "code": "G14/G15/G16",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i3-i01",
+      "modelId": "bmw-i3",
+      "code": "I01",
+      "yearFrom": 2013,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i3s-i01-s",
+      "modelId": "bmw-i3s",
+      "code": "I01 s",
+      "yearFrom": 2017,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i4-g26",
+      "modelId": "bmw-i4",
+      "code": "G26",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i4-m50-g26-m50",
+      "modelId": "bmw-i4-m50",
+      "code": "G26 M50",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i5-g60",
+      "modelId": "bmw-i5",
+      "code": "G60",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i7-g70",
+      "modelId": "bmw-i7",
+      "code": "G70",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-i8-i12-i15",
+      "modelId": "bmw-i8",
+      "code": "I12/I15",
+      "yearFrom": 2014,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-ix-i20",
+      "modelId": "bmw-ix",
+      "code": "I20",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-ix1-u11",
+      "modelId": "bmw-ix1",
+      "code": "U11",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-ix2-u10",
+      "modelId": "bmw-ix2",
+      "code": "U10",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-ix3-g08",
+      "modelId": "bmw-ix3",
+      "code": "G08",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m135i-e81-e87",
+      "modelId": "bmw-m135i",
+      "code": "E81/E87",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m135i-f20-f21",
+      "modelId": "bmw-m135i",
+      "code": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m135i-f40",
+      "modelId": "bmw-m135i",
+      "code": "F40",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m2-f87",
+      "modelId": "bmw-m2",
+      "code": "F87",
+      "yearFrom": 2015,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m2-g87",
+      "modelId": "bmw-m2",
+      "code": "G87",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m235i-f22-f23",
+      "modelId": "bmw-m235i",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m235i-g42",
+      "modelId": "bmw-m235i",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m240i-f22-f23",
+      "modelId": "bmw-m240i",
+      "code": "F22/F23",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m240i-g42",
+      "modelId": "bmw-m240i",
+      "code": "G42",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m3-e36",
+      "modelId": "bmw-m3",
+      "code": "E36",
+      "yearFrom": 1992,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m3-e46",
+      "modelId": "bmw-m3",
+      "code": "E46",
+      "yearFrom": 2000,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m3-e90-e92",
+      "modelId": "bmw-m3",
+      "code": "E90/E92",
+      "yearFrom": 2007,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m3-f80",
+      "modelId": "bmw-m3",
+      "code": "F80",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m3-g80",
+      "modelId": "bmw-m3",
+      "code": "G80",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m340i-e36",
+      "modelId": "bmw-m340i",
+      "code": "E36",
+      "yearFrom": 1990,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m340i-e46",
+      "modelId": "bmw-m340i",
+      "code": "E46",
+      "yearFrom": 1998,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m340i-e90-e91-e92",
+      "modelId": "bmw-m340i",
+      "code": "E90/E91/E92",
+      "yearFrom": 2005,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m340i-f30-f31",
+      "modelId": "bmw-m340i",
+      "code": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m340i-g20-g21",
+      "modelId": "bmw-m340i",
+      "code": "G20/G21",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m4-f82-f83",
+      "modelId": "bmw-m4",
+      "code": "F82/F83",
+      "yearFrom": 2014,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m4-g82-g83",
+      "modelId": "bmw-m4",
+      "code": "G82/G83",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m440i-f32-f33-f36",
+      "modelId": "bmw-m440i",
+      "code": "F32/F33/F36",
+      "yearFrom": 2013,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m440i-g22-g23-g26",
+      "modelId": "bmw-m440i",
+      "code": "G22/G23/G26",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-e34",
+      "modelId": "bmw-m5",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1995,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-e39",
+      "modelId": "bmw-m5",
+      "code": "E39",
+      "yearFrom": 1998,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-e60",
+      "modelId": "bmw-m5",
+      "code": "E60",
+      "yearFrom": 2005,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-f10",
+      "modelId": "bmw-m5",
+      "code": "F10",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-f90",
+      "modelId": "bmw-m5",
+      "code": "F90",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m5-g90",
+      "modelId": "bmw-m5",
+      "code": "G90",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m535i-e28-e34-m535i",
+      "modelId": "bmw-m535i",
+      "code": "E28/E34 M535i",
+      "yearFrom": 1980,
+      "yearTo": 1988,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-e34",
+      "modelId": "bmw-m550d",
+      "code": "E34",
+      "yearFrom": 1988,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-e39",
+      "modelId": "bmw-m550d",
+      "code": "E39",
+      "yearFrom": 1995,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-e60-e61",
+      "modelId": "bmw-m550d",
+      "code": "E60/E61",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-f10-f11",
+      "modelId": "bmw-m550d",
+      "code": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-g30-g31",
+      "modelId": "bmw-m550d",
+      "code": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m550d-g60-g61",
+      "modelId": "bmw-m550d",
+      "code": "G60/G61",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m6-e63-e64",
+      "modelId": "bmw-m6",
+      "code": "E63/E64",
+      "yearFrom": 2005,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m6-f06-f12-f13",
+      "modelId": "bmw-m6",
+      "code": "F06/F12/F13",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m8-f91-f92-f93",
+      "modelId": "bmw-m8",
+      "code": "F91/F92/F93",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m850i-e31",
+      "modelId": "bmw-m850i",
+      "code": "E31",
+      "yearFrom": 1989,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-m850i-g14-g15-g16",
+      "modelId": "bmw-m850i",
+      "code": "G14/G15/G16",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x1-e84",
+      "modelId": "bmw-x1",
+      "code": "E84",
+      "yearFrom": 2009,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x1-f48",
+      "modelId": "bmw-x1",
+      "code": "F48",
+      "yearFrom": 2015,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x1-u11",
+      "modelId": "bmw-x1",
+      "code": "U11",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x2-f39",
+      "modelId": "bmw-x2",
+      "code": "F39",
+      "yearFrom": 2018,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x2-u10",
+      "modelId": "bmw-x2",
+      "code": "U10",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-e83",
+      "modelId": "bmw-x3",
+      "code": "E83",
+      "yearFrom": 2003,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-f25",
+      "modelId": "bmw-x3",
+      "code": "F25",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-g01",
+      "modelId": "bmw-x3",
+      "code": "G01",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-m-f97",
+      "modelId": "bmw-x3-m",
+      "code": "F97",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x3-m-f97-lci",
+      "modelId": "bmw-x3-m",
+      "code": "F97 LCI",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x4-f26",
+      "modelId": "bmw-x4",
+      "code": "F26",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x4-g02",
+      "modelId": "bmw-x4",
+      "code": "G02",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x4-m-f98",
+      "modelId": "bmw-x4-m",
+      "code": "F98",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-e53",
+      "modelId": "bmw-x5",
+      "code": "E53",
+      "yearFrom": 1999,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-e70",
+      "modelId": "bmw-x5",
+      "code": "E70",
+      "yearFrom": 2006,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-f15",
+      "modelId": "bmw-x5",
+      "code": "F15",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-g05",
+      "modelId": "bmw-x5",
+      "code": "G05",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-m-e70-m",
+      "modelId": "bmw-x5-m",
+      "code": "E70 M",
+      "yearFrom": 2009,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-m-f85",
+      "modelId": "bmw-x5-m",
+      "code": "F85",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x5-m-f95",
+      "modelId": "bmw-x5-m",
+      "code": "F95",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-e71",
+      "modelId": "bmw-x6",
+      "code": "E71",
+      "yearFrom": 2008,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-f16",
+      "modelId": "bmw-x6",
+      "code": "F16",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-g06",
+      "modelId": "bmw-x6",
+      "code": "G06",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-m-e71-m",
+      "modelId": "bmw-x6-m",
+      "code": "E71 M",
+      "yearFrom": 2009,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-m-f86",
+      "modelId": "bmw-x6-m",
+      "code": "F86",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x6-m-f96",
+      "modelId": "bmw-x6-m",
+      "code": "F96",
+      "yearFrom": 2020,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-x7-g07",
+      "modelId": "bmw-x7",
+      "code": "G07",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-xm-g09",
+      "modelId": "bmw-xm",
+      "code": "G09",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z3-e36-7",
+      "modelId": "bmw-z3",
+      "code": "E36/7",
+      "yearFrom": 1995,
+      "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z3m-e36-7-m",
+      "modelId": "bmw-z3m",
+      "code": "E36/7 M",
+      "yearFrom": 1999,
+      "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z4-e85-e86",
+      "modelId": "bmw-z4",
+      "code": "E85/E86",
+      "yearFrom": 2002,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z4-e89",
+      "modelId": "bmw-z4",
+      "code": "E89",
+      "yearFrom": 2009,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z4-g29",
+      "modelId": "bmw-z4",
+      "code": "G29",
+      "yearFrom": 2018,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "bmw-z4m-e85-e86-m",
+      "modelId": "bmw-z4m",
+      "code": "E85/E86 M",
+      "yearFrom": 2006,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-atto-2-atto-2",
+      "modelId": "byd-atto-2",
+      "code": "Atto 2",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-atto-3-atto-3",
+      "modelId": "byd-atto-3",
+      "code": "Atto 3",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-dolphin-dolphin",
+      "modelId": "byd-dolphin",
+      "code": "Dolphin",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-dolphin-surf-dolphin-surf",
+      "modelId": "byd-dolphin-surf",
+      "code": "Dolphin Surf",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-etp3-etp3",
+      "modelId": "byd-etp3",
+      "code": "ETP3",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-han-han-ev",
+      "modelId": "byd-han",
+      "code": "Han EV",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-han-han-facelift",
+      "modelId": "byd-han",
+      "code": "Han (facelift)",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-seal-seal",
+      "modelId": "byd-seal",
+      "code": "Seal",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-seal-6-dm-i-seal-6-dm-i",
+      "modelId": "byd-seal-6-dm-i",
+      "code": "Seal 6 DM-i",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-seal-u-seal-u",
+      "modelId": "byd-seal-u",
+      "code": "Seal U",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-seal-u-dm-i-seal-u-dm-i",
+      "modelId": "byd-seal-u-dm-i",
+      "code": "Seal U DM-i",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-sealion-7-sealion-7",
+      "modelId": "byd-sealion-7",
+      "code": "Sealion 7",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-tang-tang-ev-dm",
+      "modelId": "byd-tang",
+      "code": "Tang EV/DM",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "byd-tang-tang-l",
+      "modelId": "byd-tang",
+      "code": "Tang L",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     }

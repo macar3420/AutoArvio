@@ -1,21 +1,28 @@
 package fi.tamk.autoarvio.data.repository
 
+import android.content.Context
 import fi.tamk.autoarvio.domain.model.Generation
 import fi.tamk.autoarvio.domain.model.Make
 import fi.tamk.autoarvio.domain.model.Model
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
+import org.json.JSONObject
 
 /**
  * Finnish-market catalog expanded from Nettiauto make→model filters (scraped 2026-10)
  * plus confirmed FI pages for S/RS/M gaps. yearFrom = best-effort first introduction.
  * Full mirror: assets/catalog/fi_catalog.json
- * Generations prototype: assets/catalog/generations.json (Audi A4 first).
+ * Generations: assets/catalog/generations.json (Aion, Audi, BMW, BYD filled; more later).
  *
  * Chinese FI brands kept: Aion, BYD, Maxus, MG, Smart, Voyah, XPeng.
  * Omitted (no clear FI retail): Leapmotor, Zeekr, NIO, Ora, Lynk & Co.
  */
-class CatalogRepository {
+class CatalogRepository(
+    context: Context,
+) {
+    private val appContext = context.applicationContext
+    private val generations: List<Generation> by lazy { loadGenerations(appContext) }
+
     fun observeMakes(): Flow<List<Make>> = flowOf(PlaceholderCatalog.makes)
 
     fun observeModels(makeId: String): Flow<List<Model>> =
@@ -39,61 +46,34 @@ class CatalogRepository {
         return "$make ${model.name}"
     }
 
-    /** Generations for a model (empty until data exists — currently Audi A4). */
     fun observeGenerations(modelId: String): Flow<List<Generation>> =
-        flowOf(GenerationsCatalog.byModelId(modelId))
+        flowOf(generations.filter { it.modelId == modelId })
 
     fun generationById(generationId: String): Generation? =
-        GenerationsCatalog.all.firstOrNull { it.id == generationId }
+        generations.firstOrNull { it.id == generationId }
 }
 
-/** Mirrors assets/catalog/generations.json for the MVP in-memory path. */
-private object GenerationsCatalog {
-    val all: List<Generation> = listOf(
-        Generation(
-            id = "audi-a4-b5",
-            modelId = "audi-a4",
-            code = "B5",
-            yearFrom = 1994,
-            yearTo = 2001,
-            imageAsset = "generation_placeholder",
-        ),
-        Generation(
-            id = "audi-a4-b6",
-            modelId = "audi-a4",
-            code = "B6",
-            yearFrom = 2000,
-            yearTo = 2006,
-            imageAsset = "generation_placeholder",
-        ),
-        Generation(
-            id = "audi-a4-b7",
-            modelId = "audi-a4",
-            code = "B7",
-            yearFrom = 2004,
-            yearTo = 2008,
-            imageAsset = "generation_placeholder",
-        ),
-        Generation(
-            id = "audi-a4-b8",
-            modelId = "audi-a4",
-            code = "B8",
-            yearFrom = 2007,
-            yearTo = 2015,
-            imageAsset = "generation_placeholder",
-        ),
-        Generation(
-            id = "audi-a4-b9",
-            modelId = "audi-a4",
-            code = "B9",
-            yearFrom = 2015,
-            yearTo = null,
-            imageAsset = "generation_placeholder",
-        ),
-    )
-
-    fun byModelId(modelId: String): List<Generation> =
-        all.filter { it.modelId == modelId }
+private fun loadGenerations(context: Context): List<Generation> {
+    val json = context.assets.open("catalog/generations.json")
+        .bufferedReader()
+        .use { it.readText() }
+    val root = JSONObject(json)
+    val array = root.getJSONArray("generations")
+    return buildList {
+        for (i in 0 until array.length()) {
+            val o = array.getJSONObject(i)
+            add(
+                Generation(
+                    id = o.getString("id"),
+                    modelId = o.getString("modelId"),
+                    code = o.getString("code"),
+                    yearFrom = o.getInt("yearFrom"),
+                    yearTo = if (o.isNull("yearTo")) null else o.getInt("yearTo"),
+                    imageAsset = o.optString("imageAsset", "generation_placeholder"),
+                ),
+            )
+        }
+    }
 }
 
 private fun m(
