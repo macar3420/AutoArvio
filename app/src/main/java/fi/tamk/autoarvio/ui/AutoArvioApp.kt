@@ -34,15 +34,29 @@ fun AutoArvioApp(
                 onMakeClick = { make ->
                     navController.navigate(Routes.modelList(make.id))
                 },
+                onModelClick = { make, modelName ->
+                    navController.navigate(Routes.modelList(make.id, modelName))
+                },
             )
         }
         composable(
             route = Routes.MODEL_LIST,
-            arguments = listOf(navArgument("makeId") { type = NavType.StringType }),
+            arguments = listOf(
+                navArgument("makeId") { type = NavType.StringType },
+                navArgument("q") {
+                    type = NavType.StringType
+                    defaultValue = ""
+                },
+            ),
         ) { entry ->
             val makeId = entry.arguments?.getString("makeId").orEmpty()
+            val initialQuery = entry.arguments?.getString("q").orEmpty()
             val vm: ModelListViewModel = viewModel(
-                factory = ModelListViewModel.factory(makeId, catalogRepository),
+                factory = ModelListViewModel.factory(
+                    makeId = makeId,
+                    repository = catalogRepository,
+                    initialQuery = initialQuery,
+                ),
             )
             ModelListScreen(
                 viewModel = vm,

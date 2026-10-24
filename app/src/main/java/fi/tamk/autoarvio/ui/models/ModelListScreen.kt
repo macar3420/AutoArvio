@@ -10,19 +10,23 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Clear
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -38,6 +42,8 @@ fun ModelListScreen(
     onBack: () -> Unit,
 ) {
     val models by viewModel.models.collectAsStateWithLifecycle()
+    val query by viewModel.searchQuery.collectAsStateWithLifecycle()
+    val searching = query.isNotBlank()
 
     Scaffold(
         topBar = {
@@ -67,29 +73,71 @@ fun ModelListScreen(
         },
         containerColor = MaterialTheme.colorScheme.background,
     ) { padding ->
-        if (models.isEmpty()) {
-            Text(
-                text = "No models yet for this brand",
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding),
+        ) {
+            OutlinedTextField(
+                value = query,
+                onValueChange = viewModel::onSearchQueryChange,
                 modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding)
-                    .padding(20.dp),
-                style = MaterialTheme.typography.bodyLarge,
-                fontFamily = OutfitFamily,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
-            )
-        } else {
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding),
-            ) {
-                items(models, key = { it.id }) { model ->
-                    ModelRow(model = model)
-                    HorizontalDivider(
-                        modifier = Modifier.padding(start = 20.dp),
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                placeholder = {
+                    Text(
+                        text = "Search models",
+                        fontFamily = OutfitFamily,
                     )
+                },
+                leadingIcon = {
+                    Icon(Icons.Default.Search, contentDescription = null, tint = Ultramarine)
+                },
+                trailingIcon = {
+                    if (query.isNotEmpty()) {
+                        IconButton(onClick = { viewModel.onSearchQueryChange("") }) {
+                            Icon(Icons.Default.Clear, contentDescription = "Clear search")
+                        }
+                    }
+                },
+                singleLine = true,
+                shape = MaterialTheme.shapes.medium,
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Ultramarine,
+                    cursorColor = Ultramarine,
+                    focusedLeadingIconColor = Ultramarine,
+                ),
+            )
+
+            when {
+                models.isEmpty() && searching -> {
+                    Text(
+                        text = "No models match \"$query\"",
+                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontFamily = OutfitFamily,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                    )
+                }
+                models.isEmpty() -> {
+                    Text(
+                        text = "No models yet for this brand",
+                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp),
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontFamily = OutfitFamily,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                    )
+                }
+                else -> {
+                    LazyColumn(modifier = Modifier.fillMaxSize()) {
+                        items(models, key = { it.id }) { model ->
+                            ModelRow(model = model)
+                            HorizontalDivider(
+                                modifier = Modifier.padding(start = 20.dp),
+                                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                            )
+                        }
+                    }
                 }
             }
         }

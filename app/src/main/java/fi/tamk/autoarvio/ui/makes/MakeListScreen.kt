@@ -42,16 +42,18 @@ import fi.tamk.autoarvio.ui.theme.Ultramarine
 fun MakeListScreen(
     viewModel: MakeListViewModel,
     onMakeClick: (Make) -> Unit,
+    onModelClick: (Make, String) -> Unit,
 ) {
-    val makes by viewModel.makes.collectAsStateWithLifecycle()
+    val state by viewModel.searchState.collectAsStateWithLifecycle()
     val query by viewModel.searchQuery.collectAsStateWithLifecycle()
+    val searching = query.isNotBlank()
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
                     Text(
-                        text = "Makes",
+                        text = "Choose a car",
                         fontFamily = OutfitFamily,
                         fontWeight = FontWeight.SemiBold,
                     )
@@ -77,7 +79,7 @@ fun MakeListScreen(
                     .padding(horizontal = 16.dp, vertical = 12.dp),
                 placeholder = {
                     Text(
-                        text = "Search brands",
+                        text = "Search brands or models",
                         fontFamily = OutfitFamily,
                     )
                 },
@@ -100,36 +102,69 @@ fun MakeListScreen(
                 ),
             )
 
-            if (makes.isEmpty()) {
+            val noResults = searching && state.makes.isEmpty() && state.models.isEmpty()
+            if (noResults) {
                 Text(
-                    text = "No brands match \"$query\"",
+                    text = "No brands or models match \"$query\"",
                     modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
                     fontFamily = OutfitFamily,
                 )
-            } else {
-                Text(
-                    text = "${makes.size} brands",
-                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
-                    fontFamily = OutfitFamily,
-                )
             }
 
             LazyColumn(modifier = Modifier.fillMaxSize()) {
-                items(makes, key = { it.id }) { make ->
-                    MakeRow(make = make, onClick = { onMakeClick(make) })
-                    HorizontalDivider(
-                        modifier = Modifier.padding(start = 20.dp),
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
-                    )
+                if (state.makes.isNotEmpty()) {
+                    item {
+                        SectionHeader(
+                            if (searching) {
+                                "Brands · ${state.makes.size}"
+                            } else {
+                                "Brands"
+                            },
+                        )
+                    }
+                    items(state.makes, key = { "make-${it.id}" }) { make ->
+                        MakeRow(make = make, onClick = { onMakeClick(make) })
+                        HorizontalDivider(
+                            modifier = Modifier.padding(start = 20.dp),
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                        )
+                    }
                 }
+
+                if (state.models.isNotEmpty()) {
+                    item {
+                        SectionHeader("Models · ${state.models.size}")
+                    }
+                    items(state.models, key = { "model-${it.model.id}" }) { hit ->
+                        ModelHitRow(
+                            makeName = hit.make.name,
+                            modelName = hit.model.name,
+                            onClick = { onModelClick(hit.make, hit.model.name) },
+                        )
+                        HorizontalDivider(
+                            modifier = Modifier.padding(start = 20.dp),
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f),
+                        )
+                    }
+                }
+
                 item { Spacer(modifier = Modifier.height(24.dp)) }
             }
         }
     }
+}
+
+@Composable
+private fun SectionHeader(text: String) {
+    Text(
+        text = text,
+        modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp),
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+        fontFamily = OutfitFamily,
+    )
 }
 
 @Composable
@@ -149,6 +184,42 @@ private fun MakeRow(make: Make, onClick: () -> Unit) {
             fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colorScheme.onBackground,
         )
+        Icon(
+            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            contentDescription = null,
+            tint = Ultramarine.copy(alpha = 0.7f),
+        )
+    }
+}
+
+@Composable
+private fun ModelHitRow(
+    makeName: String,
+    modelName: String,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick)
+            .padding(horizontal = 20.dp, vertical = 16.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            Text(
+                text = "$makeName · $modelName",
+                style = MaterialTheme.typography.titleMedium,
+                fontFamily = OutfitFamily,
+                fontWeight = FontWeight.SemiBold,
+                color = MaterialTheme.colorScheme.onBackground,
+            )
+            Text(
+                text = "Open models",
+                style = MaterialTheme.typography.bodySmall,
+                fontFamily = OutfitFamily,
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+            )
+        }
         Icon(
             imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
             contentDescription = null,

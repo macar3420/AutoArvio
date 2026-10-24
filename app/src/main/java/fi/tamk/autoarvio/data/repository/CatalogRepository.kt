@@ -19,8 +19,14 @@ class CatalogRepository {
     fun observeModels(makeId: String): Flow<List<Model>> =
         flowOf(PlaceholderCatalog.models.filter { it.makeId == makeId })
 
+    /** All models (for cross-make search on Choose a car). */
+    fun observeAllModels(): Flow<List<Model>> = flowOf(PlaceholderCatalog.models)
+
     fun makeName(makeId: String): String =
         PlaceholderCatalog.makes.firstOrNull { it.id == makeId }?.name ?: makeId
+
+    fun makeById(makeId: String): Make? =
+        PlaceholderCatalog.makes.firstOrNull { it.id == makeId }
 }
 
 private fun m(
