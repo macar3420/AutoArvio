@@ -14,7 +14,6 @@
         "transmissionSummary": "6MT / Multitronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 6.6,
-        "consumptionNote": "Approx. brochure combined; Multitronic often a touch lower than 6MT",
         "consumptionStandard": "NEDC"
       },
       {
@@ -28,7 +27,6 @@
         "transmissionSummary": "6MT / S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 6.9,
-        "consumptionNote": "FWD 6MT ~6.6–7.1; quattro higher",
         "consumptionStandard": "NEDC"
       },
       {
@@ -42,7 +40,6 @@
         "transmissionSummary": "6MT / S tronic / Multitronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 4.8,
-        "consumptionNote": "Common FI diesel; ~4.6–5.3 depending on gearbox",
         "consumptionStandard": "NEDC"
       },
       {
@@ -56,7 +53,6 @@
         "transmissionSummary": "6MT / S tronic",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 5.1,
-        "consumptionNote": "Later B8/B8.5 common output; quattro slightly higher",
         "consumptionStandard": "NEDC"
       },
       {
@@ -70,7 +66,6 @@
         "transmissionSummary": "7DCT / 8AT",
         "bodyStyles": "Sedan, Avant",
         "consumptionCombinedL": 6.2,
-        "consumptionNote": "V6 diesel; ~6.0–6.6 NEDC combined typical",
         "consumptionStandard": "NEDC"
       }
     ]

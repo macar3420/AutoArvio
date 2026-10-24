@@ -159,7 +159,6 @@ private fun VariantSpecsSections(
                     value = String.format("%.1f L/100 km%s", litres, standard),
                 )
             }
-            variant.consumptionNote?.let { SpecRow(label = "Note", value = it) }
             variant.batteryKwh?.let {
                 SpecRow(label = "Battery", value = String.format("%.1f kWh usable", it))
             }
