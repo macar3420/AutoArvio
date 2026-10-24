@@ -17441,6 +17441,118 @@
       "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-i",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "I",
+      "yearFrom": 1992,
+      "yearTo": 1993,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-ii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "II",
+      "yearFrom": 1993,
+      "yearTo": 1995,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-iii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "III",
+      "yearFrom": 1995,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-iv",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "IV",
+      "yearFrom": 1996,
+      "yearTo": 1998,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-v",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "V",
+      "yearFrom": 1998,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-vi",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VI",
+      "yearFrom": 1999,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-vii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VII",
+      "yearFrom": 2001,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-viii",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "VIII",
+      "yearFrom": 2003,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-ix",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "IX",
+      "yearFrom": 2005,
+      "yearTo": 2007,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-lancer-evolution-x",
+      "modelId": "mitsubishi-lancer-evolution",
+      "code": "X",
+      "yearFrom": 2007,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "subaru-wrx-va",
+      "modelId": "subaru-wrx",
+      "code": "VA",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "subaru-wrx-vb",
+      "modelId": "subaru-wrx",
+      "code": "VB",
+      "yearFrom": 2021,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "honda-integra-type-r-dc2",
+      "modelId": "honda-integra-type-r",
+      "code": "DC2",
+      "yearFrom": 1995,
+      "yearTo": 2001,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "honda-integra-type-r-dc5",
+      "modelId": "honda-integra-type-r",
+      "code": "DC5",
+      "yearFrom": 2001,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
     }
   ]
 }

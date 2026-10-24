@@ -2324,6 +2324,13 @@
             "yearFrom": 1985
         },
         {
+            "id": "honda-integra-type-r",
+            "makeId": "honda",
+            "name": "Integra Type R",
+            "yearFrom": 1995,
+            "yearTo": 2006
+        },
+        {
             "id": "honda-jazz",
             "makeId": "honda",
             "name": "Jazz",
@@ -4055,6 +4062,13 @@
             "name": "Lancer"
         },
         {
+            "id": "mitsubishi-lancer-evolution",
+            "makeId": "mitsubishi",
+            "name": "Lancer Evolution",
+            "yearFrom": 1992,
+            "yearTo": 2016
+        },
+        {
             "id": "mitsubishi-legnum",
             "makeId": "mitsubishi",
             "name": "Legnum"
@@ -5495,9 +5509,15 @@
             "name": "Uncharted"
         },
         {
+            "id": "subaru-wrx",
+            "makeId": "subaru",
+            "name": "WRX",
+            "yearFrom": 2014
+        },
+        {
             "id": "subaru-wrx-sti",
             "makeId": "subaru",
-            "name": "Wrx Sti"
+            "name": "WRX STI"
         },
         {
             "id": "subaru-xt",
