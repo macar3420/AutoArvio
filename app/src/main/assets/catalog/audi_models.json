@@ -1,0 +1,28 @@
+{
+  "makeId": "audi",
+  "makeName": "Audi",
+  "market": "FI",
+  "note": "Passenger models commonly sold / searched in Finland (EU naming). For AA-5 JSON→Room seed.",
+  "models": [
+    { "id": "audi-a1", "name": "A1", "yearFrom": 2010 },
+    { "id": "audi-a3", "name": "A3", "yearFrom": 2012 },
+    { "id": "audi-a4", "name": "A4", "yearFrom": 2015 },
+    { "id": "audi-a5", "name": "A5", "yearFrom": 2016 },
+    { "id": "audi-a6", "name": "A6", "yearFrom": 2018 },
+    { "id": "audi-a6-etron", "name": "A6 e-tron", "yearFrom": 2024 },
+    { "id": "audi-a7", "name": "A7", "yearFrom": 2018 },
+    { "id": "audi-a8", "name": "A8", "yearFrom": 2017 },
+    { "id": "audi-q2", "name": "Q2", "yearFrom": 2016 },
+    { "id": "audi-q3", "name": "Q3", "yearFrom": 2018 },
+    { "id": "audi-q4-etron", "name": "Q4 e-tron", "yearFrom": 2021 },
+    { "id": "audi-q5", "name": "Q5", "yearFrom": 2017 },
+    { "id": "audi-q6-etron", "name": "Q6 e-tron", "yearFrom": 2024 },
+    { "id": "audi-q7", "name": "Q7", "yearFrom": 2015 },
+    { "id": "audi-q8", "name": "Q8", "yearFrom": 2018 },
+    { "id": "audi-q8-etron", "name": "Q8 e-tron", "yearFrom": 2022 },
+    { "id": "audi-etron", "name": "e-tron", "yearFrom": 2019, "yearTo": 2023 },
+    { "id": "audi-etron-gt", "name": "e-tron GT", "yearFrom": 2021 },
+    { "id": "audi-tt", "name": "TT", "yearFrom": 2014, "yearTo": 2023 },
+    { "id": "audi-r8", "name": "R8", "yearFrom": 2015, "yearTo": 2023 }
+  ]
+}

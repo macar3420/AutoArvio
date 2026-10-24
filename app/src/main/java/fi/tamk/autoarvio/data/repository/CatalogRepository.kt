@@ -52,8 +52,28 @@ private object PlaceholderCatalog {
     )
 
     val models = listOf(
-        Model(id = "a4", makeId = "audi", name = "A4", yearFrom = 2016),
-        Model(id = "q5", makeId = "audi", name = "Q5", yearFrom = 2017),
+        // Audi — FI/EU passenger names (new + commonly searched used on FI market).
+        // Source shape also mirrored in assets/catalog/audi_models.json for AA-5 seed.
+        Model(id = "audi-a1", makeId = "audi", name = "A1", yearFrom = 2010),
+        Model(id = "audi-a3", makeId = "audi", name = "A3", yearFrom = 2012),
+        Model(id = "audi-a4", makeId = "audi", name = "A4", yearFrom = 2015),
+        Model(id = "audi-a5", makeId = "audi", name = "A5", yearFrom = 2016),
+        Model(id = "audi-a6", makeId = "audi", name = "A6", yearFrom = 2018),
+        Model(id = "audi-a6-etron", makeId = "audi", name = "A6 e-tron", yearFrom = 2024),
+        Model(id = "audi-a7", makeId = "audi", name = "A7", yearFrom = 2018),
+        Model(id = "audi-a8", makeId = "audi", name = "A8", yearFrom = 2017),
+        Model(id = "audi-q2", makeId = "audi", name = "Q2", yearFrom = 2016),
+        Model(id = "audi-q3", makeId = "audi", name = "Q3", yearFrom = 2018),
+        Model(id = "audi-q4-etron", makeId = "audi", name = "Q4 e-tron", yearFrom = 2021),
+        Model(id = "audi-q5", makeId = "audi", name = "Q5", yearFrom = 2017),
+        Model(id = "audi-q6-etron", makeId = "audi", name = "Q6 e-tron", yearFrom = 2024),
+        Model(id = "audi-q7", makeId = "audi", name = "Q7", yearFrom = 2015),
+        Model(id = "audi-q8", makeId = "audi", name = "Q8", yearFrom = 2018),
+        Model(id = "audi-q8-etron", makeId = "audi", name = "Q8 e-tron", yearFrom = 2022),
+        Model(id = "audi-etron", makeId = "audi", name = "e-tron", yearFrom = 2019, yearTo = 2023),
+        Model(id = "audi-etron-gt", makeId = "audi", name = "e-tron GT", yearFrom = 2021),
+        Model(id = "audi-tt", makeId = "audi", name = "TT", yearFrom = 2014, yearTo = 2023),
+        Model(id = "audi-r8", makeId = "audi", name = "R8", yearFrom = 2015, yearTo = 2023),
         Model(id = "3series", makeId = "bmw", name = "3 Series", yearFrom = 2019),
         Model(id = "x3", makeId = "bmw", name = "X3", yearFrom = 2018),
         Model(id = "c3", makeId = "citroen", name = "C3", yearFrom = 2017),
