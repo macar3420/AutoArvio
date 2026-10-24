@@ -1,7 +1,6 @@
 package fi.tamk.autoarvio.ui.navigation
 
 object Routes {
-    const val SPLASH = "splash"
     const val MAKE_LIST = "makes"
     const val MODEL_LIST = "makes/{makeId}/models"
 

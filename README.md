@@ -41,7 +41,7 @@ app/src/main/java/fi/tamk/autoarvio/
   domain/      # Make / Model models
 ```
 
-Flow today: **Splash (Ultramarine `#0437F2` + official logo) → Make list → Model list** (placeholder catalog). Room DB is created empty; `DatabaseSeeder` is ready for the JSON seed task.
+Flow today: **one system splash** (Ultramarine `#0437F2` + logo via AndroidX SplashScreen) → **Make list → Model list** (placeholder catalog). No second Compose splash. Room DB is created empty; `DatabaseSeeder` is ready for the JSON seed task.
 
 ## Thesis folder
 

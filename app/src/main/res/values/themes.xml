@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Cold-start splash (Android 12+ system SplashScreen via AndroidX). -->
+    <style name="Theme.AutoArvio.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/ultramarine</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">0</item>
+        <item name="postSplashScreenTheme">@style/Theme.AutoArvio</item>
+    </style>
+
     <style name="Theme.AutoArvio" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/ultramarine</item>
-        <item name="android:navigationBarColor">@color/ultramarine</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
         <item name="android:windowBackground">@color/ultramarine</item>
     </style>
 </resources>

@@ -14,7 +14,6 @@ import fi.tamk.autoarvio.ui.makes.MakeListViewModel
 import fi.tamk.autoarvio.ui.models.ModelListScreen
 import fi.tamk.autoarvio.ui.models.ModelListViewModel
 import fi.tamk.autoarvio.ui.navigation.Routes
-import fi.tamk.autoarvio.ui.splash.SplashScreen
 
 @Composable
 fun AutoArvioApp(
@@ -24,17 +23,8 @@ fun AutoArvioApp(
 
     NavHost(
         navController = navController,
-        startDestination = Routes.SPLASH,
+        startDestination = Routes.MAKE_LIST,
     ) {
-        composable(Routes.SPLASH) {
-            SplashScreen(
-                onFinished = {
-                    navController.navigate(Routes.MAKE_LIST) {
-                        popUpTo(Routes.SPLASH) { inclusive = true }
-                    }
-                },
-            )
-        }
         composable(Routes.MAKE_LIST) {
             val vm: MakeListViewModel = viewModel(
                 factory = MakeListViewModel.factory(catalogRepository),
