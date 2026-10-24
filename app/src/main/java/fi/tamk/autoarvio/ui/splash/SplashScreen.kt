@@ -1,20 +1,17 @@
 package fi.tamk.autoarvio.ui.splash
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.offset
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import fi.tamk.autoarvio.ui.theme.OutfitFamily
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import fi.tamk.autoarvio.R
 import fi.tamk.autoarvio.ui.theme.Ultramarine
 import kotlinx.coroutines.delay
 
@@ -35,27 +32,11 @@ fun SplashScreen(
             .background(Ultramarine),
         contentAlignment = Alignment.Center,
     ) {
-        // Slightly above true center — Nettiauto-style wordmark placement.
-        Row(
-            modifier = Modifier.offset(y = (-36).dp),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Text(
-                text = "Auto",
-                color = Color.White,
-                fontFamily = OutfitFamily,
-                fontWeight = FontWeight.Bold,
-                fontSize = 42.sp,
-                letterSpacing = (-0.8).sp,
-            )
-            Text(
-                text = "Arvio",
-                color = Color.White,
-                fontFamily = OutfitFamily,
-                fontWeight = FontWeight.Normal,
-                fontSize = 42.sp,
-                letterSpacing = (-0.8).sp,
-            )
-        }
+        Image(
+            painter = painterResource(R.drawable.autoarvio_logo),
+            contentDescription = "AutoArvio",
+            modifier = Modifier.fillMaxWidth(0.68f),
+            contentScale = ContentScale.FillWidth,
+        )
     }
 }
