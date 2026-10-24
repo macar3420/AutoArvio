@@ -1,0 +1,20 @@
+{
+  "note": "Optional tech specs keyed by generation id. Values are approximate brochure/type-approval figures for FI/EU. Fill more generations over time.",
+  "specs": {
+    "audi-a4-b8": {
+      "generationId": "audi-a4-b8",
+      "powertrain": "ice",
+      "powerHpMin": 120,
+      "powerHpMax": 333,
+      "powerKwMin": 88,
+      "powerKwMax": 245,
+      "drivetrain": "FWD / quattro",
+      "transmissionSummary": "6MT / Multitronic CVT / 7DCT / 8AT",
+      "bodyStyles": "Sedan, Avant",
+      "enginesSummary": "1.8/2.0 TFSI, 3.2 FSI (early); 2.0/3.0 TDI; S4 3.0 TFSI",
+      "consumptionCombinedL": 6.2,
+      "consumptionNote": "Typical mid-range ~5.5–7.5 L/100 km depending on engine/gearbox",
+      "consumptionStandard": "NEDC"
+    }
+  }
+}

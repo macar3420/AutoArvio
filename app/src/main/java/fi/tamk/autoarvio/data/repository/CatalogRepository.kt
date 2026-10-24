@@ -2,6 +2,7 @@ package fi.tamk.autoarvio.data.repository
 
 import android.content.Context
 import fi.tamk.autoarvio.domain.model.Generation
+import fi.tamk.autoarvio.domain.model.GenerationSpecs
 import fi.tamk.autoarvio.domain.model.Make
 import fi.tamk.autoarvio.domain.model.Model
 import kotlinx.coroutines.flow.Flow
@@ -12,7 +13,8 @@ import org.json.JSONObject
  * Finnish-market catalog expanded from Nettiauto make→model filters (scraped 2026-10)
  * plus confirmed FI pages for S/RS/M gaps. yearFrom = best-effort first introduction.
  * Full mirror: assets/catalog/fi_catalog.json
- * Generations: assets/catalog/generations.json (Aion, Audi, BMW, BYD filled; more later).
+ * Generations: assets/catalog/generations.json
+ * Tech specs: assets/catalog/generation_specs.json (optional; A4 B8 prototype filled).
  *
  * Chinese FI brands kept: Aion, BYD, Maxus, MG, Smart, Voyah, XPeng.
  * Omitted (no clear FI retail): Leapmotor, Zeekr, NIO, Ora, Lynk & Co.
@@ -22,6 +24,7 @@ class CatalogRepository(
 ) {
     private val appContext = context.applicationContext
     private val generations: List<Generation> by lazy { loadGenerations(appContext) }
+    private val generationSpecs: Map<String, GenerationSpecs> by lazy { loadGenerationSpecs(appContext) }
 
     fun observeMakes(): Flow<List<Make>> = flowOf(PlaceholderCatalog.makes)
 
@@ -51,6 +54,9 @@ class CatalogRepository(
 
     fun generationById(generationId: String): Generation? =
         generations.firstOrNull { it.id == generationId }
+
+    fun specsFor(generationId: String): GenerationSpecs? =
+        generationSpecs[generationId]
 }
 
 private fun loadGenerations(context: Context): List<Generation> {
@@ -75,6 +81,54 @@ private fun loadGenerations(context: Context): List<Generation> {
         }
     }
 }
+
+private fun loadGenerationSpecs(context: Context): Map<String, GenerationSpecs> {
+    val json = context.assets.open("catalog/generation_specs.json")
+        .bufferedReader()
+        .use { it.readText() }
+    val root = JSONObject(json)
+    val specsObj = root.getJSONObject("specs")
+    return buildMap {
+        val keys = specsObj.keys()
+        while (keys.hasNext()) {
+            val key = keys.next()
+            val o = specsObj.getJSONObject(key)
+            put(
+                key,
+                GenerationSpecs(
+                    generationId = o.optString("generationId", key),
+                    powertrain = o.optNullableString("powertrain"),
+                    powerHp = o.optNullableInt("powerHp"),
+                    powerKw = o.optNullableInt("powerKw"),
+                    powerHpMin = o.optNullableInt("powerHpMin"),
+                    powerHpMax = o.optNullableInt("powerHpMax"),
+                    powerKwMin = o.optNullableInt("powerKwMin"),
+                    powerKwMax = o.optNullableInt("powerKwMax"),
+                    drivetrain = o.optNullableString("drivetrain"),
+                    transmissionSummary = o.optNullableString("transmissionSummary"),
+                    bodyStyles = o.optNullableString("bodyStyles"),
+                    enginesSummary = o.optNullableString("enginesSummary"),
+                    consumptionCombinedL = o.optNullableDouble("consumptionCombinedL"),
+                    consumptionNote = o.optNullableString("consumptionNote"),
+                    consumptionStandard = o.optNullableString("consumptionStandard"),
+                    batteryKwh = o.optNullableDouble("batteryKwh"),
+                    electricRangeKm = o.optNullableInt("electricRangeKm"),
+                    rangeStandard = o.optNullableString("rangeStandard"),
+                    consumptionCombinedKwh = o.optNullableDouble("consumptionCombinedKwh"),
+                ),
+            )
+        }
+    }
+}
+
+private fun JSONObject.optNullableString(name: String): String? =
+    if (has(name) && !isNull(name)) optString(name).takeIf { it.isNotBlank() } else null
+
+private fun JSONObject.optNullableInt(name: String): Int? =
+    if (has(name) && !isNull(name)) getInt(name) else null
+
+private fun JSONObject.optNullableDouble(name: String): Double? =
+    if (has(name) && !isNull(name)) getDouble(name) else null
 
 private fun m(
     id: String,
