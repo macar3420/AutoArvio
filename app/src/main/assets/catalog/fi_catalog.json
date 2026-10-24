@@ -1,0 +1,1751 @@
+﻿{
+    "market":  "FI",
+    "note":  "Finnish-market MVP catalog. yearFrom = first introduction. Chinese brands with FI presence only.",
+    "makes":  [
+                  {
+                      "id":  "aion",
+                      "name":  "Aion"
+                  },
+                  {
+                      "id":  "audi",
+                      "name":  "Audi"
+                  },
+                  {
+                      "id":  "bmw",
+                      "name":  "BMW"
+                  },
+                  {
+                      "id":  "byd",
+                      "name":  "BYD"
+                  },
+                  {
+                      "id":  "citroen",
+                      "name":  "CitroÃ«n"
+                  },
+                  {
+                      "id":  "cupra",
+                      "name":  "Cupra"
+                  },
+                  {
+                      "id":  "dacia",
+                      "name":  "Dacia"
+                  },
+                  {
+                      "id":  "fiat",
+                      "name":  "Fiat"
+                  },
+                  {
+                      "id":  "ford",
+                      "name":  "Ford"
+                  },
+                  {
+                      "id":  "honda",
+                      "name":  "Honda"
+                  },
+                  {
+                      "id":  "hyundai",
+                      "name":  "Hyundai"
+                  },
+                  {
+                      "id":  "kia",
+                      "name":  "Kia"
+                  },
+                  {
+                      "id":  "landrover",
+                      "name":  "Land Rover"
+                  },
+                  {
+                      "id":  "lexus",
+                      "name":  "Lexus"
+                  },
+                  {
+                      "id":  "mazda",
+                      "name":  "Mazda"
+                  },
+                  {
+                      "id":  "maxus",
+                      "name":  "Maxus"
+                  },
+                  {
+                      "id":  "mercedes",
+                      "name":  "Mercedes-Benz"
+                  },
+                  {
+                      "id":  "mg",
+                      "name":  "MG"
+                  },
+                  {
+                      "id":  "mini",
+                      "name":  "MINI"
+                  },
+                  {
+                      "id":  "mitsubishi",
+                      "name":  "Mitsubishi"
+                  },
+                  {
+                      "id":  "nissan",
+                      "name":  "Nissan"
+                  },
+                  {
+                      "id":  "opel",
+                      "name":  "Opel"
+                  },
+                  {
+                      "id":  "peugeot",
+                      "name":  "Peugeot"
+                  },
+                  {
+                      "id":  "polestar",
+                      "name":  "Polestar"
+                  },
+                  {
+                      "id":  "porsche",
+                      "name":  "Porsche"
+                  },
+                  {
+                      "id":  "renault",
+                      "name":  "Renault"
+                  },
+                  {
+                      "id":  "seat",
+                      "name":  "SEAT"
+                  },
+                  {
+                      "id":  "skoda",
+                      "name":  "Å koda"
+                  },
+                  {
+                      "id":  "smart",
+                      "name":  "Smart"
+                  },
+                  {
+                      "id":  "subaru",
+                      "name":  "Subaru"
+                  },
+                  {
+                      "id":  "suzuki",
+                      "name":  "Suzuki"
+                  },
+                  {
+                      "id":  "tesla",
+                      "name":  "Tesla"
+                  },
+                  {
+                      "id":  "toyota",
+                      "name":  "Toyota"
+                  },
+                  {
+                      "id":  "volkswagen",
+                      "name":  "Volkswagen"
+                  },
+                  {
+                      "id":  "volvo",
+                      "name":  "Volvo"
+                  },
+                  {
+                      "id":  "voyah",
+                      "name":  "Voyah"
+                  },
+                  {
+                      "id":  "xpeng",
+                      "name":  "XPeng"
+                  }
+              ],
+    "models":  [
+                   {
+                       "id":  "aion-v",
+                       "makeId":  "aion",
+                       "name":  "V",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "audi-a1",
+                       "makeId":  "audi",
+                       "name":  "A1",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "audi-a3",
+                       "makeId":  "audi",
+                       "name":  "A3",
+                       "yearFrom":  1996
+                   },
+                   {
+                       "id":  "audi-a4",
+                       "makeId":  "audi",
+                       "name":  "A4",
+                       "yearFrom":  1994
+                   },
+                   {
+                       "id":  "audi-a5",
+                       "makeId":  "audi",
+                       "name":  "A5",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "audi-a6",
+                       "makeId":  "audi",
+                       "name":  "A6",
+                       "yearFrom":  1994
+                   },
+                   {
+                       "id":  "audi-a6-etron",
+                       "makeId":  "audi",
+                       "name":  "A6 e-tron",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "audi-a7",
+                       "makeId":  "audi",
+                       "name":  "A7",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "audi-a8",
+                       "makeId":  "audi",
+                       "name":  "A8",
+                       "yearFrom":  1994
+                   },
+                   {
+                       "id":  "audi-q2",
+                       "makeId":  "audi",
+                       "name":  "Q2",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "audi-q3",
+                       "makeId":  "audi",
+                       "name":  "Q3",
+                       "yearFrom":  2011
+                   },
+                   {
+                       "id":  "audi-q4-etron",
+                       "makeId":  "audi",
+                       "name":  "Q4 e-tron",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "audi-q5",
+                       "makeId":  "audi",
+                       "name":  "Q5",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "audi-q6-etron",
+                       "makeId":  "audi",
+                       "name":  "Q6 e-tron",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "audi-q7",
+                       "makeId":  "audi",
+                       "name":  "Q7",
+                       "yearFrom":  2005
+                   },
+                   {
+                       "id":  "audi-q8",
+                       "makeId":  "audi",
+                       "name":  "Q8",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "audi-q8-etron",
+                       "makeId":  "audi",
+                       "name":  "Q8 e-tron",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "audi-etron",
+                       "makeId":  "audi",
+                       "name":  "e-tron",
+                       "yearFrom":  2018,
+                       "yearTo":  2022
+                   },
+                   {
+                       "id":  "audi-etron-gt",
+                       "makeId":  "audi",
+                       "name":  "e-tron GT",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "audi-tt",
+                       "makeId":  "audi",
+                       "name":  "TT",
+                       "yearFrom":  1998,
+                       "yearTo":  2023
+                   },
+                   {
+                       "id":  "audi-r8",
+                       "makeId":  "audi",
+                       "name":  "R8",
+                       "yearFrom":  2006,
+                       "yearTo":  2023
+                   },
+                   {
+                       "id":  "bmw-1",
+                       "makeId":  "bmw",
+                       "name":  "1 Series",
+                       "yearFrom":  2004
+                   },
+                   {
+                       "id":  "bmw-2",
+                       "makeId":  "bmw",
+                       "name":  "2 Series",
+                       "yearFrom":  2014
+                   },
+                   {
+                       "id":  "bmw-3",
+                       "makeId":  "bmw",
+                       "name":  "3 Series",
+                       "yearFrom":  1975
+                   },
+                   {
+                       "id":  "bmw-4",
+                       "makeId":  "bmw",
+                       "name":  "4 Series",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "bmw-5",
+                       "makeId":  "bmw",
+                       "name":  "5 Series",
+                       "yearFrom":  1972
+                   },
+                   {
+                       "id":  "bmw-7",
+                       "makeId":  "bmw",
+                       "name":  "7 Series",
+                       "yearFrom":  1977
+                   },
+                   {
+                       "id":  "bmw-x1",
+                       "makeId":  "bmw",
+                       "name":  "X1",
+                       "yearFrom":  2009
+                   },
+                   {
+                       "id":  "bmw-x2",
+                       "makeId":  "bmw",
+                       "name":  "X2",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "bmw-x3",
+                       "makeId":  "bmw",
+                       "name":  "X3",
+                       "yearFrom":  2003
+                   },
+                   {
+                       "id":  "bmw-x4",
+                       "makeId":  "bmw",
+                       "name":  "X4",
+                       "yearFrom":  2014
+                   },
+                   {
+                       "id":  "bmw-x5",
+                       "makeId":  "bmw",
+                       "name":  "X5",
+                       "yearFrom":  1999
+                   },
+                   {
+                       "id":  "bmw-x6",
+                       "makeId":  "bmw",
+                       "name":  "X6",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "bmw-x7",
+                       "makeId":  "bmw",
+                       "name":  "X7",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "bmw-ix1",
+                       "makeId":  "bmw",
+                       "name":  "iX1",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "bmw-ix3",
+                       "makeId":  "bmw",
+                       "name":  "iX3",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "bmw-ix",
+                       "makeId":  "bmw",
+                       "name":  "iX",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "bmw-i4",
+                       "makeId":  "bmw",
+                       "name":  "i4",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "bmw-i5",
+                       "makeId":  "bmw",
+                       "name":  "i5",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "byd-atto3",
+                       "makeId":  "byd",
+                       "name":  "Atto 3",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "byd-dolphin",
+                       "makeId":  "byd",
+                       "name":  "Dolphin",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "byd-seal",
+                       "makeId":  "byd",
+                       "name":  "Seal",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "byd-seal-u",
+                       "makeId":  "byd",
+                       "name":  "Seal U",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "byd-han",
+                       "makeId":  "byd",
+                       "name":  "Han",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "byd-tang",
+                       "makeId":  "byd",
+                       "name":  "Tang",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "citroen-c3",
+                       "makeId":  "citroen",
+                       "name":  "C3",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "citroen-c3-aircross",
+                       "makeId":  "citroen",
+                       "name":  "C3 Aircross",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "citroen-c4",
+                       "makeId":  "citroen",
+                       "name":  "C4",
+                       "yearFrom":  2004
+                   },
+                   {
+                       "id":  "citroen-c5-aircross",
+                       "makeId":  "citroen",
+                       "name":  "C5 Aircross",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "citroen-berlingo",
+                       "makeId":  "citroen",
+                       "name":  "Berlingo",
+                       "yearFrom":  1996
+                   },
+                   {
+                       "id":  "citroen-ec4",
+                       "makeId":  "citroen",
+                       "name":  "Ã«-C4",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "cupra-formentor",
+                       "makeId":  "cupra",
+                       "name":  "Formentor",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "cupra-leon",
+                       "makeId":  "cupra",
+                       "name":  "Leon",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "cupra-ateca",
+                       "makeId":  "cupra",
+                       "name":  "Ateca",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "cupra-born",
+                       "makeId":  "cupra",
+                       "name":  "Born",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "cupra-tavascan",
+                       "makeId":  "cupra",
+                       "name":  "Tavascan",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "dacia-sandero",
+                       "makeId":  "dacia",
+                       "name":  "Sandero",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "dacia-duster",
+                       "makeId":  "dacia",
+                       "name":  "Duster",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "dacia-jogger",
+                       "makeId":  "dacia",
+                       "name":  "Jogger",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "dacia-spring",
+                       "makeId":  "dacia",
+                       "name":  "Spring",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "dacia-logan",
+                       "makeId":  "dacia",
+                       "name":  "Logan",
+                       "yearFrom":  2004
+                   },
+                   {
+                       "id":  "fiat-500",
+                       "makeId":  "fiat",
+                       "name":  "500",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "fiat-500e",
+                       "makeId":  "fiat",
+                       "name":  "500e",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "fiat-panda",
+                       "makeId":  "fiat",
+                       "name":  "Panda",
+                       "yearFrom":  1980
+                   },
+                   {
+                       "id":  "fiat-tipo",
+                       "makeId":  "fiat",
+                       "name":  "Tipo",
+                       "yearFrom":  2015
+                   },
+                   {
+                       "id":  "fiat-doblo",
+                       "makeId":  "fiat",
+                       "name":  "Doblo",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "ford-fiesta",
+                       "makeId":  "ford",
+                       "name":  "Fiesta",
+                       "yearFrom":  1976,
+                       "yearTo":  2023
+                   },
+                   {
+                       "id":  "ford-focus",
+                       "makeId":  "ford",
+                       "name":  "Focus",
+                       "yearFrom":  1998
+                   },
+                   {
+                       "id":  "ford-puma",
+                       "makeId":  "ford",
+                       "name":  "Puma",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "ford-kuga",
+                       "makeId":  "ford",
+                       "name":  "Kuga",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "ford-mustang-mach-e",
+                       "makeId":  "ford",
+                       "name":  "Mustang Mach-E",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "ford-explorer-ev",
+                       "makeId":  "ford",
+                       "name":  "Explorer",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "ford-transit-connect",
+                       "makeId":  "ford",
+                       "name":  "Transit Connect",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "honda-civic",
+                       "makeId":  "honda",
+                       "name":  "Civic",
+                       "yearFrom":  1972
+                   },
+                   {
+                       "id":  "honda-jazz",
+                       "makeId":  "honda",
+                       "name":  "Jazz",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "honda-hrv",
+                       "makeId":  "honda",
+                       "name":  "HR-V",
+                       "yearFrom":  1998
+                   },
+                   {
+                       "id":  "honda-crv",
+                       "makeId":  "honda",
+                       "name":  "CR-V",
+                       "yearFrom":  1995
+                   },
+                   {
+                       "id":  "honda-e",
+                       "makeId":  "honda",
+                       "name":  "e",
+                       "yearFrom":  2020,
+                       "yearTo":  2024
+                   },
+                   {
+                       "id":  "hyundai-i10",
+                       "makeId":  "hyundai",
+                       "name":  "i10",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "hyundai-i20",
+                       "makeId":  "hyundai",
+                       "name":  "i20",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "hyundai-i30",
+                       "makeId":  "hyundai",
+                       "name":  "i30",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "hyundai-kona",
+                       "makeId":  "hyundai",
+                       "name":  "Kona",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "hyundai-tucson",
+                       "makeId":  "hyundai",
+                       "name":  "Tucson",
+                       "yearFrom":  2004
+                   },
+                   {
+                       "id":  "hyundai-santa-fe",
+                       "makeId":  "hyundai",
+                       "name":  "Santa Fe",
+                       "yearFrom":  2000
+                   },
+                   {
+                       "id":  "hyundai-ioniq5",
+                       "makeId":  "hyundai",
+                       "name":  "IONIQ 5",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "hyundai-ioniq6",
+                       "makeId":  "hyundai",
+                       "name":  "IONIQ 6",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "kia-picanto",
+                       "makeId":  "kia",
+                       "name":  "Picanto",
+                       "yearFrom":  2004
+                   },
+                   {
+                       "id":  "kia-rio",
+                       "makeId":  "kia",
+                       "name":  "Rio",
+                       "yearFrom":  1999
+                   },
+                   {
+                       "id":  "kia-ceed",
+                       "makeId":  "kia",
+                       "name":  "Ceed",
+                       "yearFrom":  2006
+                   },
+                   {
+                       "id":  "kia-xceed",
+                       "makeId":  "kia",
+                       "name":  "XCeed",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "kia-sportage",
+                       "makeId":  "kia",
+                       "name":  "Sportage",
+                       "yearFrom":  1993
+                   },
+                   {
+                       "id":  "kia-sorento",
+                       "makeId":  "kia",
+                       "name":  "Sorento",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "kia-niro",
+                       "makeId":  "kia",
+                       "name":  "Niro",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "kia-ev6",
+                       "makeId":  "kia",
+                       "name":  "EV6",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "kia-ev9",
+                       "makeId":  "kia",
+                       "name":  "EV9",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "kia-stonic",
+                       "makeId":  "kia",
+                       "name":  "Stonic",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "lr-defender",
+                       "makeId":  "landrover",
+                       "name":  "Defender",
+                       "yearFrom":  1983
+                   },
+                   {
+                       "id":  "lr-discovery",
+                       "makeId":  "landrover",
+                       "name":  "Discovery",
+                       "yearFrom":  1989
+                   },
+                   {
+                       "id":  "lr-discovery-sport",
+                       "makeId":  "landrover",
+                       "name":  "Discovery Sport",
+                       "yearFrom":  2014
+                   },
+                   {
+                       "id":  "lr-range-rover",
+                       "makeId":  "landrover",
+                       "name":  "Range Rover",
+                       "yearFrom":  1970
+                   },
+                   {
+                       "id":  "lr-range-rover-sport",
+                       "makeId":  "landrover",
+                       "name":  "Range Rover Sport",
+                       "yearFrom":  2005
+                   },
+                   {
+                       "id":  "lr-range-rover-evoque",
+                       "makeId":  "landrover",
+                       "name":  "Range Rover Evoque",
+                       "yearFrom":  2011
+                   },
+                   {
+                       "id":  "lr-range-rover-velar",
+                       "makeId":  "landrover",
+                       "name":  "Range Rover Velar",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "lexus-ux",
+                       "makeId":  "lexus",
+                       "name":  "UX",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "lexus-nx",
+                       "makeId":  "lexus",
+                       "name":  "NX",
+                       "yearFrom":  2014
+                   },
+                   {
+                       "id":  "lexus-rx",
+                       "makeId":  "lexus",
+                       "name":  "RX",
+                       "yearFrom":  1998
+                   },
+                   {
+                       "id":  "lexus-es",
+                       "makeId":  "lexus",
+                       "name":  "ES",
+                       "yearFrom":  1989
+                   },
+                   {
+                       "id":  "lexus-lbx",
+                       "makeId":  "lexus",
+                       "name":  "LBX",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "lexus-rz",
+                       "makeId":  "lexus",
+                       "name":  "RZ",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "mazda-2",
+                       "makeId":  "mazda",
+                       "name":  "2",
+                       "yearFrom":  2003
+                   },
+                   {
+                       "id":  "mazda-3",
+                       "makeId":  "mazda",
+                       "name":  "3",
+                       "yearFrom":  2003
+                   },
+                   {
+                       "id":  "mazda-6",
+                       "makeId":  "mazda",
+                       "name":  "6",
+                       "yearFrom":  2002,
+                       "yearTo":  2024
+                   },
+                   {
+                       "id":  "mazda-cx30",
+                       "makeId":  "mazda",
+                       "name":  "CX-30",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "mazda-cx5",
+                       "makeId":  "mazda",
+                       "name":  "CX-5",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "mazda-cx60",
+                       "makeId":  "mazda",
+                       "name":  "CX-60",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "mazda-mx30",
+                       "makeId":  "mazda",
+                       "name":  "MX-30",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "maxus-mifa9",
+                       "makeId":  "maxus",
+                       "name":  "MIFA 9",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "maxus-euniq6",
+                       "makeId":  "maxus",
+                       "name":  "Euniq 6",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "maxus-deliver9",
+                       "makeId":  "maxus",
+                       "name":  "Deliver 9",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "maxus-t90",
+                       "makeId":  "maxus",
+                       "name":  "T90 EV",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "mb-a",
+                       "makeId":  "mercedes",
+                       "name":  "A-Class",
+                       "yearFrom":  1997
+                   },
+                   {
+                       "id":  "mb-b",
+                       "makeId":  "mercedes",
+                       "name":  "B-Class",
+                       "yearFrom":  2005
+                   },
+                   {
+                       "id":  "mb-c",
+                       "makeId":  "mercedes",
+                       "name":  "C-Class",
+                       "yearFrom":  1993
+                   },
+                   {
+                       "id":  "mb-e",
+                       "makeId":  "mercedes",
+                       "name":  "E-Class",
+                       "yearFrom":  1993
+                   },
+                   {
+                       "id":  "mb-s",
+                       "makeId":  "mercedes",
+                       "name":  "S-Class",
+                       "yearFrom":  1972
+                   },
+                   {
+                       "id":  "mb-cla",
+                       "makeId":  "mercedes",
+                       "name":  "CLA",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "mb-glb",
+                       "makeId":  "mercedes",
+                       "name":  "GLB",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "mb-glc",
+                       "makeId":  "mercedes",
+                       "name":  "GLC",
+                       "yearFrom":  2015
+                   },
+                   {
+                       "id":  "mb-gle",
+                       "makeId":  "mercedes",
+                       "name":  "GLE",
+                       "yearFrom":  1997
+                   },
+                   {
+                       "id":  "mb-gla",
+                       "makeId":  "mercedes",
+                       "name":  "GLA",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "mb-eqa",
+                       "makeId":  "mercedes",
+                       "name":  "EQA",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "mb-eqb",
+                       "makeId":  "mercedes",
+                       "name":  "EQB",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "mb-eqc",
+                       "makeId":  "mercedes",
+                       "name":  "EQC",
+                       "yearFrom":  2019,
+                       "yearTo":  2023
+                   },
+                   {
+                       "id":  "mb-eqe",
+                       "makeId":  "mercedes",
+                       "name":  "EQE",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "mb-eqs",
+                       "makeId":  "mercedes",
+                       "name":  "EQS",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "mg-4",
+                       "makeId":  "mg",
+                       "name":  "MG4",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "mg-5",
+                       "makeId":  "mg",
+                       "name":  "MG5",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "mg-zs",
+                       "makeId":  "mg",
+                       "name":  "ZS",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "mg-hs",
+                       "makeId":  "mg",
+                       "name":  "HS",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "mg-marvel-r",
+                       "makeId":  "mg",
+                       "name":  "Marvel R",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "mg-cyberster",
+                       "makeId":  "mg",
+                       "name":  "Cyberster",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "mini-cooper",
+                       "makeId":  "mini",
+                       "name":  "Cooper",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "mini-countryman",
+                       "makeId":  "mini",
+                       "name":  "Countryman",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "mini-clubman",
+                       "makeId":  "mini",
+                       "name":  "Clubman",
+                       "yearFrom":  2007,
+                       "yearTo":  2024
+                   },
+                   {
+                       "id":  "mini-cooper-e",
+                       "makeId":  "mini",
+                       "name":  "Cooper E",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "mini-countryman-e",
+                       "makeId":  "mini",
+                       "name":  "Countryman E",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "mitsubishi-asx",
+                       "makeId":  "mitsubishi",
+                       "name":  "ASX",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "mitsubishi-eclipse-cross",
+                       "makeId":  "mitsubishi",
+                       "name":  "Eclipse Cross",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "mitsubishi-outlander",
+                       "makeId":  "mitsubishi",
+                       "name":  "Outlander",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "mitsubishi-space-star",
+                       "makeId":  "mitsubishi",
+                       "name":  "Space Star",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "mitsubishi-l200",
+                       "makeId":  "mitsubishi",
+                       "name":  "L200",
+                       "yearFrom":  1978
+                   },
+                   {
+                       "id":  "nissan-micra",
+                       "makeId":  "nissan",
+                       "name":  "Micra",
+                       "yearFrom":  1982
+                   },
+                   {
+                       "id":  "nissan-juke",
+                       "makeId":  "nissan",
+                       "name":  "Juke",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "nissan-qashqai",
+                       "makeId":  "nissan",
+                       "name":  "Qashqai",
+                       "yearFrom":  2006
+                   },
+                   {
+                       "id":  "nissan-xtrail",
+                       "makeId":  "nissan",
+                       "name":  "X-Trail",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "nissan-leaf",
+                       "makeId":  "nissan",
+                       "name":  "Leaf",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "nissan-ariya",
+                       "makeId":  "nissan",
+                       "name":  "Ariya",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "opel-corsa",
+                       "makeId":  "opel",
+                       "name":  "Corsa",
+                       "yearFrom":  1982
+                   },
+                   {
+                       "id":  "opel-astra",
+                       "makeId":  "opel",
+                       "name":  "Astra",
+                       "yearFrom":  1991
+                   },
+                   {
+                       "id":  "opel-mokka",
+                       "makeId":  "opel",
+                       "name":  "Mokka",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "opel-crossland",
+                       "makeId":  "opel",
+                       "name":  "Crossland",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "opel-grandland",
+                       "makeId":  "opel",
+                       "name":  "Grandland",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "opel-combo",
+                       "makeId":  "opel",
+                       "name":  "Combo",
+                       "yearFrom":  1986
+                   },
+                   {
+                       "id":  "peugeot-208",
+                       "makeId":  "peugeot",
+                       "name":  "208",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "peugeot-2008",
+                       "makeId":  "peugeot",
+                       "name":  "2008",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "peugeot-308",
+                       "makeId":  "peugeot",
+                       "name":  "308",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "peugeot-3008",
+                       "makeId":  "peugeot",
+                       "name":  "3008",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "peugeot-5008",
+                       "makeId":  "peugeot",
+                       "name":  "5008",
+                       "yearFrom":  2009
+                   },
+                   {
+                       "id":  "peugeot-408",
+                       "makeId":  "peugeot",
+                       "name":  "408",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "peugeot-e208",
+                       "makeId":  "peugeot",
+                       "name":  "e-208",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "polestar-2",
+                       "makeId":  "polestar",
+                       "name":  "2",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "polestar-3",
+                       "makeId":  "polestar",
+                       "name":  "3",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "polestar-4",
+                       "makeId":  "polestar",
+                       "name":  "4",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "porsche-911",
+                       "makeId":  "porsche",
+                       "name":  "911",
+                       "yearFrom":  1963
+                   },
+                   {
+                       "id":  "porsche-cayenne",
+                       "makeId":  "porsche",
+                       "name":  "Cayenne",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "porsche-macan",
+                       "makeId":  "porsche",
+                       "name":  "Macan",
+                       "yearFrom":  2014
+                   },
+                   {
+                       "id":  "porsche-panamera",
+                       "makeId":  "porsche",
+                       "name":  "Panamera",
+                       "yearFrom":  2009
+                   },
+                   {
+                       "id":  "porsche-taycan",
+                       "makeId":  "porsche",
+                       "name":  "Taycan",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "porsche-boxster",
+                       "makeId":  "porsche",
+                       "name":  "718 Boxster",
+                       "yearFrom":  1996
+                   },
+                   {
+                       "id":  "porsche-cayman",
+                       "makeId":  "porsche",
+                       "name":  "718 Cayman",
+                       "yearFrom":  2005
+                   },
+                   {
+                       "id":  "renault-clio",
+                       "makeId":  "renault",
+                       "name":  "Clio",
+                       "yearFrom":  1990
+                   },
+                   {
+                       "id":  "renault-captur",
+                       "makeId":  "renault",
+                       "name":  "Captur",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "renault-megane",
+                       "makeId":  "renault",
+                       "name":  "MÃ©gane",
+                       "yearFrom":  1995
+                   },
+                   {
+                       "id":  "renault-austral",
+                       "makeId":  "renault",
+                       "name":  "Austral",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "renault-scenic",
+                       "makeId":  "renault",
+                       "name":  "ScÃ©nic",
+                       "yearFrom":  1996
+                   },
+                   {
+                       "id":  "renault-scenic-e",
+                       "makeId":  "renault",
+                       "name":  "ScÃ©nic E-Tech",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "renault-zoe",
+                       "makeId":  "renault",
+                       "name":  "Zoe",
+                       "yearFrom":  2012,
+                       "yearTo":  2024
+                   },
+                   {
+                       "id":  "renault-trafic",
+                       "makeId":  "renault",
+                       "name":  "Trafic",
+                       "yearFrom":  1980
+                   },
+                   {
+                       "id":  "seat-ibiza",
+                       "makeId":  "seat",
+                       "name":  "Ibiza",
+                       "yearFrom":  1984
+                   },
+                   {
+                       "id":  "seat-leon",
+                       "makeId":  "seat",
+                       "name":  "Leon",
+                       "yearFrom":  1999
+                   },
+                   {
+                       "id":  "seat-arona",
+                       "makeId":  "seat",
+                       "name":  "Arona",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "seat-ateca",
+                       "makeId":  "seat",
+                       "name":  "Ateca",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "seat-tarraco",
+                       "makeId":  "seat",
+                       "name":  "Tarraco",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "skoda-fabia",
+                       "makeId":  "skoda",
+                       "name":  "Fabia",
+                       "yearFrom":  1999
+                   },
+                   {
+                       "id":  "skoda-scala",
+                       "makeId":  "skoda",
+                       "name":  "Scala",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "skoda-octavia",
+                       "makeId":  "skoda",
+                       "name":  "Octavia",
+                       "yearFrom":  1996
+                   },
+                   {
+                       "id":  "skoda-superb",
+                       "makeId":  "skoda",
+                       "name":  "Superb",
+                       "yearFrom":  2001
+                   },
+                   {
+                       "id":  "skoda-kamiq",
+                       "makeId":  "skoda",
+                       "name":  "Kamiq",
+                       "yearFrom":  2019
+                   },
+                   {
+                       "id":  "skoda-karoq",
+                       "makeId":  "skoda",
+                       "name":  "Karoq",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "skoda-kodiaq",
+                       "makeId":  "skoda",
+                       "name":  "Kodiaq",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "skoda-enyaq",
+                       "makeId":  "skoda",
+                       "name":  "Enyaq",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "skoda-elroq",
+                       "makeId":  "skoda",
+                       "name":  "Elroq",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "smart-fortwo",
+                       "makeId":  "smart",
+                       "name":  "Fortwo",
+                       "yearFrom":  1998
+                   },
+                   {
+                       "id":  "smart-forfour",
+                       "makeId":  "smart",
+                       "name":  "Forfour",
+                       "yearFrom":  2004,
+                       "yearTo":  2021
+                   },
+                   {
+                       "id":  "smart-1",
+                       "makeId":  "smart",
+                       "name":  "#1",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "smart-3",
+                       "makeId":  "smart",
+                       "name":  "#3",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "subaru-impreza",
+                       "makeId":  "subaru",
+                       "name":  "Impreza",
+                       "yearFrom":  1992
+                   },
+                   {
+                       "id":  "subaru-xv",
+                       "makeId":  "subaru",
+                       "name":  "XV / Crosstrek",
+                       "yearFrom":  2011
+                   },
+                   {
+                       "id":  "subaru-forester",
+                       "makeId":  "subaru",
+                       "name":  "Forester",
+                       "yearFrom":  1997
+                   },
+                   {
+                       "id":  "subaru-outback",
+                       "makeId":  "subaru",
+                       "name":  "Outback",
+                       "yearFrom":  1994
+                   },
+                   {
+                       "id":  "subaru-solterra",
+                       "makeId":  "subaru",
+                       "name":  "Solterra",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "suzuki-swift",
+                       "makeId":  "suzuki",
+                       "name":  "Swift",
+                       "yearFrom":  1983
+                   },
+                   {
+                       "id":  "suzuki-ignis",
+                       "makeId":  "suzuki",
+                       "name":  "Ignis",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "suzuki-vitara",
+                       "makeId":  "suzuki",
+                       "name":  "Vitara",
+                       "yearFrom":  1988
+                   },
+                   {
+                       "id":  "suzuki-s-cross",
+                       "makeId":  "suzuki",
+                       "name":  "S-Cross",
+                       "yearFrom":  2013
+                   },
+                   {
+                       "id":  "suzuki-jimny",
+                       "makeId":  "suzuki",
+                       "name":  "Jimny",
+                       "yearFrom":  1970
+                   },
+                   {
+                       "id":  "tesla-model-s",
+                       "makeId":  "tesla",
+                       "name":  "Model S",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "tesla-model-3",
+                       "makeId":  "tesla",
+                       "name":  "Model 3",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "tesla-model-x",
+                       "makeId":  "tesla",
+                       "name":  "Model X",
+                       "yearFrom":  2015
+                   },
+                   {
+                       "id":  "tesla-model-y",
+                       "makeId":  "tesla",
+                       "name":  "Model Y",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "toyota-aygo",
+                       "makeId":  "toyota",
+                       "name":  "Aygo / Aygo X",
+                       "yearFrom":  2005
+                   },
+                   {
+                       "id":  "toyota-yaris",
+                       "makeId":  "toyota",
+                       "name":  "Yaris",
+                       "yearFrom":  1999
+                   },
+                   {
+                       "id":  "toyota-yaris-cross",
+                       "makeId":  "toyota",
+                       "name":  "Yaris Cross",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "toyota-corolla",
+                       "makeId":  "toyota",
+                       "name":  "Corolla",
+                       "yearFrom":  1966
+                   },
+                   {
+                       "id":  "toyota-camry",
+                       "makeId":  "toyota",
+                       "name":  "Camry",
+                       "yearFrom":  1982
+                   },
+                   {
+                       "id":  "toyota-c-hr",
+                       "makeId":  "toyota",
+                       "name":  "C-HR",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "toyota-rav4",
+                       "makeId":  "toyota",
+                       "name":  "RAV4",
+                       "yearFrom":  1994
+                   },
+                   {
+                       "id":  "toyota-highlander",
+                       "makeId":  "toyota",
+                       "name":  "Highlander",
+                       "yearFrom":  2000
+                   },
+                   {
+                       "id":  "toyota-land-cruiser",
+                       "makeId":  "toyota",
+                       "name":  "Land Cruiser",
+                       "yearFrom":  1951
+                   },
+                   {
+                       "id":  "toyota-hilux",
+                       "makeId":  "toyota",
+                       "name":  "Hilux",
+                       "yearFrom":  1968
+                   },
+                   {
+                       "id":  "toyota-proace",
+                       "makeId":  "toyota",
+                       "name":  "Proace City",
+                       "yearFrom":  2012
+                   },
+                   {
+                       "id":  "toyota-bz4x",
+                       "makeId":  "toyota",
+                       "name":  "bZ4X",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "vw-polo",
+                       "makeId":  "volkswagen",
+                       "name":  "Polo",
+                       "yearFrom":  1975
+                   },
+                   {
+                       "id":  "vw-golf",
+                       "makeId":  "volkswagen",
+                       "name":  "Golf",
+                       "yearFrom":  1974
+                   },
+                   {
+                       "id":  "vw-passat",
+                       "makeId":  "volkswagen",
+                       "name":  "Passat",
+                       "yearFrom":  1973
+                   },
+                   {
+                       "id":  "vw-arteon",
+                       "makeId":  "volkswagen",
+                       "name":  "Arteon",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "vw-taigo",
+                       "makeId":  "volkswagen",
+                       "name":  "Taigo",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "vw-t-roc",
+                       "makeId":  "volkswagen",
+                       "name":  "T-Roc",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "vw-t-cross",
+                       "makeId":  "volkswagen",
+                       "name":  "T-Cross",
+                       "yearFrom":  2018
+                   },
+                   {
+                       "id":  "vw-tiguan",
+                       "makeId":  "volkswagen",
+                       "name":  "Tiguan",
+                       "yearFrom":  2007
+                   },
+                   {
+                       "id":  "vw-touareg",
+                       "makeId":  "volkswagen",
+                       "name":  "Touareg",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "vw-id3",
+                       "makeId":  "volkswagen",
+                       "name":  "ID.3",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "vw-id4",
+                       "makeId":  "volkswagen",
+                       "name":  "ID.4",
+                       "yearFrom":  2020
+                   },
+                   {
+                       "id":  "vw-id5",
+                       "makeId":  "volkswagen",
+                       "name":  "ID.5",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "vw-id7",
+                       "makeId":  "volkswagen",
+                       "name":  "ID.7",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "vw-id-buzz",
+                       "makeId":  "volkswagen",
+                       "name":  "ID. Buzz",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "volvo-v40",
+                       "makeId":  "volvo",
+                       "name":  "V40",
+                       "yearFrom":  2012,
+                       "yearTo":  2019
+                   },
+                   {
+                       "id":  "volvo-v60",
+                       "makeId":  "volvo",
+                       "name":  "V60",
+                       "yearFrom":  2010
+                   },
+                   {
+                       "id":  "volvo-v90",
+                       "makeId":  "volvo",
+                       "name":  "V90",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "volvo-s60",
+                       "makeId":  "volvo",
+                       "name":  "S60",
+                       "yearFrom":  2000
+                   },
+                   {
+                       "id":  "volvo-s90",
+                       "makeId":  "volvo",
+                       "name":  "S90",
+                       "yearFrom":  2016
+                   },
+                   {
+                       "id":  "volvo-xc40",
+                       "makeId":  "volvo",
+                       "name":  "XC40",
+                       "yearFrom":  2017
+                   },
+                   {
+                       "id":  "volvo-xc60",
+                       "makeId":  "volvo",
+                       "name":  "XC60",
+                       "yearFrom":  2008
+                   },
+                   {
+                       "id":  "volvo-xc90",
+                       "makeId":  "volvo",
+                       "name":  "XC90",
+                       "yearFrom":  2002
+                   },
+                   {
+                       "id":  "volvo-ex30",
+                       "makeId":  "volvo",
+                       "name":  "EX30",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "volvo-ex40",
+                       "makeId":  "volvo",
+                       "name":  "EX40",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "volvo-ec40",
+                       "makeId":  "volvo",
+                       "name":  "EC40",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "volvo-ex90",
+                       "makeId":  "volvo",
+                       "name":  "EX90",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "voyah-free",
+                       "makeId":  "voyah",
+                       "name":  "Free",
+                       "yearFrom":  2021
+                   },
+                   {
+                       "id":  "voyah-passion",
+                       "makeId":  "voyah",
+                       "name":  "Passion",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "voyah-courage",
+                       "makeId":  "voyah",
+                       "name":  "Courage",
+                       "yearFrom":  2024
+                   },
+                   {
+                       "id":  "xpeng-g6",
+                       "makeId":  "xpeng",
+                       "name":  "G6",
+                       "yearFrom":  2023
+                   },
+                   {
+                       "id":  "xpeng-g9",
+                       "makeId":  "xpeng",
+                       "name":  "G9",
+                       "yearFrom":  2022
+                   },
+                   {
+                       "id":  "xpeng-p7",
+                       "makeId":  "xpeng",
+                       "name":  "P7",
+                       "yearFrom":  2020
+                   }
+               ]
+}

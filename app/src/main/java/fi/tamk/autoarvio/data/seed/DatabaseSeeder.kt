@@ -13,14 +13,15 @@ import fi.tamk.autoarvio.data.local.AutoArvioDatabase
  * For MVP scaffolding we keep Room empty and serve placeholder data from
  * [fi.tamk.autoarvio.data.repository.CatalogRepository] instead.
  *
- * First seed asset (Audi / FI): `assets/catalog/audi_models.json`
+ * Seed assets: `assets/catalog/fi_catalog.json` (full FI MVP) and
+ * `assets/catalog/audi_models.json` (Audi-only preview).
  */
 class DatabaseSeeder(
     private val database: AutoArvioDatabase,
 ) {
     suspend fun seedIfEmpty() {
         // Stub: no-op until full JSON→Room pipeline (AA-5).
-        // Later: parse assets/catalog/*.json when makeDao().count() == 0.
+        // Later: parse assets/catalog/fi_catalog.json when makeDao().count() == 0.
         @Suppress("UNUSED_VARIABLE")
         val db = database
     }
