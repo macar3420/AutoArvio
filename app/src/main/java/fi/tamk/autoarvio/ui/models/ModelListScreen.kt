@@ -1,6 +1,5 @@
 package fi.tamk.autoarvio.ui.models
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -146,36 +145,17 @@ fun ModelListScreen(
 
 @Composable
 private fun ModelRow(model: Model) {
-    val years = when {
-        model.yearFrom != null && model.yearTo != null -> "${model.yearFrom}–${model.yearTo}"
-        model.yearFrom != null -> "${model.yearFrom}–"
-        else -> null
-    }
-
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 20.dp, vertical = 18.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Column(
-            modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(4.dp),
-        ) {
-            Text(
-                text = model.name,
-                style = MaterialTheme.typography.titleMedium,
-                fontFamily = OutfitFamily,
-                fontWeight = FontWeight.SemiBold,
-            )
-            if (years != null) {
-                Text(
-                    text = years,
-                    style = MaterialTheme.typography.bodySmall,
-                    fontFamily = OutfitFamily,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.55f),
-                )
-            }
-        }
+        Text(
+            text = model.name,
+            style = MaterialTheme.typography.titleMedium,
+            fontFamily = OutfitFamily,
+            fontWeight = FontWeight.SemiBold,
+        )
     }
 }
