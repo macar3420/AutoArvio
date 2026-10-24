@@ -2,7 +2,8 @@
  * Build generation_specs.json from curated brand packs only.
  * No heuristic invention — missing gens get an empty list ("coming soon" in UI).
  *
- * Current pack: A-brands (Aion, Audi) via tools/a_brand_powertrains.mjs
+ * Packs: A (Aion, Audi), BMW
+ * Combined gearbox strings are split into separate MT vs auto rows.
  *
  * Usage: node tools/build_generation_variants.mjs
  */
@@ -10,6 +11,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { A_BRAND_POWERTRAINS, A_BRAND_MAKE_IDS } from "./a_brand_powertrains.mjs";
+import { BMW_BRAND_POWERTRAINS, BMW_BRAND_MAKE_IDS } from "./bmw_brand_powertrains.mjs";
+import { splitGearboxRows } from "./split_gearbox_rows.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const gensPath = path.join(root, "app/src/main/assets/catalog/generations.json");
@@ -32,7 +35,9 @@ function finalize(genId, rows) {
   return rows.map((r, idx) => {
     const powerHp = r.powerHp;
     const powerKw = r.powerKw ?? (powerHp != null ? hpToKw(powerHp) : undefined);
-    const id = r.id || `${genId}-${slug(r.name)}-${idx}`;
+    const id =
+      r.id ||
+      `${genId}-${slug(r.name)}-${slug(r.transmissionSummary || "na")}-${idx}`;
     const out = {
       id,
       generationId: genId,
@@ -54,60 +59,70 @@ function finalize(genId, rows) {
   });
 }
 
-/** Merge curated packs here as letters are completed. */
-const CURATED = { ...A_BRAND_POWERTRAINS };
+const CURATED = {
+  ...A_BRAND_POWERTRAINS,
+  ...BMW_BRAND_POWERTRAINS,
+};
+
+const REQUIRED_MAKES = [...A_BRAND_MAKE_IDS, ...BMW_BRAND_MAKE_IDS];
 
 const variants = {};
 let curatedGens = 0;
 let emptyGens = 0;
 let totalRows = 0;
-const missingA = [];
+let audiBeforeSplit = 0;
+let audiAfterSplit = 0;
+const missingRequired = [];
 
 for (const gen of gensRoot.generations) {
   const makeId = gen.modelId.split("-")[0];
-  const rows = CURATED[gen.id];
+  let rows = CURATED[gen.id];
   if (rows?.length) {
+    if (makeId === "audi") audiBeforeSplit += rows.length;
+    rows = splitGearboxRows(rows);
+    if (makeId === "audi") audiAfterSplit += rows.length;
     variants[gen.id] = finalize(gen.id, rows);
     curatedGens++;
     totalRows += variants[gen.id].length;
   } else {
     variants[gen.id] = [];
     emptyGens++;
-    if (A_BRAND_MAKE_IDS.includes(makeId)) missingA.push(gen.id);
+    // A-brands must be fully curated; BMW may intentionally leave impossible gens empty
+    if (A_BRAND_MAKE_IDS.includes(makeId)) missingRequired.push(gen.id);
   }
 }
 
-if (missingA.length) {
-  console.error("ERROR: A-brand generations missing curated rows:");
-  for (const id of missingA) console.error(" -", id);
+if (missingRequired.length) {
+  console.error("ERROR: required curated generations missing rows:");
+  for (const id of missingRequired) console.error(" -", id);
   process.exit(1);
 }
 
 const out = {
-  note: "Curated European-market engines & versions only. A-brands (Aion, Audi) filled; other makes empty until letter packs are curated. tools/build_generation_variants.mjs — no heuristic fill.",
+  note: "Curated European-market engines & versions only. Packs: Aion/Audi + BMW. MT vs automatic are separate rows. Other makes empty until curated. tools/build_generation_variants.mjs",
   specs: {},
   variants,
 };
 
 fs.writeFileSync(outPath, JSON.stringify(out, null, 2) + "\n", "utf8");
 
-const byMake = {};
-for (const gen of gensRoot.generations) {
-  const makeId = gen.modelId.split("-")[0];
-  if (!byMake[makeId]) byMake[makeId] = { models: new Set(), gens: 0, variants: 0 };
-  byMake[makeId].models.add(gen.modelId);
-  byMake[makeId].gens++;
-  byMake[makeId].variants += (variants[gen.id] || []).length;
-}
-
-const aStats = {};
-for (const m of A_BRAND_MAKE_IDS) {
-  const s = byMake[m];
-  aStats[m] = {
-    models: s.models.size,
-    generations: s.gens,
-    variants: s.variants,
-    avgPerGen: +(s.variants / s.gens).toFixed(2),
+function statsFor(prefix) {
+  const gens = gensRoot.generations.filter((g) => g.modelId.startsWith(prefix));
+  const models = new Set(gens.map((g) => g.modelId));
+  let v = 0;
+  let withRows = 0;
+  for (const g of gens) {
+    const n = (variants[g.id] || []).length;
+    v += n;
+    if (n) withRows++;
+  }
+  return {
+    models: models.size,
+    generations: gens.length,
+    gensWithVariants: withRows,
+    gensEmpty: gens.length - withRows,
+    variants: v,
+    avgPerFilledGen: withRows ? +(v / withRows).toFixed(2) : 0,
   };
 }
 
@@ -118,7 +133,14 @@ console.log(
       curatedGens,
       emptyGens,
       totalVariants: totalRows,
-      aBrandStats: aStats,
+      audiSplit: {
+        rowsBeforeSplit: audiBeforeSplit,
+        rowsAfterSplit: audiAfterSplit,
+        rowsAddedBySplit: audiAfterSplit - audiBeforeSplit,
+      },
+      aion: statsFor("aion-"),
+      audi: statsFor("audi-"),
+      bmw: statsFor("bmw-"),
       out: path.relative(root, outPath),
     },
     null,
