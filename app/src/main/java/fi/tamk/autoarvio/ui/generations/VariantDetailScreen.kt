@@ -115,15 +115,20 @@ fun VariantDetailScreen(
                 yearsLabel = generation?.yearLabel(),
             )
 
-            SpecSection(title = "Reviews") {
-                Text(
-                    text = "No reviews yet",
-                    style = MaterialTheme.typography.bodySmall,
-                    fontFamily = OutfitFamily,
-                    fontSize = 13.sp,
-                    lineHeight = 18.sp,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
-                )
+            val review = viewModel.review
+            if (review != null) {
+                ReviewSection(review)
+            } else {
+                SpecSection(title = "Reviews") {
+                    Text(
+                        text = "No reviews yet",
+                        style = MaterialTheme.typography.bodySmall,
+                        fontFamily = OutfitFamily,
+                        fontSize = 13.sp,
+                        lineHeight = 18.sp,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                    )
+                }
             }
 
             Spacer(modifier = Modifier.height(16.dp))

@@ -2,7 +2,7 @@
  * Build generation_specs.json from curated brand packs only.
  * No heuristic invention — missing gens get an empty list ("coming soon" in UI).
  *
- * Packs: A (Aion, Audi), BMW
+ * Packs: A (Aion, Audi), BMW, Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, Mercedes-Benz
  * Combined gearbox strings are split into separate MT vs auto rows.
  *
  * Usage: node tools/build_generation_variants.mjs
@@ -12,6 +12,18 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { A_BRAND_POWERTRAINS, A_BRAND_MAKE_IDS } from "./a_brand_powertrains.mjs";
 import { BMW_BRAND_POWERTRAINS, BMW_BRAND_MAKE_IDS } from "./bmw_brand_powertrains.mjs";
+import { ALFA_POWERTRAINS, ALFA_MAKE_IDS } from "./alfa_romeo_powertrains.mjs";
+import { BYD_POWERTRAINS, BYD_MAKE_IDS } from "./byd_powertrains.mjs";
+import { CUPRA_POWERTRAINS, CUPRA_MAKE_IDS } from "./cupra_powertrains.mjs";
+import { FORD_POWERTRAINS, FORD_MAKE_IDS } from "./ford_powertrains.mjs";
+import { HONDA_POWERTRAINS, HONDA_MAKE_IDS } from "./honda_powertrains.mjs";
+import { HYUNDAI_POWERTRAINS, HYUNDAI_MAKE_IDS } from "./hyundai_powertrains.mjs";
+import { KIA_POWERTRAINS, KIA_MAKE_IDS } from "./kia_powertrains.mjs";
+import { LANDROVER_POWERTRAINS, LANDROVER_MAKE_IDS } from "./landrover_powertrains.mjs";
+import { LEXUS_POWERTRAINS, LEXUS_MAKE_IDS } from "./lexus_powertrains.mjs";
+import { MAXUS_POWERTRAINS, MAXUS_MAKE_IDS } from "./maxus_powertrains.mjs";
+import { MAZDA_POWERTRAINS, MAZDA_MAKE_IDS } from "./mazda_powertrains.mjs";
+import { MERCEDES_POWERTRAINS, MERCEDES_MAKE_IDS } from "./mercedes_powertrains.mjs";
 import { splitGearboxRows } from "./split_gearbox_rows.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -62,9 +74,19 @@ function finalize(genId, rows) {
 const CURATED = {
   ...A_BRAND_POWERTRAINS,
   ...BMW_BRAND_POWERTRAINS,
+  ...ALFA_POWERTRAINS,
+  ...BYD_POWERTRAINS,
+  ...CUPRA_POWERTRAINS,
+  ...FORD_POWERTRAINS,
+  ...HONDA_POWERTRAINS,
+  ...HYUNDAI_POWERTRAINS,
+  ...KIA_POWERTRAINS,
+  ...LANDROVER_POWERTRAINS,
+  ...LEXUS_POWERTRAINS,
+  ...MAXUS_POWERTRAINS,
+  ...MAZDA_POWERTRAINS,
+  ...MERCEDES_POWERTRAINS,
 };
-
-const REQUIRED_MAKES = [...A_BRAND_MAKE_IDS, ...BMW_BRAND_MAKE_IDS];
 
 const variants = {};
 let curatedGens = 0;
@@ -87,8 +109,24 @@ for (const gen of gensRoot.generations) {
   } else {
     variants[gen.id] = [];
     emptyGens++;
-    // A-brands must be fully curated; BMW may intentionally leave impossible gens empty
-    if (A_BRAND_MAKE_IDS.includes(makeId)) missingRequired.push(gen.id);
+    // Curated makes must have rows. BMW may intentionally leave impossible gens empty.
+    if (
+      A_BRAND_MAKE_IDS.includes(makeId) ||
+      ALFA_MAKE_IDS.includes(makeId) ||
+      BYD_MAKE_IDS.includes(makeId) ||
+      CUPRA_MAKE_IDS.includes(makeId) ||
+      FORD_MAKE_IDS.includes(makeId) ||
+      HONDA_MAKE_IDS.includes(makeId) ||
+      HYUNDAI_MAKE_IDS.includes(makeId) ||
+      KIA_MAKE_IDS.includes(makeId) ||
+      LANDROVER_MAKE_IDS.includes(makeId) ||
+      LEXUS_MAKE_IDS.includes(makeId) ||
+      MAXUS_MAKE_IDS.includes(makeId) ||
+      MAZDA_MAKE_IDS.includes(makeId) ||
+      MERCEDES_MAKE_IDS.includes(makeId)
+    ) {
+      missingRequired.push(gen.id);
+    }
   }
 }
 
@@ -99,12 +137,13 @@ if (missingRequired.length) {
 }
 
 const out = {
-  note: "Curated European-market engines & versions only. Packs: Aion/Audi + BMW. MT vs automatic are separate rows. Other makes empty until curated. tools/build_generation_variants.mjs",
+  note: "Curated European-market engines & versions only. Packs: Aion/Audi + BMW + Alfa Romeo + BYD + Cupra + Ford + Honda + Hyundai + Kia + Land Rover + Lexus + Maxus + Mazda + Mercedes-Benz. MT vs automatic are separate rows. Other makes empty until curated. tools/build_generation_variants.mjs",
   specs: {},
   variants,
 };
 
-fs.writeFileSync(outPath, JSON.stringify(out, null, 2) + "\n", "utf8");
+const specsNl = fs.readFileSync(outPath, "utf8").includes("\r\n") ? "\r\n" : "\n";
+fs.writeFileSync(outPath, JSON.stringify(out, null, 2).replace(/\n/g, specsNl) + specsNl, "utf8");
 
 function statsFor(prefix) {
   const gens = gensRoot.generations.filter((g) => g.modelId.startsWith(prefix));
@@ -141,6 +180,18 @@ console.log(
       aion: statsFor("aion-"),
       audi: statsFor("audi-"),
       bmw: statsFor("bmw-"),
+      alfaromeo: statsFor("alfaromeo-"),
+      byd: statsFor("byd-"),
+      cupra: statsFor("cupra-"),
+      ford: statsFor("ford-"),
+      honda: statsFor("honda-"),
+      hyundai: statsFor("hyundai-"),
+      kia: statsFor("kia-"),
+      landrover: statsFor("landrover-"),
+      lexus: statsFor("lexus-"),
+      maxus: statsFor("maxus-"),
+      mazda: statsFor("mazda-"),
+      mercedes: statsFor("mercedes-"),
       out: path.relative(root, outPath),
     },
     null,

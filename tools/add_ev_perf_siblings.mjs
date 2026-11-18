@@ -189,14 +189,20 @@ const SIBLINGS = [
     makeId: "cupra",
     name: "Formentor VZ",
     yearFrom: 2020,
-    gens: [["Formentor VZ", 2020, null]],
+    gens: [
+      ["Formentor VZ", 2020, 2024],
+      ["Formentor VZ FL", 2024, null],
+    ],
   },
   {
     id: "cupra-leon-ehybrid",
     makeId: "cupra",
     name: "Leon e-Hybrid",
     yearFrom: 2020,
-    gens: [["Leon e-Hybrid", 2020, null]],
+    gens: [
+      ["Leon e-Hybrid", 2020, 2024],
+      ["Leon e-Hybrid FL", 2024, null],
+    ],
   },
 
   // —— BMW PHEV badges commonly listed separately ——
@@ -235,42 +241,6 @@ const SIBLINGS = [
     ],
   },
 
-  // —— Mercedes PHEV / EQ siblings often distinct ——
-  {
-    id: "mercedes-a-250-e",
-    makeId: "mercedes",
-    name: "A 250 e",
-    yearFrom: 2019,
-    gens: [["W177", 2019, null]],
-  },
-  {
-    id: "mercedes-c-300-e",
-    makeId: "mercedes",
-    name: "C 300 e",
-    yearFrom: 2019,
-    gens: [
-      ["W205", 2019, 2021],
-      ["W206", 2021, null],
-    ],
-  },
-  {
-    id: "mercedes-e-300-e",
-    makeId: "mercedes",
-    name: "E 300 e",
-    yearFrom: 2018,
-    gens: [
-      ["W213", 2018, 2023],
-      ["W214", 2023, null],
-    ],
-  },
-  {
-    id: "mercedes-gle-350-de",
-    makeId: "mercedes",
-    name: "GLE 350 de",
-    yearFrom: 2019,
-    gens: [["W167", 2019, null]],
-  },
-
   // —— Volvo Recharge / Twin Engine marketed names ——
   {
     id: "volvo-xc40-recharge",
@@ -301,108 +271,7 @@ const SIBLINGS = [
     gens: [["II Recharge", 2018, null]],
   },
 
-  // —— Ford ——
-  {
-    id: "ford-kuga-phev",
-    makeId: "ford",
-    name: "Kuga PHEV",
-    yearFrom: 2020,
-    gens: [["III PHEV", 2020, null]],
-  },
-  {
-    id: "ford-explorer-phev",
-    makeId: "ford",
-    name: "Explorer PHEV",
-    yearFrom: 2019,
-    gens: [["VI PHEV", 2019, null]],
-  },
-  {
-    id: "ford-focus-st",
-    makeId: "ford",
-    name: "Focus ST",
-    yearFrom: 2002,
-    gens: [
-      ["Mk2 ST", 2005, 2011],
-      ["Mk3 ST", 2012, 2018],
-      ["Mk4 ST", 2019, null],
-    ],
-  },
-  {
-    id: "ford-focus-rs",
-    makeId: "ford",
-    name: "Focus RS",
-    yearFrom: 2002,
-    yearTo: 2018,
-    gens: [
-      ["Mk2 RS", 2009, 2010],
-      ["Mk3 RS", 2016, 2018],
-    ],
-  },
-  {
-    id: "ford-fiesta-st",
-    makeId: "ford",
-    name: "Fiesta ST",
-    yearFrom: 2004,
-    gens: [
-      ["Mk6 ST", 2004, 2008],
-      ["Mk7 ST", 2008, 2017],
-      ["Mk8 ST", 2018, 2023],
-    ],
-  },
-
-  // —— Hyundai / Kia (extra clear badges) ——
-  {
-    id: "hyundai-ioniq-5-n",
-    makeId: "hyundai",
-    name: "Ioniq 5 N",
-    yearFrom: 2023,
-    gens: [["Ioniq 5 N", 2023, null]],
-  },
-  {
-    id: "hyundai-tucson-plug-in",
-    makeId: "hyundai",
-    name: "Tucson Plug-in",
-    yearFrom: 2020,
-    gens: [["IV PHEV", 2020, null]],
-  },
-  {
-    id: "kia-sportage-plug-in",
-    makeId: "kia",
-    name: "Sportage Plug-in",
-    yearFrom: 2021,
-    gens: [["V PHEV", 2021, null]],
-  },
-  {
-    id: "kia-sorento-plug-in",
-    makeId: "kia",
-    name: "Sorento Plug-in",
-    yearFrom: 2020,
-    gens: [["IV PHEV", 2020, null]],
-  },
-  {
-    id: "kia-ceed-sw-phev",
-    makeId: "kia",
-    name: "Ceed SW Plug-in",
-    yearFrom: 2020,
-    gens: [["III PHEV", 2020, null]],
-  },
-
-  // —— Peugeot / Citroën / Opel already have many e-; add clear GTI / PHEV ——
-  {
-    id: "peugeot-308-gte",
-    makeId: "peugeot",
-    name: "308 GTE",
-    yearFrom: 2015,
-    yearTo: 2021,
-    gens: [["II GTE", 2015, 2021]],
-  },
-  {
-    id: "peugeot-3008-hybrid",
-    makeId: "peugeot",
-    name: "3008 Hybrid",
-    yearFrom: 2019,
-    gens: [["II Hybrid", 2019, null]],
-  },
+  // —— Opel ——
   {
     id: "opel-grandland-gse",
     makeId: "opel",
@@ -481,24 +350,6 @@ const SIBLINGS = [
     gens: [["Eclipse Cross PHEV", 2021, null]],
   },
 
-  // —— Honda ——
-  {
-    id: "honda-civic-ehev",
-    makeId: "honda",
-    name: "Civic e:HEV",
-    yearFrom: 2022,
-    gens: [["FL e:HEV", 2022, null]],
-  },
-
-  // —— Mazda ——
-  {
-    id: "mazda-mx-30-r-ev",
-    makeId: "mazda",
-    name: "MX-30 R-EV",
-    yearFrom: 2023,
-    gens: [["MX-30 R-EV", 2023, null]],
-  },
-
   // —— Nissan ——
   {
     id: "nissan-qashqai-e-power",
@@ -522,22 +373,6 @@ const SIBLINGS = [
     name: "C-HR Plug-in",
     yearFrom: 2023,
     gens: [["II PHEV", 2023, null]],
-  },
-
-  // —— Lexus ——
-  {
-    id: "lexus-nx-450h-plus",
-    makeId: "lexus",
-    name: "NX 450h+",
-    yearFrom: 2021,
-    gens: [["AZ20 PHEV", 2021, null]],
-  },
-  {
-    id: "lexus-rx-450h-plus",
-    makeId: "lexus",
-    name: "RX 450h+",
-    yearFrom: 2022,
-    gens: [["AL30 PHEV", 2022, null]],
   },
 
   // —— Jeep-like not in catalog; MG ——

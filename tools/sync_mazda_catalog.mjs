@@ -1,0 +1,123 @@
+/**
+ * Replace Mazda with the common Finnish lineup from mazda_fi.mjs.
+ *
+ * Usage: node tools/sync_mazda_catalog.mjs
+ */
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { MAZDA_MODELS, mazdaGenerationRows } from "./mazda_fi.mjs";
+import { MAZDA_POWERTRAINS } from "./mazda_powertrains.mjs";
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const gensPath = path.join(root, "app/src/main/assets/catalog/generations.json");
+const catalogPath = path.join(root, "app/src/main/assets/catalog/fi_catalog.json");
+const ktPath = path.join(
+  root,
+  "app/src/main/java/fi/tamk/autoarvio/data/repository/CatalogRepository.kt",
+);
+const slugPath = path.join(root, "app/src/main/assets/catalog/nettiauto-slugs/mazda.txt");
+
+const brandGens = mazdaGenerationRows();
+const ids = brandGens.map((g) => g.id);
+const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
+const missing = ids.filter((id) => !MAZDA_POWERTRAINS[id]?.length);
+const extra = Object.keys(MAZDA_POWERTRAINS).filter((id) => !ids.includes(id));
+if (dupes.length || missing.length || extra.length) {
+  console.error(JSON.stringify({ dupes, missing, extra }, null, 2));
+  process.exit(1);
+}
+
+const gensRaw = fs.readFileSync(gensPath, "utf8");
+const gensNl = gensRaw.includes("\r\n") ? "\r\n" : "\n";
+const gensRoot = JSON.parse(gensRaw);
+const at = gensRoot.generations.findIndex((g) => g.modelId.startsWith("mazda-"));
+if (at < 0) {
+  console.error("Mazda generations missing.");
+  process.exit(1);
+}
+const removedGens = gensRoot.generations.filter((g) => g.modelId.startsWith("mazda-")).length;
+gensRoot.note =
+  "FI catalog generations. Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, and Mercedes-Benz follow the cars sold in Finland. Shared placeholder imageAsset.";
+gensRoot.generations = gensRoot.generations.filter((g) => !g.modelId.startsWith("mazda-"));
+gensRoot.generations.splice(at, 0, ...brandGens);
+gensRoot.count = gensRoot.generations.length;
+fs.writeFileSync(gensPath, JSON.stringify(gensRoot, null, 2).replace(/\n/g, gensNl) + gensNl, "utf8");
+
+const catalogRaw = fs.readFileSync(catalogPath, "utf8");
+const catalogNl = catalogRaw.includes("\r\n") ? "\r\n" : "\n";
+const catalog = JSON.parse(catalogRaw);
+const catalogAt = catalog.models.findIndex((m) => m.makeId === "mazda");
+if (catalogAt < 0) {
+  console.error("Mazda models missing from fi_catalog.json.");
+  process.exit(1);
+}
+const removedModels = catalog.models.filter((m) => m.makeId === "mazda").length;
+const catalogRows = MAZDA_MODELS.map((src) => {
+  const row = { id: src.id, makeId: "mazda", name: src.name, yearFrom: src.yearFrom };
+  if (src.yearTo != null) row.yearTo = src.yearTo;
+  return row;
+});
+catalog.models = catalog.models.filter((m) => m.makeId !== "mazda");
+catalog.models.splice(catalogAt, 0, ...catalogRows);
+fs.writeFileSync(
+  catalogPath,
+  JSON.stringify(catalog, null, 4).replace(/\n/g, catalogNl) + catalogNl,
+  "utf8",
+);
+
+const ktRaw = fs.readFileSync(ktPath, "utf8");
+const ktNl = ktRaw.includes("\r\n") ? "\r\n" : "\n";
+const lines = ktRaw.split(/\r?\n/);
+const brandLines = lines
+  .map((line, i) => (/^\s*m\("mazda-/.test(line) ? i : -1))
+  .filter((i) => i >= 0);
+if (!brandLines.length) {
+  console.error("No Mazda model lines in CatalogRepository.kt.");
+  process.exit(1);
+}
+const indent = lines[brandLines[0]].match(/^(\s*)/)[1];
+const replacement = MAZDA_MODELS.map((src) => {
+  let call = `${indent}m("${src.id}", "mazda", "${src.name}", ${src.yearFrom}`;
+  if (src.yearTo != null) call += `, ${src.yearTo}`;
+  return `${call}),`;
+});
+const drop = new Set(brandLines);
+const next = [];
+let inserted = false;
+for (let i = 0; i < lines.length; i++) {
+  if (drop.has(i)) {
+    if (!inserted) {
+      next.push(...replacement);
+      inserted = true;
+    }
+    continue;
+  }
+  next.push(lines[i]);
+}
+let ktOut = next.join(ktNl);
+if (ktRaw.endsWith(ktNl) && !ktOut.endsWith(ktNl)) ktOut += ktNl;
+if (!ktRaw.endsWith(ktNl) && ktOut.endsWith(ktNl)) ktOut = ktOut.slice(0, -ktNl.length);
+if (!ktOut.includes("Mazda curated")) {
+  ktOut = ktOut.replace("and Maxus curated", "Maxus, and Mazda curated");
+}
+fs.writeFileSync(ktPath, ktOut, "utf8");
+
+const slugRaw = fs.existsSync(slugPath) ? fs.readFileSync(slugPath, "utf8") : "\n";
+const slugNl = slugRaw.includes("\r\n") ? "\r\n" : "\n";
+const slugs = MAZDA_MODELS.map((m) => m.id.replace(/^mazda-/, ""));
+fs.writeFileSync(slugPath, slugs.join(slugNl) + slugNl, "utf8");
+
+console.log(
+  JSON.stringify(
+    {
+      keptModels: MAZDA_MODELS.length,
+      removedModels,
+      keptGenerations: brandGens.length,
+      removedGenerations: removedGens,
+      generations: gensRoot.count,
+    },
+    null,
+    2,
+  ),
+);

@@ -7,6 +7,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { spawnSync } from "child_process";
+import { ALFA_MODELS } from "./alfa_romeo_fi.mjs";
+import { CUPRA_MODELS } from "./cupra_fi.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PLACEHOLDER = "generation_placeholder";
@@ -42,144 +44,10 @@ const assign = (ids, rows) => {
   for (const id of ids) set(id, rows);
 };
 
-// ——— Shared chassis libraries ———
-const CITROEN_C3 = [
-  ["I", 2002, 2009],
-  ["II", 2009, 2016],
-  ["III", 2016, null],
-];
-const CITROEN_C4 = [
-  ["I", 2004, 2010],
-  ["II", 2010, 2018],
-  ["III", 2020, null],
-];
-const CITROEN_C5 = [
-  ["I", 2001, 2008],
-  ["II", 2008, 2017],
-];
-const BERLINGO = [
-  ["M49", 1996, 2008],
-  ["B9", 2008, 2018],
-  ["K9", 2018, null],
-];
+// ——— Cupra (Finnish market) ———
+for (const model of CUPRA_MODELS) set(model.id, model.gens);
 
-// ——— Citroën ———
-set("citroen-ax", [["AX", 1986, 1998]]);
-set("citroen-b11", [["B11", 1935, 1958]]);
-set("citroen-berlingo", BERLINGO);
-set("citroen-berlingo-van", BERLINGO);
-set("citroen-bx", [["BX", 1982, 1994]]);
-set("citroen-bx-van", [["BX Van", 1982, 1994]]);
-set("citroen-c-crosser", [["C-Crosser", 2007, 2012]]);
-set("citroen-c-zero", [["C-Zero", 2010, 2019]]);
-set("citroen-c1", [
-  ["I", 2005, 2014],
-  ["II", 2014, 2022],
-]);
-set("citroen-c2", [["C2", 2003, 2009]]);
-set("citroen-c25", [["C25", 1981, 1993]]);
-set("citroen-c3", CITROEN_C3);
-set("citroen-c3-aircross", [
-  ["I", 2017, 2024],
-  ["II", 2024, null],
-]);
-set("citroen-c3-picasso", [["C3 Picasso", 2008, 2017]]);
-set("citroen-c3-pluriel", [["Pluriel", 2003, 2010]]);
-set("citroen-c4", CITROEN_C4);
-set("citroen-c4-aircross", [["C4 Aircross", 2012, 2017]]);
-set("citroen-c4-cactus", [["C4 Cactus", 2014, 2020]]);
-set("citroen-c4-picasso", [
-  ["I", 2006, 2013],
-  ["II", 2013, 2018],
-]);
-set("citroen-c5", CITROEN_C5);
-set("citroen-c5-aircross", [["C5 Aircross", 2018, null]]);
-set("citroen-c5-x", [["C5 X", 2021, null]]);
-set("citroen-c6", [["C6", 2005, 2012]]);
-set("citroen-c8", [["C8", 2002, 2014]]);
-set("citroen-camionette", [["Camionette", 1950, 1980]]);
-set("citroen-cx", [["CX", 1974, 1991]]);
-set("citroen-d-super", [["D Super", 1967, 1975]]);
-set("citroen-ds", [["DS", 1955, 1975]]);
-set("citroen-ds3", [["DS3", 2009, 2019]]);
-set("citroen-ds4", [["DS4", 2011, 2018]]);
-set("citroen-ds5", [["DS5", 2011, 2018]]);
-set("citroen-dyane", [["Dyane", 1967, 1983]]);
-set("citroen-e-berlingo", [["ë-Berlingo", 2021, null]]);
-set("citroen-e-c3-aircross", [["ë-C3 Aircross", 2024, null]]);
-set("citroen-e-c4", [["ë-C4", 2020, null]]);
-set("citroen-e-jumpy", [["ë-Jumpy", 2020, null]]);
-set("citroen-evasion", [["Evasion", 1994, 2002]]);
-set("citroen-grand-c4-picasso", [
-  ["I", 2006, 2013],
-  ["II", 2013, 2018],
-]);
-set("citroen-gs", [["GS", 1970, 1986]]);
-set("citroen-gsa", [["GSA", 1979, 1986]]);
-set("citroen-jumper", [
-  ["I", 1994, 2006],
-  ["II", 2006, null],
-]);
-set("citroen-jumper-fourgon", [
-  ["I", 1994, 2006],
-  ["II", 2006, null],
-]);
-set("citroen-jumpy", [
-  ["I", 1995, 2007],
-  ["II", 2007, 2016],
-  ["III", 2016, null],
-]);
-set("citroen-nemo", [["Nemo", 2008, 2017]]);
-set("citroen-saxo", [["Saxo", 1996, 2003]]);
-set("citroen-visa", [["Visa", 1978, 1988]]);
-set("citroen-xantia", [["Xantia", 1993, 2001]]);
-set("citroen-xm", [["XM", 1989, 2000]]);
-set("citroen-xsara", [["Xsara", 1997, 2006]]);
-set("citroen-xsara-picasso", [["Xsara Picasso", 1999, 2010]]);
-set("citroen-zx", [["ZX", 1991, 1998]]);
-
-// ——— Cupra ———
-set("cupra-ateca", [["Ateca", 2018, null]]);
-set("cupra-born", [["Born", 2021, null]]);
-set("cupra-formentor", [["Formentor", 2020, null]]);
-set("cupra-leon", [["Leon", 2020, null]]);
-set("cupra-leon-sportstourer", [["Leon ST", 2020, null]]);
-set("cupra-raval", [["Raval", 2025, null]]);
-set("cupra-tavascan", [["Tavascan", 2024, null]]);
-set("cupra-terramar", [["Terramar", 2024, null]]);
-
-// ——— Dacia ———
-set("dacia-bigster", [["Bigster", 2025, null]]);
-set("dacia-dokker", [["Dokker", 2012, 2021]]);
-set("dacia-dokker-van", [["Dokker Van", 2012, 2021]]);
-set("dacia-duster", [
-  ["I", 2010, 2017],
-  ["II", 2017, 2024],
-  ["III", 2024, null],
-]);
-set("dacia-jogger", [["Jogger", 2021, null]]);
-set("dacia-lodgy", [["Lodgy", 2012, 2022]]);
-set("dacia-logan", [
-  ["I", 2004, 2012],
-  ["II", 2012, 2020],
-  ["III", 2020, null],
-]);
-set("dacia-logan-mcv", [
-  ["I", 2006, 2013],
-  ["II", 2013, 2020],
-]);
-set("dacia-logan-pick-up", [["Pick-up", 2008, 2012]]);
-set("dacia-logan-van", [["Van", 2006, 2012]]);
-set("dacia-sandero", [
-  ["I", 2008, 2012],
-  ["II", 2012, 2020],
-  ["III", 2020, null],
-]);
-set("dacia-sandero-stepway", [
-  ["II", 2012, 2020],
-  ["III", 2020, null],
-]);
-set("dacia-spring", [["Spring", 2021, null]]);
+for (const model of ALFA_MODELS) set(model.id, model.gens);
 
 // Import rest modules (large makes)
 const { fillRest } = await import("./generations_rest_fill.mjs");

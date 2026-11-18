@@ -5,6 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { BYD_MODELS } from "./byd_fi.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PLACEHOLDER = "generation_placeholder";
@@ -440,25 +441,8 @@ DATA["bmw-z3m"] = [["E36/7 M", 1999, 2002]];
 bmwAssign(["bmw-z4"], BMW_Z4);
 DATA["bmw-z4m"] = [["E85/E86 M", 2006, 2008]];
 
-// —— BYD (FI retail, mostly first gens) ——
-DATA["byd-atto-2"] = [["Atto 2", 2024, null]];
-DATA["byd-atto-3"] = [["Atto 3", 2022, null]];
-DATA["byd-dolphin"] = [["Dolphin", 2023, null]];
-DATA["byd-dolphin-surf"] = [["Dolphin Surf", 2024, null]];
-DATA["byd-etp3"] = [["ETP3", 2023, null]];
-DATA["byd-han"] = [
-  ["Han EV", 2020, 2022],
-  ["Han (facelift)", 2022, null],
-];
-DATA["byd-seal"] = [["Seal", 2023, null]];
-DATA["byd-seal-6-dm-i"] = [["Seal 6 DM-i", 2024, null]];
-DATA["byd-seal-u"] = [["Seal U", 2024, null]];
-DATA["byd-seal-u-dm-i"] = [["Seal U DM-i", 2024, null]];
-DATA["byd-sealion-7"] = [["Sealion 7", 2024, null]];
-DATA["byd-tang"] = [
-  ["Tang EV/DM", 2021, 2024],
-  ["Tang L", 2024, null],
-];
+// —— BYD (Finnish market) ——
+for (const model of BYD_MODELS) DATA[model.id] = model.gens;
 
 // Validate against catalog model ids
 const kt = fs.readFileSync(

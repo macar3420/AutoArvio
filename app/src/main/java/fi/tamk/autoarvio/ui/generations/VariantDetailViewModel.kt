@@ -3,6 +3,7 @@ package fi.tamk.autoarvio.ui.generations
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import fi.tamk.autoarvio.data.repository.CatalogRepository
+import fi.tamk.autoarvio.domain.model.CarReview
 import fi.tamk.autoarvio.domain.model.Generation
 import fi.tamk.autoarvio.domain.model.PowertrainVariant
 
@@ -15,6 +16,7 @@ class VariantDetailViewModel(
         variant?.let { repository.generationById(it.generationId) }
     val modelTitle: String =
         generation?.let { repository.modelTitle(it.modelId) }.orEmpty()
+    val review: CarReview? = generation?.let { repository.reviewFor(it.id) }
 
     companion object {
         fun factory(

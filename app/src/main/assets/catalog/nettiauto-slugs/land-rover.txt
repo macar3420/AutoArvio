@@ -1,13 +1,10 @@
-﻿109
-110
-88
-arvostelut
 defender
 discovery
 discovery-sport
 freelander
 range-rover
-range-rover-evoque
+range-rover-electric
 range-rover-sport
+range-rover-sport-electric
+range-rover-evoque
 range-rover-velar
-series
