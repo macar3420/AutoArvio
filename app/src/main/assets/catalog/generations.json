@@ -1,5 +1,5 @@
 {
-  "note": "FI catalog generations. Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, and Mercedes-Benz follow the cars sold in Finland. Shared placeholder imageAsset.",
+  "note": "FI catalog generations. Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, Mercedes-Benz, MG, MINI, Mitsubishi, Nissan, Opel, Polestar, Porsche, Renault, SEAT, Škoda, smart, Subaru, Suzuki, Tesla, Toyota, Volkswagen, Volvo, Voyah, and XPeng follow the cars sold in Finland or Europe. Opel, Polestar, Porsche, Renault, SEAT, Škoda, smart, Subaru, Suzuki, Tesla, Toyota, Volkswagen, Volvo, Voyah, and XPeng keep a generation only when it was still sold new in Finland after 2005. Shared placeholder imageAsset.",
   "market": "FI",
   "generations": [
     {
@@ -8491,146 +8491,18 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mg-1100-1100",
-      "modelId": "mg-1100",
-      "code": "1100",
-      "yearFrom": 1962,
-      "yearTo": 1973,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-b-mgb",
-      "modelId": "mg-b",
-      "code": "MGB",
-      "yearFrom": 1962,
-      "yearTo": 1980,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-b-gt-mgb-gt",
-      "modelId": "mg-b-gt",
-      "code": "MGB GT",
-      "yearFrom": 1965,
-      "yearTo": 1980,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-cyberster-cyberster",
-      "modelId": "mg-cyberster",
-      "code": "Cyberster",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-ehs-ehs",
-      "modelId": "mg-ehs",
-      "code": "EHS",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-f-mgf",
-      "modelId": "mg-f",
-      "code": "MGF",
-      "yearFrom": 1995,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-hs-hs",
-      "modelId": "mg-hs",
-      "code": "HS",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-hs-phev-hs-phev",
-      "modelId": "mg-hs-phev",
-      "code": "HS PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-hs-plug-in-hs-phev",
-      "modelId": "mg-hs-plug-in",
-      "code": "HS PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-marvel-r-marvel-r",
-      "modelId": "mg-marvel-r",
-      "code": "Marvel R",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg3-i",
-      "modelId": "mg-mg3",
-      "code": "I",
-      "yearFrom": 2011,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg3-ii",
-      "modelId": "mg-mg3",
-      "code": "II",
-      "yearFrom": 2018,
-      "yearTo": 2024,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg3-iii",
-      "modelId": "mg-mg3",
-      "code": "III",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg3-hybrid-mg3-hybrid",
-      "modelId": "mg-mg3-hybrid",
-      "code": "MG3 Hybrid",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg4-mg4",
-      "modelId": "mg-mg4",
-      "code": "MG4",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg4-urban-mg4-urban",
-      "modelId": "mg-mg4-urban",
-      "code": "MG4 Urban",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mg5-mg5",
-      "modelId": "mg-mg5",
-      "code": "MG5",
-      "yearFrom": 2012,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mgb-mgb",
+      "id": "mg-mgb-mk1",
       "modelId": "mg-mgb",
-      "code": "MGB",
+      "code": "Mk1",
       "yearFrom": 1962,
+      "yearTo": 1974,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-mgb-rubber",
+      "modelId": "mg-mgb",
+      "code": "Rubber",
+      "yearFrom": 1975,
       "yearTo": 1980,
       "imageAsset": "generation_placeholder"
     },
@@ -8640,22 +8512,6 @@
       "code": "MGF",
       "yearFrom": 1995,
       "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-mgs6-ev-mgs6-ev",
-      "modelId": "mg-mgs6-ev",
-      "code": "MGS6 EV",
-      "yearFrom": 2024,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mg-s5-s5",
-      "modelId": "mg-s5",
-      "code": "S5",
-      "yearFrom": 2024,
-      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -8675,26 +8531,106 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mg-zs-rover-era",
+      "id": "mg-zs-rover",
       "modelId": "mg-zs",
-      "code": "Rover-era",
+      "code": "Rover",
       "yearFrom": 2001,
       "yearTo": 2005,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mg-zs-saic",
+      "id": "mg-zs-petrol",
       "modelId": "mg-zs",
-      "code": "SAIC",
+      "code": "Petrol",
       "yearFrom": 2017,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-zs-hybrid",
+      "modelId": "mg-zs",
+      "code": "Hybrid+",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mg-zs-ev-zs-ev",
+      "id": "mg-zs-ev-i",
       "modelId": "mg-zs-ev",
-      "code": "ZS EV",
+      "code": "I",
       "yearFrom": 2019,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-zs-ev-fl",
+      "modelId": "mg-zs-ev",
+      "code": "FL",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-hs-i",
+      "modelId": "mg-hs",
+      "code": "I",
+      "yearFrom": 2019,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-hs-ii",
+      "modelId": "mg-hs",
+      "code": "II",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-mg3-hybrid",
+      "modelId": "mg-mg3",
+      "code": "Hybrid+",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-mg4-mg4",
+      "modelId": "mg-mg4",
+      "code": "MG4",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-mg5-ev",
+      "modelId": "mg-mg5",
+      "code": "EV",
+      "yearFrom": 2021,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-marvel-r-i",
+      "modelId": "mg-marvel-r",
+      "code": "I",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-cyberster-i",
+      "modelId": "mg-cyberster",
+      "code": "I",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mg-s5-ev",
+      "modelId": "mg-s5",
+      "code": "EV",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -8707,33 +8643,73 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mg-zt-t-zt-t",
-      "modelId": "mg-zt-t",
-      "code": "ZT-T",
-      "yearFrom": 2001,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-1000-classic-mini",
-      "modelId": "mini-1000",
-      "code": "Classic Mini",
+      "id": "mini-classic-mk3",
+      "modelId": "mini-classic",
+      "code": "Mk3",
       "yearFrom": 1967,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-classic-mpi",
+      "modelId": "mini-classic",
+      "code": "MPI",
+      "yearFrom": 1996,
       "yearTo": 2000,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mini-1300-classic-mini",
-      "modelId": "mini-1300",
-      "code": "Classic Mini",
-      "yearFrom": 1974,
-      "yearTo": 2000,
+      "id": "mini-cooper-r50",
+      "modelId": "mini-cooper",
+      "code": "R50",
+      "yearFrom": 2001,
+      "yearTo": 2006,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mini-aceman-aceman",
-      "modelId": "mini-aceman",
-      "code": "Aceman",
+      "id": "mini-cooper-r56",
+      "modelId": "mini-cooper",
+      "code": "R56",
+      "yearFrom": 2006,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cooper-r56-fl",
+      "modelId": "mini-cooper",
+      "code": "R56 FL",
+      "yearFrom": 2010,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cooper-f56",
+      "modelId": "mini-cooper",
+      "code": "F56",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cooper-f56-fl",
+      "modelId": "mini-cooper",
+      "code": "F56 FL",
+      "yearFrom": 2018,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cooper-f66",
+      "modelId": "mini-cooper",
+      "code": "F66",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cooper-j01",
+      "modelId": "mini-cooper",
+      "code": "J01",
       "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -8759,6 +8735,14 @@
       "modelId": "mini-cabrio",
       "code": "F57",
       "yearFrom": 2016,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-cabrio-f67",
+      "modelId": "mini-cabrio",
+      "code": "F67",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -8775,95 +8759,15 @@
       "modelId": "mini-clubman",
       "code": "F54",
       "yearFrom": 2015,
-      "yearTo": null,
+      "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mini-clubvan-r55-clubvan",
-      "modelId": "mini-clubvan",
-      "code": "R55 Clubvan",
-      "yearFrom": 2012,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-r50-r53",
-      "modelId": "mini-cooper",
-      "code": "R50/R53",
-      "yearFrom": 2001,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-r56",
-      "modelId": "mini-cooper",
-      "code": "R56",
-      "yearFrom": 2006,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-f55-f56",
-      "modelId": "mini-cooper",
-      "code": "F55/F56",
-      "yearFrom": 2013,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-j01",
-      "modelId": "mini-cooper",
-      "code": "J01",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-s-r53",
-      "modelId": "mini-cooper-s",
-      "code": "R53",
-      "yearFrom": 2002,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-s-r56",
-      "modelId": "mini-cooper-s",
-      "code": "R56",
-      "yearFrom": 2006,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-s-f56",
-      "modelId": "mini-cooper-s",
-      "code": "F56",
-      "yearFrom": 2013,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-s-j01",
-      "modelId": "mini-cooper-s",
-      "code": "J01",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-se-f56-se",
-      "modelId": "mini-cooper-se",
-      "code": "F56 SE",
+      "id": "mini-clubman-f54-fl",
+      "modelId": "mini-clubman",
+      "code": "F54 FL",
       "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-cooper-se-countryman-f60-phev",
-      "modelId": "mini-cooper-se-countryman",
-      "code": "F60 PHEV",
-      "yearFrom": 2017,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -8878,7 +8782,31 @@
       "id": "mini-countryman-f60",
       "modelId": "mini-countryman",
       "code": "F60",
-      "yearFrom": 2016,
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-countryman-f60-fl",
+      "modelId": "mini-countryman",
+      "code": "F60 FL",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-countryman-u25",
+      "modelId": "mini-countryman",
+      "code": "U25",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mini-aceman-j05",
+      "modelId": "mini-aceman",
+      "code": "J05",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -8891,122 +8819,10 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mini-hatchback-r50",
-      "modelId": "mini-hatchback",
-      "code": "R50",
-      "yearFrom": 2001,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-hatchback-r56",
-      "modelId": "mini-hatchback",
-      "code": "R56",
-      "yearFrom": 2006,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-hatchback-f55-f56",
-      "modelId": "mini-hatchback",
-      "code": "F55/F56",
-      "yearFrom": 2013,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-hatchback-j01",
-      "modelId": "mini-hatchback",
-      "code": "J01",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-john-cooper-works-r56-jcw",
-      "modelId": "mini-john-cooper-works",
-      "code": "R56 JCW",
-      "yearFrom": 2008,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-john-cooper-works-f56-jcw",
-      "modelId": "mini-john-cooper-works",
-      "code": "F56 JCW",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-one-r50",
-      "modelId": "mini-one",
-      "code": "R50",
-      "yearFrom": 2001,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-one-r56",
-      "modelId": "mini-one",
-      "code": "R56",
-      "yearFrom": 2006,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mini-one-f55-f56",
-      "modelId": "mini-one",
-      "code": "F55/F56",
-      "yearFrom": 2013,
-      "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-3000-gt-3000gt",
-      "modelId": "mitsubishi-3000-gt",
-      "code": "3000GT",
-      "yearFrom": 1990,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-asx-i",
-      "modelId": "mitsubishi-asx",
-      "code": "I",
-      "yearFrom": 2010,
-      "yearTo": 2022,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-asx-ii",
-      "modelId": "mitsubishi-asx",
-      "code": "II",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-canter-canter",
-      "modelId": "mitsubishi-canter",
-      "code": "Canter",
-      "yearFrom": 1990,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-canter-fuso-canter-fuso",
-      "modelId": "mitsubishi-canter-fuso",
-      "code": "Canter Fuso",
-      "yearFrom": 1990,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-carisma-carisma",
-      "modelId": "mitsubishi-carisma",
-      "code": "Carisma",
-      "yearFrom": 1995,
+      "id": "mitsubishi-colt-cj",
+      "modelId": "mitsubishi-colt",
+      "code": "CJ",
+      "yearFrom": 1996,
       "yearTo": 2004,
       "imageAsset": "generation_placeholder"
     },
@@ -9019,99 +8835,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-colt-later",
+      "id": "mitsubishi-colt-vi",
       "modelId": "mitsubishi-colt",
-      "code": "Later",
+      "code": "VI",
       "yearFrom": 2023,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-cordia-cordia",
-      "modelId": "mitsubishi-cordia",
-      "code": "Cordia",
-      "yearFrom": 1982,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-eclipse-eclipse",
-      "modelId": "mitsubishi-eclipse",
-      "code": "Eclipse",
-      "yearFrom": 1989,
-      "yearTo": 2011,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-eclipse-cross-eclipse-cross",
-      "modelId": "mitsubishi-eclipse-cross",
-      "code": "Eclipse Cross",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-eclipse-cross-phev-eclipse-cross-phev",
-      "modelId": "mitsubishi-eclipse-cross-phev",
-      "code": "Eclipse Cross PHEV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-galant-galant",
-      "modelId": "mitsubishi-galant",
-      "code": "Galant",
-      "yearFrom": 1996,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-grandis-grandis",
-      "modelId": "mitsubishi-grandis",
-      "code": "Grandis",
-      "yearFrom": 2003,
-      "yearTo": 2011,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-gto-gto",
-      "modelId": "mitsubishi-gto",
-      "code": "GTO",
-      "yearFrom": 1990,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-i-miev-i-miev",
-      "modelId": "mitsubishi-i-miev",
-      "code": "i-MiEV",
-      "yearFrom": 2009,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-l200-iii-iv",
-      "modelId": "mitsubishi-l200",
-      "code": "III–IV",
-      "yearFrom": 1996,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-l200-v",
-      "modelId": "mitsubishi-l200",
-      "code": "V",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-l300-l300",
-      "modelId": "mitsubishi-l300",
-      "code": "L300",
-      "yearFrom": 1986,
-      "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9123,51 +8851,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-lancer-cy-cz",
+      "id": "mitsubishi-lancer-cy",
       "modelId": "mitsubishi-lancer",
-      "code": "CY/CZ",
+      "code": "CY",
       "yearFrom": 2007,
       "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-i",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "I",
-      "yearFrom": 1992,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-ii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "II",
-      "yearFrom": 1993,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-iii",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "III",
-      "yearFrom": 1995,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-iv",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "IV",
-      "yearFrom": 1996,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-lancer-evolution-v",
-      "modelId": "mitsubishi-lancer-evolution",
-      "code": "V",
-      "yearFrom": 1998,
-      "yearTo": 1999,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9206,16 +8894,136 @@
       "id": "mitsubishi-lancer-evolution-x",
       "modelId": "mitsubishi-lancer-evolution",
       "code": "X",
-      "yearFrom": 2007,
+      "yearFrom": 2008,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-legnum-legnum",
-      "modelId": "mitsubishi-legnum",
-      "code": "Legnum",
+      "id": "mitsubishi-carisma-i",
+      "modelId": "mitsubishi-carisma",
+      "code": "I",
+      "yearFrom": 1995,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-carisma-fl",
+      "modelId": "mitsubishi-carisma",
+      "code": "FL",
+      "yearFrom": 1999,
+      "yearTo": 2004,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-galant-ea",
+      "modelId": "mitsubishi-galant",
+      "code": "EA",
       "yearFrom": 1996,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-star-i",
+      "modelId": "mitsubishi-space-star",
+      "code": "I",
+      "yearFrom": 1998,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-star-ii",
+      "modelId": "mitsubishi-space-star",
+      "code": "II",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-star-ii-fl",
+      "modelId": "mitsubishi-space-star",
+      "code": "II FL",
+      "yearFrom": 2016,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-wagon-n30",
+      "modelId": "mitsubishi-space-wagon",
+      "code": "N30",
+      "yearFrom": 1991,
+      "yearTo": 1998,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-wagon-n40",
+      "modelId": "mitsubishi-space-wagon",
+      "code": "N40",
+      "yearFrom": 1998,
+      "yearTo": 2004,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-runner-i",
+      "modelId": "mitsubishi-space-runner",
+      "code": "I",
+      "yearFrom": 1991,
+      "yearTo": 1999,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-runner-ii",
+      "modelId": "mitsubishi-space-runner",
+      "code": "II",
+      "yearFrom": 1999,
       "yearTo": 2002,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-grandis-mpv",
+      "modelId": "mitsubishi-grandis",
+      "code": "MPV",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-grandis-suv",
+      "modelId": "mitsubishi-grandis",
+      "code": "SUV",
+      "yearFrom": 2025,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-space-gear-l400",
+      "modelId": "mitsubishi-space-gear",
+      "code": "L400",
+      "yearFrom": 1994,
+      "yearTo": 2007,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-asx-ga",
+      "modelId": "mitsubishi-asx",
+      "code": "GA",
+      "yearFrom": 2010,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-asx-ga-fl",
+      "modelId": "mitsubishi-asx",
+      "code": "GA FL",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-asx-ii",
+      "modelId": "mitsubishi-asx",
+      "code": "II",
+      "yearFrom": 2023,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9239,183 +9047,191 @@
       "modelId": "mitsubishi-outlander",
       "code": "III",
       "yearFrom": 2012,
-      "yearTo": 2021,
+      "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-outlander-iv",
+      "id": "mitsubishi-outlander-iii-fl",
       "modelId": "mitsubishi-outlander",
-      "code": "IV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-outlander-phev-iii-phev",
-      "modelId": "mitsubishi-outlander-phev",
-      "code": "III PHEV",
-      "yearFrom": 2013,
+      "code": "III FL",
+      "yearFrom": 2015,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-outlander-phev-iv-phev",
+      "id": "mitsubishi-outlander-phev-i",
       "modelId": "mitsubishi-outlander-phev",
-      "code": "IV PHEV",
-      "yearFrom": 2021,
+      "code": "I",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-outlander-phev-fl",
+      "modelId": "mitsubishi-outlander-phev",
+      "code": "FL",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-outlander-phev-ii",
+      "modelId": "mitsubishi-outlander-phev",
+      "code": "II",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-ii",
+      "id": "mitsubishi-eclipse-cross-i",
+      "modelId": "mitsubishi-eclipse-cross",
+      "code": "I",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-eclipse-cross-fl",
+      "modelId": "mitsubishi-eclipse-cross",
+      "code": "FL",
+      "yearFrom": 2021,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-eclipse-cross-ev",
+      "modelId": "mitsubishi-eclipse-cross",
+      "code": "EV",
+      "yearFrom": 2025,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-pajero-v20",
       "modelId": "mitsubishi-pajero",
-      "code": "II",
+      "code": "V20",
       "yearFrom": 1991,
       "yearTo": 1999,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-iii",
+      "id": "mitsubishi-pajero-v60",
       "modelId": "mitsubishi-pajero",
-      "code": "III",
+      "code": "V60",
       "yearFrom": 1999,
       "yearTo": 2006,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-iv",
+      "id": "mitsubishi-pajero-v80",
       "modelId": "mitsubishi-pajero",
-      "code": "IV",
+      "code": "V80",
       "yearFrom": 2006,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-pajero-v80-fl",
+      "modelId": "mitsubishi-pajero",
+      "code": "V80 FL",
+      "yearFrom": 2014,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-mini-pajero-mini",
-      "modelId": "mitsubishi-pajero-mini",
-      "code": "Pajero Mini",
-      "yearFrom": 1994,
-      "yearTo": 2012,
+      "id": "mitsubishi-l200-k74",
+      "modelId": "mitsubishi-l200",
+      "code": "K74",
+      "yearFrom": 1996,
+      "yearTo": 2006,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-sport-i-ii",
-      "modelId": "mitsubishi-pajero-sport",
-      "code": "I–II",
-      "yearFrom": 1996,
+      "id": "mitsubishi-l200-kb",
+      "modelId": "mitsubishi-l200",
+      "code": "KB",
+      "yearFrom": 2006,
       "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-pajero-sport-iii",
-      "modelId": "mitsubishi-pajero-sport",
-      "code": "III",
+      "id": "mitsubishi-l200-kl",
+      "modelId": "mitsubishi-l200",
+      "code": "KL",
       "yearFrom": 2015,
-      "yearTo": null,
+      "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-rvr-rvr",
-      "modelId": "mitsubishi-rvr",
-      "code": "RVR",
-      "yearFrom": 1991,
+      "id": "mitsubishi-l200-kl-fl",
+      "modelId": "mitsubishi-l200",
+      "code": "KL FL",
+      "yearFrom": 2019,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-i-miev-i",
+      "modelId": "mitsubishi-i-miev",
+      "code": "I",
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "mitsubishi-3000gt-z16",
+      "modelId": "mitsubishi-3000gt",
+      "code": "Z16",
+      "yearFrom": 1992,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-micra-k11",
+      "modelId": "nissan-micra",
+      "code": "K11",
+      "yearFrom": 1992,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-micra-k11-fl",
+      "modelId": "nissan-micra",
+      "code": "K11 FL",
+      "yearFrom": 2000,
+      "yearTo": 2003,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-micra-k12",
+      "modelId": "nissan-micra",
+      "code": "K12",
+      "yearFrom": 2003,
       "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-sapporo-sapporo",
-      "modelId": "mitsubishi-sapporo",
-      "code": "Sapporo",
-      "yearFrom": 1975,
-      "yearTo": 1990,
+      "id": "nissan-micra-k13",
+      "modelId": "nissan-micra",
+      "code": "K13",
+      "yearFrom": 2010,
+      "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-sigma-sigma",
-      "modelId": "mitsubishi-sigma",
-      "code": "Sigma",
-      "yearFrom": 1990,
-      "yearTo": 1996,
+      "id": "nissan-micra-k14",
+      "modelId": "nissan-micra",
+      "code": "K14",
+      "yearFrom": 2017,
+      "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "mitsubishi-space-gear-space-gear",
-      "modelId": "mitsubishi-space-gear",
-      "code": "Space Gear",
-      "yearFrom": 1994,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-space-runner-space-runner",
-      "modelId": "mitsubishi-space-runner",
-      "code": "Space Runner",
-      "yearFrom": 1991,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-space-star-i",
-      "modelId": "mitsubishi-space-star",
-      "code": "I",
-      "yearFrom": 1998,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-space-star-ii",
-      "modelId": "mitsubishi-space-star",
-      "code": "II",
-      "yearFrom": 2012,
+      "id": "nissan-micra-ev",
+      "modelId": "nissan-micra",
+      "code": "EV",
+      "yearFrom": 2025,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-space-wagon-space-wagon",
-      "modelId": "mitsubishi-space-wagon",
-      "code": "Space Wagon",
-      "yearFrom": 1983,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "mitsubishi-tredia-tredia",
-      "modelId": "mitsubishi-tredia",
-      "code": "Tredia",
-      "yearFrom": 1982,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-100nx-100nx",
-      "modelId": "nissan-100nx",
-      "code": "100NX",
-      "yearFrom": 1990,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-200sx-s13-s14",
-      "modelId": "nissan-200sx",
-      "code": "S13/S14",
-      "yearFrom": 1988,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-300zx-z32",
-      "modelId": "nissan-300zx",
-      "code": "Z32",
-      "yearFrom": 1989,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-350z-z33",
-      "modelId": "nissan-350z",
-      "code": "Z33",
-      "yearFrom": 2002,
-      "yearTo": 2009,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9435,339 +9251,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "nissan-almera-tino-tino",
+      "id": "nissan-almera-tino-v10",
       "modelId": "nissan-almera-tino",
-      "code": "Tino",
+      "code": "V10",
       "yearFrom": 2000,
       "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-altima-altima",
-      "modelId": "nissan-altima",
-      "code": "Altima",
-      "yearFrom": 2001,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-bluebird-bluebird",
-      "modelId": "nissan-bluebird",
-      "code": "Bluebird",
-      "yearFrom": 1980,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-cedric-cedric",
-      "modelId": "nissan-cedric",
-      "code": "Cedric",
-      "yearFrom": 1960,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-cherry-cherry",
-      "modelId": "nissan-cherry",
-      "code": "Cherry",
-      "yearFrom": 1970,
-      "yearTo": 1986,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-cube-cube",
-      "modelId": "nissan-cube",
-      "code": "Cube",
-      "yearFrom": 1998,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-elgrand-elgrand",
-      "modelId": "nissan-elgrand",
-      "code": "Elgrand",
-      "yearFrom": 1997,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-figaro-figaro",
-      "modelId": "nissan-figaro",
-      "code": "Figaro",
-      "yearFrom": 1991,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-frontier-frontier",
-      "modelId": "nissan-frontier",
-      "code": "Frontier",
-      "yearFrom": 1997,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-gt-r-r35",
-      "modelId": "nissan-gt-r",
-      "code": "R35",
-      "yearFrom": 2007,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-interstar-interstar",
-      "modelId": "nissan-interstar",
-      "code": "Interstar",
-      "yearFrom": 2002,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-juke-f15",
-      "modelId": "nissan-juke",
-      "code": "F15",
-      "yearFrom": 2010,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-juke-f16",
-      "modelId": "nissan-juke",
-      "code": "F16",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-king-cab-king-cab",
-      "modelId": "nissan-king-cab",
-      "code": "King Cab",
-      "yearFrom": 1985,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-kubistar-kubistar",
-      "modelId": "nissan-kubistar",
-      "code": "Kubistar",
-      "yearFrom": 2003,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-laurel-laurel",
-      "modelId": "nissan-laurel",
-      "code": "Laurel",
-      "yearFrom": 1968,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-leaf-ze0",
-      "modelId": "nissan-leaf",
-      "code": "ZE0",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-leaf-ze1",
-      "modelId": "nissan-leaf",
-      "code": "ZE1",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-maxima-maxima",
-      "modelId": "nissan-maxima",
-      "code": "Maxima",
-      "yearFrom": 1988,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-micra-k11",
-      "modelId": "nissan-micra",
-      "code": "K11",
-      "yearFrom": 1992,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-micra-k12",
-      "modelId": "nissan-micra",
-      "code": "K12",
-      "yearFrom": 2002,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-micra-k13",
-      "modelId": "nissan-micra",
-      "code": "K13",
-      "yearFrom": 2010,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-micra-k14",
-      "modelId": "nissan-micra",
-      "code": "K14",
-      "yearFrom": 2016,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-murano-z50",
-      "modelId": "nissan-murano",
-      "code": "Z50",
-      "yearFrom": 2003,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-murano-z51",
-      "modelId": "nissan-murano",
-      "code": "Z51",
-      "yearFrom": 2008,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-murano-z52",
-      "modelId": "nissan-murano",
-      "code": "Z52",
-      "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-navara-d22",
-      "modelId": "nissan-navara",
-      "code": "D22",
-      "yearFrom": 1997,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-navara-d40",
-      "modelId": "nissan-navara",
-      "code": "D40",
-      "yearFrom": 2004,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-navara-d23",
-      "modelId": "nissan-navara",
-      "code": "D23",
-      "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-note-e11",
-      "modelId": "nissan-note",
-      "code": "E11",
-      "yearFrom": 2005,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-note-e12",
-      "modelId": "nissan-note",
-      "code": "E12",
-      "yearFrom": 2013,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-np300-np300",
-      "modelId": "nissan-np300",
-      "code": "NP300",
-      "yearFrom": 2008,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-nv200-nv200",
-      "modelId": "nissan-nv200",
-      "code": "NV200",
-      "yearFrom": 2009,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-nv300-nv300",
-      "modelId": "nissan-nv300",
-      "code": "NV300",
-      "yearFrom": 2016,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-nv400-nv400",
-      "modelId": "nissan-nv400",
-      "code": "NV400",
-      "yearFrom": 2010,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-pathfinder-r51",
-      "modelId": "nissan-pathfinder",
-      "code": "R51",
-      "yearFrom": 2005,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-pathfinder-r52",
-      "modelId": "nissan-pathfinder",
-      "code": "R52",
-      "yearFrom": 2012,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-pathfinder-r53",
-      "modelId": "nissan-pathfinder",
-      "code": "R53",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-patrol-y61",
-      "modelId": "nissan-patrol",
-      "code": "Y61",
-      "yearFrom": 1997,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-patrol-y62",
-      "modelId": "nissan-patrol",
-      "code": "Y62",
-      "yearFrom": 2010,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-pickup-d21-d22",
-      "modelId": "nissan-pickup",
-      "code": "D21/D22",
-      "yearFrom": 1985,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-primastar-x83",
-      "modelId": "nissan-primastar",
-      "code": "X83",
-      "yearFrom": 2002,
-      "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9790,23 +9278,39 @@
       "id": "nissan-primera-p12",
       "modelId": "nissan-primera",
       "code": "P12",
-      "yearFrom": 2001,
+      "yearFrom": 2002,
       "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "nissan-pulsar-c13",
-      "modelId": "nissan-pulsar",
-      "code": "C13",
-      "yearFrom": 2014,
-      "yearTo": 2018,
+      "id": "nissan-sunny-n14",
+      "modelId": "nissan-sunny",
+      "code": "N14",
+      "yearFrom": 1990,
+      "yearTo": 1995,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-bluebird-t72",
+      "modelId": "nissan-bluebird",
+      "code": "T72",
+      "yearFrom": 1986,
+      "yearTo": 1990,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "nissan-qashqai-j10",
       "modelId": "nissan-qashqai",
       "code": "J10",
-      "yearFrom": 2006,
+      "yearFrom": 2007,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-qashqai-j10-fl",
+      "modelId": "nissan-qashqai",
+      "code": "J10 FL",
+      "yearFrom": 2010,
       "yearTo": 2013,
       "imageAsset": "generation_placeholder"
     },
@@ -9814,7 +9318,15 @@
       "id": "nissan-qashqai-j11",
       "modelId": "nissan-qashqai",
       "code": "J11",
-      "yearFrom": 2013,
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-qashqai-j11-fl",
+      "modelId": "nissan-qashqai",
+      "code": "J11 FL",
+      "yearFrom": 2017,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
@@ -9827,99 +9339,27 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "nissan-qashqai-e-power-j12-e-power",
-      "modelId": "nissan-qashqai-e-power",
-      "code": "J12 e-POWER",
-      "yearFrom": 2021,
+      "id": "nissan-juke-f15",
+      "modelId": "nissan-juke",
+      "code": "F15",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-juke-f15-fl",
+      "modelId": "nissan-juke",
+      "code": "F15 FL",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-juke-f16",
+      "modelId": "nissan-juke",
+      "code": "F16",
+      "yearFrom": 2019,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-serena-serena",
-      "modelId": "nissan-serena",
-      "code": "Serena",
-      "yearFrom": 1991,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-silvia-s13-s15",
-      "modelId": "nissan-silvia",
-      "code": "S13–S15",
-      "yearFrom": 1988,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-skyline-r32-r34",
-      "modelId": "nissan-skyline",
-      "code": "R32–R34",
-      "yearFrom": 1989,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-stagea-stagea",
-      "modelId": "nissan-stagea",
-      "code": "Stagea",
-      "yearFrom": 1996,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-sunny-sunny",
-      "modelId": "nissan-sunny",
-      "code": "Sunny",
-      "yearFrom": 1986,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-terrano-terrano",
-      "modelId": "nissan-terrano",
-      "code": "Terrano",
-      "yearFrom": 1986,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-terrano-ii-terrano-ii",
-      "modelId": "nissan-terrano-ii",
-      "code": "Terrano II",
-      "yearFrom": 1993,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-terrano-turbodiesel-terrano-td",
-      "modelId": "nissan-terrano-turbodiesel",
-      "code": "Terrano TD",
-      "yearFrom": 1993,
-      "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-tiida-c11",
-      "modelId": "nissan-tiida",
-      "code": "C11",
-      "yearFrom": 2004,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-urvan-e25",
-      "modelId": "nissan-urvan",
-      "code": "E25",
-      "yearFrom": 2001,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "nissan-vanette-vanette",
-      "modelId": "nissan-vanette",
-      "code": "Vanette",
-      "yearFrom": 1978,
-      "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9935,14 +9375,14 @@
       "modelId": "nissan-x-trail",
       "code": "T31",
       "yearFrom": 2007,
-      "yearTo": 2013,
+      "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "nissan-x-trail-t32",
       "modelId": "nissan-x-trail",
       "code": "T32",
-      "yearFrom": 2013,
+      "yearFrom": 2014,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
@@ -9950,16 +9390,248 @@
       "id": "nissan-x-trail-t33",
       "modelId": "nissan-x-trail",
       "code": "T33",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-leaf-ze0",
+      "modelId": "nissan-leaf",
+      "code": "ZE0",
+      "yearFrom": 2011,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-leaf-ze1",
+      "modelId": "nissan-leaf",
+      "code": "ZE1",
+      "yearFrom": 2018,
+      "yearTo": 2022,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-leaf-ze1-e",
+      "modelId": "nissan-leaf",
+      "code": "ZE1 e+",
+      "yearFrom": 2019,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-leaf-ze2",
+      "modelId": "nissan-leaf",
+      "code": "ZE2",
+      "yearFrom": 2025,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-ariya-i",
+      "modelId": "nissan-ariya",
+      "code": "I",
+      "yearFrom": 2022,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-note-e11",
+      "modelId": "nissan-note",
+      "code": "E11",
+      "yearFrom": 2006,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-note-e12",
+      "modelId": "nissan-note",
+      "code": "E12",
+      "yearFrom": 2013,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-pulsar-c13",
+      "modelId": "nissan-pulsar",
+      "code": "C13",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-100nx-b13",
+      "modelId": "nissan-100nx",
+      "code": "B13",
+      "yearFrom": 1990,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-200sx-s13",
+      "modelId": "nissan-200sx",
+      "code": "S13",
+      "yearFrom": 1989,
+      "yearTo": 1994,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-200sx-s14",
+      "modelId": "nissan-200sx",
+      "code": "S14",
+      "yearFrom": 1994,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-300zx-z32",
+      "modelId": "nissan-300zx",
+      "code": "Z32",
+      "yearFrom": 1990,
+      "yearTo": 1996,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-350z-z33",
+      "modelId": "nissan-350z",
+      "code": "Z33",
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-370z-z34",
+      "modelId": "nissan-370z",
+      "code": "Z34",
+      "yearFrom": 2009,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-gt-r-r35",
+      "modelId": "nissan-gt-r",
+      "code": "R35",
+      "yearFrom": 2009,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-gt-r-r35-fl",
+      "modelId": "nissan-gt-r",
+      "code": "R35 FL",
+      "yearFrom": 2017,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-murano-z50",
+      "modelId": "nissan-murano",
+      "code": "Z50",
+      "yearFrom": 2005,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-murano-z51",
+      "modelId": "nissan-murano",
+      "code": "Z51",
+      "yearFrom": 2008,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-navara-d22",
+      "modelId": "nissan-navara",
+      "code": "D22",
+      "yearFrom": 1998,
+      "yearTo": 2005,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-navara-d40",
+      "modelId": "nissan-navara",
+      "code": "D40",
+      "yearFrom": 2005,
+      "yearTo": 2015,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-navara-d23",
+      "modelId": "nissan-navara",
+      "code": "D23",
+      "yearFrom": 2015,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-pathfinder-r51",
+      "modelId": "nissan-pathfinder",
+      "code": "R51",
+      "yearFrom": 2005,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-patrol-y61",
+      "modelId": "nissan-patrol",
+      "code": "Y61",
+      "yearFrom": 1997,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-terrano-r20",
+      "modelId": "nissan-terrano",
+      "code": "R20",
+      "yearFrom": 1993,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-maxima-a32",
+      "modelId": "nissan-maxima",
+      "code": "A32",
+      "yearFrom": 1995,
+      "yearTo": 2000,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-kubistar-x76",
+      "modelId": "nissan-kubistar",
+      "code": "X76",
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-primastar-x83",
+      "modelId": "nissan-primastar",
+      "code": "X83",
+      "yearFrom": 2002,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-primastar-ii",
+      "modelId": "nissan-primastar",
+      "code": "II",
       "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "nissan-x-trail-e-power-t33-e-power",
-      "modelId": "nissan-x-trail-e-power",
-      "code": "T33 e-POWER",
-      "yearFrom": 2022,
-      "yearTo": null,
+      "id": "nissan-nv200-m20",
+      "modelId": "nissan-nv200",
+      "code": "M20",
+      "yearFrom": 2009,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "nissan-nv200-e-nv200",
+      "modelId": "nissan-nv200",
+      "code": "e-NV200",
+      "yearFrom": 2014,
+      "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -9968,14 +9640,6 @@
       "code": "Adam",
       "yearFrom": 2012,
       "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-admiral-admiral",
-      "modelId": "opel-admiral",
-      "code": "Admiral",
-      "yearFrom": 1964,
-      "yearTo": 1977,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10007,31 +9671,15 @@
       "modelId": "opel-antara",
       "code": "Antara",
       "yearFrom": 2006,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-antara-fl",
+      "modelId": "opel-antara",
+      "code": "FL",
+      "yearFrom": 2011,
       "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-ascona-ascona-c",
-      "modelId": "opel-ascona",
-      "code": "Ascona C",
-      "yearFrom": 1981,
-      "yearTo": 1988,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-astra-f",
-      "modelId": "opel-astra",
-      "code": "F",
-      "yearFrom": 1991,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-astra-g",
-      "modelId": "opel-astra",
-      "code": "G",
-      "yearFrom": 1998,
-      "yearTo": 2004,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10055,6 +9703,14 @@
       "modelId": "opel-astra",
       "code": "K",
       "yearFrom": 2015,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-astra-k-fl",
+      "modelId": "opel-astra",
+      "code": "K FL",
+      "yearFrom": 2019,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
@@ -10064,30 +9720,6 @@
       "code": "L",
       "yearFrom": 2021,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-astra-gse-l-gse",
-      "modelId": "opel-astra-gse",
-      "code": "L GSe",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-calibra-calibra",
-      "modelId": "opel-calibra",
-      "code": "Calibra",
-      "yearFrom": 1989,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-campo-campo",
-      "modelId": "opel-campo",
-      "code": "Campo",
-      "yearFrom": 1988,
-      "yearTo": 2001,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10112,30 +9744,6 @@
       "code": "E",
       "yearFrom": 2018,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-combo-e-combo-e",
-      "modelId": "opel-combo-e",
-      "code": "Combo-e",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-commodore-commodore",
-      "modelId": "opel-commodore",
-      "code": "Commodore",
-      "yearFrom": 1967,
-      "yearTo": 1982,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-corsa-b",
-      "modelId": "opel-corsa",
-      "code": "B",
-      "yearFrom": 1993,
-      "yearTo": 2000,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10167,62 +9775,62 @@
       "modelId": "opel-corsa",
       "code": "F",
       "yearFrom": 2019,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-corsa-fl",
+      "modelId": "opel-corsa",
+      "code": "FL",
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-corsa-e-corsa-e",
-      "modelId": "opel-corsa-e",
-      "code": "Corsa-e",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-crossland-x-crossland",
-      "modelId": "opel-crossland-x",
-      "code": "Crossland",
+      "id": "opel-crossland-x",
+      "modelId": "opel-crossland",
+      "code": "X",
       "yearFrom": 2017,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-crossland-fl",
+      "modelId": "opel-crossland",
+      "code": "FL",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "opel-frontera-i",
+      "modelId": "opel-frontera",
+      "code": "I",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-frontera-a",
-      "modelId": "opel-frontera",
-      "code": "A",
-      "yearFrom": 1991,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-frontera-b",
-      "modelId": "opel-frontera",
-      "code": "B",
-      "yearFrom": 1998,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-grandland-grandland",
+      "id": "opel-grandland-x",
       "modelId": "opel-grandland",
-      "code": "Grandland",
+      "code": "X",
       "yearFrom": 2017,
-      "yearTo": null,
+      "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-grandland-gse-gse",
-      "modelId": "opel-grandland-gse",
-      "code": "GSe",
-      "yearFrom": 2022,
-      "yearTo": null,
+      "id": "opel-grandland-fl",
+      "modelId": "opel-grandland",
+      "code": "FL",
+      "yearFrom": 2021,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-grandland-x-grandland-x",
-      "modelId": "opel-grandland-x",
-      "code": "Grandland X",
-      "yearFrom": 2017,
+      "id": "opel-grandland-ii",
+      "modelId": "opel-grandland",
+      "code": "II",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10247,15 +9855,7 @@
       "modelId": "opel-insignia",
       "code": "B",
       "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-kadett-kadett-e",
-      "modelId": "opel-kadett",
-      "code": "Kadett E",
-      "yearFrom": 1984,
-      "yearTo": 1991,
+      "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10264,14 +9864,6 @@
       "code": "Karl",
       "yearFrom": 2015,
       "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-manta-manta-b",
-      "modelId": "opel-manta",
-      "code": "Manta B",
-      "yearFrom": 1975,
-      "yearTo": 1988,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10307,30 +9899,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-mokka-e-mokka-e",
-      "modelId": "opel-mokka-e",
-      "code": "Mokka-e",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-monterey-monterey",
-      "modelId": "opel-monterey",
-      "code": "Monterey",
-      "yearFrom": 1992,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-monza-monza",
-      "modelId": "opel-monza",
-      "code": "Monza",
-      "yearFrom": 1978,
-      "yearTo": 1986,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "opel-movano-a",
       "modelId": "opel-movano",
       "code": "A",
@@ -10355,46 +9923,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-olympia-olympia",
-      "modelId": "opel-olympia",
-      "code": "Olympia",
-      "yearFrom": 1967,
-      "yearTo": 1970,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-omega-a",
-      "modelId": "opel-omega",
-      "code": "A",
-      "yearFrom": 1986,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-omega-b",
-      "modelId": "opel-omega",
-      "code": "B",
-      "yearFrom": 1994,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-rekord-rekord-e",
-      "modelId": "opel-rekord",
-      "code": "Rekord E",
-      "yearFrom": 1977,
-      "yearTo": 1986,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-senator-senator-b",
-      "modelId": "opel-senator",
-      "code": "Senator B",
-      "yearFrom": 1987,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "opel-signum-signum",
       "modelId": "opel-signum",
       "code": "Signum",
@@ -10403,51 +9931,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-sintra-sintra",
-      "modelId": "opel-sintra",
-      "code": "Sintra",
-      "yearFrom": 1996,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-speedster-speedster",
-      "modelId": "opel-speedster",
-      "code": "Speedster",
-      "yearFrom": 2000,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-tigra-a",
-      "modelId": "opel-tigra",
-      "code": "A",
-      "yearFrom": 1994,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "opel-tigra-b",
       "modelId": "opel-tigra",
       "code": "B",
       "yearFrom": 2004,
       "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-vectra-a",
-      "modelId": "opel-vectra",
-      "code": "A",
-      "yearFrom": 1988,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-vectra-b",
-      "modelId": "opel-vectra",
-      "code": "B",
-      "yearFrom": 1995,
-      "yearTo": 2002,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10483,33 +9971,17 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-zafira-a",
-      "modelId": "opel-zafira",
-      "code": "A",
-      "yearFrom": 1999,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "opel-zafira-b",
       "modelId": "opel-zafira",
       "code": "B",
       "yearFrom": 2005,
-      "yearTo": 2011,
+      "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "opel-zafira-c",
+      "id": "opel-zafira-tourer",
       "modelId": "opel-zafira",
-      "code": "C",
-      "yearFrom": 2011,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "opel-zafira-tourer-c-tourer",
-      "modelId": "opel-zafira-tourer",
-      "code": "C Tourer",
+      "code": "Tourer",
       "yearFrom": 2011,
       "yearTo": 2019,
       "imageAsset": "generation_placeholder"
@@ -10523,10 +9995,18 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "polestar-2-2",
+      "id": "polestar-2-i",
       "modelId": "polestar-2",
-      "code": "2",
+      "code": "I",
       "yearFrom": 2020,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "polestar-2-fl",
+      "modelId": "polestar-2",
+      "code": "FL",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10547,35 +10027,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "porsche-718-718",
-      "modelId": "porsche-718",
-      "code": "718",
-      "yearFrom": 2016,
+      "id": "polestar-5-5",
+      "modelId": "polestar-5",
+      "code": "5",
+      "yearFrom": 2025,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-911-964",
-      "modelId": "porsche-911",
-      "code": "964",
-      "yearFrom": 1989,
-      "yearTo": 1994,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-911-993",
-      "modelId": "porsche-911",
-      "code": "993",
-      "yearFrom": 1994,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-911-996",
-      "modelId": "porsche-911",
-      "code": "996",
-      "yearFrom": 1997,
-      "yearTo": 2004,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10583,7 +10039,15 @@
       "modelId": "porsche-911",
       "code": "997",
       "yearFrom": 2004,
-      "yearTo": 2011,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-911-997-2",
+      "modelId": "porsche-911",
+      "code": "997.2",
+      "yearFrom": 2008,
+      "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10591,6 +10055,14 @@
       "modelId": "porsche-911",
       "code": "991",
       "yearFrom": 2011,
+      "yearTo": 2016,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-911-991-2",
+      "modelId": "porsche-911",
+      "code": "991.2",
+      "yearFrom": 2016,
       "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
@@ -10599,47 +10071,15 @@
       "modelId": "porsche-911",
       "code": "992",
       "yearFrom": 2019,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-911-992-2",
+      "modelId": "porsche-911",
+      "code": "992.2",
+      "yearFrom": 2024,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-924-924",
-      "modelId": "porsche-924",
-      "code": "924",
-      "yearFrom": 1976,
-      "yearTo": 1988,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-928-928",
-      "modelId": "porsche-928",
-      "code": "928",
-      "yearFrom": 1977,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-944-944",
-      "modelId": "porsche-944",
-      "code": "944",
-      "yearFrom": 1982,
-      "yearTo": 1991,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-968-968",
-      "modelId": "porsche-968",
-      "code": "968",
-      "yearFrom": 1991,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-boxster-986",
-      "modelId": "porsche-boxster",
-      "code": "986",
-      "yearFrom": 1996,
-      "yearTo": 2004,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10647,6 +10087,14 @@
       "modelId": "porsche-boxster",
       "code": "987",
       "yearFrom": 2004,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-boxster-987-2",
+      "modelId": "porsche-boxster",
+      "code": "987.2",
+      "yearFrom": 2009,
       "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
@@ -10663,54 +10111,22 @@
       "modelId": "porsche-boxster",
       "code": "718",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "porsche-cayenne-9pa",
-      "modelId": "porsche-cayenne",
-      "code": "9PA",
-      "yearFrom": 2002,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-92a",
-      "modelId": "porsche-cayenne",
-      "code": "92A",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-po536",
-      "modelId": "porsche-cayenne",
-      "code": "PO536",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-e-hybrid-92a-e-hybrid",
-      "modelId": "porsche-cayenne-e-hybrid",
-      "code": "92A E-Hybrid",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayenne-e-hybrid-po536-e-hybrid",
-      "modelId": "porsche-cayenne-e-hybrid",
-      "code": "PO536 E-Hybrid",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "porsche-cayman-987c",
+      "id": "porsche-cayman-987",
       "modelId": "porsche-cayman",
-      "code": "987c",
+      "code": "987",
       "yearFrom": 2005,
+      "yearTo": 2008,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayman-987-2",
+      "modelId": "porsche-cayman",
+      "code": "987.2",
+      "yearFrom": 2009,
       "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
@@ -10727,6 +10143,62 @@
       "modelId": "porsche-cayman",
       "code": "718",
       "yearFrom": 2016,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-9pa",
+      "modelId": "porsche-cayenne",
+      "code": "9PA",
+      "yearFrom": 2002,
+      "yearTo": 2007,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-9pa-fl",
+      "modelId": "porsche-cayenne",
+      "code": "9PA FL",
+      "yearFrom": 2007,
+      "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-92a",
+      "modelId": "porsche-cayenne",
+      "code": "92A",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-92a-fl",
+      "modelId": "porsche-cayenne",
+      "code": "92A FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-e3",
+      "modelId": "porsche-cayenne",
+      "code": "E3",
+      "yearFrom": 2017,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-e3-fl",
+      "modelId": "porsche-cayenne",
+      "code": "E3 FL",
+      "yearFrom": 2023,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-cayenne-electric",
+      "modelId": "porsche-cayenne",
+      "code": "Electric",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10735,14 +10207,30 @@
       "modelId": "porsche-macan",
       "code": "95B",
       "yearFrom": 2014,
+      "yearTo": 2018,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-macan-95b-fl",
+      "modelId": "porsche-macan",
+      "code": "95B FL",
+      "yearFrom": 2019,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "porsche-macan-xab",
+      "id": "porsche-macan-95b-2",
       "modelId": "porsche-macan",
-      "code": "XAB",
-      "yearFrom": 2021,
+      "code": "95B.2",
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-macan-electric",
+      "modelId": "porsche-macan",
+      "code": "Electric",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10751,6 +10239,14 @@
       "modelId": "porsche-panamera",
       "code": "970",
       "yearFrom": 2009,
+      "yearTo": 2013,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "porsche-panamera-970-fl",
+      "modelId": "porsche-panamera",
+      "code": "970 FL",
+      "yearFrom": 2013,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
@@ -10759,22 +10255,22 @@
       "modelId": "porsche-panamera",
       "code": "971",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "porsche-panamera-e-hybrid-970-e-hybrid",
-      "modelId": "porsche-panamera-e-hybrid",
-      "code": "970 E-Hybrid",
-      "yearFrom": 2011,
-      "yearTo": 2016,
+      "id": "porsche-panamera-971-fl",
+      "modelId": "porsche-panamera",
+      "code": "971 FL",
+      "yearFrom": 2020,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "porsche-panamera-e-hybrid-971-e-hybrid",
-      "modelId": "porsche-panamera-e-hybrid",
-      "code": "971 E-Hybrid",
-      "yearFrom": 2016,
+      "id": "porsche-panamera-972",
+      "modelId": "porsche-panamera",
+      "code": "972",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10783,94 +10279,46 @@
       "modelId": "porsche-taycan",
       "code": "Taycan",
       "yearFrom": 2019,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-10-10",
-      "modelId": "renault-10",
-      "code": "10",
-      "yearFrom": 1965,
-      "yearTo": 1971,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-12-12",
-      "modelId": "renault-12",
-      "code": "12",
-      "yearFrom": 1969,
-      "yearTo": 1980,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-16-16",
-      "modelId": "renault-16",
-      "code": "16",
-      "yearFrom": 1965,
-      "yearTo": 1980,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-19-19",
-      "modelId": "renault-19",
-      "code": "19",
-      "yearFrom": 1988,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-4-4",
-      "modelId": "renault-4",
-      "code": "4",
-      "yearFrom": 1961,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-5-i",
-      "modelId": "renault-5",
-      "code": "I",
-      "yearFrom": 1972,
-      "yearTo": 1984,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-5-ii",
-      "modelId": "renault-5",
-      "code": "II",
-      "yearFrom": 1984,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-5-iii-ev",
-      "modelId": "renault-5",
-      "code": "III EV",
+      "id": "porsche-taycan-fl",
+      "modelId": "porsche-taycan",
+      "code": "FL",
       "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-8-8",
-      "modelId": "renault-8",
-      "code": "8",
-      "yearFrom": 1962,
-      "yearTo": 1973,
+      "id": "renault-4-e-tech",
+      "modelId": "renault-4",
+      "code": "E-Tech",
+      "yearFrom": 2025,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-9-9",
-      "modelId": "renault-9",
-      "code": "9",
-      "yearFrom": 1981,
-      "yearTo": 1988,
+      "id": "renault-5-e-tech",
+      "modelId": "renault-5",
+      "code": "E-Tech",
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "renault-arkana-arkana",
       "modelId": "renault-arkana",
       "code": "Arkana",
-      "yearFrom": 2020,
+      "yearFrom": 2021,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "renault-austral-austral",
+      "modelId": "renault-austral",
+      "code": "Austral",
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -10888,22 +10336,6 @@
       "code": "II",
       "yearFrom": 2019,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-clio-i",
-      "modelId": "renault-clio",
-      "code": "I",
-      "yearFrom": 1990,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-clio-ii",
-      "modelId": "renault-clio",
-      "code": "II",
-      "yearFrom": 1998,
-      "yearTo": 2005,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10927,23 +10359,15 @@
       "modelId": "renault-clio",
       "code": "V",
       "yearFrom": 2019,
+      "yearTo": 2026,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "renault-clio-vi",
+      "modelId": "renault-clio",
+      "code": "VI",
+      "yearFrom": 2026,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-dauphine-dauphine",
-      "modelId": "renault-dauphine",
-      "code": "Dauphine",
-      "yearFrom": 1956,
-      "yearTo": 1967,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-espace-iii",
-      "modelId": "renault-espace",
-      "code": "III",
-      "yearFrom": 1996,
-      "yearTo": 2002,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10958,16 +10382,8 @@
       "id": "renault-espace-v",
       "modelId": "renault-espace",
       "code": "V",
-      "yearFrom": 2014,
+      "yearFrom": 2015,
       "yearTo": 2023,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-espace-vi",
-      "modelId": "renault-espace",
-      "code": "VI",
-      "yearFrom": 2023,
-      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -10975,54 +10391,6 @@
       "modelId": "renault-express",
       "code": "Express",
       "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-fuego-fuego",
-      "modelId": "renault-fuego",
-      "code": "Fuego",
-      "yearFrom": 1980,
-      "yearTo": 1986,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-grand-espace-iv-grand",
-      "modelId": "renault-grand-espace",
-      "code": "IV Grand",
-      "yearFrom": 2002,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-grand-modus-grand-modus",
-      "modelId": "renault-grand-modus",
-      "code": "Grand Modus",
-      "yearFrom": 2004,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-grand-scenic-ii",
-      "modelId": "renault-grand-scenic",
-      "code": "II",
-      "yearFrom": 2003,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-grand-scenic-iii",
-      "modelId": "renault-grand-scenic",
-      "code": "III",
-      "yearFrom": 2009,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-grand-scenic-iv",
-      "modelId": "renault-grand-scenic",
-      "code": "IV",
-      "yearFrom": 2016,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11046,39 +10414,15 @@
       "id": "renault-kangoo-ii",
       "modelId": "renault-kangoo",
       "code": "II",
-      "yearFrom": 2007,
-      "yearTo": 2020,
+      "yearFrom": 2008,
+      "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "renault-kangoo-iii",
       "modelId": "renault-kangoo",
       "code": "III",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-kangoo-express-i",
-      "modelId": "renault-kangoo-express",
-      "code": "I",
-      "yearFrom": 1997,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-kangoo-express-ii",
-      "modelId": "renault-kangoo-express",
-      "code": "II",
-      "yearFrom": 2007,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-kangoo-express-iii",
-      "modelId": "renault-kangoo-express",
-      "code": "III",
-      "yearFrom": 2020,
+      "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11094,23 +10438,15 @@
       "id": "renault-koleos-ii",
       "modelId": "renault-koleos",
       "code": "II",
-      "yearFrom": 2016,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-laguna-i",
-      "modelId": "renault-laguna",
-      "code": "I",
-      "yearFrom": 1993,
-      "yearTo": 2000,
+      "yearFrom": 2017,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "renault-laguna-ii",
       "modelId": "renault-laguna",
       "code": "II",
-      "yearFrom": 2000,
+      "yearFrom": 2001,
       "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
@@ -11120,22 +10456,6 @@
       "code": "III",
       "yearFrom": 2007,
       "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-logan-logan",
-      "modelId": "renault-logan",
-      "code": "Logan",
-      "yearFrom": 2004,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-mascott-mascott",
-      "modelId": "renault-mascott",
-      "code": "Mascott",
-      "yearFrom": 1999,
-      "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11151,15 +10471,15 @@
       "modelId": "renault-master",
       "code": "III",
       "yearFrom": 2010,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-megane-i",
-      "modelId": "renault-megane",
-      "code": "I",
-      "yearFrom": 1995,
-      "yearTo": 2002,
+      "id": "renault-master-iv",
+      "modelId": "renault-master",
+      "code": "IV",
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11175,22 +10495,22 @@
       "modelId": "renault-megane",
       "code": "III",
       "yearFrom": 2008,
-      "yearTo": 2015,
+      "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "renault-megane-iv",
       "modelId": "renault-megane",
       "code": "IV",
-      "yearFrom": 2015,
-      "yearTo": null,
+      "yearFrom": 2016,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-megane-e-tech-megane-e-tech",
-      "modelId": "renault-megane-e-tech",
-      "code": "Megane E-Tech",
-      "yearFrom": 2021,
+      "id": "renault-megane-e-tech",
+      "modelId": "renault-megane",
+      "code": "E-Tech",
+      "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11208,22 +10528,6 @@
       "code": "Rafale",
       "yearFrom": 2024,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-safrane-safrane",
-      "modelId": "renault-safrane",
-      "code": "Safrane",
-      "yearFrom": 1992,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "renault-scenic-i",
-      "modelId": "renault-scenic",
-      "code": "I",
-      "yearFrom": 1996,
-      "yearTo": 2003,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11247,14 +10551,14 @@
       "modelId": "renault-scenic",
       "code": "IV",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-scenic-e-tech-scenic-e-tech",
-      "modelId": "renault-scenic-e-tech",
-      "code": "Scenic E-Tech",
-      "yearFrom": 2023,
+      "id": "renault-scenic-e-tech",
+      "modelId": "renault-scenic",
+      "code": "E-Tech",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11291,14 +10595,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "renault-trafic-bussi-trafic",
-      "modelId": "renault-trafic-bussi",
-      "code": "Trafic",
-      "yearFrom": 2001,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "renault-twingo-i",
       "modelId": "renault-twingo",
       "code": "I",
@@ -11319,7 +10615,7 @@
       "modelId": "renault-twingo",
       "code": "III",
       "yearFrom": 2014,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11334,8 +10630,16 @@
       "id": "renault-zoe-zoe",
       "modelId": "renault-zoe",
       "code": "Zoe",
-      "yearFrom": 2012,
-      "yearTo": null,
+      "yearFrom": 2013,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "renault-zoe-ze50",
+      "modelId": "renault-zoe",
+      "code": "ZE50",
+      "yearFrom": 2019,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11363,22 +10667,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "seat-altea-freetrack-freetrack",
-      "modelId": "seat-altea-freetrack",
-      "code": "Freetrack",
-      "yearFrom": 2007,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-altea-xl-altea-xl",
-      "modelId": "seat-altea-xl",
-      "code": "Altea XL",
-      "yearFrom": 2006,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "seat-arona-arona",
       "modelId": "seat-arona",
       "code": "Arona",
@@ -11387,27 +10675,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "seat-arosa-arosa",
-      "modelId": "seat-arosa",
-      "code": "Arosa",
-      "yearFrom": 1997,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "seat-ateca-ateca",
       "modelId": "seat-ateca",
       "code": "Ateca",
       "yearFrom": 2016,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-cordoba-6k",
-      "modelId": "seat-cordoba",
-      "code": "6K",
-      "yearFrom": 1993,
-      "yearTo": 2002,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11424,22 +10696,6 @@
       "code": "Exeo",
       "yearFrom": 2008,
       "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-exeo-st-exeo-st",
-      "modelId": "seat-exeo-st",
-      "code": "Exeo ST",
-      "yearFrom": 2009,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-ibiza-6k",
-      "modelId": "seat-ibiza",
-      "code": "6K",
-      "yearFrom": 1993,
-      "yearTo": 2002,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11467,22 +10723,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "seat-inca-inca",
-      "modelId": "seat-inca",
-      "code": "Inca",
-      "yearFrom": 1995,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-leon-1m",
-      "modelId": "seat-leon",
-      "code": "1M",
-      "yearFrom": 1999,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "seat-leon-1p",
       "modelId": "seat-leon",
       "code": "1P",
@@ -11507,38 +10747,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "seat-leon-ehybrid-kl-e-hybrid",
-      "modelId": "seat-leon-ehybrid",
-      "code": "KL e-Hybrid",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-leon-sportstourer-kl-st",
-      "modelId": "seat-leon-sportstourer",
-      "code": "KL ST",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-leon-st-5f-st",
-      "modelId": "seat-leon-st",
-      "code": "5F ST",
-      "yearFrom": 2013,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-leon-x-perience-5f-x-perience",
-      "modelId": "seat-leon-x-perience",
-      "code": "5F X-Perience",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "seat-mii-mii",
       "modelId": "seat-mii",
       "code": "Mii",
@@ -11547,43 +10755,11 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "seat-mii-electric-mii-electric",
-      "modelId": "seat-mii-electric",
-      "code": "Mii Electric",
-      "yearFrom": 2019,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "seat-tarraco-tarraco",
       "modelId": "seat-tarraco",
       "code": "Tarraco",
       "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-tarraco-ehybrid-tarraco-e-hybrid",
-      "modelId": "seat-tarraco-ehybrid",
-      "code": "Tarraco e-Hybrid",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-toledo-1l",
-      "modelId": "seat-toledo",
-      "code": "1L",
-      "yearFrom": 1991,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "seat-toledo-1m",
-      "modelId": "seat-toledo",
-      "code": "1M",
-      "yearFrom": 1998,
-      "yearTo": 2004,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11603,46 +10779,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-1000-1000-mb",
-      "modelId": "skoda-1000",
-      "code": "1000 MB",
-      "yearFrom": 1964,
-      "yearTo": 1969,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-105-105",
-      "modelId": "skoda-105",
-      "code": "105",
-      "yearFrom": 1976,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-120-120",
-      "modelId": "skoda-120",
-      "code": "120",
-      "yearFrom": 1976,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-1200-1200",
-      "modelId": "skoda-1200",
-      "code": "1200",
-      "yearFrom": 1952,
-      "yearTo": 1973,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-130-130",
-      "modelId": "skoda-130",
-      "code": "130",
-      "yearFrom": 1984,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "skoda-citigo-citigo",
       "modelId": "skoda-citigo",
       "code": "Citigo",
@@ -11654,23 +10790,31 @@
       "id": "skoda-elroq-elroq",
       "modelId": "skoda-elroq",
       "code": "Elroq",
-      "yearFrom": 2024,
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-enyaq-enyaq",
+      "id": "skoda-enyaq-iv",
       "modelId": "skoda-enyaq",
-      "code": "Enyaq",
-      "yearFrom": 2020,
+      "code": "iV",
+      "yearFrom": 2021,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "skoda-enyaq-85",
+      "modelId": "skoda-enyaq",
+      "code": "85",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-enyaq-coupe-enyaq-coup",
-      "modelId": "skoda-enyaq-coupe",
-      "code": "Enyaq Coupé",
-      "yearFrom": 2022,
+      "id": "skoda-epiq-epiq",
+      "modelId": "skoda-epiq",
+      "code": "Epiq",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11707,30 +10851,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-favorit-favorit",
-      "modelId": "skoda-favorit",
-      "code": "Favorit",
-      "yearFrom": 1987,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-felicia-felicia",
-      "modelId": "skoda-felicia",
-      "code": "Felicia",
-      "yearFrom": 1994,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-forman-forman",
-      "modelId": "skoda-forman",
-      "code": "Forman",
-      "yearFrom": 1990,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "skoda-kamiq-kamiq",
       "modelId": "skoda-kamiq",
       "code": "Kamiq",
@@ -11747,19 +10867,19 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-kodiaq-kodiaq",
+      "id": "skoda-kodiaq-i",
       "modelId": "skoda-kodiaq",
-      "code": "Kodiaq",
-      "yearFrom": 2016,
-      "yearTo": null,
+      "code": "I",
+      "yearFrom": 2017,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-octavia-i",
-      "modelId": "skoda-octavia",
-      "code": "I",
-      "yearFrom": 1996,
-      "yearTo": 2004,
+      "id": "skoda-kodiaq-ii",
+      "modelId": "skoda-kodiaq",
+      "code": "II",
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11767,29 +10887,21 @@
       "modelId": "skoda-octavia",
       "code": "II",
       "yearFrom": 2004,
-      "yearTo": 2012,
+      "yearTo": 2013,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "skoda-octavia-iii",
       "modelId": "skoda-octavia",
       "code": "III",
-      "yearFrom": 2012,
-      "yearTo": 2019,
+      "yearFrom": 2013,
+      "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "skoda-octavia-iv",
       "modelId": "skoda-octavia",
       "code": "IV",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "skoda-octavia-iv-iv-iv",
-      "modelId": "skoda-octavia-iv",
-      "code": "IV iV",
       "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
@@ -11798,7 +10910,7 @@
       "id": "skoda-peaq-peaq",
       "modelId": "skoda-peaq",
       "code": "Peaq",
-      "yearFrom": 2025,
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11847,14 +10959,14 @@
       "modelId": "skoda-superb",
       "code": "III",
       "yearFrom": 2015,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "skoda-superb-iv-iii-iv",
-      "modelId": "skoda-superb-iv",
-      "code": "III iV",
-      "yearFrom": 2019,
+      "id": "skoda-superb-iv",
+      "modelId": "skoda-superb",
+      "code": "IV",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -11867,59 +10979,27 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "smart-1-1",
+      "id": "smart-1-i",
       "modelId": "smart-1",
-      "code": "#1",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-1-1-2",
-      "modelId": "smart-1",
-      "code": "#1",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-3-3",
-      "modelId": "smart-3",
-      "code": "#3",
+      "code": "I",
       "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "smart-3-3-2",
+      "id": "smart-3-i",
       "modelId": "smart-3",
-      "code": "#3",
+      "code": "I",
       "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "smart-5-5",
+      "id": "smart-5-i",
       "modelId": "smart-5",
-      "code": "#5",
+      "code": "I",
       "yearFrom": 2025,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-brabus-brabus",
-      "modelId": "smart-brabus",
-      "code": "Brabus",
-      "yearFrom": 2003,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-crossblade-crossblade",
-      "modelId": "smart-crossblade",
-      "code": "Crossblade",
-      "yearFrom": 2002,
-      "yearTo": 2003,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -11959,47 +11039,7 @@
       "modelId": "smart-fortwo",
       "code": "453",
       "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-fortwo-coupe-450",
-      "modelId": "smart-fortwo-coupe",
-      "code": "450",
-      "yearFrom": 1998,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-fortwo-coupe-451",
-      "modelId": "smart-fortwo-coupe",
-      "code": "451",
-      "yearFrom": 2007,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-fortwo-coupe-453",
-      "modelId": "smart-fortwo-coupe",
-      "code": "453",
-      "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "smart-roadster-roadster",
-      "modelId": "smart-roadster",
-      "code": "Roadster",
-      "yearFrom": 2003,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-1800-1800",
-      "modelId": "subaru-1800",
-      "code": "1800",
-      "yearFrom": 1980,
-      "yearTo": 1994,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12011,35 +11051,19 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-brz-zd8",
-      "modelId": "subaru-brz",
-      "code": "ZD8",
-      "yearFrom": 2021,
+      "id": "subaru-crosstrek-i",
+      "modelId": "subaru-crosstrek",
+      "code": "I",
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-e-outback-e-outback",
+      "id": "subaru-e-outback-i",
       "modelId": "subaru-e-outback",
-      "code": "E-Outback",
-      "yearFrom": 2025,
+      "code": "I",
+      "yearFrom": 2026,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-e12-e12",
-      "modelId": "subaru-e12",
-      "code": "E12",
-      "yearFrom": 1980,
-      "yearTo": 1987,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-forester-sf",
-      "modelId": "subaru-forester",
-      "code": "SF",
-      "yearFrom": 1997,
-      "yearTo": 2002,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12062,7 +11086,7 @@
       "id": "subaru-forester-sj",
       "modelId": "subaru-forester",
       "code": "SJ",
-      "yearFrom": 2012,
+      "yearFrom": 2013,
       "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
@@ -12071,15 +11095,15 @@
       "modelId": "subaru-forester",
       "code": "SK",
       "yearFrom": 2018,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-impreza-gc-gf",
-      "modelId": "subaru-impreza",
-      "code": "GC/GF",
-      "yearFrom": 1992,
-      "yearTo": 2000,
+      "id": "subaru-forester-sl",
+      "modelId": "subaru-forester",
+      "code": "SL",
+      "yearFrom": 2025,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12091,99 +11115,59 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-impreza-ge-gh",
+      "id": "subaru-impreza-ge",
       "modelId": "subaru-impreza",
-      "code": "GE/GH",
+      "code": "GE",
       "yearFrom": 2007,
       "yearTo": 2011,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-impreza-gj-gp",
+      "id": "subaru-impreza-gj",
       "modelId": "subaru-impreza",
-      "code": "GJ/GP",
-      "yearFrom": 2011,
+      "code": "GJ",
+      "yearFrom": 2012,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-impreza-gt",
+      "id": "subaru-impreza-gk",
       "modelId": "subaru-impreza",
-      "code": "GT",
-      "yearFrom": 2016,
-      "yearTo": null,
+      "code": "GK",
+      "yearFrom": 2017,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-justy-justy",
-      "modelId": "subaru-justy",
-      "code": "Justy",
-      "yearFrom": 1984,
-      "yearTo": 2011,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-legacy-be-bh",
+      "id": "subaru-legacy-bl",
       "modelId": "subaru-legacy",
-      "code": "BE/BH",
-      "yearFrom": 1998,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-legacy-bl-bp",
-      "modelId": "subaru-legacy",
-      "code": "BL/BP",
+      "code": "BL",
       "yearFrom": 2003,
       "yearTo": 2009,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-legacy-bm-br",
+      "id": "subaru-legacy-bm",
       "modelId": "subaru-legacy",
-      "code": "BM/BR",
+      "code": "BM",
       "yearFrom": 2009,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-legacy-bn-bs",
+      "id": "subaru-legacy-bn",
       "modelId": "subaru-legacy",
-      "code": "BN/BS",
-      "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-leone-leone",
-      "modelId": "subaru-leone",
-      "code": "Leone",
-      "yearFrom": 1979,
-      "yearTo": 1994,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-levorg-vm",
-      "modelId": "subaru-levorg",
-      "code": "VM",
-      "yearFrom": 2014,
+      "code": "BN",
+      "yearFrom": 2015,
       "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-levorg-vn",
+      "id": "subaru-levorg-i",
       "modelId": "subaru-levorg",
-      "code": "VN",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-outback-bh",
-      "modelId": "subaru-outback",
-      "code": "BH",
-      "yearFrom": 1998,
-      "yearTo": 2003,
+      "code": "I",
+      "yearFrom": 2015,
+      "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12214,55 +11198,39 @@
       "id": "subaru-outback-bt",
       "modelId": "subaru-outback",
       "code": "BT",
-      "yearFrom": 2020,
+      "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-pickup-pickup",
-      "modelId": "subaru-pickup",
-      "code": "Pickup",
-      "yearFrom": 1980,
-      "yearTo": 1994,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-solterra-solterra",
+      "id": "subaru-solterra-i",
       "modelId": "subaru-solterra",
-      "code": "Solterra",
+      "code": "I",
       "yearFrom": 2022,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "subaru-solterra-fl",
+      "modelId": "subaru-solterra",
+      "code": "FL",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-svx-svx",
-      "modelId": "subaru-svx",
-      "code": "SVX",
-      "yearFrom": 1991,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-targa-pickup-targa-pickup",
-      "modelId": "subaru-targa-pickup",
-      "code": "Targa Pickup",
-      "yearFrom": 1980,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-tribeca-tribeca",
+      "id": "subaru-tribeca-i",
       "modelId": "subaru-tribeca",
-      "code": "Tribeca",
-      "yearFrom": 2005,
+      "code": "I",
+      "yearFrom": 2006,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-uncharted-uncharted",
+      "id": "subaru-uncharted-i",
       "modelId": "subaru-uncharted",
-      "code": "Uncharted",
-      "yearFrom": 2022,
+      "code": "I",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -12275,129 +11243,57 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-wrx-vb",
-      "modelId": "subaru-wrx",
-      "code": "VB",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-wrx-sti-gdb",
-      "modelId": "subaru-wrx-sti",
-      "code": "GDB",
-      "yearFrom": 2000,
-      "yearTo": 2007,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-wrx-sti-grb",
-      "modelId": "subaru-wrx-sti",
-      "code": "GRB",
-      "yearFrom": 2007,
-      "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-wrx-sti-vab",
-      "modelId": "subaru-wrx-sti",
-      "code": "VAB",
-      "yearFrom": 2014,
-      "yearTo": 2021,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-xt-xt",
-      "modelId": "subaru-xt",
-      "code": "XT",
-      "yearFrom": 1985,
-      "yearTo": 1991,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "subaru-xv-gp",
+      "id": "subaru-xv-i",
       "modelId": "subaru-xv",
-      "code": "GP",
-      "yearFrom": 2011,
+      "code": "I",
+      "yearFrom": 2012,
       "yearTo": 2017,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "subaru-xv-gt",
+      "id": "subaru-xv-ii",
       "modelId": "subaru-xv",
-      "code": "GT",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-across-across",
-      "modelId": "suzuki-across",
-      "code": "Across",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-alto-alto",
-      "modelId": "suzuki-alto",
-      "code": "Alto",
-      "yearFrom": 1979,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-baleno-eg",
-      "modelId": "suzuki-baleno",
-      "code": "EG",
-      "yearFrom": 1995,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-baleno-ew",
-      "modelId": "suzuki-baleno",
-      "code": "EW",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-cappuccino-cappuccino",
-      "modelId": "suzuki-cappuccino",
-      "code": "Cappuccino",
-      "yearFrom": 1991,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-carry-carry",
-      "modelId": "suzuki-carry",
-      "code": "Carry",
-      "yearFrom": 1990,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-carry-van-carry-van",
-      "modelId": "suzuki-carry-van",
-      "code": "Carry Van",
-      "yearFrom": 1990,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-grand-vitara-i",
-      "modelId": "suzuki-grand-vitara",
-      "code": "I",
-      "yearFrom": 1998,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-grand-vitara-ii",
-      "modelId": "suzuki-grand-vitara",
       "code": "II",
+      "yearFrom": 2018,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-across-xa50",
+      "modelId": "suzuki-across",
+      "code": "XA50",
+      "yearFrom": 2020,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-alto-iv",
+      "modelId": "suzuki-alto",
+      "code": "IV",
+      "yearFrom": 2002,
+      "yearTo": 2006,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-alto-gf",
+      "modelId": "suzuki-alto",
+      "code": "GF",
+      "yearFrom": 2009,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-e-vitara-i",
+      "modelId": "suzuki-e-vitara",
+      "code": "I",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-grand-vitara-jt",
+      "modelId": "suzuki-grand-vitara",
+      "code": "JT",
       "yearFrom": 2005,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
@@ -12415,7 +11311,7 @@
       "modelId": "suzuki-ignis",
       "code": "MF",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12431,119 +11327,87 @@
       "modelId": "suzuki-jimny",
       "code": "GJ",
       "yearFrom": 2018,
-      "yearTo": null,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-liana-liana",
+      "id": "suzuki-liana-er",
       "modelId": "suzuki-liana",
-      "code": "Liana",
+      "code": "ER",
       "yearFrom": 2001,
-      "yearTo": 2007,
+      "yearTo": 2008,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-s-cross-s-cross",
+      "id": "suzuki-s-cross-jy",
       "modelId": "suzuki-s-cross",
-      "code": "S-Cross",
+      "code": "JY",
       "yearFrom": 2013,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-s-cross-ii",
+      "modelId": "suzuki-s-cross",
+      "code": "II",
+      "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-samurai-samurai",
-      "modelId": "suzuki-samurai",
-      "code": "Samurai",
-      "yearFrom": 1984,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-sj410-sj410",
-      "modelId": "suzuki-sj410",
-      "code": "SJ410",
-      "yearFrom": 1981,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-sj413-sj413",
-      "modelId": "suzuki-sj413",
-      "code": "SJ413",
-      "yearFrom": 1984,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-splash-splash",
+      "id": "suzuki-splash-ex",
       "modelId": "suzuki-splash",
-      "code": "Splash",
+      "code": "EX",
       "yearFrom": 2008,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-super-carry-super-carry",
-      "modelId": "suzuki-super-carry",
-      "code": "Super Carry",
-      "yearFrom": 1985,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-swace-swace",
+      "id": "suzuki-swace-e210",
       "modelId": "suzuki-swace",
-      "code": "Swace",
+      "code": "E210",
       "yearFrom": 2020,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-swift-ea-ma",
+      "id": "suzuki-swift-rs",
       "modelId": "suzuki-swift",
-      "code": "EA/MA",
+      "code": "RS",
       "yearFrom": 2005,
       "yearTo": 2010,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "suzuki-swift-fz",
+      "modelId": "suzuki-swift",
+      "code": "FZ",
+      "yearFrom": 2010,
+      "yearTo": 2017,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "suzuki-swift-az",
       "modelId": "suzuki-swift",
       "code": "AZ",
-      "yearFrom": 2010,
-      "yearTo": 2017,
+      "yearFrom": 2017,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-swift-zc83",
+      "id": "suzuki-swift-a",
       "modelId": "suzuki-swift",
-      "code": "ZC83",
-      "yearFrom": 2017,
+      "code": "A",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-sx4-sx4",
+      "id": "suzuki-sx4-gy",
       "modelId": "suzuki-sx4",
-      "code": "SX4",
+      "code": "GY",
       "yearFrom": 2006,
       "yearTo": 2014,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-sx4-s-cross-s-cross",
-      "modelId": "suzuki-sx4-s-cross",
-      "code": "S-Cross",
-      "yearFrom": 2013,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "suzuki-vitara-et-ta",
-      "modelId": "suzuki-vitara",
-      "code": "ET/TA",
-      "yearFrom": 1988,
-      "yearTo": 1998,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12555,25 +11419,9 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "suzuki-wagon-wagon-r",
-      "modelId": "suzuki-wagon",
-      "code": "Wagon R+",
-      "yearFrom": 1997,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "tesla-cybertruck-cybertruck",
-      "modelId": "tesla-cybertruck",
-      "code": "Cybertruck",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "tesla-model-3-2017",
+      "id": "tesla-model-3-i",
       "modelId": "tesla-model-3",
-      "code": "2017",
+      "code": "I",
       "yearFrom": 2017,
       "yearTo": 2023,
       "imageAsset": "generation_placeholder"
@@ -12582,22 +11430,30 @@
       "id": "tesla-model-3-highland",
       "modelId": "tesla-model-3",
       "code": "Highland",
-      "yearFrom": 2023,
+      "yearFrom": 2024,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "tesla-model-3-2026",
+      "modelId": "tesla-model-3",
+      "code": "2026",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "tesla-model-s-ms-2012",
+      "id": "tesla-model-s-i",
       "modelId": "tesla-model-s",
-      "code": "MS 2012",
-      "yearFrom": 2012,
+      "code": "I",
+      "yearFrom": 2013,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "tesla-model-s-ms-refresh",
+      "id": "tesla-model-s-fl",
       "modelId": "tesla-model-s",
-      "code": "MS refresh",
+      "code": "FL",
       "yearFrom": 2016,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
@@ -12607,14 +11463,14 @@
       "modelId": "tesla-model-s",
       "code": "Plaid",
       "yearFrom": 2021,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "tesla-model-x-2015",
+      "id": "tesla-model-x-i",
       "modelId": "tesla-model-x",
-      "code": "2015",
-      "yearFrom": 2015,
+      "code": "I",
+      "yearFrom": 2016,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
@@ -12623,15 +11479,15 @@
       "modelId": "tesla-model-x",
       "code": "Plaid",
       "yearFrom": 2021,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "tesla-model-y-2019",
+      "id": "tesla-model-y-i",
       "modelId": "tesla-model-y",
-      "code": "2019",
-      "yearFrom": 2019,
-      "yearTo": 2025,
+      "code": "I",
+      "yearFrom": 2020,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12651,50 +11507,10 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "tesla-roadster-ii",
-      "modelId": "tesla-roadster",
-      "code": "II",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-4runner-4runner",
-      "modelId": "toyota-4runner",
-      "code": "4Runner",
-      "yearFrom": 1984,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-alphard-alphard",
-      "modelId": "toyota-alphard",
-      "code": "Alphard",
-      "yearFrom": 2002,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-altezza-altezza",
-      "modelId": "toyota-altezza",
-      "code": "Altezza",
-      "yearFrom": 1998,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-aristo-aristo",
-      "modelId": "toyota-aristo",
-      "code": "Aristo",
-      "yearFrom": 1991,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "toyota-auris-e150",
       "modelId": "toyota-auris",
       "code": "E150",
-      "yearFrom": 2006,
+      "yearFrom": 2007,
       "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
@@ -12707,18 +11523,10 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-avensis-t22",
-      "modelId": "toyota-avensis",
-      "code": "T22",
-      "yearFrom": 1997,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "toyota-avensis-t25",
       "modelId": "toyota-avensis",
       "code": "T25",
-      "yearFrom": 2002,
+      "yearFrom": 2003,
       "yearTo": 2008,
       "imageAsset": "generation_placeholder"
     },
@@ -12726,80 +11534,88 @@
       "id": "toyota-avensis-t27",
       "modelId": "toyota-avensis",
       "code": "T27",
-      "yearFrom": 2008,
+      "yearFrom": 2009,
       "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-avensis-verso-avensis-verso",
+      "id": "toyota-avensis-verso-i",
       "modelId": "toyota-avensis-verso",
-      "code": "Avensis Verso",
+      "code": "I",
       "yearFrom": 2001,
       "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-aygo-ab10",
-      "modelId": "toyota-aygo",
-      "code": "AB10",
-      "yearFrom": 2005,
-      "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "toyota-aygo-ab40",
       "modelId": "toyota-aygo",
       "code": "AB40",
+      "yearFrom": 2005,
+      "yearTo": 2014,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-aygo-ab40-fl",
+      "modelId": "toyota-aygo",
+      "code": "AB40 FL",
       "yearFrom": 2014,
       "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-bb-bb",
-      "modelId": "toyota-bb",
-      "code": "bB",
-      "yearFrom": 2000,
-      "yearTo": 2016,
+      "id": "toyota-aygo-x-i",
+      "modelId": "toyota-aygo-x",
+      "code": "I",
+      "yearFrom": 2022,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-bz4x-bz4x",
-      "modelId": "toyota-bz4x",
-      "code": "bZ4X",
-      "yearFrom": 2022,
+      "id": "toyota-aygo-x-hybrid",
+      "modelId": "toyota-aygo-x",
+      "code": "Hybrid",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-c-hr-i",
-      "modelId": "toyota-c-hr",
+      "id": "toyota-bz4x-i",
+      "modelId": "toyota-bz4x",
       "code": "I",
+      "yearFrom": 2022,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-bz4x-fl",
+      "modelId": "toyota-bz4x",
+      "code": "FL",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-c-hr-ax10",
+      "modelId": "toyota-c-hr",
+      "code": "AX10",
       "yearFrom": 2016,
       "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-c-hr-ii",
+      "id": "toyota-c-hr-ax20",
       "modelId": "toyota-c-hr",
-      "code": "II",
+      "code": "AX20",
       "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-c-hr-plug-in-ii-phev",
-      "modelId": "toyota-c-hr-plug-in",
-      "code": "II PHEV",
-      "yearFrom": 2023,
+      "id": "toyota-c-hr-plus-c-hr",
+      "modelId": "toyota-c-hr-plus",
+      "code": "C-HR+",
+      "yearFrom": 2025,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-caldina-caldina",
-      "modelId": "toyota-caldina",
-      "code": "Caldina",
-      "yearFrom": 1992,
-      "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12811,91 +11627,27 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-camry-xv50",
-      "modelId": "toyota-camry",
-      "code": "XV50",
-      "yearFrom": 2011,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "toyota-camry-xv70",
       "modelId": "toyota-camry",
       "code": "XV70",
-      "yearFrom": 2017,
-      "yearTo": null,
+      "yearFrom": 2019,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-carina-carina",
-      "modelId": "toyota-carina",
-      "code": "Carina",
-      "yearFrom": 1970,
-      "yearTo": 2001,
+      "id": "toyota-camry-xv80",
+      "modelId": "toyota-camry",
+      "code": "XV80",
+      "yearFrom": 2024,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-carina-e-carina-e",
-      "modelId": "toyota-carina-e",
-      "code": "Carina E",
-      "yearFrom": 1992,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-carina-ii-carina-ii",
-      "modelId": "toyota-carina-ii",
-      "code": "Carina II",
-      "yearFrom": 1983,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-celica-t20",
+      "id": "toyota-celica-t230",
       "modelId": "toyota-celica",
-      "code": "T20",
-      "yearFrom": 1993,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-celica-t23",
-      "modelId": "toyota-celica",
-      "code": "T23",
+      "code": "T230",
       "yearFrom": 1999,
       "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-century-century",
-      "modelId": "toyota-century",
-      "code": "Century",
-      "yearFrom": 1967,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-chaser-chaser",
-      "modelId": "toyota-chaser",
-      "code": "Chaser",
-      "yearFrom": 1977,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-corolla-e100",
-      "modelId": "toyota-corolla",
-      "code": "E100",
-      "yearFrom": 1991,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-corolla-e110",
-      "modelId": "toyota-corolla",
-      "code": "E110",
-      "yearFrom": 1997,
-      "yearTo": 2001,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -12910,120 +11662,72 @@
       "id": "toyota-corolla-e150",
       "modelId": "toyota-corolla",
       "code": "E150",
-      "yearFrom": 2006,
+      "yearFrom": 2007,
       "yearTo": 2013,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-corolla-e160-e170",
+      "id": "toyota-corolla-e170",
       "modelId": "toyota-corolla",
-      "code": "E160/E170",
+      "code": "E170",
       "yearFrom": 2013,
-      "yearTo": 2018,
+      "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "toyota-corolla-e210",
       "modelId": "toyota-corolla",
       "code": "E210",
-      "yearFrom": 2018,
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-corolla-cross-corolla-cross",
+      "id": "toyota-corolla-cross-cross",
       "modelId": "toyota-corolla-cross",
-      "code": "Corolla Cross",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-corolla-verso-corolla-verso",
-      "modelId": "toyota-corolla-verso",
-      "code": "Corolla Verso",
-      "yearFrom": 2001,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-corona-corona",
-      "modelId": "toyota-corona",
-      "code": "Corona",
-      "yearFrom": 1957,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-cressida-cressida",
-      "modelId": "toyota-cressida",
-      "code": "Cressida",
-      "yearFrom": 1976,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-crown-crown",
-      "modelId": "toyota-crown",
-      "code": "Crown",
-      "yearFrom": 1955,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-dyna-dyna",
-      "modelId": "toyota-dyna",
-      "code": "Dyna",
-      "yearFrom": 1995,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-fj-cruiser-fj-cruiser",
-      "modelId": "toyota-fj-cruiser",
-      "code": "FJ Cruiser",
-      "yearFrom": 2006,
-      "yearTo": 2022,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-gr-corolla-gr-corolla",
-      "modelId": "toyota-gr-corolla",
-      "code": "GR Corolla",
+      "code": "Cross",
       "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-gr-yaris-gr-yaris",
+      "id": "toyota-corolla-verso-ar10",
+      "modelId": "toyota-corolla-verso",
+      "code": "AR10",
+      "yearFrom": 2004,
+      "yearTo": 2009,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-gr-yaris-i",
       "modelId": "toyota-gr-yaris",
-      "code": "GR Yaris",
+      "code": "I",
       "yearFrom": 2020,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-gr-yaris-fl",
+      "modelId": "toyota-gr-yaris",
+      "code": "FL",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-grand-hiace-grand-hiace",
-      "modelId": "toyota-grand-hiace",
-      "code": "Grand Hiace",
-      "yearFrom": 1999,
-      "yearTo": 2002,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-granvia-granvia",
-      "modelId": "toyota-granvia",
-      "code": "Granvia",
-      "yearFrom": 1995,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-gt86-zn6",
+      "id": "toyota-gt86-gt86",
       "modelId": "toyota-gt86",
-      "code": "ZN6",
+      "code": "GT86",
       "yearFrom": 2012,
-      "yearTo": 2020,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-gt86-gr86",
+      "modelId": "toyota-gt86",
+      "code": "GR86",
+      "yearFrom": 2022,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13031,47 +11735,47 @@
       "modelId": "toyota-hiace",
       "code": "H200",
       "yearFrom": 2004,
-      "yearTo": null,
+      "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-highlander-highlander",
+      "id": "toyota-highlander-xu70",
       "modelId": "toyota-highlander",
-      "code": "Highlander",
-      "yearFrom": 2000,
-      "yearTo": null,
+      "code": "XU70",
+      "yearFrom": 2021,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-hilux-n70",
+      "id": "toyota-hilux-an10",
       "modelId": "toyota-hilux",
-      "code": "N70",
-      "yearFrom": 2004,
+      "code": "AN10",
+      "yearFrom": 2005,
       "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-hilux-n80",
+      "id": "toyota-hilux-an120",
       "modelId": "toyota-hilux",
-      "code": "N80",
+      "code": "AN120",
       "yearFrom": 2015,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-iq-iq",
+      "id": "toyota-iq-aj10",
       "modelId": "toyota-iq",
-      "code": "iQ",
+      "code": "AJ10",
       "yearFrom": 2008,
       "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-land-cruiser-j90-j95",
+      "id": "toyota-land-cruiser-j100",
       "modelId": "toyota-land-cruiser",
-      "code": "J90/J95",
-      "yearFrom": 1996,
-      "yearTo": 2002,
+      "code": "J100",
+      "yearFrom": 1998,
+      "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13091,35 +11795,19 @@
       "imageAsset": "generation_placeholder"
     },
     {
+      "id": "toyota-land-cruiser-j200",
+      "modelId": "toyota-land-cruiser",
+      "code": "J200",
+      "yearFrom": 2008,
+      "yearTo": 2021,
+      "imageAsset": "generation_placeholder"
+    },
+    {
       "id": "toyota-land-cruiser-j250",
       "modelId": "toyota-land-cruiser",
       "code": "J250",
-      "yearFrom": 2023,
+      "yearFrom": 2024,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-mark-x-mark-x",
-      "modelId": "toyota-mark-x",
-      "code": "Mark X",
-      "yearFrom": 2004,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-markii-mark-ii",
-      "modelId": "toyota-markii",
-      "code": "Mark II",
-      "yearFrom": 1968,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-mr2-w20",
-      "modelId": "toyota-mr2",
-      "code": "W20",
-      "yearFrom": 1989,
-      "yearTo": 1999,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13131,42 +11819,18 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-paseo-paseo",
-      "modelId": "toyota-paseo",
-      "code": "Paseo",
-      "yearFrom": 1991,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-picnic-picnic",
-      "modelId": "toyota-picnic",
-      "code": "Picnic",
-      "yearFrom": 1996,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-previa-previa",
+      "id": "toyota-previa-xr30",
       "modelId": "toyota-previa",
-      "code": "Previa",
-      "yearFrom": 1990,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-prius-xw10",
-      "modelId": "toyota-prius",
-      "code": "XW10",
-      "yearFrom": 1997,
-      "yearTo": 2003,
+      "code": "XR30",
+      "yearFrom": 2000,
+      "yearTo": 2006,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "toyota-prius-xw20",
       "modelId": "toyota-prius",
       "code": "XW20",
-      "yearFrom": 2003,
+      "yearFrom": 2004,
       "yearTo": 2009,
       "imageAsset": "generation_placeholder"
     },
@@ -13182,7 +11846,7 @@
       "id": "toyota-prius-xw50",
       "modelId": "toyota-prius",
       "code": "XW50",
-      "yearFrom": 2015,
+      "yearFrom": 2016,
       "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
@@ -13190,71 +11854,39 @@
       "id": "toyota-prius-xw60",
       "modelId": "toyota-prius",
       "code": "XW60",
-      "yearFrom": 2022,
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-prius-phev-prius-phev",
-      "modelId": "toyota-prius-phev",
-      "code": "Prius PHEV",
-      "yearFrom": 2012,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-prius-plug-in-hybrid-prius-phev",
-      "modelId": "toyota-prius-plug-in-hybrid",
-      "code": "Prius PHEV",
-      "yearFrom": 2012,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-proace-proace",
+      "id": "toyota-proace-i",
       "modelId": "toyota-proace",
-      "code": "Proace",
-      "yearFrom": 2013,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-proace-city-proace-city",
-      "modelId": "toyota-proace-city",
-      "code": "Proace City",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-proace-city-ev-proace-city-ev",
-      "modelId": "toyota-proace-city-ev",
-      "code": "Proace City EV",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-proace-verso-proace-verso",
-      "modelId": "toyota-proace-verso",
-      "code": "Proace Verso",
+      "code": "I",
       "yearFrom": 2016,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-rav4-xa20",
-      "modelId": "toyota-rav4",
-      "code": "XA20",
-      "yearFrom": 2000,
-      "yearTo": 2005,
+      "id": "toyota-proace-city-i",
+      "modelId": "toyota-proace-city",
+      "code": "I",
+      "yearFrom": 2019,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-proace-max-i",
+      "modelId": "toyota-proace-max",
+      "code": "I",
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "toyota-rav4-xa30",
       "modelId": "toyota-rav4",
       "code": "XA30",
-      "yearFrom": 2005,
+      "yearFrom": 2006,
       "yearTo": 2012,
       "imageAsset": "generation_placeholder"
     },
@@ -13262,7 +11894,7 @@
       "id": "toyota-rav4-xa40",
       "modelId": "toyota-rav4",
       "code": "XA40",
-      "yearFrom": 2012,
+      "yearFrom": 2013,
       "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
@@ -13270,64 +11902,16 @@
       "id": "toyota-rav4-xa50",
       "modelId": "toyota-rav4",
       "code": "XA50",
-      "yearFrom": 2018,
+      "yearFrom": 2019,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-rav4-xa60",
+      "modelId": "toyota-rav4",
+      "code": "XA60",
+      "yearFrom": 2026,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-rav4-hybrid-xa40-50-hybrid",
-      "modelId": "toyota-rav4-hybrid",
-      "code": "XA40/50 Hybrid",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-rav4-plug-in-xa50-phev",
-      "modelId": "toyota-rav4-plug-in",
-      "code": "XA50 PHEV",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-sienna-sienna",
-      "modelId": "toyota-sienna",
-      "code": "Sienna",
-      "yearFrom": 1997,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-soarer-soarer",
-      "modelId": "toyota-soarer",
-      "code": "Soarer",
-      "yearFrom": 1981,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-solara-solara",
-      "modelId": "toyota-solara",
-      "code": "Solara",
-      "yearFrom": 1998,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-starlet-p9",
-      "modelId": "toyota-starlet",
-      "code": "P9",
-      "yearFrom": 1996,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-supra-a80",
-      "modelId": "toyota-supra",
-      "code": "A80",
-      "yearFrom": 1993,
-      "yearTo": 2002,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13335,55 +11919,39 @@
       "modelId": "toyota-supra",
       "code": "A90",
       "yearFrom": 2019,
-      "yearTo": null,
+      "yearTo": 2026,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-tercel-tercel",
-      "modelId": "toyota-tercel",
-      "code": "Tercel",
-      "yearFrom": 1978,
-      "yearTo": 1999,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-timangi-timangi",
-      "modelId": "toyota-timangi",
-      "code": "Timangi",
-      "yearFrom": 1980,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-urban-cruiser-urban-cruiser",
+      "id": "toyota-urban-cruiser-xp110",
       "modelId": "toyota-urban-cruiser",
-      "code": "Urban Cruiser",
-      "yearFrom": 2008,
+      "code": "XP110",
+      "yearFrom": 2009,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-verso-verso",
+      "id": "toyota-urban-cruiser-ev",
+      "modelId": "toyota-urban-cruiser",
+      "code": "EV",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-verso-i",
       "modelId": "toyota-verso",
-      "code": "Verso",
+      "code": "I",
       "yearFrom": 2009,
       "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-verso-s-verso-s",
+      "id": "toyota-verso-s-i",
       "modelId": "toyota-verso-s",
-      "code": "Verso-S",
-      "yearFrom": 2010,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "toyota-yaris-xp10",
-      "modelId": "toyota-yaris",
-      "code": "XP10",
-      "yearFrom": 1999,
-      "yearTo": 2005,
+      "code": "I",
+      "yearFrom": 2011,
+      "yearTo": 2017,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13411,26 +11979,26 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-yaris-cross-yaris-cross",
+      "id": "toyota-yaris-cross-i",
       "modelId": "toyota-yaris-cross",
-      "code": "Yaris Cross",
-      "yearFrom": 2020,
+      "code": "I",
+      "yearFrom": 2021,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "toyota-yaris-cross-fl",
+      "modelId": "toyota-yaris-cross",
+      "code": "FL",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "toyota-yaris-verso-yaris-verso",
-      "modelId": "toyota-yaris-verso",
-      "code": "Yaris Verso",
-      "yearFrom": 1999,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-amarok-i",
+      "id": "volkswagen-amarok-2h",
       "modelId": "volkswagen-amarok",
-      "code": "I",
-      "yearFrom": 2009,
+      "code": "2H",
+      "yearFrom": 2010,
       "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
@@ -13438,23 +12006,31 @@
       "id": "volkswagen-amarok-ii",
       "modelId": "volkswagen-amarok",
       "code": "II",
-      "yearFrom": 2022,
+      "yearFrom": 2023,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-arteon-arteon",
+      "id": "volkswagen-arteon-i",
       "modelId": "volkswagen-arteon",
-      "code": "Arteon",
+      "code": "I",
       "yearFrom": 2017,
-      "yearTo": null,
+      "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-beetle-new-beetle",
+      "id": "volkswagen-arteon-fl",
+      "modelId": "volkswagen-arteon",
+      "code": "FL",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-beetle-9c",
       "modelId": "volkswagen-beetle",
-      "code": "New Beetle",
-      "yearFrom": 1997,
+      "code": "9C",
+      "yearFrom": 1998,
       "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
@@ -13467,105 +12043,33 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-bora-bora",
-      "modelId": "volkswagen-bora",
-      "code": "Bora",
-      "yearFrom": 1998,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caddy-ii",
+      "id": "volkswagen-caddy-2k",
       "modelId": "volkswagen-caddy",
-      "code": "II",
-      "yearFrom": 1995,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caddy-iii",
-      "modelId": "volkswagen-caddy",
-      "code": "III",
-      "yearFrom": 2003,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caddy-iv",
-      "modelId": "volkswagen-caddy",
-      "code": "IV",
-      "yearFrom": 2015,
+      "code": "2K",
+      "yearFrom": 2004,
       "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-caddy-v",
+      "id": "volkswagen-caddy-sb",
       "modelId": "volkswagen-caddy",
-      "code": "V",
+      "code": "SB",
       "yearFrom": 2020,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-caddy-maxi-caddy-maxi",
-      "modelId": "volkswagen-caddy-maxi",
-      "code": "Caddy Maxi",
-      "yearFrom": 2007,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caravelle-t4",
-      "modelId": "volkswagen-caravelle",
-      "code": "T4",
-      "yearFrom": 1990,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caravelle-t5",
-      "modelId": "volkswagen-caravelle",
-      "code": "T5",
-      "yearFrom": 2003,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-caravelle-t6",
-      "modelId": "volkswagen-caravelle",
-      "code": "T6",
-      "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-cc-cc",
+      "id": "volkswagen-cc-i",
       "modelId": "volkswagen-cc",
-      "code": "CC",
-      "yearFrom": 2008,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-corrado-corrado",
-      "modelId": "volkswagen-corrado",
-      "code": "Corrado",
-      "yearFrom": 1988,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-country-country",
-      "modelId": "volkswagen-country",
-      "code": "Country",
-      "yearFrom": 1980,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-crafter-i",
-      "modelId": "volkswagen-crafter",
       "code": "I",
+      "yearFrom": 2008,
+      "yearTo": 2017,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-crafter-2e",
+      "modelId": "volkswagen-crafter",
+      "code": "2E",
       "yearFrom": 2006,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
@@ -13574,64 +12078,24 @@
       "id": "volkswagen-crafter-ii",
       "modelId": "volkswagen-crafter",
       "code": "II",
-      "yearFrom": 2016,
+      "yearFrom": 2017,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-derby-derby",
-      "modelId": "volkswagen-derby",
-      "code": "Derby",
-      "yearFrom": 1977,
-      "yearTo": 1985,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-e-golf-e-golf",
-      "modelId": "volkswagen-e-golf",
-      "code": "e-Golf",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-e-up-e-up",
-      "modelId": "volkswagen-e-up",
-      "code": "e-up!",
-      "yearFrom": 2013,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-eos-eos",
+      "id": "volkswagen-eos-i",
       "modelId": "volkswagen-eos",
-      "code": "Eos",
+      "code": "I",
       "yearFrom": 2006,
       "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-fox-fox",
+      "id": "volkswagen-fox-i",
       "modelId": "volkswagen-fox",
-      "code": "Fox",
+      "code": "I",
       "yearFrom": 2005,
       "yearTo": 2011,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-mk3",
-      "modelId": "volkswagen-golf",
-      "code": "Mk3",
-      "yearFrom": 1991,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-mk4",
-      "modelId": "volkswagen-golf",
-      "code": "Mk4",
-      "yearFrom": 1997,
-      "yearTo": 2003,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13663,271 +12127,135 @@
       "modelId": "volkswagen-golf",
       "code": "Mk8",
       "yearFrom": 2019,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-golf-mk8-5",
+      "modelId": "volkswagen-golf",
+      "code": "Mk8.5",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-golf-gte-mk7-gte",
-      "modelId": "volkswagen-golf-gte",
-      "code": "Mk7 GTE",
-      "yearFrom": 2014,
-      "yearTo": 2020,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gte-mk8-gte",
-      "modelId": "volkswagen-golf-gte",
-      "code": "Mk8 GTE",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk3",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk3",
-      "yearFrom": 1991,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk4",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk4",
-      "yearFrom": 1997,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk5",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk5",
-      "yearFrom": 2003,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk6",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk6",
-      "yearFrom": 2008,
-      "yearTo": 2012,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk7",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk7",
-      "yearFrom": 2012,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-gti-mk8",
-      "modelId": "volkswagen-golf-gti",
-      "code": "Mk8",
-      "yearFrom": 2019,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-plus-golf-plus",
+      "id": "volkswagen-golf-plus-i",
       "modelId": "volkswagen-golf-plus",
-      "code": "Golf Plus",
-      "yearFrom": 2004,
+      "code": "I",
+      "yearFrom": 2005,
       "yearTo": 2014,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-golf-r-mk5-r32-r",
-      "modelId": "volkswagen-golf-r",
-      "code": "Mk5 R32/R",
-      "yearFrom": 2005,
-      "yearTo": 2008,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-r-mk6-r",
-      "modelId": "volkswagen-golf-r",
-      "code": "Mk6 R",
-      "yearFrom": 2009,
-      "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-r-mk7-r",
-      "modelId": "volkswagen-golf-r",
-      "code": "Mk7 R",
-      "yearFrom": 2013,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-r-mk8-r",
-      "modelId": "volkswagen-golf-r",
-      "code": "Mk8 R",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-golf-sportsvan-sportsvan",
+      "id": "volkswagen-golf-sportsvan-i",
       "modelId": "volkswagen-golf-sportsvan",
-      "code": "Sportsvan",
+      "code": "I",
       "yearFrom": 2014,
       "yearTo": 2020,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id-buzz-id-buzz",
+      "id": "volkswagen-id-buzz-i",
       "modelId": "volkswagen-id-buzz",
-      "code": "ID. Buzz",
+      "code": "I",
       "yearFrom": 2022,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id-polo-id-polo",
+      "id": "volkswagen-id-cross-i",
+      "modelId": "volkswagen-id-cross",
+      "code": "I",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-id-polo-i",
       "modelId": "volkswagen-id-polo",
-      "code": "ID. Polo",
-      "yearFrom": 2025,
+      "code": "I",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id3-id-3",
+      "id": "volkswagen-id-tiguan-i",
+      "modelId": "volkswagen-id-tiguan",
+      "code": "I",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-id3-i",
       "modelId": "volkswagen-id3",
-      "code": "ID.3",
+      "code": "I",
       "yearFrom": 2020,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-id3-fl",
+      "modelId": "volkswagen-id3",
+      "code": "FL",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id4-id-4",
+      "id": "volkswagen-id4-i",
       "modelId": "volkswagen-id4",
-      "code": "ID.4",
+      "code": "I",
       "yearFrom": 2020,
+      "yearTo": 2023,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-id4-fl",
+      "modelId": "volkswagen-id4",
+      "code": "FL",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-id5-id-5",
-      "modelId": "volkswagen-id5",
-      "code": "ID.5",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-id7-id-7",
+      "id": "volkswagen-id7-i",
       "modelId": "volkswagen-id7",
-      "code": "ID.7",
-      "yearFrom": 2023,
+      "code": "I",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-jetta-mk4",
+      "id": "volkswagen-jetta-a5",
       "modelId": "volkswagen-jetta",
-      "code": "Mk4",
-      "yearFrom": 1998,
-      "yearTo": 2005,
+      "code": "A5",
+      "yearFrom": 2005,
+      "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-jetta-mk5-6",
+      "id": "volkswagen-jetta-a6",
       "modelId": "volkswagen-jetta",
-      "code": "Mk5/6",
-      "yearFrom": 2005,
+      "code": "A6",
+      "yearFrom": 2011,
       "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-karmann-ghia-karmann-ghia",
-      "modelId": "volkswagen-karmann-ghia",
-      "code": "Karmann Ghia",
-      "yearFrom": 1955,
-      "yearTo": 1974,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-kastenwagen-kastenwagen",
-      "modelId": "volkswagen-kastenwagen",
-      "code": "Kastenwagen",
-      "yearFrom": 1950,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-kleinbus-kleinbus",
-      "modelId": "volkswagen-kleinbus",
-      "code": "Kleinbus",
-      "yearFrom": 1950,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-kupla-kupla-beetle",
-      "modelId": "volkswagen-kupla",
-      "code": "Kupla/Beetle",
-      "yearFrom": 1945,
-      "yearTo": 2003,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-lt-lt",
+      "id": "volkswagen-lt-ii",
       "modelId": "volkswagen-lt",
-      "code": "LT",
-      "yearFrom": 1975,
+      "code": "II",
+      "yearFrom": 1996,
       "yearTo": 2006,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-lupo-lupo",
-      "modelId": "volkswagen-lupo",
-      "code": "Lupo",
-      "yearFrom": 1998,
-      "yearTo": 2005,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-multivan-t5",
-      "modelId": "volkswagen-multivan",
-      "code": "T5",
-      "yearFrom": 2003,
-      "yearTo": 2015,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-multivan-t6",
-      "modelId": "volkswagen-multivan",
-      "code": "T6",
-      "yearFrom": 2015,
-      "yearTo": 2021,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "volkswagen-multivan-t7",
       "modelId": "volkswagen-multivan",
       "code": "T7",
-      "yearFrom": 2021,
+      "yearFrom": 2022,
       "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-new-beetle-new-beetle",
-      "modelId": "volkswagen-new-beetle",
-      "code": "New Beetle",
-      "yearFrom": 1997,
-      "yearTo": 2010,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-passat-b5",
-      "modelId": "volkswagen-passat",
-      "code": "B5",
-      "yearFrom": 1996,
-      "yearTo": 2005,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -13951,46 +12279,30 @@
       "modelId": "volkswagen-passat",
       "code": "B8",
       "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-passat-cc-cc",
-      "modelId": "volkswagen-passat-cc",
-      "code": "CC",
-      "yearFrom": 2008,
-      "yearTo": 2016,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-passat-gte-b8-gte",
-      "modelId": "volkswagen-passat-gte",
-      "code": "B8 GTE",
-      "yearFrom": 2015,
       "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-phaeton-phaeton",
+      "id": "volkswagen-passat-b9",
+      "modelId": "volkswagen-passat",
+      "code": "B9",
+      "yearFrom": 2024,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-phaeton-i",
       "modelId": "volkswagen-phaeton",
-      "code": "Phaeton",
+      "code": "I",
       "yearFrom": 2002,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-polo-6n",
+      "id": "volkswagen-polo-9n3",
       "modelId": "volkswagen-polo",
-      "code": "6N",
-      "yearFrom": 1994,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-9n",
-      "modelId": "volkswagen-polo",
-      "code": "9N",
-      "yearFrom": 2001,
+      "code": "9N3",
+      "yearFrom": 2005,
       "yearTo": 2009,
       "imageAsset": "generation_placeholder"
     },
@@ -14011,46 +12323,6 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-polo-gte-6c-gte",
-      "modelId": "volkswagen-polo-gte",
-      "code": "6C GTE",
-      "yearFrom": 2014,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-6n-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "6N GTI",
-      "yearFrom": 1998,
-      "yearTo": 2001,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-9n-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "9N GTI",
-      "yearFrom": 2005,
-      "yearTo": 2009,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-6r-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "6R GTI",
-      "yearFrom": 2010,
-      "yearTo": 2017,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-polo-gti-aw-gti",
-      "modelId": "volkswagen-polo-gti",
-      "code": "AW GTI",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
       "id": "volkswagen-scirocco-iii",
       "modelId": "volkswagen-scirocco",
       "code": "III",
@@ -14059,139 +12331,115 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-sharan-i",
+      "id": "volkswagen-sharan-7m",
       "modelId": "volkswagen-sharan",
-      "code": "I",
+      "code": "7M",
       "yearFrom": 1995,
       "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-sharan-ii",
+      "id": "volkswagen-sharan-7n",
       "modelId": "volkswagen-sharan",
-      "code": "II",
+      "code": "7N",
       "yearFrom": 2010,
-      "yearTo": null,
+      "yearTo": 2022,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-t-cross-t-cross",
+      "id": "volkswagen-t-cross-i",
       "modelId": "volkswagen-t-cross",
-      "code": "T-Cross",
-      "yearFrom": 2018,
+      "code": "I",
+      "yearFrom": 2019,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-t-roc-t-roc",
+      "id": "volkswagen-t-roc-i",
       "modelId": "volkswagen-t-roc",
-      "code": "T-Roc",
+      "code": "I",
       "yearFrom": 2017,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-t-roc-ii",
+      "modelId": "volkswagen-t-roc",
+      "code": "II",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-taigo-taigo",
+      "id": "volkswagen-taigo-i",
       "modelId": "volkswagen-taigo",
-      "code": "Taigo",
+      "code": "I",
       "yearFrom": 2021,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-taro-taro",
-      "modelId": "volkswagen-taro",
-      "code": "Taro",
-      "yearFrom": 1989,
-      "yearTo": 1997,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-tiguan-i",
+      "id": "volkswagen-tiguan-5n",
       "modelId": "volkswagen-tiguan",
-      "code": "I",
+      "code": "5N",
       "yearFrom": 2007,
-      "yearTo": 2015,
+      "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-tiguan-ii",
+      "id": "volkswagen-tiguan-ad",
       "modelId": "volkswagen-tiguan",
-      "code": "II",
-      "yearFrom": 2015,
+      "code": "AD",
+      "yearFrom": 2016,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-tiguan-iii",
+      "modelId": "volkswagen-tiguan",
+      "code": "III",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-tiguan-allspace-allspace",
-      "modelId": "volkswagen-tiguan-allspace",
-      "code": "Allspace",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-tiguan-ehybrid-ii-ehybrid",
-      "modelId": "volkswagen-tiguan-ehybrid",
-      "code": "II eHybrid",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-touareg-i",
+      "id": "volkswagen-touareg-7l",
       "modelId": "volkswagen-touareg",
-      "code": "I",
+      "code": "7L",
       "yearFrom": 2002,
       "yearTo": 2010,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-touareg-ii",
+      "id": "volkswagen-touareg-7p",
       "modelId": "volkswagen-touareg",
-      "code": "II",
+      "code": "7P",
       "yearFrom": 2010,
-      "yearTo": 2017,
+      "yearTo": 2018,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-touareg-iii",
+      "id": "volkswagen-touareg-cr",
       "modelId": "volkswagen-touareg",
-      "code": "III",
-      "yearFrom": 2017,
+      "code": "CR",
+      "yearFrom": 2018,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-touareg-r-iii-r",
-      "modelId": "volkswagen-touareg-r",
-      "code": "III R",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-touran-i",
+      "id": "volkswagen-touran-1t",
       "modelId": "volkswagen-touran",
-      "code": "I",
+      "code": "1T",
       "yearFrom": 2003,
       "yearTo": 2015,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-touran-ii",
+      "id": "volkswagen-touran-5t",
       "modelId": "volkswagen-touran",
-      "code": "II",
+      "code": "5T",
       "yearFrom": 2015,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volkswagen-transporter-t4",
-      "modelId": "volkswagen-transporter",
-      "code": "T4",
-      "yearFrom": 1990,
-      "yearTo": 2003,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14203,259 +12451,59 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-transporter-t6-t6-1",
+      "id": "volkswagen-transporter-t6",
       "modelId": "volkswagen-transporter",
-      "code": "T6/T6.1",
+      "code": "T6",
       "yearFrom": 2015,
+      "yearTo": 2019,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-transporter-t6-1",
+      "modelId": "volkswagen-transporter",
+      "code": "T6.1",
+      "yearFrom": 2019,
+      "yearTo": 2024,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volkswagen-transporter-t7",
+      "modelId": "volkswagen-transporter",
+      "code": "T7",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-up-up",
+      "id": "volkswagen-up-i",
       "modelId": "volkswagen-up",
-      "code": "up!",
+      "code": "I",
       "yearFrom": 2011,
-      "yearTo": null,
+      "yearTo": 2023,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volkswagen-vento-vento",
-      "modelId": "volkswagen-vento",
-      "code": "Vento",
-      "yearFrom": 1992,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-142-140",
-      "modelId": "volvo-142",
-      "code": "140",
-      "yearFrom": 1966,
-      "yearTo": 1974,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-144-140",
-      "modelId": "volvo-144",
-      "code": "140",
-      "yearFrom": 1966,
-      "yearTo": 1974,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-145-140",
-      "modelId": "volvo-145",
-      "code": "140",
-      "yearFrom": 1966,
-      "yearTo": 1974,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-164-164",
-      "modelId": "volvo-164",
-      "code": "164",
-      "yearFrom": 1968,
-      "yearTo": 1975,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-240-240",
-      "modelId": "volvo-240",
-      "code": "240",
-      "yearFrom": 1974,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-242-240",
-      "modelId": "volvo-242",
-      "code": "240",
-      "yearFrom": 1974,
-      "yearTo": 1984,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-244-240",
-      "modelId": "volvo-244",
-      "code": "240",
-      "yearFrom": 1974,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-245-240",
-      "modelId": "volvo-245",
-      "code": "240",
-      "yearFrom": 1974,
-      "yearTo": 1993,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-262-260",
-      "modelId": "volvo-262",
-      "code": "260",
-      "yearFrom": 1974,
-      "yearTo": 1982,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-264-260",
-      "modelId": "volvo-264",
-      "code": "260",
-      "yearFrom": 1974,
-      "yearTo": 1982,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-340-300",
-      "modelId": "volvo-340",
-      "code": "300",
-      "yearFrom": 1976,
-      "yearTo": 1991,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-360-300",
-      "modelId": "volvo-360",
-      "code": "300",
-      "yearFrom": 1982,
-      "yearTo": 1991,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-440-400",
-      "modelId": "volvo-440",
-      "code": "400",
-      "yearFrom": 1987,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-460-400",
-      "modelId": "volvo-460",
-      "code": "400",
-      "yearFrom": 1988,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-480-480",
-      "modelId": "volvo-480",
-      "code": "480",
-      "yearFrom": 1986,
-      "yearTo": 1995,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-740-740",
-      "modelId": "volvo-740",
-      "code": "740",
-      "yearFrom": 1982,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-745-740",
-      "modelId": "volvo-745",
-      "code": "740",
-      "yearFrom": 1982,
-      "yearTo": 1992,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-760-760",
-      "modelId": "volvo-760",
-      "code": "760",
-      "yearFrom": 1982,
-      "yearTo": 1990,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-850-850",
-      "modelId": "volvo-850",
-      "code": "850",
-      "yearFrom": 1991,
-      "yearTo": 1996,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-940-940",
-      "modelId": "volvo-940",
-      "code": "940",
-      "yearFrom": 1990,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-960-960",
-      "modelId": "volvo-960",
-      "code": "960",
-      "yearFrom": 1990,
-      "yearTo": 1998,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-amazon-amazon",
-      "modelId": "volvo-amazon",
-      "code": "Amazon",
-      "yearFrom": 1956,
-      "yearTo": 1970,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-c202-c202",
-      "modelId": "volvo-c202",
-      "code": "C202",
-      "yearFrom": 1977,
-      "yearTo": 1981,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-c30-c30",
+      "id": "volvo-c30-i",
       "modelId": "volvo-c30",
-      "code": "C30",
+      "code": "I",
       "yearFrom": 2006,
       "yearTo": 2013,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-c303-c303",
-      "modelId": "volvo-c303",
-      "code": "C303",
-      "yearFrom": 1974,
-      "yearTo": 1984,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-c40-c40",
-      "modelId": "volvo-c40",
-      "code": "C40",
-      "yearFrom": 2021,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-c70-i",
-      "modelId": "volvo-c70",
-      "code": "I",
-      "yearFrom": 1997,
-      "yearTo": 2005,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "volvo-c70-ii",
       "modelId": "volvo-c70",
       "code": "II",
-      "yearFrom": 2005,
+      "yearFrom": 2006,
       "yearTo": 2013,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-duett-duett",
-      "modelId": "volvo-duett",
-      "code": "Duett",
-      "yearFrom": 1953,
-      "yearTo": 1969,
+      "id": "volvo-ec40-c40",
+      "modelId": "volvo-ec40",
+      "code": "C40",
+      "yearFrom": 2021,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14467,19 +12515,27 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-em90-em90",
-      "modelId": "volvo-em90",
-      "code": "EM90",
-      "yearFrom": 2024,
+      "id": "volvo-es90-i",
+      "modelId": "volvo-es90",
+      "code": "I",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-ex30-ex30",
+      "id": "volvo-ex30-i",
       "modelId": "volvo-ex30",
-      "code": "EX30",
+      "code": "I",
       "yearFrom": 2023,
       "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-ex40-recharge",
+      "modelId": "volvo-ex40",
+      "code": "Recharge",
+      "yearFrom": 2020,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14491,43 +12547,19 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-ex90-ex90",
-      "modelId": "volvo-ex90",
-      "code": "EX90",
-      "yearFrom": 2024,
+      "id": "volvo-ex60-i",
+      "modelId": "volvo-ex60",
+      "code": "I",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-lv-1303-lv",
-      "modelId": "volvo-lv-1303",
-      "code": "LV",
-      "yearFrom": 1930,
-      "yearTo": 1950,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-p1800-p1800",
-      "modelId": "volvo-p1800",
-      "code": "P1800",
-      "yearFrom": 1961,
-      "yearTo": 1973,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-pv-pv",
-      "modelId": "volvo-pv",
-      "code": "PV",
-      "yearFrom": 1944,
-      "yearTo": 1965,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-s40-i",
-      "modelId": "volvo-s40",
+      "id": "volvo-ex90-i",
+      "modelId": "volvo-ex90",
       "code": "I",
-      "yearFrom": 1995,
-      "yearTo": 2004,
+      "yearFrom": 2024,
+      "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14559,23 +12591,7 @@
       "modelId": "volvo-s60",
       "code": "III",
       "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-s60-cross-country-s60-cc",
-      "modelId": "volvo-s60-cross-country",
-      "code": "S60 CC",
-      "yearFrom": 2015,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-s70-s70",
-      "modelId": "volvo-s70",
-      "code": "S70",
-      "yearFrom": 1996,
-      "yearTo": 2000,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
@@ -14595,41 +12611,25 @@
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-s90-s90",
+      "id": "volvo-s90-i",
       "modelId": "volvo-s90",
-      "code": "S90",
+      "code": "I",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
       "id": "volvo-v40-i",
       "modelId": "volvo-v40",
       "code": "I",
-      "yearFrom": 1995,
-      "yearTo": 2004,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v40-ii",
-      "modelId": "volvo-v40",
-      "code": "II",
       "yearFrom": 2012,
       "yearTo": 2019,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-v40-cross-country-v40-cc",
-      "modelId": "volvo-v40-cross-country",
-      "code": "V40 CC",
-      "yearFrom": 2012,
-      "yearTo": 2019,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v50-v50",
+      "id": "volvo-v50-i",
       "modelId": "volvo-v50",
-      "code": "V50",
+      "code": "I",
       "yearFrom": 2004,
       "yearTo": 2012,
       "imageAsset": "generation_placeholder"
@@ -14647,86 +12647,54 @@
       "modelId": "volvo-v60",
       "code": "II",
       "yearFrom": 2018,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-v60-fl",
+      "modelId": "volvo-v60",
+      "code": "FL",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-v60-cross-country-i",
-      "modelId": "volvo-v60-cross-country",
-      "code": "I",
-      "yearFrom": 2015,
-      "yearTo": 2018,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v60-cross-country-ii",
-      "modelId": "volvo-v60-cross-country",
-      "code": "II",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v60-recharge-ii-recharge",
-      "modelId": "volvo-v60-recharge",
-      "code": "II Recharge",
-      "yearFrom": 2018,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v70-i",
+      "id": "volvo-v70-p2",
       "modelId": "volvo-v70",
-      "code": "I",
-      "yearFrom": 1996,
-      "yearTo": 2000,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-v70-ii",
-      "modelId": "volvo-v70",
-      "code": "II",
+      "code": "P2",
       "yearFrom": 2000,
       "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-v70-iii",
+      "id": "volvo-v70-p3",
       "modelId": "volvo-v70",
-      "code": "III",
+      "code": "P3",
       "yearFrom": 2007,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-v90-v90",
+      "id": "volvo-v90-i",
       "modelId": "volvo-v90",
-      "code": "V90",
+      "code": "I",
       "yearFrom": 2016,
-      "yearTo": null,
+      "yearTo": 2025,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-v90-cross-country-v90-cc",
-      "modelId": "volvo-v90-cross-country",
-      "code": "V90 CC",
-      "yearFrom": 2016,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc40-xc40",
+      "id": "volvo-xc40-i",
       "modelId": "volvo-xc40",
-      "code": "XC40",
+      "code": "I",
       "yearFrom": 2017,
-      "yearTo": null,
+      "yearTo": 2024,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-xc40-recharge-xc40-recharge",
-      "modelId": "volvo-xc40-recharge",
-      "code": "XC40 Recharge",
-      "yearFrom": 2020,
+      "id": "volvo-xc40-fl",
+      "modelId": "volvo-xc40",
+      "code": "FL",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
@@ -14743,29 +12711,29 @@
       "modelId": "volvo-xc60",
       "code": "II",
       "yearFrom": 2017,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-xc60-fl",
+      "modelId": "volvo-xc60",
+      "code": "FL",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-xc60-recharge-ii-recharge",
-      "modelId": "volvo-xc60-recharge",
-      "code": "II Recharge",
-      "yearFrom": 2017,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc70-i",
+      "id": "volvo-xc70-p2",
       "modelId": "volvo-xc70",
-      "code": "I",
-      "yearFrom": 2000,
+      "code": "P2",
+      "yearFrom": 2002,
       "yearTo": 2007,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "volvo-xc70-ii",
+      "id": "volvo-xc70-p3",
       "modelId": "volvo-xc70",
-      "code": "II",
+      "code": "P3",
       "yearFrom": 2007,
       "yearTo": 2016,
       "imageAsset": "generation_placeholder"
@@ -14782,98 +12750,98 @@
       "id": "volvo-xc90-ii",
       "modelId": "volvo-xc90",
       "code": "II",
-      "yearFrom": 2014,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "volvo-xc90-recharge-ii-recharge",
-      "modelId": "volvo-xc90-recharge",
-      "code": "II Recharge",
       "yearFrom": 2015,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "volvo-xc90-fl",
+      "modelId": "volvo-xc90",
+      "code": "FL",
+      "yearFrom": 2026,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "voyah-courage-courage",
+      "id": "voyah-courage-i",
       "modelId": "voyah-courage",
-      "code": "Courage",
-      "yearFrom": 2023,
+      "code": "I",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "voyah-free-free",
+      "id": "voyah-free-i",
       "modelId": "voyah-free",
-      "code": "Free",
-      "yearFrom": 2021,
+      "code": "I",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "voyah-passion-passion",
-      "modelId": "voyah-passion",
-      "code": "Passion",
-      "yearFrom": 2023,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-g6-g6",
+      "id": "xpeng-g6-i",
       "modelId": "xpeng-g6",
-      "code": "G6",
-      "yearFrom": 2023,
+      "code": "I",
+      "yearFrom": 2024,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-g6-ii",
+      "modelId": "xpeng-g6",
+      "code": "II",
+      "yearFrom": 2025,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     },
     {
-      "id": "xpeng-g9-g9",
+      "id": "xpeng-g9-i",
       "modelId": "xpeng-g9",
-      "code": "G9",
-      "yearFrom": 2022,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-l03-l03",
-      "modelId": "xpeng-l03",
-      "code": "L03",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-new-g6-g6-new",
-      "modelId": "xpeng-new-g6",
-      "code": "G6 (new)",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-new-g9-g9-new",
-      "modelId": "xpeng-new-g9",
-      "code": "G9 (new)",
-      "yearFrom": 2025,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-p7-p7",
-      "modelId": "xpeng-p7",
-      "code": "P7",
-      "yearFrom": 2020,
-      "yearTo": null,
-      "imageAsset": "generation_placeholder"
-    },
-    {
-      "id": "xpeng-x9-x9",
-      "modelId": "xpeng-x9",
-      "code": "X9",
+      "code": "I",
       "yearFrom": 2023,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-g9-ii",
+      "modelId": "xpeng-g9",
+      "code": "II",
+      "yearFrom": 2025,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-l03-i",
+      "modelId": "xpeng-l03",
+      "code": "I",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-p7-i",
+      "modelId": "xpeng-p7",
+      "code": "I",
+      "yearFrom": 2023,
+      "yearTo": 2025,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-p7-plus",
+      "modelId": "xpeng-p7",
+      "code": "Plus",
+      "yearFrom": 2026,
+      "yearTo": null,
+      "imageAsset": "generation_placeholder"
+    },
+    {
+      "id": "xpeng-x9-i",
+      "modelId": "xpeng-x9",
+      "code": "I",
+      "yearFrom": 2024,
       "yearTo": null,
       "imageAsset": "generation_placeholder"
     }
   ],
-  "count": 1859
+  "count": 1605
 }

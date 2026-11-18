@@ -2,7 +2,7 @@
  * Build generation_specs.json from curated brand packs only.
  * No heuristic invention — missing gens get an empty list ("coming soon" in UI).
  *
- * Packs: A (Aion, Audi), BMW, Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, Mercedes-Benz
+ * Packs: A (Aion, Audi), BMW, Alfa Romeo, BYD, Cupra, Ford, Honda, Hyundai, Kia, Land Rover, Lexus, Maxus, Mazda, Mercedes-Benz, MG, MINI, Mitsubishi, Nissan, Opel, Polestar, Porsche, Renault, SEAT, Škoda, Tesla, Toyota, Volkswagen, Volvo, smart, Subaru, Voyah, XPeng, Suzuki
  * Combined gearbox strings are split into separate MT vs auto rows.
  *
  * Usage: node tools/build_generation_variants.mjs
@@ -24,6 +24,25 @@ import { LEXUS_POWERTRAINS, LEXUS_MAKE_IDS } from "./lexus_powertrains.mjs";
 import { MAXUS_POWERTRAINS, MAXUS_MAKE_IDS } from "./maxus_powertrains.mjs";
 import { MAZDA_POWERTRAINS, MAZDA_MAKE_IDS } from "./mazda_powertrains.mjs";
 import { MERCEDES_POWERTRAINS, MERCEDES_MAKE_IDS } from "./mercedes_powertrains.mjs";
+import { MG_POWERTRAINS, MG_MAKE_IDS } from "./mg_powertrains.mjs";
+import { MINI_POWERTRAINS, MINI_MAKE_IDS } from "./mini_powertrains.mjs";
+import { MITSUBISHI_POWERTRAINS, MITSUBISHI_MAKE_IDS } from "./mitsubishi_powertrains.mjs";
+import { NISSAN_POWERTRAINS, NISSAN_MAKE_IDS } from "./nissan_powertrains.mjs";
+import { OPEL_POWERTRAINS, OPEL_MAKE_IDS } from "./opel_powertrains.mjs";
+import { POLESTAR_POWERTRAINS, POLESTAR_MAKE_IDS } from "./polestar_powertrains.mjs";
+import { PORSCHE_POWERTRAINS, PORSCHE_MAKE_IDS } from "./porsche_powertrains.mjs";
+import { RENAULT_POWERTRAINS, RENAULT_MAKE_IDS } from "./renault_powertrains.mjs";
+import { SEAT_POWERTRAINS, SEAT_MAKE_IDS } from "./seat_powertrains.mjs";
+import { SKODA_POWERTRAINS, SKODA_MAKE_IDS } from "./skoda_powertrains.mjs";
+import { TESLA_POWERTRAINS, TESLA_MAKE_IDS } from "./tesla_powertrains.mjs";
+import { TOYOTA_POWERTRAINS, TOYOTA_MAKE_IDS } from "./toyota_powertrains.mjs";
+import { VOLKSWAGEN_POWERTRAINS, VOLKSWAGEN_MAKE_IDS } from "./volkswagen_powertrains.mjs";
+import { VOLVO_POWERTRAINS, VOLVO_MAKE_IDS } from "./volvo_powertrains.mjs";
+import { SMART_POWERTRAINS, SMART_MAKE_IDS } from "./smart_powertrains.mjs";
+import { SUBARU_POWERTRAINS, SUBARU_MAKE_IDS } from "./subaru_powertrains.mjs";
+import { VOYAH_POWERTRAINS, VOYAH_MAKE_IDS } from "./voyah_powertrains.mjs";
+import { XPENG_POWERTRAINS, XPENG_MAKE_IDS } from "./xpeng_powertrains.mjs";
+import { SUZUKI_POWERTRAINS, SUZUKI_MAKE_IDS } from "./suzuki_powertrains.mjs";
 import { splitGearboxRows } from "./split_gearbox_rows.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -86,6 +105,25 @@ const CURATED = {
   ...MAXUS_POWERTRAINS,
   ...MAZDA_POWERTRAINS,
   ...MERCEDES_POWERTRAINS,
+  ...MG_POWERTRAINS,
+  ...MINI_POWERTRAINS,
+  ...MITSUBISHI_POWERTRAINS,
+  ...NISSAN_POWERTRAINS,
+  ...OPEL_POWERTRAINS,
+  ...POLESTAR_POWERTRAINS,
+  ...PORSCHE_POWERTRAINS,
+  ...RENAULT_POWERTRAINS,
+  ...SEAT_POWERTRAINS,
+  ...SKODA_POWERTRAINS,
+  ...TESLA_POWERTRAINS,
+  ...TOYOTA_POWERTRAINS,
+  ...VOLKSWAGEN_POWERTRAINS,
+  ...VOLVO_POWERTRAINS,
+  ...SMART_POWERTRAINS,
+  ...SUBARU_POWERTRAINS,
+  ...VOYAH_POWERTRAINS,
+  ...XPENG_POWERTRAINS,
+  ...SUZUKI_POWERTRAINS,
 };
 
 const variants = {};
@@ -123,7 +161,26 @@ for (const gen of gensRoot.generations) {
       LEXUS_MAKE_IDS.includes(makeId) ||
       MAXUS_MAKE_IDS.includes(makeId) ||
       MAZDA_MAKE_IDS.includes(makeId) ||
-      MERCEDES_MAKE_IDS.includes(makeId)
+      MERCEDES_MAKE_IDS.includes(makeId) ||
+      MG_MAKE_IDS.includes(makeId) ||
+      MINI_MAKE_IDS.includes(makeId) ||
+      MITSUBISHI_MAKE_IDS.includes(makeId) ||
+      NISSAN_MAKE_IDS.includes(makeId) ||
+      OPEL_MAKE_IDS.includes(makeId) ||
+      POLESTAR_MAKE_IDS.includes(makeId) ||
+      PORSCHE_MAKE_IDS.includes(makeId) ||
+      RENAULT_MAKE_IDS.includes(makeId) ||
+      SEAT_MAKE_IDS.includes(makeId) ||
+      SKODA_MAKE_IDS.includes(makeId) ||
+      TESLA_MAKE_IDS.includes(makeId) ||
+      TOYOTA_MAKE_IDS.includes(makeId) ||
+      VOLKSWAGEN_MAKE_IDS.includes(makeId) ||
+      VOLVO_MAKE_IDS.includes(makeId) ||
+      SMART_MAKE_IDS.includes(makeId) ||
+      SUBARU_MAKE_IDS.includes(makeId) ||
+      VOYAH_MAKE_IDS.includes(makeId) ||
+      XPENG_MAKE_IDS.includes(makeId) ||
+      SUZUKI_MAKE_IDS.includes(makeId)
     ) {
       missingRequired.push(gen.id);
     }
@@ -137,7 +194,7 @@ if (missingRequired.length) {
 }
 
 const out = {
-  note: "Curated European-market engines & versions only. Packs: Aion/Audi + BMW + Alfa Romeo + BYD + Cupra + Ford + Honda + Hyundai + Kia + Land Rover + Lexus + Maxus + Mazda + Mercedes-Benz. MT vs automatic are separate rows. Other makes empty until curated. tools/build_generation_variants.mjs",
+  note: "Curated European-market engines & versions only. Packs: Aion/Audi + BMW + Alfa Romeo + BYD + Cupra + Ford + Honda + Hyundai + Kia + Land Rover + Lexus + Maxus + Mazda + Mercedes-Benz + MG + MINI + Mitsubishi + Nissan + Opel + Polestar + Porsche + Renault + SEAT + Škoda + Tesla + Toyota + Volkswagen + Volvo + smart + Subaru + Voyah + XPeng + Suzuki. MT vs automatic are separate rows. Other makes empty until curated. tools/build_generation_variants.mjs",
   specs: {},
   variants,
 };
@@ -192,6 +249,25 @@ console.log(
       maxus: statsFor("maxus-"),
       mazda: statsFor("mazda-"),
       mercedes: statsFor("mercedes-"),
+      mg: statsFor("mg-"),
+      mini: statsFor("mini-"),
+      mitsubishi: statsFor("mitsubishi-"),
+      nissan: statsFor("nissan-"),
+      opel: statsFor("opel-"),
+      polestar: statsFor("polestar-"),
+      porsche: statsFor("porsche-"),
+      renault: statsFor("renault-"),
+      seat: statsFor("seat-"),
+      skoda: statsFor("skoda-"),
+      tesla: statsFor("tesla-"),
+      toyota: statsFor("toyota-"),
+      volkswagen: statsFor("volkswagen-"),
+      volvo: statsFor("volvo-"),
+      smart: statsFor("smart-"),
+      subaru: statsFor("subaru-"),
+      voyah: statsFor("voyah-"),
+      xpeng: statsFor("xpeng-"),
+      suzuki: statsFor("suzuki-"),
       out: path.relative(root, outPath),
     },
     null,

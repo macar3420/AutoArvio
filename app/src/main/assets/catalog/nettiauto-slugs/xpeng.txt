@@ -1,7 +1,5 @@
-﻿g6
+g6
 g9
 l03
-new-g6
-new-g9
 p7
 x9

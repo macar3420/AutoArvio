@@ -1,8 +1,5 @@
-﻿arvostelut
-cybertruck
 model-3
 model-s
 model-x
 model-y
-muu
 roadster

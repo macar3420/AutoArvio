@@ -1,16 +1,8 @@
-﻿1000
-105
-120
-1200
-130
-arvostelut
 citigo
 elroq
 enyaq
+epiq
 fabia
-favorit
-felicia
-forman
 kamiq
 karoq
 kodiaq
